@@ -1,0 +1,17 @@
+# Temporary and test artifacts
+scratch/
+__pycache__/
+*.pyc
+
+# Audit and development test scripts
+find_culprits.py
+find_overflow.py
+scratch_audit_all_refs.py
+scratch_audit_site.py
+test_footer_snap.py
+verify_mobile.py
+check_overflow.js
+
+# OS generated files
+.DS_Store
+Thumbs.db

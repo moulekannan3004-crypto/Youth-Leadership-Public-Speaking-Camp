@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 440" width="100%" height="100%" fill="none">
+  <defs>
+    <linearGradient id="cardGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1E293B"/>
+      <stop offset="100%" stop-color="#0F172A"/>
+    </linearGradient>
+    <linearGradient id="chartLine" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#4F46E5"/>
+      <stop offset="50%" stop-color="#6366F1"/>
+      <stop offset="100%" stop-color="#818CF8"/>
+    </linearGradient>
+  </defs>
+  <!-- Main Window Container -->
+  <rect x="20" y="20" width="600" height="400" rx="16" fill="url(#cardGrad)" stroke="#334155" stroke-width="2"/>
+  <!-- Window Header -->
+  <rect x="20" y="20" width="600" height="44" rx="16" fill="#0F172A"/>
+  <circle cx="44" cy="42" r="5" fill="#475569"/>
+  <circle cx="60" cy="42" r="5" fill="#64748B"/>
+  <circle cx="76" cy="42" r="5" fill="#818CF8"/>
+  <rect x="200" y="32" width="240" height="20" rx="10" fill="#1E293B"/>
+  
+  <!-- Dashboard Sidebar -->
+  <rect x="36" y="80" width="120" height="320" rx="8" fill="#1E293B" opacity="0.6"/>
+  <rect x="48" y="100" width="96" height="14" rx="4" fill="#4F46E5"/>
+  <rect x="48" y="126" width="70" height="10" rx="3" fill="#475569"/>
+  <rect x="48" y="148" width="85" height="10" rx="3" fill="#475569"/>
+  <rect x="48" y="170" width="60" height="10" rx="3" fill="#475569"/>
+  <rect x="48" y="192" width="80" height="10" rx="3" fill="#475569"/>
+  
+  <!-- Stats Mini Cards -->
+  <rect x="176" y="80" width="130" height="70" rx="10" fill="#1E293B"/>
+  <text x="190" y="105" font-family="'Plus Jakarta Sans', sans-serif" font-size="10" fill="#94A3B8">Active Students</text>
+  <text x="190" y="132" font-family="'Plus Jakarta Sans', sans-serif" font-size="18" font-weight="bold" fill="#F8FAFC">2,840</text>
+  <text x="270" y="132" font-family="'Plus Jakarta Sans', sans-serif" font-size="10" font-weight="bold" fill="#818CF8">+24%</text>
+
+  <rect x="320" y="80" width="130" height="70" rx="10" fill="#1E293B"/>
+  <text x="334" y="105" font-family="'Plus Jakarta Sans', sans-serif" font-size="10" fill="#94A3B8">Skill Mastery Rate</text>
+  <text x="334" y="132" font-family="'Plus Jakarta Sans', sans-serif" font-size="18" font-weight="bold" fill="#F8FAFC">94.6%</text>
+
+  <rect x="464" y="80" width="136" height="70" rx="10" fill="#1E293B"/>
+  <text x="478" y="105" font-family="'Plus Jakarta Sans', sans-serif" font-size="10" fill="#94A3B8">Live Camp Sessions</text>
+  <text x="478" y="132" font-family="'Plus Jakarta Sans', sans-serif" font-size="18" font-weight="bold" fill="#F8FAFC">48 Cohorts</text>
+
+  <!-- Large Chart Area -->
+  <rect x="176" y="165" width="424" height="235" rx="12" fill="#1E293B"/>
+  <text x="196" y="195" font-family="'Plus Jakarta Sans', sans-serif" font-size="12" font-weight="bold" fill="#F8FAFC">Leadership & Oratory Performance Trends</text>
+  <!-- Chart Grid -->
+  <line x1="200" y1="230" x2="570" y2="230" stroke="#334155" stroke-dasharray="4"/>
+  <line x1="200" y1="280" x2="570" y2="280" stroke="#334155" stroke-dasharray="4"/>
+  <line x1="200" y1="330" x2="570" y2="330" stroke="#334155" stroke-dasharray="4"/>
+  <!-- Spline Path -->
+  <path d="M210 350 Q260 340 310 270 T410 240 T500 210 T560 190" stroke="url(#chartLine)" stroke-width="4" fill="none"/>
+  <circle cx="560" cy="190" r="6" fill="#4F46E5" stroke="#FFFFFF" stroke-width="2"/>
+</svg>

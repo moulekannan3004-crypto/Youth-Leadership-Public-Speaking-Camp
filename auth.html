@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="light" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Parent Portal Access | VoxLeaders Youth Academy</title>
+  <meta name="description" content="Sign in to your VoxLeaders Parent Portal to enroll children in camp sessions, track speech development progress, and access event media.">
+  
+  <link rel="icon" type="image/svg+xml" href="assets/img/brand/favicon.svg">
+  <link id="bootstrap-theme-style" rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <!-- Google Fonts: Poppins (Light 300), Outfit, Plus Jakarta Sans -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800;900&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,300&display=swap" rel="stylesheet">
+  
+<link rel="stylesheet" href="assets/css/style.css?v=7.8">
+  <link rel="stylesheet" href="assets/css/rtl.css">
+</head>
+<body class="bg-surface-alt d-flex flex-column min-vh-100">
+
+  <!-- Main Login Card Container -->
+  <main class="flex-grow-1 d-flex align-items-center justify-content-center py-5">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-12 col-sm-10 col-md-8 col-lg-6 col-xl-5" style="max-width: 500px;">
+          <!-- Auth Card -->
+          <div class="card border-0 bg-surface rounded-theme-xl p-4 p-md-5 shadow-lg">
+            
+            <!-- Top Utility Row: LTR/RTL in Left Corner & Dark Mode in Right Corner -->
+            <div class="d-flex align-items-center justify-content-between mb-3">
+              <button class="btn-vx-dir-pill rtl-toggle-btn" aria-label="Toggle Text Direction" title="Toggle Direction">
+                <span class="dir-active">LTR</span>
+                <i class="bi bi-arrow-left-right text-muted" style="font-size: 0.7rem;"></i>
+                <span class="dir-inactive">RTL</span>
+              </button>
+
+              <button class="btn-vx-theme-circle theme-toggle-btn" aria-label="Toggle Dark/Light Mode" title="Toggle Theme">
+                <i class="bi bi-moon-stars-fill"></i>
+              </button>
+            </div>
+
+            <div class="text-center mb-4">
+              <a href="index.html" class="d-inline-block mb-3">
+                <img src="assets/img/brand/logo.svg" alt="VoxLeaders Logo" class="vx-brand-img" height="44">
+              </a>
+              <div>
+                <div class="badge-pill-soft mb-2"><i class="bi bi-person-heart text-primary"></i> Parent Portal</div>
+              </div>
+              <h1 class="h3 fw-bold font-heading mb-1">Parent Portal Access</h1>
+              <p class="small text-body-secondary mb-0">Track your child's speaking progress, view session milestones, and download camp recordings.</p>
+            </div>
+
+            <!-- Tab Switcher (Sign In vs Register) -->
+            <ul class="nav nav-pills nav-fill mb-4 p-1 bg-surface-alt rounded-pill border border-theme" id="authTabs" role="tablist">
+              <li class="nav-item">
+                <button class="nav-link active rounded-pill fw-bold small py-2" id="signin-tab" data-bs-toggle="pill" data-bs-target="#signinTabContent" type="button">
+                  <i class="bi bi-box-arrow-in-right me-1"></i> Sign In
+                </button>
+              </li>
+              <li class="nav-item">
+                <button class="nav-link rounded-pill fw-bold small py-2" id="register-tab" data-bs-toggle="pill" data-bs-target="#registerTabContent" type="button">
+                  <i class="bi bi-person-plus me-1"></i> New Parent Account
+                </button>
+              </li>
+            </ul>
+
+            <div class="tab-content" id="authTabContent">
+              <!-- SIGN IN TAB -->
+              <div class="tab-pane fade show active" id="signinTabContent" role="tabpanel">
+                <form class="needs-validation-vx" novalidate onsubmit="event.preventDefault(); showToast('Sign In Successful', 'Welcome back, Rachel Adams! Redirecting to parent dashboard...', 'success'); setTimeout(() => { window.location.href='dashboard-parent.html'; }, 900);">
+                  <div class="mb-3">
+                    <label class="form-label small fw-bold">Parent Email Address</label>
+                    <input type="email" class="form-control form-control-vx" placeholder="rachel.adams@example.com" value="rachel.adams@example.com" required>
+                  </div>
+
+                  <div class="mb-3">
+                    <div class="d-flex justify-content-between">
+                      <label class="form-label small fw-bold">Password</label>
+                      <button type="button" onclick="showToast('Password Reset', 'A password reset link has been dispatched to your email address.', 'info');" class="btn btn-link p-0 small text-decoration-none">Forgot Password?</button>
+                    </div>
+                    <div class="position-relative">
+                      <input type="password" class="form-control form-control-vx pe-5" id="parentPassword" value="••••••••••••" required>
+                      <button class="btn border-0 position-absolute end-0 top-50 translate-middle-y text-body-secondary me-2 p-1" type="button" onclick="const p = document.getElementById('parentPassword'); p.type = p.type==='password'?'text':'password'; this.querySelector('i').classList.toggle('bi-eye'); this.querySelector('i').classList.toggle('bi-eye-slash');" aria-label="Toggle password visibility">
+                        <i class="bi bi-eye fs-5"></i>
+                      </button>
+                    </div>
+                  </div>
+
+                  <div class="form-check mb-4">
+                    <input class="form-check-input" type="checkbox" id="rememberParent" checked>
+                    <label class="form-check-label small text-body-secondary" for="rememberParent">Remember this device for 30 days</label>
+                  </div>
+
+                  <button type="submit" class="btn-vx btn-vx-primary w-100 py-3 mb-3">
+                    <i class="bi bi-box-arrow-in-right"></i>
+                    <span>Log In to Parent Portal</span>
+                  </button>
+
+                  <div class="d-flex align-items-center my-3">
+                    <div class="border-top border-theme flex-grow-1"></div>
+                    <span class="px-3 small text-body-secondary fw-semibold">or continue with</span>
+                    <div class="border-top border-theme flex-grow-1"></div>
+                  </div>
+
+                  <div class="row g-2 mb-3">
+                    <div class="col-6">
+                      <button type="button" onclick="showToast('Google Sign In', 'Authenticated successfully via Google. Opening dashboard...', 'success'); setTimeout(() => { window.location.href='dashboard-parent.html'; }, 900);" class="btn btn-vx-outline w-100 d-flex align-items-center justify-content-center gap-2 py-2.5 small fw-bold rounded-pill">
+                        <i class="fab fa-google text-danger fs-6"></i>
+                        <span>Google</span>
+                      </button>
+                    </div>
+                    <div class="col-6">
+                      <button type="button" onclick="showToast('Apple Sign In', 'Authenticated successfully via Apple ID. Opening dashboard...', 'success'); setTimeout(() => { window.location.href='dashboard-parent.html'; }, 900);" class="btn btn-vx-outline w-100 d-flex align-items-center justify-content-center gap-2 py-2.5 small fw-bold rounded-pill">
+                        <i class="fab fa-apple fs-6 text-heading"></i>
+                        <span>Apple</span>
+                      </button>
+                    </div>
+                  </div>
+
+                  <div class="text-center small text-body-secondary">
+                    <i class="bi bi-shield-lock-fill text-success me-1"></i> Protected by 256-bit SSL encryption &bull; FERPA compliant
+                  </div>
+                </form>
+              </div>
+
+              <!-- REGISTER TAB -->
+              <div class="tab-pane fade" id="registerTabContent" role="tabpanel">
+                <form class="needs-validation-vx" novalidate onsubmit="event.preventDefault(); showToast('Account Created!', 'Your parent account has been successfully registered. Opening dashboard...', 'success'); setTimeout(() => { window.location.href='dashboard-parent.html'; }, 900);">
+                  <div class="mb-3">
+                    <label class="form-label small fw-bold">Parent Full Name</label>
+                    <input type="text" class="form-control form-control-vx input-name-only" placeholder="e.g. Sarah Jenkins" pattern="^[A-Za-z\s\-']+$" required>
+                  </div>
+
+                  <div class="row g-2 mb-3">
+                    <div class="col-8">
+                      <label class="form-label small fw-bold">Child Name</label>
+                      <input type="text" class="form-control form-control-vx input-name-only" placeholder="e.g. Lucas Jenkins" pattern="^[A-Za-z\s\-']+$" required>
+                    </div>
+                    <div class="col-4">
+                      <label class="form-label small fw-bold">Child Age</label>
+                      <input type="number" class="form-control form-control-vx" placeholder="13" min="7" max="18" required>
+                    </div>
+                  </div>
+
+                  <div class="mb-3">
+                    <label class="form-label small fw-bold">Email Address</label>
+                    <input type="email" class="form-control form-control-vx" placeholder="sarah@example.com" required>
+                  </div>
+
+                  <div class="mb-3">
+                    <label class="form-label small fw-bold">Create Password</label>
+                    <input type="password" class="form-control form-control-vx" placeholder="At least 8 characters" required>
+                  </div>
+
+                  <div class="form-check mb-4">
+                    <input class="form-check-input" type="checkbox" id="agreeTerms" required checked>
+                    <label class="form-check-label small text-body-secondary" for="agreeTerms">I agree to the Camp Terms of Enrollment</label>
+                  </div>
+
+                  <button type="submit" class="btn-vx btn-vx-primary w-100 py-3 mb-3">
+                    <i class="bi bi-person-check-fill"></i>
+                    <span>Create Parent Account &amp; Access</span>
+                  </button>
+
+                  <div class="d-flex align-items-center my-3">
+                    <div class="border-top border-theme flex-grow-1"></div>
+                    <span class="px-3 small text-body-secondary fw-semibold">or sign up with</span>
+                    <div class="border-top border-theme flex-grow-1"></div>
+                  </div>
+
+                  <div class="row g-2 mb-3">
+                    <div class="col-6">
+                      <button type="button" onclick="showToast('Google Sign-Up', 'Registered and signed in via Google. Opening dashboard...', 'success'); setTimeout(() => { window.location.href='dashboard-parent.html'; }, 900);" class="btn btn-vx-outline w-100 d-flex align-items-center justify-content-center gap-2 py-2.5 small fw-bold rounded-pill">
+                        <i class="fab fa-google text-danger fs-6"></i>
+                        <span>Google</span>
+                      </button>
+                    </div>
+                    <div class="col-6">
+                      <button type="button" onclick="showToast('Apple Sign-Up', 'Registered and signed in via Apple ID. Opening dashboard...', 'success'); setTimeout(() => { window.location.href='dashboard-parent.html'; }, 900);" class="btn btn-vx-outline w-100 d-flex align-items-center justify-content-center gap-2 py-2.5 small fw-bold rounded-pill">
+                        <i class="fab fa-apple fs-6 text-heading"></i>
+                        <span>Apple</span>
+                      </button>
+                    </div>
+                  </div>
+
+                  <div class="text-center small text-body-secondary">
+                    Already registered? <a href="#" onclick="document.getElementById('signin-tab').click();" class="fw-bold text-primary">Sign in here</a>
+                  </div>
+                </form>
+              </div>
+            </div> <!-- Close #authTabContent -->
+          </div> <!-- Close Card -->
+        </div> <!-- Close Col -->
+      </div> <!-- Close Row -->
+    </div> <!-- Close Container -->
+  </main>
+
+  <!-- Simple Footer -->
+  <footer class="py-3 text-center small text-body-secondary border-top border-theme bg-surface">
+    &copy; 2026 VoxLeaders Youth Academy Inc. All Rights Reserved.
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="light" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sessions & Enrollment | VoxLeaders Parent Portal</title>
+  <meta name="description" content="Manage enrolled camp cohorts, view schedules, attendance logs, and register siblings for upcoming speech & debate intensives.">
+  
+  <link rel="icon" type="image/svg+xml" href="assets/img/brand/favicon.svg">
+  <link id="bootstrap-theme-style" rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <!-- Google Fonts: Poppins, Outfit, Plus Jakarta Sans -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800;900&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,300&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="assets/css/style.css?v=7.8">
+  <link rel="stylesheet" href="assets/css/dashboard.css">
+  <link rel="stylesheet" href="assets/css/rtl.css">
+</head>
+<body>
+
+  <div class="dashboard-layout">
+    
+    <!-- =================================================================
+         SIDEBAR NAVIGATION
+    ================================================================== -->
+    <aside class="dashboard-sidebar">
+      <div class="sidebar-brand-wrapper">
+        <a href="index.html" class="d-flex align-items-center">
+          <img src="assets/img/brand/logo.svg" alt="VoxLeaders Logo" class="vx-brand-img" height="46">
+        </a>
+        <button class="btn btn-sm d-lg-none border-0 text-muted" id="sidebarCloseBtn"><i class="bi bi-x-lg"></i></button>
+      </div>
+
+      <div class="sidebar-menu">
+        <div class="sidebar-section-title">Parent Dashboard</div>
+        <a href="dashboard-parent.html" class="sidebar-nav-link">
+          <i class="bi bi-speedometer2"></i>
+          <span>Overview</span>
+        </a>
+        <a href="dashboard-skills.html" class="sidebar-nav-link">
+          <i class="bi bi-pie-chart-fill"></i>
+          <span>Skill Analytics</span>
+          <span class="badge bg-primary sidebar-nav-badge">Live</span>
+        </a>
+        <a href="dashboard-sessions.html" class="sidebar-nav-link active">
+          <i class="bi bi-calendar2-check-fill"></i>
+          <span>Sessions &amp; Enrollment</span>
+        </a>
+        <a href="dashboard-badges.html" class="sidebar-nav-link">
+          <i class="bi bi-award-fill"></i>
+          <span>Badges &amp; Honors</span>
+        </a>
+
+        <div class="sidebar-section-title mt-3">Family &amp; Account</div>
+        <a href="contact.html" class="sidebar-nav-link">
+          <i class="bi bi-chat-dots-fill"></i>
+          <span>Message Coaches</span>
+        </a>
+        <a href="pricing.html" class="sidebar-nav-link">
+          <i class="bi bi-receipt"></i>
+          <span>Tuition &amp; Invoices</span>
+        </a>
+      </div>
+
+      <!-- Modularis Reference Sidebar Footer -->
+      <div class="sidebar-bottom-actions">
+        <a href="index.html" class="btn-sidebar-website">
+          <i class="bi bi-arrow-left"></i>
+          <span>Back to Website</span>
+        </a>
+        <a href="index.html" class="btn-sidebar-logout" onclick="showToast('Logged Out', 'You have been safely signed out. Redirecting to home...', 'info');">
+          <i class="bi bi-box-arrow-right"></i>
+          <span>Logout Dashboard</span>
+        </a>
+      </div>
+    </aside>
+
+    <!-- =================================================================
+         MAIN CONTENT AREA
+    ================================================================== -->
+    <main class="dashboard-main">
+      
+      <!-- Topbar Header (Modularis Reference Style) -->
+      <header class="dashboard-topbar">
+        <div class="d-flex align-items-center gap-3">
+          <button class="btn btn-sm btn-vx-outline d-lg-none" id="sidebarToggleBtn" aria-label="Toggle Mobile Menu">
+            <i class="bi bi-list fs-5"></i>
+          </button>
+
+          <!-- Global Admin / Parent Search -->
+          <div class="dashboard-search-container d-none d-md-block">
+            <i class="bi bi-search dashboard-search-icon"></i>
+            <input type="text" class="dashboard-search-input" placeholder="Search cohorts, schedules, campuses...">
+          </div>
+
+
+        </div>
+
+        <div class="d-flex align-items-center gap-2">
+          <!-- Back to Website Pill -->
+          <a href="index.html" class="btn-topbar-website d-none d-sm-inline-flex">
+            <i class="bi bi-arrow-left"></i>
+            <span>Website</span>
+          </a>
+
+          <!-- RTL Switcher -->
+          <button class="nav-control-btn rtl-toggle-btn" aria-label="Toggle RTL"><span class="dir-label">RTL</span></button>
+
+          <!-- Dark / Light Mode -->
+          <button class="nav-control-btn theme-toggle-btn" aria-label="Toggle Theme"><i class="bi bi-moon-stars-fill"></i></button>
+
+          <!-- User Avatar Ring -->
+          <a href="dashboard-parent.html" class="ms-1" title="Rachel Adams Profile">
+            <img src="assets/img/dashboard/camper-avatar-maya.jpg" class="user-avatar-ring" alt="Rachel Adams">
+          </a>
+        </div>
+      </header>
+
+      <!-- Dashboard View Content -->
+      <div class="dashboard-content-area">
+        
+        <!-- Welcome Card (Modularis Reference Style) -->
+        <div class="dashboard-welcome-card">
+          <div class="welcome-status-pills">
+            <span class="status-pill-green">
+              <i class="bi bi-check-circle-fill"></i> 2 SESSIONS ENROLLED (ACTIVE)
+            </span>
+            <span class="status-pill-gold">
+              <i class="bi bi-calendar2-check-fill"></i> COHORT OPERATIONS ROSTER
+            </span>
+            <span class="status-pill-calendar">
+              <i class="bi bi-calendar3"></i> Tuesday, October 13, 2026
+            </span>
+          </div>
+
+          <div class="row align-items-center g-4">
+            <div class="col-lg-8">
+              <h1 class="display-6 fw-extrabold text-heading font-heading mb-2">
+                Camp Sessions &amp; Cohort Enrollment 🗓️
+              </h1>
+              <p class="text-body-secondary mb-0">
+                Manage your registered children's active sessions, view daily schedules, and enroll in upcoming seasonal intensives. 15% alumni discount applies automatically.
+              </p>
+            </div>
+            <div class="col-lg-4 text-lg-end">
+              <div class="d-flex flex-wrap gap-2 justify-content-lg-end">
+                <button class="btn-vx btn-vx-primary py-2.5 px-4 rounded-pill fw-bold" data-bs-toggle="modal" data-bs-target="#enrollModal">
+                  <i class="bi bi-plus-lg me-1"></i> ENROLL IN SESSION
+                </button>
+                <a href="dashboard-parent.html" class="btn btn-vx-outline py-2.5 px-3 rounded-pill fw-bold">
+                  <i class="bi bi-speedometer2 me-1"></i> OVERVIEW
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Currently Enrolled Sessions Grid -->
+        <div class="row g-4 mb-4">
+          <!-- Active Session 1: Maya Lin -->
+          <div class="col-lg-6">
+            <div class="p-4 bg-surface rounded-theme-lg border border-theme h-100 d-flex flex-column shadow-sm position-relative">
+              <div class="d-flex justify-content-between align-items-start mb-3">
+                <div>
+                  <span class="badge bg-primary text-white rounded-pill px-3 py-1 fw-bold small">Active Session &bull; Week 3 of 6</span>
+                  <h2 class="h5 fw-bold mt-2 mb-1 text-heading">Teen Leaders Parliamentary Debate Intensive</h2>
+                  <div class="small text-body-secondary">Student: <strong class="text-heading">Maya Lin</strong> (Grade 8 &bull; Age 13)</div>
+                </div>
+                <div class="avatar-sm">
+                  <img src="assets/img/dashboard/camper-avatar-maya.jpg" width="46" height="46" class="rounded-circle shadow-sm" style="object-fit: cover;" alt="Maya Lin">
+                </div>
+              </div>
+
+              <div class="p-3 bg-surface-alt rounded-theme border border-theme mb-3">
+                <div class="row g-2 small">
+                  <div class="col-6">
+                    <span class="text-body-secondary d-block">Schedule:</span>
+                    <strong class="text-heading">Mon, Wed, Fri &bull; 9am–3:30pm</strong>
+                  </div>
+                  <div class="col-6">
+                    <span class="text-body-secondary d-block">Dates:</span>
+                    <strong class="text-heading">July 7 – July 24, 2026</strong>
+                  </div>
+                  <div class="col-6">
+                    <span class="text-body-secondary d-block">Campus:</span>
+                    <strong class="text-heading">Boston Back Bay (Soundstage B)</strong>
+                  </div>
+                  <div class="col-6">
+                    <span class="text-body-secondary d-block">Lead Coach:</span>
+                    <strong class="text-heading">Dr. Marcus Vance</strong>
+                  </div>
+                </div>
+              </div>
+
+              <div class="mb-3">
+                <div class="d-flex justify-content-between align-items-center small mb-1">
+                  <span class="text-body-secondary fw-semibold">Camp Milestones Unlocked</span>
+                  <span class="fw-bold text-primary">82% (14 of 17 Labs)</span>
+                </div>
+                <div class="progress" style="height: 7px;">
+                  <div class="progress-bar bg-primary" role="progressbar" style="width: 82%;"></div>
+                </div>
+              </div>
+
+              <div class="d-flex flex-wrap gap-2 pt-2 border-top border-theme mt-auto">
+                <button class="btn btn-sm btn-vx-outline flex-grow-1" onclick="showToast('Syllabus PDF', 'Downloading Summer 2026 Debate Syllabus (PDF)...', 'info');">
+                  <i class="bi bi-file-earmark-pdf me-1"></i> Syllabus (PDF)
+                </button>
+                <button class="btn btn-sm btn-vx-outline flex-grow-1" onclick="showToast('Attendance Log', 'Maya has 100% attendance across all 6 completed days.', 'success');">
+                  <i class="bi bi-check2-all me-1 text-success"></i> Attendance (100%)
+                </button>
+                <button class="btn btn-sm btn-vx-primary" data-bs-toggle="modal" data-bs-target="#enrollModal">
+                  <i class="bi bi-arrow-repeat me-1"></i> Extend
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Confirmed Session 2: Lucas Lin -->
+          <div class="col-lg-6">
+            <div class="p-4 bg-surface rounded-theme-lg border border-theme h-100 d-flex flex-column shadow-sm position-relative">
+              <div class="d-flex justify-content-between align-items-start mb-3">
+                <div>
+                  <span class="badge bg-primary-soft text-primary rounded-pill px-3 py-1 fw-bold small">Confirmed &bull; Starts August 3</span>
+                  <h2 class="h5 fw-bold mt-2 mb-1 text-heading">Junior Orators Brave Storytellers Academy</h2>
+                  <div class="small text-body-secondary">Student: <strong class="text-heading">Lucas Lin</strong> (Grade 4 &bull; Age 9)</div>
+                </div>
+                <div class="avatar-sm">
+                  <img src="assets/img/avatars/avatar-2.jpg" width="46" height="46" class="rounded-circle shadow-sm" style="object-fit: cover;" alt="Lucas Lin">
+                </div>
+              </div>
+
+              <div class="p-3 bg-surface-alt rounded-theme border border-theme mb-3">
+                <div class="row g-2 small">
+                  <div class="col-6">
+                    <span class="text-body-secondary d-block">Schedule:</span>
+                    <strong class="text-heading">Tue, Thu &bull; 10am–1:00pm</strong>
+                  </div>
+                  <div class="col-6">
+                    <span class="text-body-secondary d-block">Dates:</span>
+                    <strong class="text-heading">August 3 – August 21, 2026</strong>
+                  </div>
+                  <div class="col-6">
+                    <span class="text-body-secondary d-block">Campus:</span>
+                    <strong class="text-heading">Cambridge Studio Pod A</strong>
+                  </div>
+                  <div class="col-6">
+                    <span class="text-body-secondary d-block">Lead Coach:</span>
+                    <strong class="text-heading">Ms. Elena Rostova</strong>
+                  </div>
+                </div>
+              </div>
+
+              <div class="mb-3">
+                <div class="d-flex justify-content-between align-items-center small mb-1">
+                  <span class="text-body-secondary fw-semibold">Pre-Camp Readiness</span>
+                  <span class="fw-bold text-success"><i class="bi bi-patch-check-fill me-1"></i> Tuition Paid ($650.00)</span>
+                </div>
+                <div class="progress" style="height: 7px;">
+                  <div class="progress-bar bg-success" role="progressbar" style="width: 100%;"></div>
+                </div>
+              </div>
+
+              <div class="d-flex flex-wrap gap-2 pt-2 border-top border-theme mt-auto">
+                <button class="btn btn-sm btn-vx-outline flex-grow-1" onclick="showToast('Camp Checklist', 'Pre-camp packing & stage equipment checklist opened.', 'info');">
+                  <i class="bi bi-card-checklist me-1"></i> Camper Prep
+                </button>
+                <button class="btn btn-sm btn-vx-outline flex-grow-1" onclick="showToast('Receipt #VX-8941', 'Receipt sent to registered parent email: rachel@adamsfamily.org', 'info');">
+                  <i class="bi bi-receipt me-1"></i> View Receipt
+                </button>
+                <button class="btn btn-sm btn-vx-primary" data-bs-toggle="modal" data-bs-target="#enrollModal">
+                  <i class="bi bi-plus-lg"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Available Upcoming Camp Sessions Catalog -->
+        <div class="card border-0 bg-surface rounded-theme-lg p-4 mb-4 shadow-sm">
+          <div class="d-flex justify-content-between align-items-center mb-4">
+            <div>
+              <h3 class="h5 fw-bold font-heading mb-1">Upcoming Seasonal Intensives &amp; Forensics Leagues</h3>
+              <small class="text-body-secondary">Reserve your spot early. Returning VoxLeaders families receive an automatic 15% alumni discount.</small>
+            </div>
+            <span class="badge bg-primary-soft text-primary fw-bold px-3 py-1 rounded-pill">Open Enrollment</span>
+          </div>
+
+          <div class="row g-4">
+            <!-- Program 1 -->
+            <div class="col-md-4">
+              <div class="p-3 bg-surface-alt rounded-theme border border-theme h-100 d-flex flex-column">
+                <div class="d-flex justify-content-between align-items-start mb-2">
+                  <span class="badge bg-primary-soft text-primary fw-bold">Ages 12–16</span>
+                  <span class="h6 fw-bold text-primary mb-0">$650</span>
+                </div>
+                <h4 class="h6 fw-bold text-heading mb-1">Fall Weekend Forensics League</h4>
+                <p class="small text-body-secondary mb-3 flex-grow-1">Weekly Saturday competitive debate rounds preparing students for NSDA regional tournaments.</p>
+                <div class="small text-muted mb-3">
+                  <div><i class="bi bi-calendar3 me-1"></i> Sept 12 – Oct 18, 2026</div>
+                  <div><i class="bi bi-clock me-1"></i> Saturdays &bull; 10:00 AM – 1:00 PM</div>
+                </div>
+                <button class="btn-vx btn-vx-primary btn-vx-sm w-100" data-bs-toggle="modal" data-bs-target="#enrollModal">Enroll Child</button>
+              </div>
+            </div>
+
+            <!-- Program 2 -->
+            <div class="col-md-4">
+              <div class="p-3 bg-surface-alt rounded-theme border border-theme h-100 d-flex flex-column border-primary">
+                <div class="d-flex justify-content-between align-items-start mb-2">
+                  <span class="badge bg-primary text-white fw-bold">Ages 14–18 &bull; Advanced</span>
+                  <span class="h6 fw-bold text-primary mb-0">$1,150</span>
+                </div>
+                <h4 class="h6 fw-bold text-heading mb-1">TEDx Keynote Soundstage Residency</h4>
+                <p class="small text-body-secondary mb-3 flex-grow-1">Intensive speechwriting and 4K teleprompter stage training culminating in a recorded auditorium keynote.</p>
+                <div class="small text-muted mb-3">
+                  <div><i class="bi bi-calendar3 me-1"></i> August 15 – August 28, 2026</div>
+                  <div><i class="bi bi-clock me-1"></i> Mon–Fri &bull; 1:00 PM – 5:00 PM</div>
+                </div>
+                <button class="btn-vx btn-vx-primary btn-vx-sm w-100" data-bs-toggle="modal" data-bs-target="#enrollModal">Enroll Child</button>
+              </div>
+            </div>
+
+            <!-- Program 3 -->
+            <div class="col-md-4">
+              <div class="p-3 bg-surface-alt rounded-theme border border-theme h-100 d-flex flex-column">
+                <div class="d-flex justify-content-between align-items-start mb-2">
+                  <span class="badge bg-primary-soft text-primary fw-bold">Ages 10–15</span>
+                  <span class="h6 fw-bold text-primary mb-0">$550</span>
+                </div>
+                <h4 class="h6 fw-bold text-heading mb-1">Winter Model UN Simulation</h4>
+                <p class="small text-body-secondary mb-3 flex-grow-1">Diplomatic caucus drills, resolution drafting, and committee debate representing international delegations.</p>
+                <div class="small text-muted mb-3">
+                  <div><i class="bi bi-calendar3 me-1"></i> Dec 20 – Dec 30, 2026</div>
+                  <div><i class="bi bi-clock me-1"></i> Daily &bull; 10:00 AM – 2:00 PM</div>
+                </div>
+                <button class="btn-vx btn-vx-primary btn-vx-sm w-100" data-bs-toggle="modal" data-bs-target="#enrollModal">Enroll Child</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Tuition & Invoices Summary Section -->
+        <div class="card border-0 bg-surface rounded-theme-lg p-4 mb-4 shadow-sm">
+          <div class="d-flex justify-content-between align-items-center mb-3">
+            <div>
+              <h3 class="h5 fw-bold font-heading mb-1">Tuition &amp; Payment Receipts</h3>
+              <small class="text-body-secondary">Transparent family billing with instant downloadable receipts.</small>
+            </div>
+            <button class="btn btn-sm btn-vx-outline" onclick="showToast('Billing Statement', 'Annual family statement PDF downloaded.', 'info');">
+              <i class="bi bi-receipt me-1"></i> Download Statement
+            </button>
+          </div>
+
+          <div class="table-responsive">
+            <table class="table table-hover align-middle mb-0">
+              <thead class="small text-muted text-uppercase">
+                <tr>
+                  <th>Invoice ID</th>
+                  <th>Student &bull; Session</th>
+                  <th>Date</th>
+                  <th>Amount</th>
+                  <th>Status</th>
+                  <th class="text-end">Action</th>
+                </tr>
+              </thead>
+              <tbody class="small">
+                <tr>
+                  <td><code>#VX-2026-8941</code></td>
+                  <td><strong>Maya Lin</strong> &bull; Teen Parliamentary Debate</td>
+                  <td>July 1, 2026</td>
+                  <td><strong>$850.00</strong></td>
+                  <td><span class="badge bg-success-subtle text-success fw-bold px-2 py-1 rounded-pill">Paid in Full</span></td>
+                  <td class="text-end">
+                    <button class="btn btn-sm btn-link text-primary p-0" onclick="showToast('Receipt Download', 'Receipt #VX-2026-8941 PDF downloaded.', 'success');"><i class="bi bi-download"></i> Receipt</button>
+                  </td>
+                </tr>
+                <tr>
+                  <td><code>#VX-2026-9022</code></td>
+                  <td><strong>Lucas Lin</strong> &bull; Junior Storytellers Academy</td>
+                  <td>July 15, 2026</td>
+                  <td><strong>$650.00</strong></td>
+                  <td><span class="badge bg-success-subtle text-success fw-bold px-2 py-1 rounded-pill">Paid in Full</span></td>
+                  <td class="text-end">
+                    <button class="btn btn-sm btn-link text-primary p-0" onclick="showToast('Receipt Download', 'Receipt #VX-2026-9022 PDF downloaded.', 'success');"><i class="bi bi-download"></i> Receipt</button>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        <!-- Clean Sub-footer -->
+        <div class="text-center py-4 small text-body-secondary border-top border-theme mt-4">
+          &copy; 2026 VoxLeaders Youth Academy &bull; Parent Portal
+        </div>
+
+      </div>
+    </main>
+  </div>
+
+  <!-- Enrollment & Checkout Modal -->
+  <div class="modal fade" id="enrollModal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content bg-surface border-theme">
+        <div class="modal-header border-theme">
+          <h5 class="modal-title fw-bold">Enroll in New Camp Cohort</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+        </div>
+        <div class="modal-body p-4">
+          <form class="needs-validation-vx" novalidate onsubmit="event.preventDefault(); bootstrap.Modal.getInstance(document.getElementById('enrollModal')).hide(); showToast('Enrollment Confirmed!', 'Receipt sent to your parent email. Coach assigned!', 'success');">
+            <div class="mb-3">
+              <label class="form-label small fw-bold">Select Child</label>
+              <select class="form-select form-select-vx" required>
+                <option value="maya" selected>Maya Lin (Teen Leaders)</option>
+                <option value="lucas">Lucas Lin (Junior Orators)</option>
+                <option value="new">+ Add New Sibling Profile</option>
+              </select>
+            </div>
+            <div class="mb-3">
+              <label class="form-label small fw-bold">Select Camp Session</label>
+              <select class="form-select form-select-vx" id="checkoutSessionSelect" required>
+                <option value="august" data-price="$850" selected>Cohort B: August 3 – August 21 ($850)</option>
+                <option value="fall" data-price="$650">Fall Weekend Forensics League ($650)</option>
+                <option value="tedx" data-price="$1,150">TEDx Keynote Soundstage Residency ($1,150)</option>
+              </select>
+            </div>
+            <div class="mb-4 p-3 bg-surface-alt rounded-theme border border-theme d-flex justify-content-between align-items-center">
+              <span class="small fw-bold">Total Deposit:</span>
+              <span class="h4 fw-bold text-primary mb-0 font-heading" id="checkoutTotalDisplay">$850</span>
+            </div>
+            <button type="submit" class="btn-vx btn-vx-primary w-100 py-3">Confirm Enrollment & Pay</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.2/dist/chart.umd.min.js"></script>
+  <script src="assets/js/main.js"></script>
+  <script src="assets/js/dashboard.js"></script>
+</body>
+</html>

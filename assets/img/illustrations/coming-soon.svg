@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 400" width="100%" height="100%" fill="none">
+  <defs>
+    <linearGradient id="csG" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#4F46E5"/>
+      <stop offset="100%" stop-color="#818CF8"/>
+    </linearGradient>
+  </defs>
+  <circle cx="250" cy="200" r="150" fill="#EEF2FF"/>
+  <!-- Megaphone / Rocket -->
+  <g transform="translate(180, 120)">
+    <path d="M20 70 L90 30 L110 30 L110 110 L90 110 L20 70 Z" fill="#4F46E5"/>
+    <path d="M110 45 L130 35 L130 105 L110 95 Z" fill="#6366F1"/>
+    <rect x="15" y="60" width="25" height="50" rx="6" fill="#312E81"/>
+    <!-- Sound Waves -->
+    <path d="M145 50 C155 60 155 80 145 90" stroke="#818CF8" stroke-width="4" stroke-linecap="round" fill="none"/>
+    <path d="M160 40 C175 55 175 85 160 100" stroke="#A5B4FC" stroke-width="4" stroke-linecap="round" fill="none"/>
+  </g>
+  <!-- Confetti Elements -->
+  <polygon points="120,80 130,90 120,100 110,90" fill="#6366F1"/>
+  <circle cx="380" cy="110" r="8" fill="#818CF8"/>
+  <rect x="350" y="240" width="14" height="8" rx="2" fill="#6366F1" transform="rotate(30 350 240)"/>
+  <rect x="130" y="260" width="12" height="12" rx="3" fill="#A5B4FC" transform="rotate(45 130 260)"/>
+</svg>

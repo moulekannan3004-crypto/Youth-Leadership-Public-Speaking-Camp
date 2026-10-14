@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="light" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>VoxLeaders Documentation & Marketplace Guide</title>
+  
+  <link rel="icon" type="image/svg+xml" href="assets/img/brand/favicon.svg">
+  <link id="bootstrap-theme-style" rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <!-- Google Fonts: Poppins (Light 300), Outfit, Plus Jakarta Sans -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800;900&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,300&display=swap" rel="stylesheet">
+  
+<link rel="stylesheet" href="assets/css/style.css?v=7.8">
+  <link rel="stylesheet" href="assets/css/rtl.css">
+  <style>
+    pre code {
+      font-size: 0.875rem;
+      color: #F8FAFC;
+    }
+    .code-block {
+      background: #0F172A;
+      border-radius: 12px;
+      padding: 1.25rem;
+      overflow-x: auto;
+    }
+  </style>
+</head>
+<body class="bg-surface-alt">
+
+  <!-- Top Navbar -->
+  <header class="py-3 px-3 px-md-4 border-bottom border-theme bg-surface sticky-top">
+    <div class="container d-flex justify-content-between align-items-center">
+      <div class="d-flex align-items-center gap-2 gap-sm-3">
+        <a href="index.html">
+          <img src="assets/img/brand/logo.svg" alt="VoxLeaders Logo" class="vx-brand-img" height="38">
+        </a>
+        <span class="badge bg-primary text-white rounded-pill px-3 py-1 d-none d-md-inline-block">ThemeForest Item v1.0.0</span>
+      </div>
+      <div class="d-flex align-items-center gap-2">
+        <button class="nav-control-btn theme-toggle-btn" aria-label="Toggle Theme"><i class="bi bi-moon-stars-fill"></i></button>
+        <button class="nav-control-btn rtl-toggle-btn" aria-label="Toggle RTL"><span class="dir-label">RTL</span></button>
+        <a href="index.html" class="btn-vx btn-vx-primary btn-vx-sm ms-2 d-none d-sm-inline-flex"><span>Live Demo</span></a>
+      </div>
+    </div>
+  </header>
+
+  <div class="container py-5">
+    <div class="row g-4 g-lg-5">
+      <!-- Documentation Sidebar -->
+      <div class="col-lg-3">
+        <div class="card border-0 bg-surface rounded-theme-lg p-3 shadow-sm sticky-top" style="top: 85px;">
+          <h2 class="h6 fw-bold text-heading px-3 pt-2 mb-2 text-uppercase letter-spacing-1">Quick Links</h2>
+          <nav class="nav nav-pills flex-column gap-1">
+            <a class="nav-link rounded-theme px-3 py-2 small fw-semibold text-body-secondary active" href="#intro">1. Overview</a>
+            <a class="nav-link rounded-theme px-3 py-2 small fw-semibold text-body-secondary" href="#features">2. Key Features</a>
+            <a class="nav-link rounded-theme px-3 py-2 small fw-semibold text-body-secondary" href="#files">3. File Structure</a>
+            <a class="nav-link rounded-theme px-3 py-2 small fw-semibold text-body-secondary" href="#theming">4. Dark Mode & RTL</a>
+            <a class="nav-link rounded-theme px-3 py-2 small fw-semibold text-body-secondary" href="#charts">5. Chart.js Config</a>
+            <a class="nav-link rounded-theme px-3 py-2 small fw-semibold text-body-secondary" href="#support">6. Support & Credits</a>
+          </nav>
+        </div>
+      </div>
+
+      <!-- Main Doc Content -->
+      <div class="col-lg-9">
+        <div class="card border-0 bg-surface rounded-theme-xl p-4 p-md-5 shadow-sm">
+          
+          <!-- 1. Overview -->
+          <section id="intro" class="mb-5 pb-4 border-bottom border-theme">
+            <span class="badge bg-primary-soft text-primary px-3 py-1 rounded-pill mb-2 fw-bold">Commercial HTML Template</span>
+            <h1 class="display-5 fw-extrabold font-heading mb-3">VoxLeaders Template Documentation</h1>
+            <p class="lead text-body-secondary">
+              Thank you for purchasing <strong>VoxLeaders</strong>, a premier multipurpose HTML5/CSS/JavaScript template and web application designed specifically for youth academies, debate camps, leadership institutions, and EdTech platforms.
+            </p>
+          </section>
+
+          <!-- 2. Key Features -->
+          <section id="features" class="mb-5 pb-4 border-bottom border-theme">
+            <h2 class="h4 fw-bold font-heading mb-3">2. Core Highlights & Technologies</h2>
+            <div class="row g-3">
+              <div class="col-md-6">
+                <div class="p-3 bg-surface-alt rounded-theme border border-theme">
+                  <strong class="d-block text-heading mb-1"><i class="bi bi-moon-stars text-primary me-2"></i> Instant Dark Mode</strong>
+                  <small class="text-body-secondary">Built on Bootstrap 5.3 <code>data-bs-theme</code> engine with localStorage persistence and CSS custom properties.</small>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="p-3 bg-surface-alt rounded-theme border border-theme">
+                  <strong class="d-block text-heading mb-1"><i class="bi bi-text-right text-primary me-2"></i> Bidirectional LTR & RTL</strong>
+                  <small class="text-body-secondary">Dynamic stylesheet swapping between <code>bootstrap.min.css</code> and <code>bootstrap.rtl.min.css</code> plus custom <code>rtl.css</code>.</small>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="p-3 bg-surface-alt rounded-theme border border-theme">
+                  <strong class="d-block text-heading mb-1"><i class="bi bi-speedometer2 text-primary me-2"></i> Parent Portal Dashboard</strong>
+                  <small class="text-body-secondary">Includes complete interactive dashboard views with radar charts, session booking, and photo vault.</small>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="p-3 bg-surface-alt rounded-theme border border-theme">
+                  <strong class="d-block text-heading mb-1"><i class="bi bi-lightning-charge text-primary me-2"></i> Pure Vanilla JavaScript</strong>
+                  <small class="text-body-secondary">Zero heavy jQuery runtime dependencies. Fast 100/100 Lighthouse performance score ready.</small>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <!-- 3. File Structure -->
+          <section id="files" class="mb-5 pb-4 border-bottom border-theme">
+            <h2 class="h4 fw-bold font-heading mb-3">3. Directory & File Organization</h2>
+            <div class="code-block mb-3">
+              <pre><code>├── index.html                  (Home 1 - Youth Camp Focus)
+├── index-business.html         (Home 2 - Digital Agency & SaaS Academy)
+├── about.html                  (About Us - Mission, Timeline, Mentors)
+├── programs.html               (Programs Directory - Search & Age Filters)
+├── program-details.html        (Deep Dive - Curriculum Tabs, Pricing, FAQs)
+├── testimonials.html           (Video Testimonials & Parent Reviews)
+├── blog.html                   (Blog Grid & Search)
+├── blog-details.html           (Blog Article Single & Comments)
+├── contact.html                (AJAX Contact Form & Map Embed)
+├── pricing.html                (Pricing Toggles & Matrix)
+├── gallery.html                (Photo & Media Gallery)
+├── auth.html                   (Parent Login & Registration Portal)
+├── 404.html                    (Lost in Speech Error Page)
+├── dashboard-parent.html       (Parent Portal Overview Dashboard)
+├── dashboard-skills.html       (360° Skill Analytics & Speech Diagnostics)
+├── dashboard-sessions.html     (Camp Sessions & Cohort Enrollment)
+├── dashboard-media.html        (Media & Photo Vault 4K Gallery)
+├── dashboard-badges.html       (Student Achievement Badges & Honors)
+├── documentation.html          (Buyer Documentation)
+└── assets/
+    ├── css/
+    │   ├── style.css           (Master Theme System & Variables)
+    │   ├── rtl.css             (Bidirectional RTL Overrides)
+    │   └── dashboard.css       (Portal & Dashboard Layouts)
+    ├── js/
+    │   ├── main.js             (Theme Engine, RTL, Filters, Toasts)
+    │   └── dashboard.js        (Chart.js Radar/Bar/Line & Chat)
+    └── img/
+        ├── brand/              (Logos & Favicon)
+        ├── illustrations/      (Vector Illustrations)
+        ├── badges/             (Achievement Shields)
+        └── avatars/            (Character Avatars)</code></pre>
+            </div>
+          </section>
+
+          <!-- 4. Theming -->
+          <section id="theming" class="mb-5 pb-4 border-bottom border-theme">
+            <h2 class="h4 fw-bold font-heading mb-3">4. Customizing Theme Colors & Fonts</h2>
+            <p class="text-body-secondary">
+              All master tokens are defined in <code>assets/css/style.css</code> inside the <code>:root</code> declaration:
+            </p>
+            <div class="code-block mb-3">
+              <pre><code>:root {
+  --vx-primary: #4F46E5;       /* Electric Indigo */
+  --vx-secondary: #0B132B;     /* Deep Navy */
+  --vx-accent: #6366F1;        /* Soft Iris Indigo */
+  --vx-success: #4F46E5;       /* Electric Indigo */
+  --vx-font-sans: 'Plus Jakarta Sans', sans-serif;
+  --vx-font-heading: 'Outfit', sans-serif;
+}</code></pre>
+            </div>
+          </section>
+
+          <!-- 5. Chart.js Config -->
+          <section id="charts" class="mb-5 pb-4 border-bottom border-theme">
+            <h2 class="h4 fw-bold font-heading mb-3">5. Chart.js Customization</h2>
+            <p class="text-body-secondary">
+              Chart setups are modularly initialized in <code>assets/js/dashboard.js</code>:
+            </p>
+            <ul>
+              <li><code>skillRadarChart</code>: 6-metric radar chart tracking speech variety, confidence, and posture.</li>
+              <li><code>weeklyGrowthChart</code>: Bar chart tracking weekly progress over 6 weeks.</li>
+              <li><code>adminRevenueChart</code>: Dual-axis line chart for revenue ($k) and camper enrollments.</li>
+            </ul>
+          </section>
+
+          <!-- 6. Support -->
+          <section id="support">
+            <h2 class="h4 fw-bold font-heading mb-3">6. Support & Feedback</h2>
+            <p class="text-body-secondary">
+              If you have any questions or customization requests, reach out via the ThemeForest item support tab or via email at <code>support@voxleaders.org</code>.
+            </p>
+          </section>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- =================================================================
+       FOOTER
+  ================================================================== -->
+  <footer class="vx-footer">
+    <div class="container">
+      <div class="row g-4 align-items-start">
+        
+        <!-- Column 1: Brand Info & Socials -->
+        <div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
+          <div class="footer-brand-wrap">
+            <a href="index.html" class="footer-brand-logo mb-3">
+              <img src="assets/img/brand/logo-white.svg" alt="VoxLeaders Logo" height="38">
+            </a>
+            <p class="footer-brand-desc small mb-4">
+              Empowering young minds with executive confidence, public speaking mastery &amp; debate skills.
+            </p>
+            <div class="d-flex align-items-center gap-2">
+              <a href="https://www.instagram.com/accounts/login/" target="_blank" rel="noopener noreferrer" class="footer-social-btn" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+              <a href="https://www.facebook.com/login/" target="_blank" rel="noopener noreferrer" class="footer-social-btn" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+              <a href="https://www.linkedin.com/login" target="_blank" rel="noopener noreferrer" class="footer-social-btn" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+              <a href="https://x.com/" target="_blank" rel="noopener noreferrer" class="footer-social-btn" aria-label="X (Twitter)"><i class="fab fa-x-twitter"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Column 2: Navigation -->
+        <div class="col-lg-2 col-md-6 mb-4 mb-lg-0">
+          <div class="footer-col-title">NAVIGATION</div>
+          <ul class="list-unstyled mb-0 d-flex flex-column">
+            <li><a href="index.html" class="footer-link">Home</a></li>
+            <li><a href="about.html" class="footer-link">About Us</a></li>
+            <li><a href="programs.html" class="footer-link">Programs</a></li>
+            <li><a href="pricing.html" class="footer-link">Pricing Tiers</a></li>
+            <li><a href="blog.html" class="footer-link">Blog &amp; Journal</a></li>
+            <li><a href="contact.html" class="footer-link">Contact Sales</a></li>
+          </ul>
+        </div>
+
+        <!-- Column 3: Camp Standards -->
+        <div class="col-lg-4 col-md-6 mb-4 mb-lg-0">
+          <div class="footer-col-title">CAMP STANDARDS</div>
+          <ul class="list-unstyled mb-0 d-flex flex-column">
+            <li class="footer-sla-item"><span class="sla-highlight">1:6 Coach Ratio</span> <span class="sla-desc">Certified Speech Mentors</span></li>
+            <li class="footer-sla-item"><span class="sla-highlight">Daily Stage Time</span> <span class="sla-desc">Live Adjudicated Practice</span></li>
+            <li class="footer-sla-item"><span class="sla-highlight">4K HD Video</span> <span class="sla-desc">Gala Showcase Recordings</span></li>
+            <li class="footer-sla-item"><span class="sla-highlight">Ages 7–18</span> <span class="sla-desc">Junior, Teen &amp; Exec Tracks</span></li>
+            <li class="footer-sla-item"><span class="sla-highlight">5 Regional Hubs</span> <span class="sla-desc">Speech &amp; Debate Campuses</span></li>
+          </ul>
+        </div>
+
+        <!-- Column 4: Camp Admissions -->
+        <div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
+          <div class="footer-col-title">CAMP ADMISSIONS</div>
+          <ul class="list-unstyled mb-3 d-flex flex-column">
+            <li class="footer-contact-item">
+              <i class="bi bi-envelope"></i>
+              <a href="mailto:admissions@voxleaders.org">admissions@voxleaders.org</a>
+            </li>
+            <li class="footer-contact-item">
+              <i class="bi bi-telephone"></i>
+              <a href="tel:+18005558695">+1 (800) 555-VOXLEAD</a>
+            </li>
+            <li class="footer-contact-item">
+              <i class="bi bi-geo-alt"></i>
+              <span>500 Leadership Way, Boston, MA</span>
+            </li>
+          </ul>
+          <a href="contact.html" class="btn-footer-cta">Connect Admissions Team</a>
+        </div>
+
+      </div>
+
+      <!-- Centered Copyright -->
+      <div class="vx-footer-bottom text-center">
+        &copy; 2026 VoxLeaders Youth Academy Ltd. All rights reserved.
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

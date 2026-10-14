@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="light" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Media & Photo Vault | VoxLeaders Parent Portal</title>
+  <meta name="description" content="Access high-resolution camp photos, live stage recordings, and soundstage audio clips for your child in the VoxLeaders Parent Portal.">
+  
+  <link rel="icon" type="image/svg+xml" href="assets/img/brand/favicon.svg">
+  <link id="bootstrap-theme-style" rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <!-- Google Fonts: Poppins, Outfit, Plus Jakarta Sans -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800;900&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,300&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="assets/css/style.css?v=7.8">
+  <link rel="stylesheet" href="assets/css/dashboard.css">
+  <link rel="stylesheet" href="assets/css/rtl.css">
+</head>
+<body>
+
+  <div class="dashboard-layout">
+    
+    <!-- =================================================================
+         SIDEBAR NAVIGATION
+    ================================================================== -->
+    <aside class="dashboard-sidebar">
+      <div class="sidebar-brand-wrapper">
+        <a href="index.html" class="d-flex align-items-center">
+          <img src="assets/img/brand/logo.svg" alt="VoxLeaders Logo" class="vx-brand-img" height="46">
+        </a>
+        <button class="btn btn-sm d-lg-none border-0 text-muted" id="sidebarCloseBtn"><i class="bi bi-x-lg"></i></button>
+      </div>
+
+      <div class="sidebar-menu">
+        <div class="sidebar-section-title">Parent Dashboard</div>
+        <a href="dashboard-parent.html" class="sidebar-nav-link">
+          <i class="bi bi-speedometer2"></i>
+          <span>Overview</span>
+        </a>
+        <a href="dashboard-skills.html" class="sidebar-nav-link">
+          <i class="bi bi-pie-chart-fill"></i>
+          <span>Skill Analytics</span>
+          <span class="badge bg-primary sidebar-nav-badge">Live</span>
+        </a>
+        <a href="dashboard-sessions.html" class="sidebar-nav-link">
+          <i class="bi bi-calendar2-check-fill"></i>
+          <span>Sessions &amp; Enrollment</span>
+        </a>
+        <a href="dashboard-badges.html" class="sidebar-nav-link">
+          <i class="bi bi-award-fill"></i>
+          <span>Badges &amp; Honors</span>
+        </a>
+
+        <div class="sidebar-section-title mt-3">Family &amp; Account</div>
+        <a href="contact.html" class="sidebar-nav-link">
+          <i class="bi bi-chat-dots-fill"></i>
+          <span>Message Coaches</span>
+        </a>
+        <a href="pricing.html" class="sidebar-nav-link">
+          <i class="bi bi-receipt"></i>
+          <span>Tuition &amp; Invoices</span>
+        </a>
+      </div>
+
+      <!-- Modularis Reference Sidebar Footer -->
+      <div class="sidebar-bottom-actions">
+        <a href="index.html" class="btn-sidebar-website">
+          <i class="bi bi-arrow-left"></i>
+          <span>Back to Website</span>
+        </a>
+        <a href="index.html" class="btn-sidebar-logout" onclick="showToast('Logged Out', 'You have been safely signed out. Redirecting to home...', 'info');">
+          <i class="bi bi-box-arrow-right"></i>
+          <span>Logout Dashboard</span>
+        </a>
+      </div>
+    </aside>
+
+    <!-- =================================================================
+         MAIN CONTENT AREA
+    ================================================================== -->
+    <main class="dashboard-main">
+      
+      <!-- Topbar Header (Modularis Reference Style) -->
+      <header class="dashboard-topbar">
+        <div class="d-flex align-items-center gap-3">
+          <button class="btn btn-sm btn-vx-outline d-lg-none" id="sidebarToggleBtn" aria-label="Toggle Mobile Menu">
+            <i class="bi bi-list fs-5"></i>
+          </button>
+
+          <!-- Global Admin / Parent Search -->
+          <div class="dashboard-search-container d-none d-md-block">
+            <i class="bi bi-search dashboard-search-icon"></i>
+            <input type="text" class="dashboard-search-input" placeholder="Search photos, galas, debate pods, recordings...">
+          </div>
+
+
+        </div>
+
+        <div class="d-flex align-items-center gap-2">
+          <!-- Back to Website Pill -->
+          <a href="index.html" class="btn-topbar-website d-none d-sm-inline-flex">
+            <i class="bi bi-arrow-left"></i>
+            <span>Website</span>
+          </a>
+
+          <!-- RTL Switcher -->
+          <button class="nav-control-btn rtl-toggle-btn" aria-label="Toggle RTL"><span class="dir-label">RTL</span></button>
+
+          <!-- Dark / Light Mode -->
+          <button class="nav-control-btn theme-toggle-btn" aria-label="Toggle Theme"><i class="bi bi-moon-stars-fill"></i></button>
+
+          <!-- User Avatar Ring -->
+          <a href="dashboard-parent.html" class="ms-1" title="Rachel Adams Profile">
+            <img src="assets/img/dashboard/camper-avatar-maya.jpg" class="user-avatar-ring" alt="Rachel Adams">
+          </a>
+        </div>
+      </header>
+
+      <!-- Dashboard View Content -->
+      <div class="dashboard-content-area">
+        
+        <!-- Welcome Card (Modularis Reference Style) -->
+        <div class="dashboard-welcome-card">
+          <div class="welcome-status-pills">
+            <span class="status-pill-green">
+              <i class="bi bi-camera-reels-fill"></i> 14 NEW 4K CAPTURES SYNCED
+            </span>
+            <span class="status-pill-gold">
+              <i class="bi bi-images"></i> MEDIA &amp; SOUNDSTAGE VAULT
+            </span>
+            <span class="status-pill-calendar">
+              <i class="bi bi-calendar3"></i> Tuesday, October 13, 2026
+            </span>
+          </div>
+
+          <div class="row align-items-center g-4">
+            <div class="col-lg-8">
+              <h1 class="display-6 fw-extrabold text-heading font-heading mb-2">
+                Event Photos &amp; Soundstage Recordings 📸
+              </h1>
+              <p class="text-body-secondary mb-0">
+                High-resolution 4K performance photography, stage keynotes, and studio audio recordings for <strong>Maya Lin</strong> and <strong>Lucas Lin</strong>.
+              </p>
+            </div>
+            <div class="col-lg-4 text-lg-end">
+              <div class="d-flex flex-wrap gap-2 justify-content-lg-end">
+                <button class="btn-vx btn-vx-primary py-2.5 px-4 rounded-pill fw-bold" onclick="showToast('Archive Export', 'Preparing high-resolution 4K ZIP package (328MB)...', 'info');">
+                  <i class="bi bi-download me-1"></i> DOWNLOAD ZIP (328MB)
+                </button>
+                <a href="dashboard-parent.html" class="btn btn-vx-outline py-2.5 px-3 rounded-pill fw-bold">
+                  <i class="bi bi-speedometer2 me-1"></i> OVERVIEW
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Media Filter Pills (Interactive Category Filter) -->
+        <div class="d-flex flex-wrap gap-2 mb-4" id="mediaFilterGroup">
+          <button type="button" class="filter-btn-pill active" data-filter="all">All Media (12)</button>
+          <button type="button" class="filter-btn-pill" data-filter="podium">Podium Speeches (3)</button>
+          <button type="button" class="filter-btn-pill" data-filter="soundstage">Soundstage Labs (4)</button>
+          <button type="button" class="filter-btn-pill" data-filter="debate">Debate Chambers (3)</button>
+          <button type="button" class="filter-btn-pill" data-filter="awards">Award Ceremonies (3)</button>
+        </div>
+
+        <!-- Media Gallery Grid (12 High-Res Photos) -->
+        <div class="row g-3 mb-5" id="mediaGalleryGrid">
+          <!-- Photo 1: Podium -->
+          <div class="col-6 col-md-4 col-lg-3" data-category="podium all">
+            <div class="media-gallery-item" style="background-image: url('assets/img/dashboard/dashboard-speech-award.jpg'); background-size: cover; background-position: center; height: 210px;" data-bs-toggle="modal" data-bs-target="#lightboxModal" data-img-src="assets/img/dashboard/dashboard-speech-award.jpg" data-img-title="Maya Delivering Stage Keynote">
+              <div class="media-gallery-overlay">
+                <span class="badge bg-primary text-white align-self-start">Podium Speech</span>
+                <div>
+                  <h3 class="text-white small fw-bold mb-0">Live Stage Gala Keynote</h3>
+                  <small class="text-white-50">July 18, 2026</small>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Photo 2: Soundstage -->
+          <div class="col-6 col-md-4 col-lg-3" data-category="soundstage all">
+            <div class="media-gallery-item" style="background-image: url('assets/img/dashboard/speech-recording-thumb.jpg'); background-size: cover; background-position: center; height: 210px;" data-bs-toggle="modal" data-bs-target="#lightboxModal" data-img-src="assets/img/dashboard/speech-recording-thumb.jpg" data-img-title="Speech Cadence Recording Lab">
+              <div class="media-gallery-overlay">
+                <span class="badge bg-primary text-white align-self-start">Soundstage</span>
+                <div>
+                  <h3 class="text-white small fw-bold mb-0">Speech Recording Lab</h3>
+                  <small class="text-white-50">July 16, 2026</small>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Photo 3: Debate -->
+          <div class="col-6 col-md-4 col-lg-3" data-category="debate all">
+            <div class="media-gallery-item" style="background-image: url('assets/img/dashboard/dashboard-mun-round.jpg'); background-size: cover; background-position: center; height: 210px;" data-bs-toggle="modal" data-bs-target="#lightboxModal" data-img-src="assets/img/dashboard/dashboard-mun-round.jpg" data-img-title="MUN Committee Debate Pod">
+              <div class="media-gallery-overlay">
+                <span class="badge bg-primary-soft text-primary align-self-start">Debate Pod</span>
+                <div>
+                  <h3 class="text-white small fw-bold mb-0">MUN Committee Round</h3>
+                  <small class="text-white-50">July 14, 2026</small>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Photo 4: Awards -->
+          <div class="col-6 col-md-4 col-lg-3" data-category="awards all">
+            <div class="media-gallery-item" style="background-image: url('assets/img/dashboard/dashboard-trophy-award.jpg'); background-size: cover; background-position: center; height: 210px;" data-bs-toggle="modal" data-bs-target="#lightboxModal" data-img-src="assets/img/dashboard/dashboard-trophy-award.jpg" data-img-title="Team Resolution Celebration">
+              <div class="media-gallery-overlay">
+                <span class="badge bg-primary text-white align-self-start">Award Gala</span>
+                <div>
+                  <h3 class="text-white small fw-bold mb-0">Podium Trophy Ceremony</h3>
+                  <small class="text-white-50">July 12, 2026</small>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Photo 5: Teleprompter / Soundstage / Podium -->
+          <div class="col-6 col-md-4 col-lg-3" data-category="soundstage podium all">
+            <div class="media-gallery-item" style="background-image: url('assets/img/gallery/gal-6-teleprompter-stage.jpg'); background-size: cover; background-position: center; height: 210px;" data-bs-toggle="modal" data-bs-target="#lightboxModal" data-img-src="assets/img/gallery/gal-6-teleprompter-stage.jpg" data-img-title="Live Teleprompter Studio Drill">
+              <div class="media-gallery-overlay">
+                <span class="badge bg-primary text-white align-self-start">Teleprompter</span>
+                <div>
+                  <h3 class="text-white small fw-bold mb-0">Studio Stage Practice</h3>
+                  <small class="text-white-50">July 10, 2026</small>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Photo 6: 1:6 Clinic / Soundstage -->
+          <div class="col-6 col-md-4 col-lg-3" data-category="soundstage all">
+            <div class="media-gallery-item" style="background-image: url('assets/img/gallery/gal-3-coach-feedback.jpg'); background-size: cover; background-position: center; height: 210px;" data-bs-toggle="modal" data-bs-target="#lightboxModal" data-img-src="assets/img/gallery/gal-3-coach-feedback.jpg" data-img-title="1:6 Mentorship & Coaching Huddle">
+              <div class="media-gallery-overlay">
+                <span class="badge bg-primary-soft text-primary align-self-start">1:6 Clinic</span>
+                <div>
+                  <h3 class="text-white small fw-bold mb-0">Mentor Feedback Huddle</h3>
+                  <small class="text-white-50">July 08, 2026</small>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Photo 7: Vocal Lab / Soundstage -->
+          <div class="col-6 col-md-4 col-lg-3" data-category="soundstage all">
+            <div class="media-gallery-item" style="background-image: url('assets/img/gallery/gal-5-vocal-circle.jpg'); background-size: cover; background-position: center; height: 210px;" data-bs-toggle="modal" data-bs-target="#lightboxModal" data-img-src="assets/img/gallery/gal-5-vocal-circle.jpg" data-img-title="Diaphragmatic Breath & Projection Circle">
+              <div class="media-gallery-overlay">
+                <span class="badge bg-primary text-white align-self-start">Vocal Lab</span>
+                <div>
+                  <h3 class="text-white small fw-bold mb-0">Vocal Warm-up Circle</h3>
+                  <small class="text-white-50">July 07, 2026</small>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Photo 8: Graduation / Awards -->
+          <div class="col-6 col-md-4 col-lg-3" data-category="awards all">
+            <div class="media-gallery-item" style="background-image: url('assets/img/gallery/gal-8-cap-toss.jpg'); background-size: cover; background-position: center; height: 210px;" data-bs-toggle="modal" data-bs-target="#lightboxModal" data-img-src="assets/img/gallery/gal-8-cap-toss.jpg" data-img-title="Graduation Cap Toss Celebration">
+              <div class="media-gallery-overlay">
+                <span class="badge bg-primary text-white align-self-start">Graduation</span>
+                <div>
+                  <h3 class="text-white small fw-bold mb-0">Camp Graduation Ceremony</h3>
+                  <small class="text-white-50">July 06, 2026</small>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Photo 9: Auditorium / Podium -->
+          <div class="col-6 col-md-4 col-lg-3" data-category="podium all">
+            <div class="media-gallery-item" style="background-image: url('assets/img/gallery/gal-1-auditorium.jpg'); background-size: cover; background-position: center; height: 210px;" data-bs-toggle="modal" data-bs-target="#lightboxModal" data-img-src="assets/img/gallery/gal-1-auditorium.jpg" data-img-title="Auditorium Gala Opening Ceremony">
+              <div class="media-gallery-overlay">
+                <span class="badge bg-primary text-white align-self-start">Auditorium</span>
+                <div>
+                  <h3 class="text-white small fw-bold mb-0">Boston Keynote Hall</h3>
+                  <small class="text-white-50">July 04, 2026</small>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Photo 10: Cross-Exam / Debate -->
+          <div class="col-6 col-md-4 col-lg-3" data-category="debate all">
+            <div class="media-gallery-item" style="background-image: url('assets/img/gallery/gal-7-mock-trial-room.jpg'); background-size: cover; background-position: center; height: 210px;" data-bs-toggle="modal" data-bs-target="#lightboxModal" data-img-src="assets/img/gallery/gal-7-mock-trial-room.jpg" data-img-title="Forensics Mock Trial Chamber">
+              <div class="media-gallery-overlay">
+                <span class="badge bg-primary-soft text-primary align-self-start">Chamber</span>
+                <div>
+                  <h3 class="text-white small fw-bold mb-0">Cross-Exam Chamber</h3>
+                  <small class="text-white-50">July 03, 2026</small>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Photo 11: Resolution Pod / Debate -->
+          <div class="col-6 col-md-4 col-lg-3" data-category="debate all">
+            <div class="media-gallery-item" style="background-image: url('assets/img/gallery/gal-2-debate-pod.jpg'); background-size: cover; background-position: center; height: 210px;" data-bs-toggle="modal" data-bs-target="#lightboxModal" data-img-src="assets/img/gallery/gal-2-debate-pod.jpg" data-img-title="Debate Resolution Drafting Pod">
+              <div class="media-gallery-overlay">
+                <span class="badge bg-primary text-white align-self-start">Resolution</span>
+                <div>
+                  <h3 class="text-white small fw-bold mb-0">Peer Policy Collaboration</h3>
+                  <small class="text-white-50">July 02, 2026</small>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Photo 12: Medallion / Awards -->
+          <div class="col-6 col-md-4 col-lg-3" data-category="awards all">
+            <div class="media-gallery-item" style="background-image: url('assets/img/gallery/gal-4-trophy-ceremony.jpg'); background-size: cover; background-position: center; height: 210px;" data-bs-toggle="modal" data-bs-target="#lightboxModal" data-img-src="assets/img/gallery/gal-4-trophy-ceremony.jpg" data-img-title="National Forensics Championship Honors">
+              <div class="media-gallery-overlay">
+                <span class="badge bg-primary text-white align-self-start">Champion</span>
+                <div>
+                  <h3 class="text-white small fw-bold mb-0">State Forensics Medallion</h3>
+                  <small class="text-white-50">July 01, 2026</small>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Soundstage Audio & Keynote Recordings Section -->
+        <div class="card border-0 bg-surface rounded-theme-lg p-4 mb-4 shadow-sm">
+          <div class="d-flex justify-content-between align-items-center mb-4">
+            <div>
+              <h2 class="h5 fw-bold font-heading mb-1">Soundstage Audio Recordings &amp; Voice Analysis</h2>
+              <small class="text-body-secondary">Private speech recordings captured in our acoustic soundstage lab for pitch &amp; pace review.</small>
+            </div>
+            <span class="badge bg-primary-soft text-primary fw-bold px-3 py-1 rounded-pill">3 Master Audio Tracks</span>
+          </div>
+
+          <div class="row g-3">
+            <!-- Audio Track 1 -->
+            <div class="col-lg-4">
+              <div class="p-3 bg-surface-alt rounded-theme border border-theme h-100 d-flex flex-column">
+                <div class="d-flex justify-content-between align-items-center mb-2">
+                  <span class="badge bg-primary text-white small">Impromptu Drill</span>
+                  <small class="text-muted"><i class="bi bi-clock me-1"></i>3:12 &bull; MP3</small>
+                </div>
+                <h3 class="h6 fw-bold mb-1 text-heading">Why Courage Precedes Confidence</h3>
+                <small class="text-body-secondary mb-3">Maya Lin &bull; Day 5 Table Topic Soundstage</small>
+                
+                <div class="p-2 bg-surface rounded border border-theme d-flex align-items-center gap-3 mb-3 mt-auto">
+                  <button class="btn btn-sm btn-primary rounded-circle" style="width: 34px; height: 34px;" onclick="showToast('Playing Audio', 'Playing Maya\'s Day 5 Impromptu Speech...', 'info');"><i class="bi bi-play-fill"></i></button>
+                  <div class="flex-grow-1">
+                    <div class="progress" style="height: 5px;">
+                      <div class="progress-bar bg-primary" style="width: 45%;"></div>
+                    </div>
+                  </div>
+                  <small class="text-muted">1:26 / 3:12</small>
+                </div>
+
+                <button class="btn btn-sm btn-vx-outline w-100" onclick="showToast('Download Audio', 'Downloading 320kbps MP3 audio master...', 'success');"><i class="bi bi-download me-1"></i> Download MP3</button>
+              </div>
+            </div>
+
+            <!-- Audio Track 2 -->
+            <div class="col-lg-4">
+              <div class="p-3 bg-surface-alt rounded-theme border border-theme h-100 d-flex flex-column">
+                <div class="d-flex justify-content-between align-items-center mb-2">
+                  <span class="badge bg-primary text-white small">Parliamentary Rebuttal</span>
+                  <small class="text-muted"><i class="bi bi-clock me-1"></i>5:45 &bull; MP3</small>
+                </div>
+                <h3 class="h6 fw-bold mb-1 text-heading">Digital Privacy &amp; Algorithmic Ethics</h3>
+                <small class="text-body-secondary mb-3">Maya Lin &bull; Day 12 Parliamentary Cross-Exam</small>
+                
+                <div class="p-2 bg-surface rounded border border-theme d-flex align-items-center gap-3 mb-3 mt-auto">
+                  <button class="btn btn-sm btn-primary rounded-circle" style="width: 34px; height: 34px;" onclick="showToast('Playing Audio', 'Playing Maya\'s Day 12 Parliamentary Rebuttal...', 'info');"><i class="bi bi-play-fill"></i></button>
+                  <div class="flex-grow-1">
+                    <div class="progress" style="height: 5px;">
+                      <div class="progress-bar bg-primary" style="width: 15%;"></div>
+                    </div>
+                  </div>
+                  <small class="text-muted">0:52 / 5:45</small>
+                </div>
+
+                <button class="btn btn-sm btn-vx-outline w-100" onclick="showToast('Download Audio', 'Downloading 320kbps MP3 audio master...', 'success');"><i class="bi bi-download me-1"></i> Download MP3</button>
+              </div>
+            </div>
+
+            <!-- Audio Track 3 -->
+            <div class="col-lg-4">
+              <div class="p-3 bg-surface-alt rounded-theme border border-theme h-100 d-flex flex-column">
+                <div class="d-flex justify-content-between align-items-center mb-2">
+                  <span class="badge bg-primary-soft text-primary small">Character Storytelling</span>
+                  <small class="text-muted"><i class="bi bi-clock me-1"></i>2:15 &bull; MP3</small>
+                </div>
+                <h3 class="h6 fw-bold mb-1 text-heading">The Mountain Lion's Roar</h3>
+                <small class="text-body-secondary mb-3">Lucas Lin &bull; Day 3 Junior Voice Modulation</small>
+                
+                <div class="p-2 bg-surface rounded border border-theme d-flex align-items-center gap-3 mb-3 mt-auto">
+                  <button class="btn btn-sm btn-primary rounded-circle" style="width: 34px; height: 34px;" onclick="showToast('Playing Audio', 'Playing Lucas\'s Storytelling Recording...', 'info');"><i class="bi bi-play-fill"></i></button>
+                  <div class="flex-grow-1">
+                    <div class="progress" style="height: 5px;">
+                      <div class="progress-bar bg-primary" style="width: 70%;"></div>
+                    </div>
+                  </div>
+                  <small class="text-muted">1:34 / 2:15</small>
+                </div>
+
+                <button class="btn btn-sm btn-vx-outline w-100" onclick="showToast('Download Audio', 'Downloading 320kbps MP3 audio master...', 'success');"><i class="bi bi-download me-1"></i> Download MP3</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Clean Sub-footer -->
+        <div class="text-center py-4 small text-body-secondary border-top border-theme mt-4">
+          &copy; 2026 VoxLeaders Youth Academy &bull; Parent Portal
+        </div>
+
+      </div>
+    </main>
+  </div>
+
+  <!-- Lightbox Preview Modal -->
+  <div class="modal fade" id="lightboxModal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+      <div class="modal-content bg-dark text-white border-0">
+        <div class="modal-header border-0 pb-0">
+          <h5 class="modal-title text-white" id="lightboxModalTitle">Camp Media Preview</h5>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+        </div>
+        <div class="modal-body p-4 text-center">
+          <img src="assets/img/dashboard/dashboard-camper-hero.jpg" id="lightboxModalImg" class="img-fluid rounded-theme mb-3" alt="Camp Photo" style="max-height: 480px;">
+          <div class="d-flex justify-content-center gap-2">
+            <button class="btn btn-sm btn-light" onclick="showToast('Downloading', 'High-res RAW photo downloading...', 'info');"><i class="bi bi-download"></i> Download Full Resolution (4K)</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Enrollment & Checkout Modal -->
+  <div class="modal fade" id="enrollModal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content bg-surface border-theme">
+        <div class="modal-header border-theme">
+          <h5 class="modal-title fw-bold">Enroll in New Camp Cohort</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+        </div>
+        <div class="modal-body p-4">
+          <form class="needs-validation-vx" novalidate onsubmit="event.preventDefault(); bootstrap.Modal.getInstance(document.getElementById('enrollModal')).hide(); showToast('Enrollment Confirmed!', 'Receipt sent to your parent email. Coach assigned!', 'success');">
+            <div class="mb-3">
+              <label class="form-label small fw-bold">Select Child</label>
+              <select class="form-select form-select-vx" required>
+                <option value="maya" selected>Maya Lin (Teen Leaders)</option>
+                <option value="lucas">Lucas Lin (Junior Orators)</option>
+                <option value="new">+ Add New Sibling Profile</option>
+              </select>
+            </div>
+            <div class="mb-3">
+              <label class="form-label small fw-bold">Select Camp Session</label>
+              <select class="form-select form-select-vx" id="checkoutSessionSelect" required>
+                <option value="august" data-price="$850" selected>Cohort B: August 3 – August 21 ($850)</option>
+                <option value="fall" data-price="$650">Fall Weekend Forensics League ($650)</option>
+                <option value="tedx" data-price="$1,150">TEDx Keynote Soundstage Residency ($1,150)</option>
+              </select>
+            </div>
+            <div class="mb-4 p-3 bg-surface-alt rounded-theme border border-theme d-flex justify-content-between align-items-center">
+              <span class="small fw-bold">Total Deposit:</span>
+              <span class="h4 fw-bold text-primary mb-0 font-heading" id="checkoutTotalDisplay">$850</span>
+            </div>
+            <button type="submit" class="btn-vx btn-vx-primary w-100 py-3">Confirm Enrollment & Pay</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.2/dist/chart.umd.min.js"></script>
+  <script src="assets/js/main.js"></script>
+  <script src="assets/js/dashboard.js"></script>
+</body>
+</html>

@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="light" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Badges & Honors | VoxLeaders Parent Portal</title>
+  <meta name="description" content="View unlocked student achievement badges, public speaking milestone shields, and graduation honors in the VoxLeaders Parent Portal.">
+  
+  <link rel="icon" type="image/svg+xml" href="assets/img/brand/favicon.svg">
+  <link id="bootstrap-theme-style" rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <!-- Google Fonts: Poppins, Outfit, Plus Jakarta Sans -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800;900&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,300&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="assets/css/style.css?v=7.8">
+  <link rel="stylesheet" href="assets/css/dashboard.css">
+  <link rel="stylesheet" href="assets/css/rtl.css">
+</head>
+<body>
+
+  <div class="dashboard-layout">
+    
+    <!-- =================================================================
+         SIDEBAR NAVIGATION (Modularis Reference Style)
+    ================================================================== -->
+    <aside class="dashboard-sidebar">
+      <div class="sidebar-brand-wrapper">
+        <a href="index.html" class="d-flex align-items-center">
+          <img src="assets/img/brand/logo.svg" alt="VoxLeaders Logo" class="vx-brand-img" height="42">
+        </a>
+        <button class="btn btn-sm d-lg-none border-0 text-muted" id="sidebarCloseBtn"><i class="bi bi-x-lg"></i></button>
+      </div>
+
+      <div class="sidebar-menu">
+        <div class="sidebar-section-title">Parent Dashboard</div>
+        <a href="dashboard-parent.html" class="sidebar-nav-link">
+          <i class="bi bi-speedometer2"></i>
+          <span>Overview</span>
+        </a>
+        <a href="dashboard-skills.html" class="sidebar-nav-link">
+          <i class="bi bi-pie-chart-fill"></i>
+          <span>Skill Analytics</span>
+          <span class="badge bg-primary sidebar-nav-badge">Live</span>
+        </a>
+        <a href="dashboard-sessions.html" class="sidebar-nav-link">
+          <i class="bi bi-calendar2-check-fill"></i>
+          <span>Sessions &amp; Enrollment</span>
+        </a>
+        <a href="dashboard-badges.html" class="sidebar-nav-link active">
+          <i class="bi bi-award-fill"></i>
+          <span>Badges &amp; Honors</span>
+        </a>
+
+        <div class="sidebar-section-title mt-3">Family &amp; Account</div>
+        <a href="contact.html" class="sidebar-nav-link">
+          <i class="bi bi-chat-dots-fill"></i>
+          <span>Message Coaches</span>
+        </a>
+        <a href="pricing.html" class="sidebar-nav-link">
+          <i class="bi bi-receipt"></i>
+          <span>Tuition &amp; Invoices</span>
+        </a>
+      </div>
+
+      <!-- Modularis Reference Sidebar Footer -->
+      <div class="sidebar-bottom-actions">
+        <a href="index.html" class="btn-sidebar-website">
+          <i class="bi bi-arrow-left"></i>
+          <span>Back to Website</span>
+        </a>
+        <a href="index.html" class="btn-sidebar-logout" onclick="showToast('Logged Out', 'You have been safely signed out. Redirecting to home...', 'info');">
+          <i class="bi bi-box-arrow-right"></i>
+          <span>Logout Dashboard</span>
+        </a>
+      </div>
+    </aside>
+
+    <!-- =================================================================
+         MAIN CONTENT AREA
+    ================================================================== -->
+    <main class="dashboard-main">
+      
+      <!-- Topbar Header (Modularis Reference Style) -->
+      <header class="dashboard-topbar">
+        <div class="d-flex align-items-center gap-3">
+          <button class="btn btn-sm btn-vx-outline d-lg-none" id="sidebarToggleBtn" aria-label="Toggle Mobile Menu">
+            <i class="bi bi-list fs-5"></i>
+          </button>
+
+          <!-- Global Admin / Parent Search -->
+          <div class="dashboard-search-container d-none d-md-block">
+            <i class="bi bi-search dashboard-search-icon"></i>
+            <input type="text" class="dashboard-search-input" placeholder="Search badges, awards, speech topics...">
+          </div>
+
+
+        </div>
+
+        <div class="d-flex align-items-center gap-2">
+          <!-- Back to Website Pill -->
+          <a href="index.html" class="btn-topbar-website d-none d-sm-inline-flex">
+            <i class="bi bi-arrow-left"></i>
+            <span>Website</span>
+          </a>
+
+          <!-- RTL Switcher -->
+          <button class="nav-control-btn rtl-toggle-btn" aria-label="Toggle RTL"><span class="dir-label">RTL</span></button>
+
+          <!-- Dark / Light Mode -->
+          <button class="nav-control-btn theme-toggle-btn" aria-label="Toggle Theme"><i class="bi bi-moon-stars-fill"></i></button>
+
+          <!-- User Avatar Ring -->
+          <a href="dashboard-parent.html" class="ms-1" title="Rachel Adams Profile">
+            <img src="assets/img/dashboard/camper-avatar-maya.jpg" class="user-avatar-ring" alt="Rachel Adams">
+          </a>
+        </div>
+      </header>
+
+      <!-- Dashboard View Content -->
+      <div class="dashboard-content-area">
+        
+        <!-- Welcome Card (Modularis Reference Style) -->
+        <div class="dashboard-welcome-card">
+          <div class="welcome-status-pills">
+            <span class="status-pill-green">
+              <i class="bi bi-patch-check-fill"></i> 4 OF 6 BADGES UNLOCKED
+            </span>
+            <span class="status-pill-gold">
+              <i class="bi bi-award-fill"></i> STUDENT HONORS ROSTER
+            </span>
+            <span class="status-pill-calendar">
+              <i class="bi bi-calendar3"></i> Tuesday, October 13, 2026
+            </span>
+          </div>
+
+          <div class="row align-items-center g-4">
+            <div class="col-lg-8">
+              <h1 class="display-6 fw-extrabold text-heading font-heading mb-2">
+                Student Achievement Badges &amp; Honors 🏆
+              </h1>
+              <p class="text-body-secondary mb-0">
+                Badges unlocked by <strong>Maya Lin</strong> through live stage performances, parliamentary tournament rounds, and peer leadership. Verified by the VoxLeaders Academic Board.
+              </p>
+            </div>
+            <div class="col-lg-4 text-lg-end">
+              <button class="btn-vx btn-vx-primary py-2.5 px-4 rounded-pill fw-bold" onclick="showToast('Certificate Export', 'Official PDF Certificate of Oratory Mastery downloading...', 'success');">
+                <i class="bi bi-file-earmark-pdf me-1"></i> Download Certificate (PDF)
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- 4 Unlocked Badges Grid -->
+        <h2 class="h5 fw-bold font-heading mb-3">Unlocked Mastery Shields (4)</h2>
+        <div class="row g-4 mb-5">
+          <!-- Badge 1: Master Orator -->
+          <div class="col-md-6 col-lg-3">
+            <div class="p-4 bg-surface rounded-theme-lg border border-theme h-100 d-flex flex-column text-center shadow-sm">
+              <div class="mb-3">
+                <img src="assets/img/badges/badge-oratory.svg" width="84" height="84" alt="Master Orator Badge" class="mx-auto">
+              </div>
+              <span class="badge bg-success-subtle text-success fw-bold px-3 py-1 rounded-pill mx-auto mb-2"><i class="bi bi-check-circle-fill me-1"></i> Unlocked Day 8</span>
+              <h3 class="h6 fw-bold mb-1 text-heading">Master Orator Shield</h3>
+              <p class="small text-body-secondary mb-3 flex-grow-1">Delivered 10 live stage presentations to auditorium audiences with sustained eye contact.</p>
+              <div class="p-2 bg-surface-alt rounded border border-theme small text-muted">
+                <strong>Criterion:</strong> 10 Adjudicated Speeches
+              </div>
+            </div>
+          </div>
+
+          <!-- Badge 2: Debate Champ -->
+          <div class="col-md-6 col-lg-3">
+            <div class="p-4 bg-surface rounded-theme-lg border border-theme h-100 d-flex flex-column text-center shadow-sm">
+              <div class="mb-3">
+                <img src="assets/img/badges/badge-debate.svg" width="84" height="84" alt="Debate Champ Badge" class="mx-auto">
+              </div>
+              <span class="badge bg-success-subtle text-success fw-bold px-3 py-1 rounded-pill mx-auto mb-2"><i class="bi bi-check-circle-fill me-1"></i> Unlocked Day 11</span>
+              <h3 class="h6 fw-bold mb-1 text-heading">Debate Tournament Champ</h3>
+              <p class="small text-body-secondary mb-3 flex-grow-1">Won 4 consecutive parliamentary rebuttal rounds with judges scoring 90+ on argument logic.</p>
+              <div class="p-2 bg-surface-alt rounded border border-theme small text-muted">
+                <strong>Criterion:</strong> 4 Mock Rebuttal Wins
+              </div>
+            </div>
+          </div>
+
+          <!-- Badge 3: Confidence 100 -->
+          <div class="col-md-6 col-lg-3">
+            <div class="p-4 bg-surface rounded-theme-lg border border-theme h-100 d-flex flex-column text-center shadow-sm">
+              <div class="mb-3">
+                <img src="assets/img/badges/badge-confidence.svg" width="84" height="84" alt="Confidence 100 Badge" class="mx-auto">
+              </div>
+              <span class="badge bg-success-subtle text-success fw-bold px-3 py-1 rounded-pill mx-auto mb-2"><i class="bi bi-check-circle-fill me-1"></i> Unlocked Day 12</span>
+              <h3 class="h6 fw-bold mb-1 text-heading">Confidence 100 Shield</h3>
+              <p class="small text-body-secondary mb-3 flex-grow-1">Completed a 5-minute continuous stage speech with zero filler words and relaxed breath pacing.</p>
+              <div class="p-2 bg-surface-alt rounded border border-theme small text-muted">
+                <strong>Criterion:</strong> Zero Fillers on Keynote
+              </div>
+            </div>
+          </div>
+
+          <!-- Badge 4: Youth Diplomat -->
+          <div class="col-md-6 col-lg-3">
+            <div class="p-4 bg-surface rounded-theme-lg border border-theme h-100 d-flex flex-column text-center shadow-sm">
+              <div class="mb-3">
+                <img src="assets/img/badges/badge-diplomat.svg" width="84" height="84" alt="Youth Diplomat Badge" class="mx-auto">
+              </div>
+              <span class="badge bg-success-subtle text-success fw-bold px-3 py-1 rounded-pill mx-auto mb-2"><i class="bi bi-check-circle-fill me-1"></i> Unlocked Day 14</span>
+              <h3 class="h6 fw-bold mb-1 text-heading">Youth Diplomat Crest</h3>
+              <p class="small text-body-secondary mb-3 flex-grow-1">Successfully drafted, negotiated, and passed a collaborative Model UN committee resolution.</p>
+              <div class="p-2 bg-surface-alt rounded border border-theme small text-muted">
+                <strong>Criterion:</strong> Passed MUN Resolution
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 2 In-Progress Badges Section -->
+        <h2 class="h5 fw-bold font-heading mb-3">Badges In Progress (2)</h2>
+        <div class="row g-4 mb-5">
+          <!-- In Progress 1 -->
+          <div class="col-md-6">
+            <div class="p-4 bg-surface rounded-theme-lg border border-theme shadow-sm h-100">
+              <div class="d-flex justify-content-between align-items-center mb-3">
+                <div class="d-flex align-items-center gap-2">
+                  <div class="rounded-circle bg-primary-soft text-primary d-flex align-items-center justify-content-center" style="width: 44px; height: 44px;">
+                    <i class="bi bi-mic-fill fs-5"></i>
+                  </div>
+                  <div>
+                    <h3 class="h6 fw-bold mb-0 text-heading">TEDx Keynote Virtuoso</h3>
+                    <small class="text-body-secondary">Record a 10-minute filmed TEDx keynote with teleprompter</small>
+                  </div>
+                </div>
+                <span class="badge bg-primary text-white fw-bold">80% Done</span>
+              </div>
+              <div class="progress mb-2" style="height: 8px;">
+                <div class="progress-bar bg-primary" style="width: 80%;"></div>
+              </div>
+              <div class="d-flex justify-content-between small text-muted">
+                <span>Script &amp; teleprompter drills passed</span>
+                <strong>Remaining: Saturday Gala Recording</strong>
+              </div>
+            </div>
+          </div>
+
+          <!-- In Progress 2 -->
+          <div class="col-md-6">
+            <div class="p-4 bg-surface rounded-theme-lg border border-theme shadow-sm h-100">
+              <div class="d-flex justify-content-between align-items-center mb-3">
+                <div class="d-flex align-items-center gap-2">
+                  <div class="rounded-circle bg-primary-soft text-primary d-flex align-items-center justify-content-center" style="width: 44px; height: 44px;">
+                    <i class="bi bi-trophy-fill fs-5"></i>
+                  </div>
+                  <div>
+                    <h3 class="h6 fw-bold mb-0 text-heading">Grand Forensics Finalist</h3>
+                    <small class="text-body-secondary">Qualify for the All-Camp Championship debate round</small>
+                  </div>
+                </div>
+                <span class="badge bg-primary-soft text-primary fw-bold">65% Done</span>
+              </div>
+              <div class="progress mb-2" style="height: 8px;">
+                <div class="progress-bar bg-primary" style="width: 65%;"></div>
+              </div>
+              <div class="d-flex justify-content-between small text-muted">
+                <span>Quarterfinals &amp; Semifinals won</span>
+                <strong>Remaining: Final Mock Cross-Exam</strong>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Student Certificate Card -->
+        <div class="card border-0 bg-surface rounded-theme-lg p-4 mb-4 shadow-sm">
+          <div class="row align-items-center g-4">
+            <div class="col-md-3 text-center">
+              <div class="p-3 bg-surface-alt rounded-theme border border-warning border-opacity-50">
+                <i class="bi bi-award text-warning display-4"></i>
+                <div class="small fw-bold text-heading mt-2">VoxLeaders Official Seal</div>
+                <small class="text-muted d-block" style="font-size: 0.72rem;">Serial: #VL-2026-MAYALIN</small>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <span class="badge bg-primary-soft text-primary fw-bold mb-2">Graduation Honor Certificate</span>
+              <h3 class="h5 fw-bold text-heading font-heading mb-1">Certificate of Public Speaking &amp; Leadership Mastery</h3>
+              <p class="small text-body-secondary mb-0">
+                Issued to Maya Lin upon completion of 6-week Teen Leaders Parliamentary Intensive. Certified by Head Coach Dr. Marcus Vance &amp; Academic Director Elena Rostova.
+              </p>
+            </div>
+            <div class="col-md-3 text-md-end">
+              <button class="btn-vx btn-vx-primary btn-vx-sm w-100 mb-2" onclick="showToast('Certificate PDF', 'Official high-resolution print PDF downloading...', 'success');">
+                <i class="bi bi-download me-1"></i> Download PDF
+              </button>
+              <button class="btn btn-sm btn-vx-outline w-100" onclick="showToast('Share Link', 'Private verified certificate link copied to clipboard.', 'info');">
+                <i class="bi bi-share me-1"></i> Share Link
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Clean Sub-footer -->
+        <div class="text-center py-4 small text-body-secondary border-top border-theme mt-4">
+          &copy; 2026 VoxLeaders Youth Academy &bull; Parent Operations Command Center
+        </div>
+
+      </div>
+    </main>
+  </div>
+
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.2/dist/chart.umd.min.js"></script>
+  <script src="assets/js/main.js"></script>
+  <script src="assets/js/dashboard.js"></script>
+</body>
+</html>

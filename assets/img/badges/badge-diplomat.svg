@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" width="120" height="120" fill="none">
+  <defs>
+    <linearGradient id="bgDip" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#312E81"/>
+      <stop offset="100%" stop-color="#4F46E5"/>
+    </linearGradient>
+    <linearGradient id="ribbonDip" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#3730A3"/>
+      <stop offset="100%" stop-color="#4338CA"/>
+    </linearGradient>
+  </defs>
+  <polygon points="60,6 106,30 106,84 60,108 14,84 14,30" fill="url(#bgDip)"/>
+  <polygon points="60,12 100,33 100,81 60,102 20,81 20,33" stroke="#C7D2FE" stroke-width="2" fill="none" opacity="0.6"/>
+  <!-- Globe / Peace Dove Emblem -->
+  <circle cx="60" cy="50" r="17" stroke="#FFFFFF" stroke-width="2.5" fill="#1E1B4B" opacity="0.4"/>
+  <ellipse cx="60" cy="50" rx="9" ry="17" stroke="#FFFFFF" stroke-width="2"/>
+  <line x1="43" y1="50" x2="77" y2="50" stroke="#FFFFFF" stroke-width="2"/>
+  <!-- Ribbon -->
+  <path d="M26 92L60 84L94 92L60 98Z" fill="url(#ribbonDip)"/>
+  <text x="60" y="93" text-anchor="middle" font-family="'Plus Jakarta Sans', sans-serif" font-size="7" font-weight="800" fill="#FFFFFF">YOUTH DIPLOMAT</text>
+</svg>

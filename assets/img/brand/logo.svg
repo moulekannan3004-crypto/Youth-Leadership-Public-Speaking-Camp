@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 315 68" width="315" height="68" fill="none">
+  <defs>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700;800&amp;display=swap');
+      .brand-title { font-family: 'Poppins', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; font-size: 34px; font-weight: 800; letter-spacing: -0.4px; }
+      .brand-subtitle { font-family: 'Poppins', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; font-size: 10px; font-weight: 700; letter-spacing: 1.8px; }
+    </style>
+    <linearGradient id="vxBrandGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#4F46E5"/>
+      <stop offset="50%" stop-color="#6366F1"/>
+      <stop offset="100%" stop-color="#818CF8"/>
+    </linearGradient>
+    <filter id="vxBrandShadow" x="-15%" y="-15%" width="130%" height="130%">
+      <feDropShadow dx="0" dy="3" stdDeviation="3.5" flood-color="#4F46E5" flood-opacity="0.32"/>
+    </filter>
+  </defs>
+
+  <!-- Premium Rounded Square Icon Badge -->
+  <g transform="translate(4, 10)" filter="url(#vxBrandShadow)">
+    <rect width="48" height="48" rx="13" fill="url(#vxBrandGrad)"/>
+    
+    <!-- Sound Resonance Arcs (Acoustic Voice Waves) -->
+    <path d="M10 20C9 22.5 9 25.5 10 28" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-opacity="0.6"/>
+    <path d="M38 20C39 22.5 39 25.5 38 28" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-opacity="0.6"/>
+
+    <!-- Modern Studio Microphone Capsule -->
+    <rect x="18.5" y="12" width="11" height="16" rx="5.5" fill="#FFFFFF"/>
+    <!-- Mic Dynamic Capsule Band -->
+    <path d="M18.5 19.5H29.5" stroke="#4F46E5" stroke-width="1.8" stroke-linecap="round"/>
+
+    <!-- Acoustic Cradle Arc -->
+    <path d="M14 21C14 26.5 18.5 31 24 31C29.5 31 34 26.5 34 21" stroke="#FFFFFF" stroke-width="2.6" stroke-linecap="round"/>
+    
+    <!-- Base Stem & Stand -->
+    <path d="M24 31V36.5M19 36.5H29" stroke="#FFFFFF" stroke-width="2.6" stroke-linecap="round"/>
+
+    <!-- Brilliant 4-Point Orator Spark (Symbol of Eloquence & Leadership) -->
+    <path d="M34 11L35.2 13.8L38 15L35.2 16.2L34 19L32.8 16.2L30 15L32.8 13.8Z" fill="#FFFFFF"/>
+  </g>
+
+  <!-- Brand Typography (Prominent Bold Hierarchy, Big Name & Clear Subtitle) -->
+  <text x="64" y="38" class="brand-title" fill="#0F172A">
+    Vox<tspan fill="#4F46E5" font-weight="700">Leaders</tspan>
+  </text>
+  <text x="65" y="52.5" class="brand-subtitle" fill="#64748B">
+    YOUTH LEADERSHIP ACADEMY
+  </text>
+</svg>

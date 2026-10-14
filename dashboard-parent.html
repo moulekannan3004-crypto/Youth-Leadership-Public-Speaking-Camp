@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="light" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Parent Operations Dashboard | VoxLeaders</title>
+  <meta name="description" content="Operations command center for VoxLeaders Youth Academy. Track speech milestones, active sessions, and student development analytics.">
+  
+  <link rel="icon" type="image/svg+xml" href="assets/img/brand/favicon.svg">
+  <link id="bootstrap-theme-style" rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <!-- Google Fonts: Poppins, Outfit, Plus Jakarta Sans -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800;900&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,300&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="assets/css/style.css?v=7.8">
+  <link rel="stylesheet" href="assets/css/dashboard.css">
+  <link rel="stylesheet" href="assets/css/rtl.css">
+</head>
+<body>
+
+  <div class="dashboard-layout">
+    
+    <!-- =================================================================
+         SIDEBAR NAVIGATION (Modularis Reference Style)
+    ================================================================== -->
+    <aside class="dashboard-sidebar">
+      <div class="sidebar-brand-wrapper">
+        <a href="index.html" class="d-flex align-items-center">
+          <img src="assets/img/brand/logo.svg" alt="VoxLeaders Logo" class="vx-brand-img" height="42">
+        </a>
+        <button class="btn btn-sm d-lg-none border-0 text-muted" id="sidebarCloseBtn"><i class="bi bi-x-lg"></i></button>
+      </div>
+
+      <div class="sidebar-menu">
+        <div class="sidebar-section-title">Parent Dashboard</div>
+        <a href="dashboard-parent.html" class="sidebar-nav-link active">
+          <i class="bi bi-speedometer2"></i>
+          <span>Overview</span>
+        </a>
+        <a href="dashboard-skills.html" class="sidebar-nav-link">
+          <i class="bi bi-pie-chart-fill"></i>
+          <span>Skill Analytics</span>
+          <span class="badge bg-primary sidebar-nav-badge">Live</span>
+        </a>
+        <a href="dashboard-sessions.html" class="sidebar-nav-link">
+          <i class="bi bi-calendar2-check-fill"></i>
+          <span>Sessions &amp; Enrollment</span>
+        </a>
+        <a href="dashboard-badges.html" class="sidebar-nav-link">
+          <i class="bi bi-award-fill"></i>
+          <span>Badges & Honors</span>
+        </a>
+
+        <div class="sidebar-section-title mt-3">Family & Account</div>
+        <a href="contact.html" class="sidebar-nav-link">
+          <i class="bi bi-chat-dots-fill"></i>
+          <span>Message Coaches</span>
+        </a>
+        <a href="pricing.html" class="sidebar-nav-link">
+          <i class="bi bi-receipt"></i>
+          <span>Tuition & Invoices</span>
+        </a>
+      </div>
+
+      <!-- Modularis Reference Sidebar Footer -->
+      <div class="sidebar-bottom-actions">
+        <a href="index.html" class="btn-sidebar-website">
+          <i class="bi bi-arrow-left"></i>
+          <span>Back to Website</span>
+        </a>
+        <a href="index.html" class="btn-sidebar-logout" onclick="showToast('Logged Out', 'You have been safely signed out. Redirecting to home...', 'info');">
+          <i class="bi bi-box-arrow-right"></i>
+          <span>Logout Dashboard</span>
+        </a>
+      </div>
+    </aside>
+
+    <!-- =================================================================
+         MAIN CONTENT AREA
+    ================================================================== -->
+    <main class="dashboard-main">
+      
+      <!-- Topbar Header (Modularis Reference Style) -->
+      <header class="dashboard-topbar">
+        <div class="d-flex align-items-center gap-3">
+          <button class="btn btn-sm btn-vx-outline d-lg-none" id="sidebarToggleBtn" aria-label="Toggle Mobile Menu">
+            <i class="bi bi-list fs-5"></i>
+          </button>
+
+          <!-- Global Admin / Parent Search -->
+          <div class="dashboard-search-container d-none d-md-block">
+            <i class="bi bi-search dashboard-search-icon"></i>
+            <input type="text" class="dashboard-search-input" placeholder="Global search (e.g. Maya, Dr. Vance, speech syllabus)...">
+          </div>
+
+
+        </div>
+
+        <div class="d-flex align-items-center gap-2">
+          <!-- Back to Website Pill -->
+          <a href="index.html" class="btn-topbar-website d-none d-sm-inline-flex">
+            <i class="bi bi-arrow-left"></i>
+            <span>Website</span>
+          </a>
+
+          <!-- RTL Switcher -->
+          <button class="nav-control-btn rtl-toggle-btn" aria-label="Toggle RTL"><span class="dir-label">RTL</span></button>
+
+          <!-- Dark / Light Mode -->
+          <button class="nav-control-btn theme-toggle-btn" aria-label="Toggle Theme"><i class="bi bi-moon-stars-fill"></i></button>
+
+          <!-- User Avatar Ring -->
+          <a href="dashboard-parent.html" class="ms-1" title="Rachel Adams Profile">
+            <img src="assets/img/dashboard/camper-avatar-maya.jpg" class="user-avatar-ring" alt="Rachel Adams">
+          </a>
+        </div>
+      </header>
+
+      <!-- Dashboard View Content -->
+      <div class="dashboard-content-area">
+        
+        <!-- Welcome Card (Modularis Reference Style) -->
+        <div class="dashboard-welcome-card">
+          <div class="welcome-status-pills">
+            <span class="status-pill-green">
+              <i class="bi bi-circle-fill" style="font-size: 0.45rem;"></i> SYSTEM STATUS: 99.98% SLA ONLINE
+            </span>
+            <span class="status-pill-gold">
+              <i class="bi bi-shield-check"></i> PARENT ACCESS: RACHEL ADAMS
+            </span>
+            <span class="status-pill-calendar">
+              <i class="bi bi-calendar3"></i> Tuesday, October 13, 2026
+            </span>
+          </div>
+
+          <div class="row align-items-center g-4">
+            <div class="col-lg-8">
+              <h1 class="display-6 fw-extrabold text-heading font-heading mb-2">
+                Good evening, Rachel Adams 👋
+              </h1>
+              <p class="text-body-secondary mb-0">
+                Welcome to your <strong>VoxLeaders Operations Command Center</strong>. Maya has completed <strong>82%</strong> of her <em>Teen Leaders Parliamentary Debate</em> milestones. All 4 regional speech soundstages are synchronized and live practice telemetry is active.
+              </p>
+            </div>
+            <div class="col-lg-4 text-lg-end">
+              <div class="d-flex flex-wrap gap-2 justify-content-lg-end">
+                <button class="btn-vx btn-vx-primary py-2.5 px-4 rounded-pill fw-bold" data-bs-toggle="modal" data-bs-target="#enrollModal">
+                  <i class="bi bi-plus-lg me-1"></i> ENROLL IN SESSION
+                </button>
+                <a href="dashboard-skills.html" class="btn btn-vx-outline py-2.5 px-3 rounded-pill fw-bold">
+                  <i class="bi bi-pie-chart-fill me-1"></i> ANALYTICS
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 4 KPI Metric Cards Grid (Modularis Reference Style) -->
+        <div class="row g-4 mb-4">
+          <!-- Card 1: Speaking Confidence -->
+          <div class="col-sm-6 col-xl-3">
+            <div class="kpi-card-modular">
+              <div class="d-flex justify-content-between align-items-center mb-1">
+                <span class="kpi-category-title">Speaking Confidence</span>
+                <div class="kpi-squircle-icon">
+                  <i class="bi bi-graph-up-arrow"></i>
+                </div>
+              </div>
+              <div class="kpi-metric-number">92<span class="fs-5 text-muted fw-normal">/100</span></div>
+              <div class="kpi-metric-footer d-flex justify-content-between align-items-center">
+                <span class="badge bg-success-subtle text-success fw-bold"><i class="bi bi-arrow-up-right"></i> +38.4% YoY</span>
+                <span class="text-muted small">Target: 95.0</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 2: Active Platform Speeches -->
+          <div class="col-sm-6 col-xl-3">
+            <div class="kpi-card-modular">
+              <div class="d-flex justify-content-between align-items-center mb-1">
+                <span class="kpi-category-title">Stage Speeches Given</span>
+                <div class="kpi-squircle-icon">
+                  <i class="bi bi-mic-fill"></i>
+                </div>
+              </div>
+              <div class="kpi-metric-number">14 Speeches</div>
+              <div class="kpi-metric-footer">
+                <div class="d-flex justify-content-between text-muted small mb-1">
+                  <span>In Podium Arena</span>
+                  <strong>85%</strong>
+                </div>
+                <div class="progress" style="height: 4px;">
+                  <div class="progress-bar bg-primary" style="width: 85%;"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 3: Filler Words -->
+          <div class="col-sm-6 col-xl-3">
+            <div class="kpi-card-modular">
+              <div class="d-flex justify-content-between align-items-center mb-1">
+                <span class="kpi-category-title">Filler Words / Min</span>
+                <div class="kpi-squircle-icon">
+                  <i class="bi bi-lightning-charge-fill"></i>
+                </div>
+              </div>
+              <div class="kpi-metric-number">1.2 <span class="fs-5 text-muted fw-normal">/min</span></div>
+              <div class="kpi-metric-footer d-flex justify-content-between align-items-center">
+                <span class="badge bg-primary-soft text-primary fw-bold"><i class="bi bi-check2"></i> Zero Hesitation</span>
+                <span class="badge bg-surface-alt border text-muted fw-bold">18-Min SLA</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 4: Enrolled Campers -->
+          <div class="col-sm-6 col-xl-3">
+            <div class="kpi-card-modular">
+              <div class="d-flex justify-content-between align-items-center mb-1">
+                <span class="kpi-category-title">Enrolled Campers</span>
+                <div class="kpi-squircle-icon">
+                  <i class="bi bi-people-fill"></i>
+                </div>
+              </div>
+              <div class="kpi-metric-number">2 Children</div>
+              <div class="kpi-metric-footer d-flex justify-content-between align-items-center">
+                <span class="badge bg-success-subtle text-success fw-bold"><i class="bi bi-check-circle-fill"></i> 100% Retained</span>
+                <div class="avatar-stack d-flex">
+                  <img src="assets/img/dashboard/camper-avatar-maya.jpg" width="26" height="26" class="rounded-circle border border-white" style="object-fit: cover;" alt="Maya">
+                  <img src="assets/img/avatars/avatar-2.jpg" width="26" height="26" class="rounded-circle border border-white ms-n1" style="object-fit: cover;" alt="Lucas">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Main Chart & Quick Actions Row (Modularis Reference Style) -->
+        <div class="row g-4 mb-4">
+          <!-- Left Column: Weekly Growth Chart -->
+          <div class="col-lg-8">
+            <div class="card border-0 bg-surface rounded-theme-xl p-4 shadow-sm h-100 d-flex flex-column">
+              <div class="d-flex justify-content-between align-items-center mb-3">
+                <div>
+                  <div class="d-flex align-items-center gap-2">
+                    <i class="bi bi-bar-chart-fill text-primary"></i>
+                    <h2 class="h5 fw-bold font-heading mb-0 text-heading">Enterprise Oratory &amp; Growth Trajectory</h2>
+                  </div>
+                  <small class="text-body-secondary">Quarterly speaking confidence index across camp cohorts (2025 – 2026)</small>
+                </div>
+                <span class="badge bg-primary-soft text-primary fw-bold px-3 py-1 rounded-pill">Audited Rubric</span>
+              </div>
+              <div class="flex-grow-1 position-relative" style="min-height: 290px;">
+                <canvas id="weeklyGrowthChart"></canvas>
+              </div>
+              <div class="pt-3 border-top border-theme mt-3 d-flex justify-content-between align-items-center">
+                <span class="small text-muted">Detailed 360° radar breakdown available in diagnostics tab.</span>
+                <a href="dashboard-skills.html" class="btn btn-sm btn-vx-outline">Open Detailed Skill Analytics &rarr;</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right Column: Quick Parent Actions (Modularis Reference Style) -->
+          <div class="col-lg-4">
+            <div class="card border-0 bg-surface rounded-theme-xl p-4 shadow-sm h-100 d-flex flex-column">
+              <div class="d-flex align-items-center gap-2 mb-3">
+                <i class="bi bi-lightning-charge-fill text-warning fs-5"></i>
+                <h2 class="h5 fw-bold font-heading mb-0 text-heading">Quick Parent Actions</h2>
+              </div>
+
+              <div class="d-flex flex-column flex-grow-1 justify-content-between">
+                <!-- Action 1 -->
+                <a href="#" class="quick-action-row" data-bs-toggle="modal" data-bs-target="#enrollModal">
+                  <div class="d-flex align-items-center gap-2">
+                    <i class="bi bi-plus-circle text-primary"></i>
+                    <span>Enroll in Next Camp Session</span>
+                  </div>
+                  <i class="bi bi-chevron-right text-muted small"></i>
+                </a>
+
+                <!-- Action 2 -->
+                <a href="dashboard-skills.html" class="quick-action-row">
+                  <div class="d-flex align-items-center gap-2">
+                    <i class="bi bi-pie-chart-fill text-primary"></i>
+                    <span>Track Skill Development &amp; Rubrics</span>
+                  </div>
+                  <i class="bi bi-chevron-right text-muted small"></i>
+                </a>
+
+                <!-- Action 4 -->
+                <a href="dashboard-sessions.html" class="quick-action-row">
+                  <div class="d-flex align-items-center gap-2">
+                    <i class="bi bi-calendar2-check text-primary"></i>
+                    <span>View Enrolled Cohorts &amp; Schedules (2)</span>
+                  </div>
+                  <i class="bi bi-chevron-right text-muted small"></i>
+                </a>
+
+                <!-- Action 5 -->
+                <a href="dashboard-badges.html" class="quick-action-row">
+                  <div class="d-flex align-items-center gap-2">
+                    <i class="bi bi-award text-primary"></i>
+                    <span>Review Honors &amp; Master Badges</span>
+                  </div>
+                  <i class="bi bi-chevron-right text-muted small"></i>
+                </a>
+
+                <!-- Action 6 -->
+                <a href="contact.html" class="quick-action-row">
+                  <div class="d-flex align-items-center gap-2">
+                    <i class="bi bi-chat-dots text-primary"></i>
+                    <span>Message Coach Dr. Vance</span>
+                  </div>
+                  <i class="bi bi-chevron-right text-muted small"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Clean Sub-footer (NO website footer!) -->
+        <div class="text-center py-4 small text-body-secondary border-top border-theme mt-5">
+          &copy; 2026 VoxLeaders Youth Academy &bull; Parent Operations Command Center
+        </div>
+
+      </div>
+    </main>
+  </div>
+
+  <!-- Enrollment & Checkout Modal -->
+  <div class="modal fade" id="enrollModal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content bg-surface border-theme">
+        <div class="modal-header border-theme">
+          <h5 class="modal-title fw-bold">Enroll in New Camp Cohort</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+        </div>
+        <div class="modal-body p-4">
+          <form class="needs-validation-vx" novalidate onsubmit="event.preventDefault(); bootstrap.Modal.getInstance(document.getElementById('enrollModal')).hide(); showToast('Enrollment Confirmed!', 'Receipt sent to your parent email. Coach assigned!', 'success');">
+            <div class="mb-3">
+              <label class="form-label small fw-bold">Select Child</label>
+              <select class="form-select form-select-vx" required>
+                <option value="maya" selected>Maya Lin (Teen Leaders)</option>
+                <option value="lucas">Lucas Lin (Junior Orators)</option>
+                <option value="new">+ Add New Sibling Profile</option>
+              </select>
+            </div>
+            <div class="mb-3">
+              <label class="form-label small fw-bold">Select Camp Session</label>
+              <select class="form-select form-select-vx" id="checkoutSessionSelect" required>
+                <option value="august" data-price="$850" selected>Cohort B: August 3 – August 21 ($850)</option>
+                <option value="fall" data-price="$650">Fall Weekend Forensics League ($650)</option>
+                <option value="tedx" data-price="$1,150">TEDx Keynote Soundstage Residency ($1,150)</option>
+              </select>
+            </div>
+            <div class="mb-4 p-3 bg-surface-alt rounded-theme border border-theme d-flex justify-content-between align-items-center">
+              <span class="small fw-bold">Total Deposit:</span>
+              <span class="h4 fw-bold text-primary mb-0 font-heading" id="checkoutTotalDisplay">$850</span>
+            </div>
+            <button type="submit" class="btn-vx btn-vx-primary w-100 py-3">Confirm Enrollment & Pay</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.2/dist/chart.umd.min.js"></script>
+  <script src="assets/js/main.js"></script>
+  <script src="assets/js/dashboard.js"></script>
+</body>
+</html>

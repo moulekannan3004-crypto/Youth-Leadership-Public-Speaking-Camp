@@ -1,0 +1,935 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="light" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>VoxLeaders Enterprise | Leadership & Oratory SaaS Platform</title>
+  <meta name="description" content="Enterprise-grade public speaking intelligence, speech analytics, and cohort leadership curriculum designed for schools, academies, and youth institutions.">
+  <meta name="keywords" content="leadership SaaS, speech analytics AI, youth debate LMS, school oratory platform">
+  
+  <link rel="icon" type="image/svg+xml" href="assets/img/brand/favicon.svg">
+  <link id="bootstrap-theme-style" rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <!-- Google Fonts: Poppins (Light 300), Outfit, Plus Jakarta Sans -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800;900&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,300&display=swap" rel="stylesheet">
+  
+<link rel="stylesheet" href="assets/css/style.css?v=7.8">
+  <link rel="stylesheet" href="assets/css/rtl.css">
+</head>
+<body class="page-home-business">
+
+    <!-- =================================================================
+       GLOBAL NAVIGATION HEADER (Matches Reference Format)
+  ================================================================== -->
+  <header class="vx-header sticky-top">
+    <nav class="navbar navbar-expand-xl vx-navbar" aria-label="Main Navigation">
+      <div class="container-fluid px-3 px-xl-5">
+        <!-- Brand Logo -->
+        <a class="navbar-brand vx-brand" href="index.html">
+          <img src="assets/img/brand/logo.svg" alt="VoxLeaders Logo" class="vx-brand-img" height="46">
+        </a>
+
+        <!-- Mobile Toggler -->
+        <button class="navbar-toggler border-0 shadow-none d-xl-none" type="button" data-bs-toggle="collapse" data-bs-target="#vxNavbarContent" aria-controls="vxNavbarContent" aria-expanded="false" aria-label="Toggle navigation">
+          <i class="bi bi-list fs-2"></i>
+        </button>
+
+        <!-- Navbar Links & Right Controls -->
+        <div class="collapse navbar-collapse" id="vxNavbarContent">
+          <!-- Center Navigation Links -->
+          <ul class="navbar-nav mx-auto mb-2 mb-xl-0 align-items-xl-center">
+            <!-- Home 2 with Dropdown -->
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle vx-nav-link active" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                <span class="vx-nav-text">Home 2</span> <i class="bi bi-chevron-down ms-1" style="font-size: 0.75rem;"></i>
+              </a>
+              <ul class="dropdown-menu dropdown-menu-vx">
+                <li><a class="dropdown-item dropdown-item-vx" href="index.html"><i class="bi bi-mic-fill"></i> Home 1 - Youth Camp Focus</a></li>
+                <li><a class="dropdown-item dropdown-item-vx active" href="index-business.html"><i class="bi bi-briefcase-fill"></i> Home 2 - Business / SaaS Academy</a></li>
+              </ul>
+            </li>
+
+            <!-- About Us -->
+            <li class="nav-item">
+              <a class="nav-link vx-nav-link " href="about.html"><span class="vx-nav-text">About Us</span></a>
+            </li>
+
+            <!-- Programs -->
+            <li class="nav-item">
+              <a class="nav-link vx-nav-link " href="programs.html"><span class="vx-nav-text">Programs</span></a>
+            </li>
+
+            <!-- Testimonials -->
+            <li class="nav-item">
+              <a class="nav-link vx-nav-link " href="testimonials.html"><span class="vx-nav-text">Testimonials</span></a>
+            </li>
+
+            <!-- Pricing -->
+            <li class="nav-item">
+              <a class="nav-link vx-nav-link " href="pricing.html"><span class="vx-nav-text">Pricing</span></a>
+            </li>
+
+            <!-- Gallery -->
+            <li class="nav-item">
+              <a class="nav-link vx-nav-link " href="gallery.html"><span class="vx-nav-text">Gallery</span></a>
+            </li>
+
+            <!-- Blog -->
+            <li class="nav-item">
+              <a class="nav-link vx-nav-link " href="blog.html"><span class="vx-nav-text">Blog</span></a>
+            </li>
+
+            <!-- Contact -->
+            <li class="nav-item">
+              <a class="nav-link vx-nav-link " href="contact.html"><span class="vx-nav-text">Contact</span></a>
+            </li>
+
+            <!-- Dashboard -->
+            <li class="nav-item">
+              <a class="nav-link vx-nav-link " href="dashboard-parent.html"><span class="vx-nav-text">Dashboard</span></a>
+            </li>
+          </ul>
+
+          <!-- Right Header Actions (LTR/RTL Pill + Theme Toggle Circle + Login Pill) -->
+          <div class="vx-header-actions mt-3 mt-xl-0">
+            <!-- LTR / RTL Switcher Pill -->
+            <button class="btn-vx-dir-pill rtl-toggle-btn" aria-label="Toggle Text Direction">
+              <span class="dir-active">LTR</span>
+              <i class="bi bi-arrow-left-right text-muted" style="font-size: 0.7rem;"></i>
+              <span class="dir-inactive">RTL</span>
+            </button>
+
+            <!-- Dark / Light Theme Toggle Circle -->
+            <button class="btn-vx-theme-circle theme-toggle-btn" aria-label="Toggle Dark/Light Mode" title="Toggle Theme">
+              <i class="bi bi-moon-stars-fill"></i>
+            </button>
+
+            <!-- Login Pill Button -->
+            <a href="auth.html" class="btn-vx-login-pill">
+              <span class="login-plus-icon">+</span>
+              <span>Login</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!-- =================================================================
+       MAIN CONTENT
+  ================================================================== -->
+  <main id="mainContent">
+
+    <!-- 1. BUSINESS HERO SECTION -->
+    <section class="hero-wrapper position-relative">
+      <div class="hero-glow-bg"></div>
+      <div class="container position-relative z-1">
+        <div class="row align-items-stretch g-4 g-xl-5">
+          <div class="col-lg-6 d-flex flex-column justify-content-between">
+            <div>
+              <div class="badge-pill-soft mb-3">
+                <i class="bi bi-cpu-fill text-primary"></i>
+                <span>Speech Analytics &amp; Curriculum SaaS</span>
+              </div>
+              
+              <h1 class="hero-title mb-4">
+                Scale Oratory Excellence <br>
+                <span class="text-gradient-primary">Across Every Student Cohort.</span>
+              </h1>
+
+              <p class="hero-lead mb-4">
+                The all-in-one platform for educational institutions, charter schools, and youth organizations. Benchmark speaking confidence, track debate analytics, and automate student progression reports effortlessly.
+              </p>
+
+              <!-- Email Signup Form -->
+              <form class="needs-validation-vx mb-4" novalidate>
+                <div class="input-group p-1 border rounded-pill bg-surface shadow-sm" style="max-width: 520px;">
+                  <input type="email" class="form-control border-0 bg-transparent px-3" placeholder="Enter your institutional email..." required>
+                  <button class="btn btn-vx-primary rounded-pill px-4" type="submit">
+                    <span>Start Free Trial</span>
+                  </button>
+                </div>
+                <div class="form-text small mt-2">14-day free institutional trial &bull; No credit card required &bull; FERPA compliant</div>
+              </form>
+            </div>
+
+            <!-- Trust Bar at Bottom Baseline -->
+            <div class="hero-trust-bar pt-3 d-flex align-items-center gap-4">
+              <div class="d-flex -space-x-2">
+                <img src="assets/img/business/partner-rep-1.jpg" width="36" height="36" class="rounded-circle border border-2 border-white shadow-sm" alt="School Principal Partner" style="object-fit: cover;">
+                <img src="assets/img/business/partner-rep-2.jpg" width="36" height="36" class="rounded-circle border border-2 border-white ms-n2 shadow-sm" alt="Speech Department Head" style="object-fit: cover;">
+                <img src="assets/img/business/partner-rep-3.jpg" width="36" height="36" class="rounded-circle border border-2 border-white ms-n2 shadow-sm" alt="Curriculum Director" style="object-fit: cover;">
+                <img src="assets/img/business/partner-rep-4.jpg" width="36" height="36" class="rounded-circle border border-2 border-white ms-n2 shadow-sm" alt="Debate League Dean" style="object-fit: cover;">
+              </div>
+              <div class="small">
+                <div class="fw-bold text-heading">Trusted by 120+ Leading Schools</div>
+                <div class="star-rating small">
+                  <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                  <span class="text-body-secondary ms-1 fw-bold">4.9/5 Average Rating</span>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- Product Dashboard Illustration (Equally Matched Height & Baseline Alignment) -->
+          <div class="col-lg-6 d-flex">
+            <div class="hero-visual-card hero-dashboard-window h-100 w-100 position-relative">
+              <!-- Window Chrome Bar -->
+              <div class="dashboard-window-bar">
+                <div class="d-flex align-items-center gap-1">
+                  <span class="rounded-circle bg-danger" style="width: 10px; height: 10px; display: inline-block; opacity: 0.85;"></span>
+                  <span class="rounded-circle bg-warning" style="width: 10px; height: 10px; display: inline-block; opacity: 0.85;"></span>
+                  <span class="rounded-circle bg-success" style="width: 10px; height: 10px; display: inline-block; opacity: 0.85;"></span>
+                </div>
+                <div class="small text-white-50 font-monospace" style="font-size: 0.72rem;">app.voxleaders.io &bull; Live Keynote Speech Analytics</div>
+                <div class="d-flex align-items-center gap-1 text-white-50" style="font-size: 0.72rem;">
+                  <i class="bi bi-shield-check text-success"></i> <span style="font-size: 0.7rem;">SSL Secured</span>
+                </div>
+              </div>
+
+              <!-- Dashboard Screen Frame -->
+              <div class="hero-image-frame">
+                <img src="assets/img/business/scale-oratory-keynote.png" alt="Scale Oratory Excellence Across Every Student Cohort - Keynote Presentation" class="img-fluid w-100 h-100" style="object-position: center 30%;">
+              </div>
+
+              <!-- Floating Badges on Device Border -->
+              <div class="floating-pill-badge floating-pill-top">
+                <i class="bi bi-cpu-fill text-primary"></i>
+                <span class="fw-bold">Live Speech Cadence AI</span>
+              </div>
+              <div class="floating-pill-badge floating-pill-bottom">
+                <span class="badge-dot-live"></span>
+                <span class="fw-bold">96.4% Vocal Clarity Score</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 2. UNIQUE HEADLINE NEWS & INSTITUTIONAL PARTNERS (Running Ticker Animation) -->
+    <section class="headline-news-ticker-section py-5">
+      <div class="container text-center mb-4">
+        <div class="d-inline-flex flex-wrap align-items-center justify-content-center gap-2 mb-2">
+          <div class="headline-live-pill">
+            <span class="live-pulse-dot"></span>
+            <span>Live Headline Wire</span>
+          </div>
+          <div class="partner-showcase-badge mb-0">
+            <i class="bi bi-patch-check-fill text-primary"></i>
+            <span>Accredited District &amp; Institutional Partners</span>
+          </div>
+        </div>
+        <p class="small text-body-secondary mb-0">Adopted by premier speech faculties, debate societies, and school districts worldwide &bull; <em>Hover ticker to pause wire</em></p>
+      </div>
+
+      <!-- Marquee Ticker Track (Continuous Seamless Horizontal Running Loop) -->
+      <div class="headline-marquee-container" aria-label="Running Headline News Ticker">
+        <div class="headline-marquee-track">
+          <!-- ================= SET 1 ================= -->
+          <!-- Card 1: Harvard Ed -->
+          <div class="headline-news-card" onclick="showToast('Curriculum Partner', 'Harvard Ed speech syllabus &amp; debate rubrics integrated across VoxLeaders.', 'info');">
+            <div class="headline-card-icon"><i class="bi bi-mortarboard-fill"></i></div>
+            <div class="headline-card-body">
+              <div class="headline-tag-row">
+                <span class="headline-tag-pill">Curriculum Lead</span>
+                <span class="headline-tag-meta">Ivy Accredited</span>
+              </div>
+              <div class="headline-card-title">HARVARD ED</div>
+              <div class="headline-card-desc">Gold-Standard Youth Oratory Curriculum Partner</div>
+            </div>
+          </div>
+
+          <!-- Card 2: Breaking News - National Champions -->
+          <div class="headline-news-card" onclick="showToast('Breaking Accolade', 'VoxLeaders cohorts win 1st Place at National Forensics finals!', 'success');">
+            <div class="headline-card-icon"><i class="bi bi-trophy-fill"></i></div>
+            <div class="headline-card-body">
+              <div class="headline-tag-row">
+                <span class="headline-tag-pill tag-breaking">Breaking News</span>
+                <span class="headline-tag-meta">October 2026</span>
+              </div>
+              <div class="headline-card-title">NATIONAL CHAMPIONS</div>
+              <div class="headline-card-desc">1st Place in Tri-State Oratory &amp; Cross-Exam Finals</div>
+            </div>
+          </div>
+
+          <!-- Card 3: Oxford Yth -->
+          <div class="headline-news-card" onclick="showToast('Debate Faculty', 'Oxford Union debate standards and British Parliamentary protocols.', 'info');">
+            <div class="headline-card-icon"><i class="bi bi-bank2"></i></div>
+            <div class="headline-card-body">
+              <div class="headline-tag-row">
+                <span class="headline-tag-pill">Debate Faculty</span>
+                <span class="headline-tag-meta">Residency Lead</span>
+              </div>
+              <div class="headline-card-title">OXFORD YTH</div>
+              <div class="headline-card-desc">Parliamentary Debate Faculty &amp; Protocol Standards</div>
+            </div>
+          </div>
+
+          <!-- Card 4: MUN Global -->
+          <div class="headline-news-card" onclick="showToast('Model UN Wire', '48 school districts participate in live crisis chamber simulations.', 'info');">
+            <div class="headline-card-icon"><i class="bi bi-globe-americas"></i></div>
+            <div class="headline-card-body">
+              <div class="headline-tag-row">
+                <span class="headline-tag-pill">Simulation Lead</span>
+                <span class="headline-tag-meta">48 Districts</span>
+              </div>
+              <div class="headline-card-title">MUN GLOBAL</div>
+              <div class="headline-card-desc">Model UN Security Council &amp; Treaty Drafting Engine</div>
+            </div>
+          </div>
+
+          <!-- Card 5: TEDx Youth -->
+          <div class="headline-news-card" onclick="showToast('TEDx Youth', 'Official keynote speaker audition host for regional youth symposiums.', 'info');">
+            <div class="headline-card-icon"><i class="bi bi-lightning-charge-fill"></i></div>
+            <div class="headline-card-body">
+              <div class="headline-tag-row">
+                <span class="headline-tag-pill tag-gold">Showcase Host</span>
+                <span class="headline-tag-meta">Keynote Residency</span>
+              </div>
+              <div class="headline-card-title">TEDx YOUTH</div>
+              <div class="headline-card-desc">Official Youth Keynote Showcase Audition Partner</div>
+            </div>
+          </div>
+
+          <!-- Card 6: Toastmasters Int'l -->
+          <div class="headline-news-card" onclick="showToast('Toastmasters Rubrics', 'Accredited table topics and impromptu evaluations.', 'info');">
+            <div class="headline-card-icon"><i class="bi bi-check2-circle"></i></div>
+            <div class="headline-card-body">
+              <div class="headline-tag-row">
+                <span class="headline-tag-pill">Speech Rubrics</span>
+                <span class="headline-tag-meta">Gold Standard</span>
+              </div>
+              <div class="headline-card-title">TOASTMASTERS</div>
+              <div class="headline-card-desc">Accredited Youth Impromptu &amp; Voice Evaluation</div>
+            </div>
+          </div>
+
+          <!-- Card 7: Voice AI Labs -->
+          <div class="headline-news-card" onclick="showToast('Acoustic AI Engine', 'Over 35,000 speeches analyzed for cadence and filler words.', 'info');">
+            <div class="headline-card-icon"><i class="bi bi-soundwave"></i></div>
+            <div class="headline-card-body">
+              <div class="headline-tag-row">
+                <span class="headline-tag-pill">AI Telemetry</span>
+                <span class="headline-tag-meta">Live Soundstage</span>
+              </div>
+              <div class="headline-card-title">ACOUSTIC AI LABS</div>
+              <div class="headline-card-desc">35,000+ Speeches Analyzed on Real-Time Voice Stage</div>
+            </div>
+          </div>
+
+          <!-- Card 8: Ivy League Admissions Wire -->
+          <div class="headline-news-card" onclick="showToast('College Wire', '98.4% alumni acceptance rate into Tier-1 and Ivy League universities.', 'success');">
+            <div class="headline-card-icon"><i class="bi bi-mortarboard"></i></div>
+            <div class="headline-card-body">
+              <div class="headline-tag-row">
+                <span class="headline-tag-pill tag-breaking">Special Report</span>
+                <span class="headline-tag-meta">Class of 2026</span>
+              </div>
+              <div class="headline-card-title">98.4% TIER-1 ADMISSION</div>
+              <div class="headline-card-desc">Alumni Accepted to Top Universities with Forensics Honors</div>
+            </div>
+          </div>
+
+          <!-- ================= SET 2 (IDENTICAL CLONE FOR SEAMLESS INFINITE LOOP) ================= -->
+          <!-- Card 1 Clone -->
+          <div class="headline-news-card" onclick="showToast('Curriculum Partner', 'Harvard Ed speech syllabus &amp; debate rubrics integrated across VoxLeaders.', 'info');">
+            <div class="headline-card-icon"><i class="bi bi-mortarboard-fill"></i></div>
+            <div class="headline-card-body">
+              <div class="headline-tag-row">
+                <span class="headline-tag-pill">Curriculum Lead</span>
+                <span class="headline-tag-meta">Ivy Accredited</span>
+              </div>
+              <div class="headline-card-title">HARVARD ED</div>
+              <div class="headline-card-desc">Gold-Standard Youth Oratory Curriculum Partner</div>
+            </div>
+          </div>
+
+          <!-- Card 2 Clone -->
+          <div class="headline-news-card" onclick="showToast('Breaking Accolade', 'VoxLeaders cohorts win 1st Place at National Forensics finals!', 'success');">
+            <div class="headline-card-icon"><i class="bi bi-trophy-fill"></i></div>
+            <div class="headline-card-body">
+              <div class="headline-tag-row">
+                <span class="headline-tag-pill tag-breaking">Breaking News</span>
+                <span class="headline-tag-meta">October 2026</span>
+              </div>
+              <div class="headline-card-title">NATIONAL CHAMPIONS</div>
+              <div class="headline-card-desc">1st Place in Tri-State Oratory &amp; Cross-Exam Finals</div>
+            </div>
+          </div>
+
+          <!-- Card 3 Clone -->
+          <div class="headline-news-card" onclick="showToast('Debate Faculty', 'Oxford Union debate standards and British Parliamentary protocols.', 'info');">
+            <div class="headline-card-icon"><i class="bi bi-bank2"></i></div>
+            <div class="headline-card-body">
+              <div class="headline-tag-row">
+                <span class="headline-tag-pill">Debate Faculty</span>
+                <span class="headline-tag-meta">Residency Lead</span>
+              </div>
+              <div class="headline-card-title">OXFORD YTH</div>
+              <div class="headline-card-desc">Parliamentary Debate Faculty &amp; Protocol Standards</div>
+            </div>
+          </div>
+
+          <!-- Card 4 Clone -->
+          <div class="headline-news-card" onclick="showToast('Model UN Wire', '48 school districts participate in live crisis chamber simulations.', 'info');">
+            <div class="headline-card-icon"><i class="bi bi-globe-americas"></i></div>
+            <div class="headline-card-body">
+              <div class="headline-tag-row">
+                <span class="headline-tag-pill">Simulation Lead</span>
+                <span class="headline-tag-meta">48 Districts</span>
+              </div>
+              <div class="headline-card-title">MUN GLOBAL</div>
+              <div class="headline-card-desc">Model UN Security Council &amp; Treaty Drafting Engine</div>
+            </div>
+          </div>
+
+          <!-- Card 5 Clone -->
+          <div class="headline-news-card" onclick="showToast('TEDx Youth', 'Official keynote speaker audition host for regional youth symposiums.', 'info');">
+            <div class="headline-card-icon"><i class="bi bi-lightning-charge-fill"></i></div>
+            <div class="headline-card-body">
+              <div class="headline-tag-row">
+                <span class="headline-tag-pill tag-gold">Showcase Host</span>
+                <span class="headline-tag-meta">Keynote Residency</span>
+              </div>
+              <div class="headline-card-title">TEDx YOUTH</div>
+              <div class="headline-card-desc">Official Youth Keynote Showcase Audition Partner</div>
+            </div>
+          </div>
+
+          <!-- Card 6 Clone -->
+          <div class="headline-news-card" onclick="showToast('Toastmasters Rubrics', 'Accredited table topics and impromptu evaluations.', 'info');">
+            <div class="headline-card-icon"><i class="bi bi-check2-circle"></i></div>
+            <div class="headline-card-body">
+              <div class="headline-tag-row">
+                <span class="headline-tag-pill">Speech Rubrics</span>
+                <span class="headline-tag-meta">Gold Standard</span>
+              </div>
+              <div class="headline-card-title">TOASTMASTERS</div>
+              <div class="headline-card-desc">Accredited Youth Impromptu &amp; Voice Evaluation</div>
+            </div>
+          </div>
+
+          <!-- Card 7 Clone -->
+          <div class="headline-news-card" onclick="showToast('Acoustic AI Engine', 'Over 35,000 speeches analyzed for cadence and filler words.', 'info');">
+            <div class="headline-card-icon"><i class="bi bi-soundwave"></i></div>
+            <div class="headline-card-body">
+              <div class="headline-tag-row">
+                <span class="headline-tag-pill">AI Telemetry</span>
+                <span class="headline-tag-meta">Live Soundstage</span>
+              </div>
+              <div class="headline-card-title">ACOUSTIC AI LABS</div>
+              <div class="headline-card-desc">35,000+ Speeches Analyzed on Real-Time Voice Stage</div>
+            </div>
+          </div>
+
+          <!-- Card 8 Clone -->
+          <div class="headline-news-card" onclick="showToast('College Wire', '98.4% alumni acceptance rate into Tier-1 and Ivy League universities.', 'success');">
+            <div class="headline-card-icon"><i class="bi bi-mortarboard"></i></div>
+            <div class="headline-card-body">
+              <div class="headline-tag-row">
+                <span class="headline-tag-pill tag-breaking">Special Report</span>
+                <span class="headline-tag-meta">Class of 2026</span>
+              </div>
+              <div class="headline-card-title">98.4% TIER-1 ADMISSION</div>
+              <div class="headline-card-desc">Alumni Accepted to Top Universities with Forensics Honors</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 3. KEY METRICS & ROI COUNTERS (HIGH-IMPACT UNIQUE REDESIGN) -->
+    <section class="py-6 bg-surface-alt position-relative overflow-hidden" id="institutionalRoiSection">
+      <div class="container position-relative z-1">
+        
+        <!-- Section Header with Verified Telemetry Badge -->
+        <div class="row justify-content-center text-center mb-5">
+          <div class="col-lg-9 col-xl-8">
+            <div class="d-inline-flex align-items-center gap-2 px-3 py-1.5 rounded-pill mb-3 bg-primary-soft text-primary border border-primary-subtle shadow-xs">
+              <i class="bi bi-patch-check-fill text-primary"></i>
+              <span class="small fw-bold text-uppercase" style="letter-spacing: 0.06em; font-size: 0.74rem;">Measurable Institutional Impact</span>
+            </div>
+            <h2 class="display-5 fw-extrabold mb-3 font-heading">
+              Proven Learning ROI Across <span style="background: linear-gradient(135deg, var(--vx-primary) 0%, #7C3AED 50%, #2563EB 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">35,000+ Speeches</span>
+            </h2>
+            <p class="lead text-body-secondary mx-auto mb-3" style="max-width: 680px;">
+              Continuous speech tracking delivers quantifiable results in student confidence, academic GPA, and tournament placements.
+            </p>
+            
+            <!-- Live Telemetry Pill -->
+            <div class="d-inline-flex flex-wrap align-items-center justify-content-center gap-2 px-3 py-1.5 rounded-pill bg-surface border shadow-xs">
+              <span class="live-pulse-dot"></span>
+              <span class="small fw-bold text-heading">Verified Telemetry Feed</span>
+              <span class="text-body-tertiary small d-none d-sm-inline">&bull;</span>
+              <span class="small text-body-secondary"><i class="bi bi-shield-fill-check text-primary me-1"></i> Audited by National Forensics League</span>
+              <span class="text-body-tertiary small d-none d-sm-inline">&bull;</span>
+              <span class="small text-body-secondary"><i class="bi bi-clock-history text-primary me-1"></i> Fall 2026 Audit Cohort</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- 4 Unique Stat Metric Cards -->
+        <div class="row g-4 align-items-stretch mb-4">
+          
+          <!-- Card 1: 480% - Student Confidence ROI (Primary Indigo Theme) -->
+          <div class="col-md-6 col-lg-3 d-flex">
+            <div class="hero-stat-card stat-accent-primary w-100 position-relative overflow-hidden text-start d-flex flex-column justify-content-between p-4">
+              <!-- Watermark & Corner Ambient Glow -->
+              <div class="stat-card-watermark"><i class="bi bi-soundwave"></i></div>
+              <div class="stat-card-glow" style="background: radial-gradient(circle, rgba(79, 70, 229, 0.28) 0%, transparent 70%);"></div>
+              
+              <!-- Card Top Header: 3D Crest + Pill -->
+              <div class="position-relative z-1 mb-3">
+                <div class="d-flex align-items-center justify-content-between mb-3 w-100">
+                  <div class="hero-stat-icon" style="background: rgba(79, 70, 229, 0.12); color: #4F46E5; border: 1px solid rgba(79, 70, 229, 0.2);">
+                    <i class="bi bi-soundwave fs-5"></i>
+                  </div>
+                  <span class="stat-category-pill" style="background: rgba(79, 70, 229, 0.08); color: #4F46E5; border: 1px solid rgba(79, 70, 229, 0.22);">
+                    <i class="bi bi-lightning-charge-fill text-primary me-1"></i> +4.8x Lift
+                  </span>
+                </div>
+                
+                <!-- Stat Number & Titles -->
+                <div class="stat-number display-5 fw-extrabold font-heading text-primary lh-1 mb-2" data-counter-target="480" data-counter-suffix="%">480%</div>
+                <h3 class="stat-title fw-bold text-heading fs-6 mb-1">Student Confidence ROI</h3>
+                <p class="small text-body-secondary mb-0">Measured reduction in speaking hesitation and speech filler words.</p>
+              </div>
+
+              <!-- Tactile Telemetry Progress Bar -->
+              <div class="stat-progress-wrapper pt-3 border-top border-dashed position-relative z-1">
+                <div class="stat-progress-track mb-2" style="height: 6px; border-radius: 99px; background: rgba(79, 70, 229, 0.1);">
+                  <div class="stat-progress-fill" style="width: 88%; background: linear-gradient(90deg, #4F46E5, #818CF8); height: 100%; border-radius: 99px; box-shadow: 0 0 10px rgba(79, 70, 229, 0.4);"></div>
+                </div>
+                <div class="d-flex justify-content-between align-items-center">
+                  <span class="stat-micro-caption small text-body-secondary" style="font-size: 0.72rem;">Hesitation: 42s &rarr; 8s</span>
+                  <span class="stat-micro-badge small fw-bold px-2 py-0.5 rounded" style="font-size: 0.7rem; background: rgba(79, 70, 229, 0.1); color: #4F46E5;">81% Less Fillers</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 2: 95% - Cohort Completion Rate (Primary Indigo Theme) -->
+          <div class="col-md-6 col-lg-3 d-flex">
+            <div class="hero-stat-card stat-accent-primary w-100 position-relative overflow-hidden text-start d-flex flex-column justify-content-between p-4">
+              <!-- Watermark & Corner Ambient Glow -->
+              <div class="stat-card-watermark"><i class="bi bi-award-fill"></i></div>
+              <div class="stat-card-glow" style="background: radial-gradient(circle, rgba(79, 70, 229, 0.28) 0%, transparent 70%);"></div>
+              
+              <!-- Card Top Header: 3D Crest + Pill -->
+              <div class="position-relative z-1 mb-3">
+                <div class="d-flex align-items-center justify-content-between mb-3 w-100">
+                  <div class="hero-stat-icon" style="background: rgba(79, 70, 229, 0.12); color: #4F46E5; border: 1px solid rgba(79, 70, 229, 0.2);">
+                    <i class="bi bi-mortarboard-fill fs-5"></i>
+                  </div>
+                  <span class="stat-category-pill" style="background: rgba(79, 70, 229, 0.08); color: #4F46E5; border: 1px solid rgba(79, 70, 229, 0.22);">
+                    <i class="bi bi-patch-check-fill text-primary me-1"></i> Top 1% Retention
+                  </span>
+                </div>
+                
+                <!-- Stat Number & Titles -->
+                <div class="stat-number display-5 fw-extrabold font-heading text-primary lh-1 mb-2" data-counter-target="95" data-counter-suffix="%">95%</div>
+                <h3 class="stat-title fw-bold text-heading fs-6 mb-1">Cohort Completion Rate</h3>
+                <p class="small text-body-secondary mb-0">High student retention powered by micro-gamification and badges.</p>
+              </div>
+
+              <!-- Tactile Telemetry Progress Bar -->
+              <div class="stat-progress-wrapper pt-3 border-top border-dashed position-relative z-1">
+                <div class="stat-progress-track mb-2" style="height: 6px; border-radius: 99px; background: rgba(79, 70, 229, 0.1);">
+                  <div class="stat-progress-fill" style="width: 95%; background: linear-gradient(90deg, #4F46E5, #818CF8); height: 100%; border-radius: 99px; box-shadow: 0 0 10px rgba(79, 70, 229, 0.4);"></div>
+                </div>
+                <div class="d-flex justify-content-between align-items-center">
+                  <span class="stat-micro-caption small text-body-secondary" style="font-size: 0.72rem;">Industry Avg: 62%</span>
+                  <span class="stat-micro-badge small fw-bold px-2 py-0.5 rounded" style="font-size: 0.7rem; background: rgba(79, 70, 229, 0.1); color: #4F46E5;">+33% Above Avg</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 3: $1,200k+ - Scholarships Earned (Primary Indigo Theme) -->
+          <div class="col-md-6 col-lg-3 d-flex">
+            <div class="hero-stat-card stat-accent-primary w-100 position-relative overflow-hidden text-start d-flex flex-column justify-content-between p-4">
+              <!-- Watermark & Corner Ambient Glow -->
+              <div class="stat-card-watermark"><i class="bi bi-cash-stack"></i></div>
+              <div class="stat-card-glow" style="background: radial-gradient(circle, rgba(79, 70, 229, 0.28) 0%, transparent 70%);"></div>
+              
+              <!-- Card Top Header: 3D Crest + Pill -->
+              <div class="position-relative z-1 mb-3">
+                <div class="d-flex align-items-center justify-content-between mb-3 w-100">
+                  <div class="hero-stat-icon" style="background: rgba(79, 70, 229, 0.12); color: #4F46E5; border: 1px solid rgba(79, 70, 229, 0.2);">
+                    <i class="bi bi-trophy-fill fs-5"></i>
+                  </div>
+                  <span class="stat-category-pill" style="background: rgba(79, 70, 229, 0.08); color: #4F46E5; border: 1px solid rgba(79, 70, 229, 0.22);">
+                    <i class="bi bi-stars text-primary me-1"></i> Merit Grants
+                  </span>
+                </div>
+                
+                <!-- Stat Number & Titles -->
+                <div class="stat-number display-5 fw-extrabold font-heading text-primary lh-1 mb-2" data-counter-target="1200" data-counter-prefix="$" data-counter-suffix="k+">$1,200k+</div>
+                <h3 class="stat-title fw-bold text-heading fs-6 mb-1">Scholarships Earned</h3>
+                <p class="small text-body-secondary mb-0">In Ivy League and competitive forensics oratory scholarships.</p>
+              </div>
+
+              <!-- Tactile Telemetry Progress Bar -->
+              <div class="stat-progress-wrapper pt-3 border-top border-dashed position-relative z-1">
+                <div class="stat-progress-track mb-2" style="height: 6px; border-radius: 99px; background: rgba(79, 70, 229, 0.1);">
+                  <div class="stat-progress-fill" style="width: 92%; background: linear-gradient(90deg, #4F46E5, #818CF8); height: 100%; border-radius: 99px; box-shadow: 0 0 10px rgba(79, 70, 229, 0.4);"></div>
+                </div>
+                <div class="d-flex justify-content-between align-items-center">
+                  <span class="stat-micro-caption small text-body-secondary" style="font-size: 0.72rem;">Ivy League &amp; Forensics</span>
+                  <span class="stat-micro-badge small fw-bold px-2 py-0.5 rounded" style="font-size: 0.7rem; background: rgba(79, 70, 229, 0.1); color: #4F46E5;">142 Full-Rides</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 4: 48+ - Simultaneous Cohorts (Primary Indigo Theme) -->
+          <div class="col-md-6 col-lg-3 d-flex">
+            <div class="hero-stat-card stat-accent-primary w-100 position-relative overflow-hidden text-start d-flex flex-column justify-content-between p-4">
+              <!-- Watermark & Corner Ambient Glow -->
+              <div class="stat-card-watermark"><i class="bi bi-globe-americas"></i></div>
+              <div class="stat-card-glow" style="background: radial-gradient(circle, rgba(79, 70, 229, 0.28) 0%, transparent 70%);"></div>
+              
+              <!-- Card Top Header: 3D Crest + Pill -->
+              <div class="position-relative z-1 mb-3">
+                <div class="d-flex align-items-center justify-content-between mb-3 w-100">
+                  <div class="hero-stat-icon" style="background: rgba(79, 70, 229, 0.12); color: #4F46E5; border: 1px solid rgba(79, 70, 229, 0.2);">
+                    <i class="bi bi-broadcast fs-5"></i>
+                  </div>
+                  <span class="stat-category-pill" style="background: rgba(79, 70, 229, 0.08); color: #4F46E5; border: 1px solid rgba(79, 70, 229, 0.22);">
+                    <i class="bi bi-broadcast-pin text-primary me-1"></i> Live Global
+                  </span>
+                </div>
+                
+                <!-- Stat Number & Titles -->
+                <div class="stat-number display-5 fw-extrabold font-heading text-primary lh-1 mb-2" data-counter-target="48" data-counter-suffix="+">48+</div>
+                <h3 class="stat-title fw-bold text-heading fs-6 mb-1">Simultaneous Cohorts</h3>
+                <p class="small text-body-secondary mb-0">Live across 14 countries in North America, Europe &amp; Asia.</p>
+              </div>
+
+              <!-- Tactile Telemetry Progress Bar -->
+              <div class="stat-progress-wrapper pt-3 border-top border-dashed position-relative z-1">
+                <div class="stat-progress-track mb-2" style="height: 6px; border-radius: 99px; background: rgba(79, 70, 229, 0.1);">
+                  <div class="stat-progress-fill" style="width: 84%; background: linear-gradient(90deg, #4F46E5, #818CF8); height: 100%; border-radius: 99px; box-shadow: 0 0 10px rgba(79, 70, 229, 0.4);"></div>
+                </div>
+                <div class="d-flex justify-content-between align-items-center">
+                  <span class="stat-micro-caption small text-body-secondary" style="font-size: 0.72rem;">14 Countries Online</span>
+                  <span class="stat-micro-badge small fw-bold px-2 py-0.5 rounded" style="font-size: 0.7rem; background: rgba(79, 70, 229, 0.1); color: #4F46E5;">24/7 Pods</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Extra Unique Touch: Live Institutional Telemetry Summary Banner -->
+        <div class="row">
+          <div class="col-12">
+            <div class="roi-telemetry-banner">
+              <div class="row g-3 align-items-center text-center text-md-start">
+                
+                <div class="col-6 col-md-3">
+                  <div class="roi-telemetry-item justify-content-center justify-content-md-start">
+                    <div class="roi-telemetry-icon" style="background: rgba(79, 70, 229, 0.1); color: var(--vx-primary);">
+                      <i class="bi bi-clock-history"></i>
+                    </div>
+                    <div>
+                      <div class="fw-extrabold text-heading lh-sm fs-6">185,400+ hrs</div>
+                      <small class="text-body-secondary" style="font-size: 0.75rem;">Stage Audio Analyzed</small>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-6 col-md-3">
+                  <div class="roi-telemetry-item justify-content-center justify-content-md-start">
+                    <div class="roi-telemetry-icon" style="background: rgba(79, 70, 229, 0.1); color: var(--vx-primary);">
+                      <i class="bi bi-bar-chart-fill"></i>
+                    </div>
+                    <div>
+                      <div class="fw-extrabold text-heading lh-sm fs-6">-72% "Um" Words</div>
+                      <small class="text-body-secondary" style="font-size: 0.75rem;">Filler Sound Reduction</small>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-6 col-md-3">
+                  <div class="roi-telemetry-item justify-content-center justify-content-md-start">
+                    <div class="roi-telemetry-icon" style="background: rgba(79, 70, 229, 0.1); color: var(--vx-primary);">
+                      <i class="bi bi-award-fill"></i>
+                    </div>
+                    <div>
+                      <div class="fw-extrabold text-heading lh-sm fs-6">89.4% Win Rate</div>
+                      <small class="text-body-secondary" style="font-size: 0.75rem;">Tournament Podiums</small>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-6 col-md-3">
+                  <div class="roi-telemetry-item justify-content-center justify-content-md-start">
+                    <div class="roi-telemetry-icon" style="background: rgba(79, 70, 229, 0.1); color: var(--vx-primary);">
+                      <i class="bi bi-heart-pulse-fill"></i>
+                    </div>
+                    <div>
+                      <div class="fw-extrabold text-heading lh-sm fs-6">+94 Parent NPS</div>
+                      <small class="text-body-secondary" style="font-size: 0.75rem;">Net Promoter Score</small>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- 4. FEATURE COMPARISON / SERVICES MATRIX -->
+    <section class="py-6">
+      <div class="container">
+        <div class="row justify-content-center text-center mb-5">
+          <div class="col-lg-8">
+            <div class="badge-pill-soft mb-2">Platform Matrix</div>
+            <h2 class="display-5 fw-extrabold mb-3">Why Traditional Public Speaking Camps Fall Short</h2>
+            <p class="lead text-body-secondary">See how VoxLeaders pairs live stage mentorship with real-time feedback intelligence.</p>
+          </div>
+        </div>
+
+        <div class="table-responsive bg-surface rounded-theme-xl border border-theme shadow-sm">
+          <table class="table table-hover align-middle mb-0 custom-matrix-table">
+            <thead>
+              <tr class="bg-surface-alt">
+                <th class="py-4 px-4 fw-bold text-heading fs-6" style="width: 40%;">Core Platform Capability</th>
+                <th class="py-4 px-4 text-center fw-bold text-muted" style="width: 30%;">Traditional Speech Camps</th>
+                <th class="py-4 px-4 text-center fw-extrabold text-primary fs-6 bg-primary-soft position-relative" style="width: 30%;">
+                  <span class="badge bg-primary text-white rounded-pill px-2 py-0.5 small me-1">Recommended</span>
+                  VoxLeaders Platform
+                </th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="py-3 px-4">
+                  <div class="d-flex align-items-center gap-2">
+                    <i class="bi bi-people-fill text-primary fs-5"></i>
+                    <div>
+                      <strong>Personalized 1:6 Coach Ratio</strong>
+                      <div class="small text-body-secondary">Dedicated time for each student on stage daily</div>
+                    </div>
+                  </div>
+                </td>
+                <td class="text-center text-muted">
+                  <span class="badge bg-danger-subtle text-danger border border-danger-subtle rounded-pill px-3 py-1.5 small">
+                    <i class="bi bi-x me-1"></i> 1:25 typically
+                  </span>
+                </td>
+                <td class="text-center bg-primary-soft">
+                  <span class="badge bg-primary text-white shadow-sm rounded-pill px-3 py-1.5 small fw-bold">
+                    <i class="bi bi-check-circle-fill me-1"></i> Guaranteed 1:6
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td class="py-3 px-4">
+                  <div class="d-flex align-items-center gap-2">
+                    <i class="bi bi-soundwave text-primary fs-5"></i>
+                    <div>
+                      <strong>AI Speech &amp; Cadence Analysis</strong>
+                      <div class="small text-body-secondary">Real-time pitch variance, filler word counter, and eye contact tracking</div>
+                    </div>
+                  </div>
+                </td>
+                <td class="text-center text-muted">
+                  <span class="badge bg-danger-subtle text-danger border border-danger-subtle rounded-pill px-3 py-1.5 small">
+                    <i class="bi bi-x me-1"></i> Manual notes only
+                  </span>
+                </td>
+                <td class="text-center bg-primary-soft">
+                  <span class="badge bg-primary text-white shadow-sm rounded-pill px-3 py-1.5 small fw-bold">
+                    <i class="bi bi-check-circle-fill me-1"></i> Proprietary Voice AI
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td class="py-3 px-4">
+                  <div class="d-flex align-items-center gap-2">
+                    <i class="bi bi-speedometer2 text-primary fs-5"></i>
+                    <div>
+                      <strong>Parent Growth Portal</strong>
+                      <div class="small text-body-secondary">Weekly video highlights, radar skill charts, and rubric breakdowns</div>
+                    </div>
+                  </div>
+                </td>
+                <td class="text-center text-muted">
+                  <span class="badge bg-danger-subtle text-danger border border-danger-subtle rounded-pill px-3 py-1.5 small">
+                    <i class="bi bi-x me-1"></i> End-of-term paper slip
+                  </span>
+                </td>
+                <td class="text-center bg-primary-soft">
+                  <span class="badge bg-primary text-white shadow-sm rounded-pill px-3 py-1.5 small fw-bold">
+                    <i class="bi bi-check-circle-fill me-1"></i> Live Parent Dashboard
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td class="py-3 px-4">
+                  <div class="d-flex align-items-center gap-2">
+                    <i class="bi bi-camera-reels-fill text-primary fs-5"></i>
+                    <div>
+                      <strong>Official TEDx &amp; MUN Formats</strong>
+                      <div class="small text-body-secondary">Live recorded showcase with certified credentialing</div>
+                    </div>
+                  </div>
+                </td>
+                <td class="text-center text-muted">
+                  <span class="badge bg-danger-subtle text-danger border border-danger-subtle rounded-pill px-3 py-1.5 small">
+                    <i class="bi bi-x me-1"></i> Informal classroom skit
+                  </span>
+                </td>
+                <td class="text-center bg-primary-soft">
+                  <span class="badge bg-primary text-white shadow-sm rounded-pill px-3 py-1.5 small fw-bold">
+                    <i class="bi bi-check-circle-fill me-1"></i> Stage Film &amp; Credential
+                  </span>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <!-- 5. ENTERPRISE CTA -->
+    <section class="py-6 bg-surface-alt">
+      <div class="container">
+        <!-- Institutional Spotlight Card -->
+        <div class="card border-0 bg-surface rounded-theme-xl overflow-hidden shadow-sm mb-5">
+          <div class="row g-0 align-items-stretch">
+            <div class="col-lg-6 d-flex">
+              <div class="position-relative w-100 h-100" style="min-height: 380px;">
+                <img src="assets/img/business/turnkey-school-curriculum.png" alt="Turnkey Oratory Curriculum for Schools &amp; Leagues - Collaborative Classroom Workshop" class="w-100 h-100" style="object-fit: cover; object-position: center;">
+                <div class="position-absolute bottom-0 start-0 m-3">
+                  <span class="badge bg-primary text-white rounded-pill px-3 py-2 shadow-sm"><i class="bi bi-mortarboard-fill me-1"></i> 48 District Deployments</span>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6 p-4 p-md-5 d-flex flex-column justify-content-center">
+              <div class="badge-pill-soft mb-3">Enterprise &amp; District Partnerships</div>
+              <h3 class="h3 fw-bold font-heading mb-3">Turnkey Oratory Curriculum for Schools &amp; Leagues</h3>
+              <p class="text-body-secondary mb-3">
+                We empower preparatory academies, private day schools, and youth leadership NGOs with accredited speech pedagogy, automated scoring rubrics, and certified mentor staffing.
+              </p>
+              <div class="row g-2 mb-4">
+                <div class="col-sm-6 small text-body-secondary"><i class="bi bi-check-circle-fill text-primary me-2"></i>Turnkey LMS Integration</div>
+                <div class="col-sm-6 small text-body-secondary"><i class="bi bi-check-circle-fill text-primary me-2"></i>FERPA &amp; COPPA Compliant</div>
+                <div class="col-sm-6 small text-body-secondary"><i class="bi bi-check-circle-fill text-primary me-2"></i>Certified Mentor Staffing</div>
+                <div class="col-sm-6 small text-body-secondary"><i class="bi bi-check-circle-fill text-primary me-2"></i>Speech Benchmarking AI</div>
+              </div>
+              <div class="d-flex align-items-center gap-3">
+                <a href="contact.html" class="btn-vx btn-vx-primary btn-vx-sm"><i class="bi bi-calendar-check me-2"></i>Request District Consultation</a>
+                <a href="pricing.html" class="btn-vx btn-vx-outline btn-vx-sm">View Institutional Tiers</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="text-center">
+          <h2 class="display-6 fw-extrabold mb-3">Empower Your Students With Voice Leadership</h2>
+          <p class="lead text-body-secondary mb-4 mx-auto" style="max-width: 650px;">
+            Talk with our Director of Institutional Partnerships today. We will build a customized cohort curriculum tailored to your academy or district goals.
+          </p>
+          <div class="d-flex flex-column flex-sm-row justify-content-center align-items-center gap-3">
+            <a href="contact.html" class="btn-vx btn-vx-primary btn-vx-lg">Schedule Institutional Demo</a>
+            <a href="pricing.html" class="btn-vx btn-vx-outline btn-vx-lg">Review Enterprise Tiers</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+        <!-- =================================================================
+       FOOTER
+  ================================================================== -->
+  <footer class="vx-footer">
+    <div class="container">
+      <div class="row g-4 align-items-start">
+        
+        <!-- Column 1: Brand Info & Socials -->
+        <div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
+          <div class="footer-brand-wrap">
+            <a href="index.html" class="footer-brand-logo mb-3">
+              <img src="assets/img/brand/logo-white.svg" alt="VoxLeaders Logo" height="38">
+            </a>
+            <p class="footer-brand-desc small mb-4">
+              Empowering young minds with executive confidence, public speaking mastery &amp; debate skills.
+            </p>
+            <div class="d-flex align-items-center gap-2">
+              <a href="https://www.instagram.com/accounts/login/" target="_blank" rel="noopener noreferrer" class="footer-social-btn" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+              <a href="https://www.facebook.com/login/" target="_blank" rel="noopener noreferrer" class="footer-social-btn" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+              <a href="https://www.linkedin.com/login" target="_blank" rel="noopener noreferrer" class="footer-social-btn" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+              <a href="https://x.com/" target="_blank" rel="noopener noreferrer" class="footer-social-btn" aria-label="X (Twitter)"><i class="fab fa-x-twitter"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Column 2: Navigation -->
+        <div class="col-lg-2 col-md-6 mb-4 mb-lg-0">
+          <div class="footer-col-title">NAVIGATION</div>
+          <ul class="list-unstyled mb-0 d-flex flex-column">
+            <li><a href="index.html" class="footer-link">Home</a></li>
+            <li><a href="about.html" class="footer-link">About Us</a></li>
+            <li><a href="programs.html" class="footer-link">Programs</a></li>
+            <li><a href="pricing.html" class="footer-link">Pricing Tiers</a></li>
+            <li><a href="blog.html" class="footer-link">Blog &amp; Journal</a></li>
+            <li><a href="contact.html" class="footer-link">Contact Sales</a></li>
+          </ul>
+        </div>
+
+        <!-- Column 3: Camp Standards -->
+        <div class="col-lg-4 col-md-6 mb-4 mb-lg-0">
+          <div class="footer-col-title">CAMP STANDARDS</div>
+          <ul class="list-unstyled mb-0 d-flex flex-column">
+            <li class="footer-sla-item"><span class="sla-highlight">1:6 Coach Ratio</span> <span class="sla-desc">Certified Speech Mentors</span></li>
+            <li class="footer-sla-item"><span class="sla-highlight">Daily Stage Time</span> <span class="sla-desc">Live Adjudicated Practice</span></li>
+            <li class="footer-sla-item"><span class="sla-highlight">4K HD Video</span> <span class="sla-desc">Gala Showcase Recordings</span></li>
+            <li class="footer-sla-item"><span class="sla-highlight">Ages 7&ndash;18</span> <span class="sla-desc">Junior, Teen &amp; Exec Tracks</span></li>
+            <li class="footer-sla-item"><span class="sla-highlight">5 Regional Hubs</span> <span class="sla-desc">Speech &amp; Debate Campuses</span></li>
+          </ul>
+        </div>
+
+        <!-- Column 4: Camp Admissions -->
+        <div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
+          <div class="footer-col-title">CAMP ADMISSIONS</div>
+          <ul class="list-unstyled mb-3 d-flex flex-column">
+            <li class="footer-contact-item">
+              <i class="bi bi-envelope"></i>
+              <a href="mailto:admissions@voxleaders.org">admissions@voxleaders.org</a>
+            </li>
+            <li class="footer-contact-item">
+              <i class="bi bi-telephone"></i>
+              <a href="tel:+18005558695">+1 (800) 555-VOXLEAD</a>
+            </li>
+            <li class="footer-contact-item">
+              <i class="bi bi-geo-alt"></i>
+              <span>500 Leadership Way, Boston, MA</span>
+            </li>
+          </ul>
+          <a href="contact.html" class="btn-footer-cta">Connect Admissions Team</a>
+        </div>
+
+      </div>
+
+      <!-- Centered Copyright -->
+      <div class="vx-footer-bottom text-center">
+        &copy; 2026 VoxLeaders Youth Academy Ltd. All rights reserved.
+      </div>
+    </div>
+  </footer>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,95 @@
+/* ===================================================================
+   VoxLeaders - RTL Stylesheet
+   Direction: Right-to-Left (dir="rtl")
+   Handles text-align, floating elements, icons, timeline, dashboards
+=================================================================== */
+
+[dir="rtl"] {
+  text-align: right;
+  direction: rtl;
+}
+
+[dir="rtl"] .dropdown-menu,
+[dir="rtl"] .dropdown-menu-vx {
+  text-align: right;
+  left: auto !important;
+  right: 0 !important;
+}
+
+[dir="rtl"] .vx-brand {
+  margin-right: 0;
+  margin-left: 2rem;
+}
+
+[dir="rtl"] .vx-nav-actions {
+  flex-direction: row-reverse;
+}
+
+[dir="rtl"] .footer-link:hover {
+  transform: translateX(-4px);
+}
+
+
+/* Bi-directional Icon flipping */
+[dir="rtl"] .bi-arrow-right,
+[dir="rtl"] .bi-chevron-right,
+[dir="rtl"] .fa-arrow-right,
+[dir="rtl"] .fa-chevron-right {
+  transform: scaleX(-1);
+}
+
+[dir="rtl"] .bi-arrow-left,
+[dir="rtl"] .bi-chevron-left,
+[dir="rtl"] .fa-arrow-left,
+[dir="rtl"] .fa-chevron-left {
+  transform: scaleX(-1);
+}
+
+/* Timeline adjustments in RTL */
+@media (max-width: 991.98px) {
+  [dir="rtl"] .timeline-stem::before {
+    left: auto;
+    right: 24px;
+  }
+  [dir="rtl"] .timeline-marker {
+    left: auto;
+    right: 24px;
+  }
+  [dir="rtl"] .timeline-content-box {
+    margin-left: 0 !important;
+    margin-right: 60px !important;
+    text-align: right !important;
+  }
+}
+
+/* Floating badges flip */
+[dir="rtl"] .floating-pill-badge {
+  direction: rtl;
+}
+
+/* Form floating labels */
+[dir="rtl"] .form-floating > label {
+  left: auto;
+  right: 0;
+  transform-origin: 100% 0;
+}
+
+/* Dashboard Sidebar RTL */
+[dir="rtl"] .dashboard-sidebar {
+  border-right: none;
+  border-left: 1px solid var(--vx-border);
+}
+
+[dir="rtl"] .sidebar-nav-link {
+  text-align: right;
+}
+
+[dir="rtl"] .chat-message.sent {
+  margin-right: auto;
+  margin-left: 0;
+}
+
+[dir="rtl"] .chat-message.received {
+  margin-left: auto;
+  margin-right: 0;
+}

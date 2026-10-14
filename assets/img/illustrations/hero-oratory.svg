@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 500" width="100%" height="100%" fill="none">
+  <defs>
+    <linearGradient id="glowG" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#4F46E5" stop-opacity="0.25"/>
+      <stop offset="100%" stop-color="#6366F1" stop-opacity="0.05"/>
+    </linearGradient>
+    <linearGradient id="podiumG" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#312E81"/>
+      <stop offset="100%" stop-color="#1E1B4B"/>
+    </linearGradient>
+    <linearGradient id="beam" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#6366F1" stop-opacity="0.25"/>
+      <stop offset="100%" stop-color="#4F46E5" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+  <!-- Background Glow Aura -->
+  <circle cx="300" cy="250" r="220" fill="url(#glowG)"/>
+  <polygon points="300,40 180,420 420,420" fill="url(#beam)"/>
+  
+  <!-- Stage & Platform -->
+  <ellipse cx="300" cy="420" rx="200" ry="40" fill="#1E293B" opacity="0.4"/>
+  <ellipse cx="300" cy="415" rx="170" ry="30" fill="#4338CA" opacity="0.6"/>
+  <path d="M260 410 L270 290 L330 290 L340 410 Z" fill="url(#podiumG)"/>
+  <rect x="250" y="280" width="100" height="15" rx="5" fill="#6366F1"/>
+  
+  <!-- Microphone on Stand -->
+  <line x1="300" y1="280" x2="300" y2="230" stroke="#E2E8F0" stroke-width="4" stroke-linecap="round"/>
+  <circle cx="300" cy="225" r="10" fill="#4F46E5"/>
+  <rect x="296" y="215" width="8" height="14" rx="4" fill="#FFFFFF"/>
+
+  <!-- Speaker Figure -->
+  <circle cx="230" cy="210" r="28" fill="#312E81"/> <!-- Hair/Head -->
+  <circle cx="230" cy="215" r="22" fill="#E0E7FF"/> <!-- Face -->
+  <path d="M200 370 C200 270 260 270 260 370 Z" fill="#4F46E5"/> <!-- Body/Jacket -->
+  <!-- Confident Gesture Arm -->
+  <path d="M250 280 Q290 260 320 230" stroke="#4F46E5" stroke-width="12" stroke-linecap="round" fill="none"/>
+  
+  <!-- Floating Metric Card 1 -->
+  <g transform="translate(60, 100)">
+    <rect width="160" height="70" rx="12" fill="#FFFFFF" filter="drop-shadow(0 10px 15px rgba(15,23,42,0.08))"/>
+    <circle cx="30" cy="35" r="16" fill="#EEF2FF"/>
+    <text x="30" y="40" text-anchor="middle" font-size="16" fill="#4F46E5">🎤</text>
+    <text x="56" y="30" font-family="'Plus Jakarta Sans', sans-serif" font-size="12" font-weight="700" fill="#0F172A">Voice Modulation</text>
+    <text x="56" y="48" font-family="'Plus Jakarta Sans', sans-serif" font-size="10" font-weight="600" fill="#4F46E5">98% Clarity Score</text>
+  </g>
+  <!-- Floating Metric Card 2 -->
+  <g transform="translate(380, 120)">
+    <rect width="165" height="70" rx="12" fill="#FFFFFF" filter="drop-shadow(0 10px 15px rgba(15,23,42,0.08))"/>
+    <circle cx="30" cy="35" r="16" fill="#EEF2FF"/>
+    <text x="30" y="40" text-anchor="middle" font-size="16" fill="#4F46E5">🏆</text>
+    <text x="56" y="30" font-family="'Plus Jakarta Sans', sans-serif" font-size="12" font-weight="700" fill="#0F172A">National Debate</text>
+    <text x="56" y="48" font-family="'Plus Jakarta Sans', sans-serif" font-size="10" font-weight="600" fill="#6366F1">1st Place Finalist</text>
+  </g>
+  <!-- Floating Metric Card 3 -->
+  <g transform="translate(390, 290)">
+    <rect width="150" height="60" rx="12" fill="#FFFFFF" filter="drop-shadow(0 10px 15px rgba(15,23,42,0.08))"/>
+    <circle cx="28" cy="30" r="14" fill="#EEF2FF"/>
+    <text x="28" y="35" text-anchor="middle" font-size="14" fill="#4F46E5">⚡</text>
+    <text x="50" y="27" font-family="'Plus Jakarta Sans', sans-serif" font-size="11" font-weight="700" fill="#0F172A">Stage Presence</text>
+    <text x="50" y="42" font-family="'Plus Jakarta Sans', sans-serif" font-size="9" font-weight="600" fill="#4F46E5">Zero Anxiety</text>
+  </g>
+</svg>
