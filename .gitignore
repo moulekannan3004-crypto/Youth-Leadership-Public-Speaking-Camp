@@ -15,3 +15,6 @@ check_overflow.js
 # OS generated files
 .DS_Store
 Thumbs.db
+
+# Vercel deployment folder
+.vercel/
