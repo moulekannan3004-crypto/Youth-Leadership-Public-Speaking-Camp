@@ -824,12 +824,16 @@ a:hover {
   background-color: rgba(79, 70, 229, 0.04);
 }
 
-.btn-vx-login-pill .login-plus-icon {
+.btn-vx-login-pill .login-icon,
+.btn-vx-login-pill .login-plus-icon,
+.btn-vx-login-pill i {
   color: var(--vx-primary);
-  font-size: 1.05rem;
-  font-weight: 700;
+  font-size: 0.95rem;
   line-height: 1;
-  margin-right: 0.2rem;
+  margin-right: 0.35rem;
+  display: inline-flex;
+  align-items: center;
+  transition: var(--vx-transition);
 }
 
 /* Primary CTA Pill Button (GET PROPOSAL) */
