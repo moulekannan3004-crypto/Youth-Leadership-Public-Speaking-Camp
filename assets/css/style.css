@@ -959,14 +959,30 @@ a:hover {
   overflow: hidden;
 }
 
+/* Home Page Hero Background Image */
+.hero-wrapper:not(.page-header-hero) {
+  background-image: 
+    linear-gradient(180deg, rgba(255, 255, 255, 0.72) 0%, rgba(243, 246, 255, 0.65) 45%, rgba(255, 255, 255, 0.82) 100%),
+    url('../img/hero/camp-circle-bg.jpg');
+  background-size: cover;
+  background-position: center 30%;
+  background-repeat: no-repeat;
+}
+
+[data-bs-theme="dark"] .hero-wrapper:not(.page-header-hero) {
+  background-image: 
+    linear-gradient(180deg, rgba(11, 15, 25, 0.72) 0%, rgba(15, 23, 42, 0.62) 45%, rgba(11, 15, 25, 0.82) 100%),
+    url('../img/hero/camp-circle-bg.jpg');
+}
+
 /* ===================================================================
-   PAGE HEADER HERO (INNER PAGES WITH HERO BACKGROUND IMAGES)
+   PAGE HEADER HERO (INNER PAGES WITH CLEAR HERO BACKGROUND IMAGES)
 =================================================================== */
 .hero-wrapper.page-header-hero {
   position: relative;
   overflow: hidden;
   background-image: 
-    linear-gradient(180deg, rgba(238, 242, 255, 0.86) 0%, rgba(243, 246, 255, 0.82) 45%, rgba(248, 250, 252, 0.94) 100%),
+    linear-gradient(180deg, rgba(248, 250, 252, 0.42) 0%, rgba(238, 242, 255, 0.35) 45%, rgba(248, 250, 252, 0.60) 100%),
     url('../img/hero/camp-circle-bg.jpg') !important;
   background-size: cover !important;
   background-position: center 30% !important;
@@ -990,118 +1006,118 @@ a:hover {
   background-image: radial-gradient(rgba(79, 70, 229, 0.08) 1px, transparent 1px);
   background-size: 24px 24px;
   pointer-events: none;
-  opacity: 0.35;
+  opacity: 0.12;
 }
 
 [data-bs-theme="dark"] .hero-wrapper.page-header-hero {
   background-image: 
-    linear-gradient(180deg, rgba(15, 23, 42, 0.88) 0%, rgba(26, 32, 60, 0.84) 45%, rgba(15, 23, 42, 0.94) 100%),
+    linear-gradient(180deg, rgba(11, 15, 25, 0.60) 0%, rgba(15, 23, 42, 0.45) 45%, rgba(11, 15, 25, 0.72) 100%),
     url('../img/hero/camp-circle-bg.jpg') !important;
 }
 
 [data-bs-theme="dark"] .hero-wrapper.page-header-hero::before {
   background-image: radial-gradient(rgba(129, 140, 248, 0.12) 1px, transparent 1px);
-  opacity: 0.25;
+  opacity: 0.12;
 }
 
-/* Scoped Inner Page Hero Backgrounds */
+/* Scoped Inner Page Hero Backgrounds (High Image Clarity) */
 .hero-wrapper.page-header-hero.about-origin-hero,
 .hero-wrapper.page-header-hero.about-header-bg {
   background-image: 
-    linear-gradient(180deg, rgba(238, 242, 255, 0.86) 0%, rgba(243, 246, 255, 0.82) 45%, rgba(248, 250, 252, 0.94) 100%),
+    linear-gradient(180deg, rgba(248, 250, 252, 0.42) 0%, rgba(238, 242, 255, 0.35) 45%, rgba(248, 250, 252, 0.60) 100%),
     url('../img/hero/camp-circle-bg.jpg') !important;
   background-position: center 35% !important;
 }
 [data-bs-theme="dark"] .hero-wrapper.page-header-hero.about-origin-hero,
 [data-bs-theme="dark"] .hero-wrapper.page-header-hero.about-header-bg {
   background-image: 
-    linear-gradient(180deg, rgba(15, 23, 42, 0.88) 0%, rgba(26, 32, 60, 0.84) 45%, rgba(15, 23, 42, 0.94) 100%),
+    linear-gradient(180deg, rgba(11, 15, 25, 0.60) 0%, rgba(15, 23, 42, 0.45) 45%, rgba(11, 15, 25, 0.72) 100%),
     url('../img/hero/camp-circle-bg.jpg') !important;
 }
 
 .hero-wrapper.page-header-hero.programs-header-bg {
   background-image: 
-    linear-gradient(180deg, rgba(238, 242, 255, 0.86) 0%, rgba(243, 246, 255, 0.82) 45%, rgba(248, 250, 252, 0.94) 100%),
+    linear-gradient(180deg, rgba(248, 250, 252, 0.42) 0%, rgba(238, 242, 255, 0.35) 45%, rgba(248, 250, 252, 0.60) 100%),
     url('../img/gallery/gallery-auditorium-keynote.jpg') !important;
   background-position: center 40% !important;
 }
 [data-bs-theme="dark"] .hero-wrapper.page-header-hero.programs-header-bg {
   background-image: 
-    linear-gradient(180deg, rgba(15, 23, 42, 0.88) 0%, rgba(26, 32, 60, 0.84) 45%, rgba(15, 23, 42, 0.94) 100%),
+    linear-gradient(180deg, rgba(11, 15, 25, 0.60) 0%, rgba(15, 23, 42, 0.45) 45%, rgba(11, 15, 25, 0.72) 100%),
     url('../img/gallery/gallery-auditorium-keynote.jpg') !important;
 }
 
 .hero-wrapper.page-header-hero.testimonials-header-bg {
   background-image: 
-    linear-gradient(180deg, rgba(238, 242, 255, 0.86) 0%, rgba(243, 246, 255, 0.82) 45%, rgba(248, 250, 252, 0.94) 100%),
+    linear-gradient(180deg, rgba(248, 250, 252, 0.42) 0%, rgba(238, 242, 255, 0.35) 45%, rgba(248, 250, 252, 0.60) 100%),
     url('../img/testimonials/graduates-confetti-toss-hq.png') !important;
   background-position: center 30% !important;
 }
 [data-bs-theme="dark"] .hero-wrapper.page-header-hero.testimonials-header-bg {
   background-image: 
-    linear-gradient(180deg, rgba(15, 23, 42, 0.88) 0%, rgba(26, 32, 60, 0.84) 45%, rgba(15, 23, 42, 0.94) 100%),
+    linear-gradient(180deg, rgba(11, 15, 25, 0.60) 0%, rgba(15, 23, 42, 0.45) 45%, rgba(11, 15, 25, 0.72) 100%),
     url('../img/testimonials/graduates-confetti-toss-hq.png') !important;
 }
 
 .hero-wrapper.page-header-hero.pricing-header-bg {
   background-image: 
-    linear-gradient(180deg, rgba(238, 242, 255, 0.86) 0%, rgba(243, 246, 255, 0.82) 45%, rgba(248, 250, 252, 0.94) 100%),
+    linear-gradient(180deg, rgba(248, 250, 252, 0.42) 0%, rgba(238, 242, 255, 0.35) 45%, rgba(248, 250, 252, 0.60) 100%),
     url('../img/gallery/gal-cohort-campus.png') !important;
   background-position: center 25% !important;
 }
 [data-bs-theme="dark"] .hero-wrapper.page-header-hero.pricing-header-bg {
   background-image: 
-    linear-gradient(180deg, rgba(15, 23, 42, 0.88) 0%, rgba(26, 32, 60, 0.84) 45%, rgba(15, 23, 42, 0.94) 100%),
+    linear-gradient(180deg, rgba(11, 15, 25, 0.60) 0%, rgba(15, 23, 42, 0.45) 45%, rgba(11, 15, 25, 0.72) 100%),
     url('../img/gallery/gal-cohort-campus.png') !important;
 }
 
 .hero-wrapper.page-header-hero.gallery-header-bg {
   background-image: 
-    linear-gradient(180deg, rgba(238, 242, 255, 0.86) 0%, rgba(243, 246, 255, 0.82) 45%, rgba(248, 250, 252, 0.94) 100%),
+    linear-gradient(180deg, rgba(248, 250, 252, 0.42) 0%, rgba(238, 242, 255, 0.35) 45%, rgba(248, 250, 252, 0.60) 100%),
     url('../img/gallery/gallery-final-gala.jpg') !important;
   background-position: center 30% !important;
 }
 [data-bs-theme="dark"] .hero-wrapper.page-header-hero.gallery-header-bg {
   background-image: 
-    linear-gradient(180deg, rgba(15, 23, 42, 0.88) 0%, rgba(26, 32, 60, 0.84) 45%, rgba(15, 23, 42, 0.94) 100%),
+    linear-gradient(180deg, rgba(11, 15, 25, 0.60) 0%, rgba(15, 23, 42, 0.45) 45%, rgba(11, 15, 25, 0.72) 100%),
     url('../img/gallery/gallery-final-gala.jpg') !important;
 }
 
 .hero-wrapper.page-header-hero.blog-header-bg,
 .hero-wrapper.page-header-hero.blog-details-header-bg {
   background-image: 
-    linear-gradient(180deg, rgba(238, 242, 255, 0.86) 0%, rgba(243, 246, 255, 0.82) 45%, rgba(248, 250, 252, 0.94) 100%),
+    linear-gradient(180deg, rgba(248, 250, 252, 0.42) 0%, rgba(238, 242, 255, 0.35) 45%, rgba(248, 250, 252, 0.60) 100%),
     url('../img/blog/blog-detail-hero.jpg') !important;
   background-position: center 30% !important;
 }
 [data-bs-theme="dark"] .hero-wrapper.page-header-hero.blog-header-bg,
 [data-bs-theme="dark"] .hero-wrapper.page-header-hero.blog-details-header-bg {
   background-image: 
-    linear-gradient(180deg, rgba(15, 23, 42, 0.88) 0%, rgba(26, 32, 60, 0.84) 45%, rgba(15, 23, 42, 0.94) 100%),
+    linear-gradient(180deg, rgba(11, 15, 25, 0.60) 0%, rgba(15, 23, 42, 0.45) 45%, rgba(11, 15, 25, 0.72) 100%),
     url('../img/blog/blog-detail-hero.jpg') !important;
 }
 
 .hero-wrapper.page-header-hero.contact-header-bg {
   background-image: 
-    linear-gradient(180deg, rgba(238, 242, 255, 0.86) 0%, rgba(243, 246, 255, 0.82) 45%, rgba(248, 250, 252, 0.94) 100%),
+    linear-gradient(180deg, rgba(248, 250, 252, 0.42) 0%, rgba(238, 242, 255, 0.35) 45%, rgba(248, 250, 252, 0.60) 100%),
     url('../img/contact/contact-campus-boston.jpg') !important;
   background-position: center 35% !important;
 }
 [data-bs-theme="dark"] .hero-wrapper.page-header-hero.contact-header-bg {
   background-image: 
-    linear-gradient(180deg, rgba(15, 23, 42, 0.88) 0%, rgba(26, 32, 60, 0.84) 45%, rgba(15, 23, 42, 0.94) 100%),
+    linear-gradient(180deg, rgba(11, 15, 25, 0.60) 0%, rgba(15, 23, 42, 0.45) 45%, rgba(11, 15, 25, 0.72) 100%),
     url('../img/contact/contact-campus-boston.jpg') !important;
 }
 
 .hero-wrapper.page-header-hero.program-details-header-bg {
   background-image: 
-    linear-gradient(180deg, rgba(238, 242, 255, 0.86) 0%, rgba(243, 246, 255, 0.82) 45%, rgba(248, 250, 252, 0.94) 100%),
+    linear-gradient(180deg, rgba(248, 250, 252, 0.42) 0%, rgba(238, 242, 255, 0.35) 45%, rgba(248, 250, 252, 0.60) 100%),
     url('../img/programs/program-detail-hero.jpg') !important;
   background-position: center 30% !important;
 }
 [data-bs-theme="dark"] .hero-wrapper.page-header-hero.program-details-header-bg {
   background-image: 
-    linear-gradient(180deg, rgba(15, 23, 42, 0.88) 0%, rgba(26, 32, 60, 0.84) 45%, rgba(15, 23, 42, 0.94) 100%),
+    linear-gradient(180deg, rgba(11, 15, 25, 0.60) 0%, rgba(15, 23, 42, 0.45) 45%, rgba(11, 15, 25, 0.72) 100%),
     url('../img/programs/program-detail-hero.jpg') !important;
 }
 
@@ -1111,24 +1127,46 @@ a:hover {
   width: 100%;
 }
 
-/* Crisp typography matching site theme */
+/* Crisp typography matching site theme with clear background images */
 .hero-wrapper.page-header-hero h1,
 .hero-wrapper.page-header-hero .display-4 {
   font-weight: 800;
   letter-spacing: -0.02em;
-  color: var(--vx-heading-color);
-  text-shadow: 0 1px 2px rgba(255, 255, 255, 0.5);
+  color: #0F172A;
+  text-shadow: 0 2px 10px rgba(255, 255, 255, 0.95), 0 1px 3px rgba(0, 0, 0, 0.12);
 }
 
 [data-bs-theme="dark"] .hero-wrapper.page-header-hero h1,
 [data-bs-theme="dark"] .hero-wrapper.page-header-hero .display-4 {
-  text-shadow: 0 2px 12px rgba(0, 0, 0, 0.6);
+  color: #FFFFFF !important;
+  text-shadow: 0 2px 16px rgba(0, 0, 0, 0.95), 0 1px 4px rgba(0, 0, 0, 0.85);
 }
 
 .hero-wrapper.page-header-hero p.lead {
-  color: var(--vx-body-secondary) !important;
-  font-weight: 450;
-  text-shadow: none !important;
+  color: #1E293B !important;
+  font-weight: 600;
+  text-shadow: 0 1px 8px rgba(255, 255, 255, 0.95);
+}
+
+[data-bs-theme="dark"] .hero-wrapper.page-header-hero p.lead {
+  color: #F1F5F9 !important;
+  font-weight: 500;
+  text-shadow: 0 1px 12px rgba(0, 0, 0, 0.92);
+}
+
+.hero-wrapper.page-header-hero .badge-pill-soft {
+  background: #FFFFFF !important;
+  color: #4F46E5 !important;
+  border: 1px solid rgba(79, 70, 229, 0.25) !important;
+  box-shadow: 0 4px 14px rgba(15, 23, 42, 0.12) !important;
+}
+
+[data-bs-theme="dark"] .hero-wrapper.page-header-hero .badge-pill-soft {
+  background: rgba(17, 24, 39, 0.85) !important;
+  color: #A5B4FC !important;
+  border-color: rgba(165, 180, 252, 0.3) !important;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.5) !important;
+  backdrop-filter: blur(8px);
 }
 
 .hero-glow-bg {
