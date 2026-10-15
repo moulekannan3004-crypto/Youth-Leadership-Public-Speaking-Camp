@@ -956,13 +956,17 @@ a:hover {
 }
 
 /* ===================================================================
-   PAGE HEADER HERO (CLEAN, MODERN SURFACE STYLING WITHOUT BG IMAGES)
+   PAGE HEADER HERO (INNER PAGES WITH HERO BACKGROUND IMAGES)
 =================================================================== */
 .hero-wrapper.page-header-hero {
   position: relative;
   overflow: hidden;
-  background: radial-gradient(circle at 50% 20%, rgba(79, 70, 229, 0.12) 0%, rgba(99, 102, 241, 0.04) 60%, transparent 85%),
-              linear-gradient(180deg, #EEF2FF 0%, #E8EEFC 45%, var(--vx-surface-alt) 100%) !important;
+  background-image: 
+    linear-gradient(180deg, rgba(238, 242, 255, 0.86) 0%, rgba(243, 246, 255, 0.82) 45%, rgba(248, 250, 252, 0.94) 100%),
+    url('../img/hero/camp-circle-bg.jpg') !important;
+  background-size: cover !important;
+  background-position: center 30% !important;
+  background-repeat: no-repeat !important;
   border-bottom: 1px solid var(--vx-border);
   min-height: 380px;
   display: flex;
@@ -982,29 +986,119 @@ a:hover {
   background-image: radial-gradient(rgba(79, 70, 229, 0.08) 1px, transparent 1px);
   background-size: 24px 24px;
   pointer-events: none;
-  opacity: 0.6;
+  opacity: 0.35;
 }
 
 [data-bs-theme="dark"] .hero-wrapper.page-header-hero {
-  background: radial-gradient(circle at 50% 20%, rgba(99, 102, 241, 0.18) 0%, rgba(79, 70, 229, 0.06) 60%, transparent 85%),
-              linear-gradient(180deg, #0F172A 0%, #151F38 50%, var(--vx-surface-alt) 100%) !important;
+  background-image: 
+    linear-gradient(180deg, rgba(15, 23, 42, 0.88) 0%, rgba(26, 32, 60, 0.84) 45%, rgba(15, 23, 42, 0.94) 100%),
+    url('../img/hero/camp-circle-bg.jpg') !important;
 }
 
 [data-bs-theme="dark"] .hero-wrapper.page-header-hero::before {
   background-image: radial-gradient(rgba(129, 140, 248, 0.12) 1px, transparent 1px);
-  opacity: 0.45;
+  opacity: 0.25;
 }
 
-.hero-wrapper.page-header-hero.about-origin-hero {
-  background: var(--vx-primary-light) !important;
+/* Scoped Inner Page Hero Backgrounds */
+.hero-wrapper.page-header-hero.about-origin-hero,
+.hero-wrapper.page-header-hero.about-header-bg {
+  background-image: 
+    linear-gradient(180deg, rgba(238, 242, 255, 0.86) 0%, rgba(243, 246, 255, 0.82) 45%, rgba(248, 250, 252, 0.94) 100%),
+    url('../img/hero/camp-circle-bg.jpg') !important;
+  background-position: center 35% !important;
+}
+[data-bs-theme="dark"] .hero-wrapper.page-header-hero.about-origin-hero,
+[data-bs-theme="dark"] .hero-wrapper.page-header-hero.about-header-bg {
+  background-image: 
+    linear-gradient(180deg, rgba(15, 23, 42, 0.88) 0%, rgba(26, 32, 60, 0.84) 45%, rgba(15, 23, 42, 0.94) 100%),
+    url('../img/hero/camp-circle-bg.jpg') !important;
 }
 
-.hero-wrapper.page-header-hero.about-origin-hero::before {
-  display: none;
+.hero-wrapper.page-header-hero.programs-header-bg {
+  background-image: 
+    linear-gradient(180deg, rgba(238, 242, 255, 0.86) 0%, rgba(243, 246, 255, 0.82) 45%, rgba(248, 250, 252, 0.94) 100%),
+    url('../img/gallery/gallery-auditorium-keynote.jpg') !important;
+  background-position: center 40% !important;
+}
+[data-bs-theme="dark"] .hero-wrapper.page-header-hero.programs-header-bg {
+  background-image: 
+    linear-gradient(180deg, rgba(15, 23, 42, 0.88) 0%, rgba(26, 32, 60, 0.84) 45%, rgba(15, 23, 42, 0.94) 100%),
+    url('../img/gallery/gallery-auditorium-keynote.jpg') !important;
 }
 
-[data-bs-theme="dark"] .hero-wrapper.page-header-hero.about-origin-hero {
-  background: var(--vx-surface-alt) !important;
+.hero-wrapper.page-header-hero.testimonials-header-bg {
+  background-image: 
+    linear-gradient(180deg, rgba(238, 242, 255, 0.86) 0%, rgba(243, 246, 255, 0.82) 45%, rgba(248, 250, 252, 0.94) 100%),
+    url('../img/testimonials/graduates-confetti-toss-hq.png') !important;
+  background-position: center 30% !important;
+}
+[data-bs-theme="dark"] .hero-wrapper.page-header-hero.testimonials-header-bg {
+  background-image: 
+    linear-gradient(180deg, rgba(15, 23, 42, 0.88) 0%, rgba(26, 32, 60, 0.84) 45%, rgba(15, 23, 42, 0.94) 100%),
+    url('../img/testimonials/graduates-confetti-toss-hq.png') !important;
+}
+
+.hero-wrapper.page-header-hero.pricing-header-bg {
+  background-image: 
+    linear-gradient(180deg, rgba(238, 242, 255, 0.86) 0%, rgba(243, 246, 255, 0.82) 45%, rgba(248, 250, 252, 0.94) 100%),
+    url('../img/gallery/gal-cohort-campus.png') !important;
+  background-position: center 25% !important;
+}
+[data-bs-theme="dark"] .hero-wrapper.page-header-hero.pricing-header-bg {
+  background-image: 
+    linear-gradient(180deg, rgba(15, 23, 42, 0.88) 0%, rgba(26, 32, 60, 0.84) 45%, rgba(15, 23, 42, 0.94) 100%),
+    url('../img/gallery/gal-cohort-campus.png') !important;
+}
+
+.hero-wrapper.page-header-hero.gallery-header-bg {
+  background-image: 
+    linear-gradient(180deg, rgba(238, 242, 255, 0.86) 0%, rgba(243, 246, 255, 0.82) 45%, rgba(248, 250, 252, 0.94) 100%),
+    url('../img/gallery/gallery-final-gala.jpg') !important;
+  background-position: center 30% !important;
+}
+[data-bs-theme="dark"] .hero-wrapper.page-header-hero.gallery-header-bg {
+  background-image: 
+    linear-gradient(180deg, rgba(15, 23, 42, 0.88) 0%, rgba(26, 32, 60, 0.84) 45%, rgba(15, 23, 42, 0.94) 100%),
+    url('../img/gallery/gallery-final-gala.jpg') !important;
+}
+
+.hero-wrapper.page-header-hero.blog-header-bg,
+.hero-wrapper.page-header-hero.blog-details-header-bg {
+  background-image: 
+    linear-gradient(180deg, rgba(238, 242, 255, 0.86) 0%, rgba(243, 246, 255, 0.82) 45%, rgba(248, 250, 252, 0.94) 100%),
+    url('../img/blog/blog-detail-hero.jpg') !important;
+  background-position: center 30% !important;
+}
+[data-bs-theme="dark"] .hero-wrapper.page-header-hero.blog-header-bg,
+[data-bs-theme="dark"] .hero-wrapper.page-header-hero.blog-details-header-bg {
+  background-image: 
+    linear-gradient(180deg, rgba(15, 23, 42, 0.88) 0%, rgba(26, 32, 60, 0.84) 45%, rgba(15, 23, 42, 0.94) 100%),
+    url('../img/blog/blog-detail-hero.jpg') !important;
+}
+
+.hero-wrapper.page-header-hero.contact-header-bg {
+  background-image: 
+    linear-gradient(180deg, rgba(238, 242, 255, 0.86) 0%, rgba(243, 246, 255, 0.82) 45%, rgba(248, 250, 252, 0.94) 100%),
+    url('../img/contact/contact-campus-boston.jpg') !important;
+  background-position: center 35% !important;
+}
+[data-bs-theme="dark"] .hero-wrapper.page-header-hero.contact-header-bg {
+  background-image: 
+    linear-gradient(180deg, rgba(15, 23, 42, 0.88) 0%, rgba(26, 32, 60, 0.84) 45%, rgba(15, 23, 42, 0.94) 100%),
+    url('../img/contact/contact-campus-boston.jpg') !important;
+}
+
+.hero-wrapper.page-header-hero.program-details-header-bg {
+  background-image: 
+    linear-gradient(180deg, rgba(238, 242, 255, 0.86) 0%, rgba(243, 246, 255, 0.82) 45%, rgba(248, 250, 252, 0.94) 100%),
+    url('../img/programs/program-detail-hero.jpg') !important;
+  background-position: center 30% !important;
+}
+[data-bs-theme="dark"] .hero-wrapper.page-header-hero.program-details-header-bg {
+  background-image: 
+    linear-gradient(180deg, rgba(15, 23, 42, 0.88) 0%, rgba(26, 32, 60, 0.84) 45%, rgba(15, 23, 42, 0.94) 100%),
+    url('../img/programs/program-detail-hero.jpg') !important;
 }
 
 .hero-wrapper.page-header-hero > .container {
@@ -1019,27 +1113,18 @@ a:hover {
   font-weight: 800;
   letter-spacing: -0.02em;
   color: var(--vx-heading-color);
-  text-shadow: none !important;
+  text-shadow: 0 1px 2px rgba(255, 255, 255, 0.5);
+}
+
+[data-bs-theme="dark"] .hero-wrapper.page-header-hero h1,
+[data-bs-theme="dark"] .hero-wrapper.page-header-hero .display-4 {
+  text-shadow: 0 2px 12px rgba(0, 0, 0, 0.6);
 }
 
 .hero-wrapper.page-header-hero p.lead {
   color: var(--vx-body-secondary) !important;
-  font-weight: 400;
+  font-weight: 450;
   text-shadow: none !important;
-}
-
-/* Ensure page header classes inherit the refined soft gradient background */
-.about-origin-hero,
-.about-header-bg,
-.programs-header-bg,
-.testimonials-header-bg,
-.pricing-header-bg,
-.gallery-header-bg,
-.blog-header-bg,
-.contact-header-bg,
-.program-details-header-bg,
-.blog-details-header-bg {
-  /* Inherits soft indigo gradient and subtle pattern from .hero-wrapper.page-header-hero */
 }
 
 .hero-glow-bg {
