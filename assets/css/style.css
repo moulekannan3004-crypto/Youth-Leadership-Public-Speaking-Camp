@@ -3480,6 +3480,24 @@ a:hover {
   border: 1px solid rgba(255, 255, 255, 0.9);
 }
 
+.guarantee-vault-card .guarantee-title {
+  color: #0F172A;
+  font-weight: 700;
+}
+
+.guarantee-vault-card .guarantee-desc {
+  color: #475569;
+  line-height: 1.6;
+}
+
+.guarantee-vault-card .guarantee-rating {
+  color: #0F172A;
+}
+
+.guarantee-vault-card .guarantee-alumni {
+  color: #64748B;
+}
+
 .guarantee-vault-card:hover {
   transform: translateY(-4px);
   box-shadow: 0 30px 60px -12px rgba(15, 23, 42, 0.45);
@@ -3503,6 +3521,48 @@ a:hover {
 
 .guarantee-vault-card:hover .guarantee-crest-badge {
   transform: scale(1.1) rotate(6deg);
+}
+
+/* Guarantee Card Dark Mode Overrides (Prevents Invisible Text on White Background) */
+[data-bs-theme="dark"] .guarantee-vault-card {
+  background: rgba(17, 24, 39, 0.95) !important;
+  border: 1px solid rgba(255, 255, 255, 0.16) !important;
+  box-shadow: 0 20px 45px -10px rgba(0, 0, 0, 0.6) !important;
+  backdrop-filter: blur(12px);
+}
+
+[data-bs-theme="dark"] .guarantee-vault-card .guarantee-title {
+  color: #F8FAFC !important;
+}
+
+[data-bs-theme="dark"] .guarantee-vault-card .guarantee-desc {
+  color: #CBD5E1 !important;
+}
+
+[data-bs-theme="dark"] .guarantee-vault-card .guarantee-rating {
+  color: #F8FAFC !important;
+}
+
+[data-bs-theme="dark"] .guarantee-vault-card .guarantee-alumni {
+  color: #94A3B8 !important;
+}
+
+[data-bs-theme="dark"] .guarantee-vault-card .guarantee-crest-badge {
+  background: rgba(129, 140, 248, 0.15) !important;
+  color: #A5B4FC !important;
+  border-color: rgba(129, 140, 248, 0.3) !important;
+  box-shadow: 0 8px 24px -4px rgba(0, 0, 0, 0.4) !important;
+}
+
+[data-bs-theme="dark"] .guarantee-vault-card .guarantee-divider {
+  border-top-color: rgba(255, 255, 255, 0.1) !important;
+}
+
+/* Global Dark Mode Badge Contrast Rule */
+[data-bs-theme="dark"] .badge.bg-white.text-primary {
+  background: rgba(255, 255, 255, 0.16) !important;
+  color: #FFFFFF !important;
+  border: 1px solid rgba(255, 255, 255, 0.28) !important;
 }
 
 /* ===================================================================
