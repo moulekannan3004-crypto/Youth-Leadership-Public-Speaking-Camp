@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="light" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tuition & Camp Pricing | VoxLeaders Youth Academy</title>
+  <meta name="description" content="Transparent tuition pricing and cohort packages for youth public speaking and leadership camps. Flexible session or annual academy enrollment.">
+  
+  <link rel="icon" type="image/svg+xml" href="assets/img/brand/favicon.svg">
+  <link id="bootstrap-theme-style" rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <!-- Google Fonts: Poppins (Light 300), Outfit, Plus Jakarta Sans -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800;900&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,300&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="assets/css/style.css?v=8.3">
+  <link rel="stylesheet" href="assets/css/rtl.css">
+</head>
+<body class="page-pricing">
+
+  <!-- Navigation Bar -->
+    <!-- =================================================================
+       GLOBAL NAVIGATION HEADER (Matches Reference Format)
+  ================================================================== -->
+  <header class="vx-header sticky-top">
+    <nav class="navbar navbar-expand-xl vx-navbar" aria-label="Main Navigation">
+      <div class="container-fluid px-3 px-xl-5">
+        <!-- Brand Logo -->
+        <a class="navbar-brand vx-brand" href="index.html">
+          <img src="assets/img/brand/logo.svg" alt="VoxLeaders Logo" class="vx-brand-img" height="46">
+        </a>
+
+        <!-- Mobile Toggler -->
+        <button class="navbar-toggler border-0 shadow-none d-xl-none" type="button" data-bs-toggle="collapse" data-bs-target="#vxNavbarContent" aria-controls="vxNavbarContent" aria-expanded="false" aria-label="Toggle navigation">
+          <i class="bi bi-list fs-2"></i>
+        </button>
+
+        <!-- Navbar Links & Right Controls -->
+        <div class="collapse navbar-collapse" id="vxNavbarContent">
+          <!-- Center Navigation Links -->
+          <ul class="navbar-nav mx-auto mb-2 mb-xl-0 align-items-xl-center">
+            <!-- Home with Dropdown -->
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle vx-nav-link " href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                <span class="vx-nav-text">Home</span> <i class="bi bi-chevron-down ms-1" style="font-size: 0.75rem;"></i>
+              </a>
+              <ul class="dropdown-menu dropdown-menu-vx">
+                <li><a class="dropdown-item dropdown-item-vx" href="index.html">Home</a></li>
+                <li><a class="dropdown-item dropdown-item-vx" href="index-business.html">Home 2</a></li>
+              </ul>
+            </li>
+
+            <!-- About Us -->
+            <li class="nav-item">
+              <a class="nav-link vx-nav-link " href="about.html"><span class="vx-nav-text">About Us</span></a>
+            </li>
+
+            <!-- Programs -->
+            <li class="nav-item">
+              <a class="nav-link vx-nav-link " href="programs.html"><span class="vx-nav-text">Programs</span></a>
+            </li>
+
+            <!-- Testimonials -->
+            <li class="nav-item">
+              <a class="nav-link vx-nav-link " href="testimonials.html"><span class="vx-nav-text">Testimonials</span></a>
+            </li>
+
+            <!-- Pricing -->
+            <li class="nav-item">
+              <a class="nav-link vx-nav-link active" href="pricing.html"><span class="vx-nav-text">Pricing</span></a>
+            </li>
+
+            <!-- Gallery -->
+            <li class="nav-item">
+              <a class="nav-link vx-nav-link " href="gallery.html"><span class="vx-nav-text">Gallery</span></a>
+            </li>
+
+            <!-- Blog -->
+            <li class="nav-item">
+              <a class="nav-link vx-nav-link " href="blog.html"><span class="vx-nav-text">Blog</span></a>
+            </li>
+
+            <!-- Contact -->
+            <li class="nav-item">
+              <a class="nav-link vx-nav-link " href="contact.html"><span class="vx-nav-text">Contact</span></a>
+            </li>
+
+            <!-- Dashboard -->
+            <li class="nav-item">
+              <a class="nav-link vx-nav-link " href="dashboard-parent.html"><span class="vx-nav-text">Dashboard</span></a>
+            </li>
+          </ul>
+
+          <!-- Right Header Actions (LTR/RTL Pill + Theme Toggle Circle + Login Pill) -->
+          <div class="vx-header-actions mt-3 mt-xl-0">
+            <!-- LTR / RTL Switcher Pill -->
+            <button class="btn-vx-dir-pill rtl-toggle-btn" aria-label="Toggle Text Direction">
+              <span class="dir-active">LTR</span>
+              <i class="bi bi-arrow-left-right text-muted" style="font-size: 0.7rem;"></i>
+              <span class="dir-inactive">RTL</span>
+            </button>
+
+            <!-- Dark / Light Theme Toggle Circle -->
+            <button class="btn-vx-theme-circle theme-toggle-btn" aria-label="Toggle Dark/Light Mode" title="Toggle Theme">
+              <i class="bi bi-moon-stars-fill"></i>
+            </button>
+
+            <!-- Login Pill Button -->
+            <a href="auth.html" class="btn-vx-login-pill">
+              <i class="bi bi-box-arrow-in-right login-icon"></i>
+              <span>Login</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main id="mainContent">
+
+    <!-- Header Banner with Scoped Background -->
+    <section class="hero-wrapper page-header-hero pricing-header-bg text-center">
+      <div class="hero-glow-bg"></div>
+      <div class="container position-relative z-2">
+        <div class="badge-pill-soft mb-3">Transparent Investment</div>
+        <h1 class="display-4 fw-extrabold mb-3">Invest In A Lifetime Of Eloquence</h1>
+        <p class="lead text-body-secondary mx-auto mb-0" style="max-width: 680px;">
+          All plans include 1:6 coach mentorship, full access to the Parent Portal skill tracker, and live Gala graduation showcase.
+        </p>
+      </div>
+    </section>
+
+    <!-- Pricing Cards Grid -->
+    <section class="py-5 bg-surface-alt">
+      <div class="container">
+
+        <!-- Billing Toggle (Session vs Annual Membership - Positioned Down From Header) -->
+        <div class="text-center mb-5">
+          <div class="pricing-toggle-pill d-inline-flex flex-wrap align-items-center justify-content-center gap-2 gap-sm-3 p-2 bg-surface rounded-pill border border-theme shadow-sm">
+            <span class="small fw-bold text-heading">Single Camp Session</span>
+            <div class="form-check form-switch mb-0">
+              <input class="form-check-input" type="checkbox" role="switch" id="billingCycleToggle" style="cursor: pointer; width: 44px; height: 22px;">
+            </div>
+            <span class="small fw-bold text-primary">Annual Academy Membership <span class="badge bg-primary-soft text-primary rounded-pill ms-1">Save 20%</span></span>
+          </div>
+        </div>
+
+        <div class="row g-4 align-items-stretch pt-4">
+          
+          <!-- Plan 1: Junior Spark -->
+          <div class="col-lg-4">
+            <div class="pricing-card h-100 d-flex flex-column">
+              <div class="rounded-theme overflow-hidden mb-3">
+                <img src="assets/img/pricing/pricing-junior-spark.jpg" class="w-100" style="height: 140px; object-fit: cover; object-position: center 25%;" alt="Junior Spark Camp">
+              </div>
+              <h3 class="h4 fw-bold mb-1">Junior Spark</h3>
+              <p class="small text-body-secondary mb-3">For ages 7&ndash;11 building initial vocal confidence & storytelling.</p>
+              
+              <div class="mb-4">
+                <span class="pricing-amount price-session">$650</span>
+                <span class="pricing-amount price-annual d-none">$1,850</span>
+                <span class="text-body-secondary billing-cycle-label">/ Camp Session</span>
+              </div>
+
+              <ul class="list-unstyled d-flex flex-column gap-3 small text-body-secondary mb-5 flex-grow-1">
+                <li><i class="bi bi-check-circle-fill text-primary me-2"></i> 2 Weeks In-Person Camp (Mon-Fri)</li>
+                <li><i class="bi bi-check-circle-fill text-primary me-2"></i> 1:6 Coach-to-Student Ratio</li>
+                <li><i class="bi bi-check-circle-fill text-primary me-2"></i> Daily Classroom Desensitization Games</li>
+                <li><i class="bi bi-check-circle-fill text-primary me-2"></i> Parent Portal Photo & Rubric Access</li>
+                <li><i class="bi bi-check-circle-fill text-primary me-2"></i> Graduation Gala Presentation</li>
+                <li class="opacity-50"><i class="bi bi-dash-circle me-2"></i> 4K Video Recording & Soundstage</li>
+                <li class="opacity-50"><i class="bi bi-dash-circle me-2"></i> 1:1 Executive Coaching</li>
+              </ul>
+
+              <a href="program-details.html#bookingSection" class="btn-vx btn-vx-outline w-100 mt-auto">Enroll Junior Spark</a>
+            </div>
+          </div>
+
+          <!-- Plan 2: Teen Orator (Featured) -->
+          <div class="col-lg-4">
+            <div class="pricing-card featured h-100 d-flex flex-column">
+              <div class="pricing-ribbon">Most Popular</div>
+              <div class="rounded-theme overflow-hidden mb-3">
+                <img src="assets/img/pricing/pricing-teen-orator.jpg" class="w-100" style="height: 140px; object-fit: cover; object-position: center 20%;" alt="Teen Orator &amp; Debate">
+              </div>
+              <h3 class="h4 fw-bold mb-1">Teen Orator & Debate</h3>
+              <p class="small text-body-secondary mb-3">For ages 12&ndash;15 learning rebuttal frameworks & MUN debate.</p>
+              
+              <div class="mb-4">
+                <span class="pricing-amount text-primary price-session">$850</span>
+                <span class="pricing-amount text-primary price-annual d-none">$2,450</span>
+                <span class="text-body-secondary billing-cycle-label">/ Camp Session</span>
+              </div>
+
+              <ul class="list-unstyled d-flex flex-column gap-3 small text-body-secondary mb-5 flex-grow-1">
+                <li><i class="bi bi-check-circle-fill text-primary me-2"></i> 3 Weeks Intensive Debate Bootcamp</li>
+                <li><i class="bi bi-check-circle-fill text-primary me-2"></i> 1:6 Ratio with World Champion Mentors</li>
+                <li><i class="bi bi-check-circle-fill text-primary me-2"></i> Full MUN Parliamentary Simulations</li>
+                <li><i class="bi bi-check-circle-fill text-primary me-2"></i> Real-time AI Speech Analytics & Feedback</li>
+                <li><i class="bi bi-check-circle-fill text-primary me-2"></i> Parent Portal 360-Radar Skill Charts</li>
+                <li><i class="bi bi-check-circle-fill text-primary me-2"></i> High-Res Graduation Gala Broadcast</li>
+                <li class="opacity-50"><i class="bi bi-dash-circle me-2"></i> 1:1 Executive Coaching</li>
+              </ul>
+
+              <a href="program-details.html#bookingSection" class="btn-vx btn-vx-primary w-100 mt-auto">Enroll Teen Orator</a>
+            </div>
+          </div>
+
+          <!-- Plan 3: Future Executive -->
+          <div class="col-lg-4">
+            <div class="pricing-card h-100 d-flex flex-column">
+              <div class="rounded-theme overflow-hidden mb-3">
+                <img src="assets/img/pricing/pricing-future-exec.jpg" class="w-100" style="height: 140px; object-fit: cover; object-position: center 35%;" alt="Future Executive Camp">
+              </div>
+              <h3 class="h4 fw-bold mb-1">Future Executive</h3>
+              <p class="small text-body-secondary mb-3">For ages 16&ndash;18 targeting TEDx talks & Ivy League interviews.</p>
+              
+              <div class="mb-4">
+                <span class="pricing-amount price-session">$1,150</span>
+                <span class="pricing-amount price-annual d-none">$3,200</span>
+                <span class="text-body-secondary billing-cycle-label">/ Camp Session</span>
+              </div>
+
+              <ul class="list-unstyled d-flex flex-column gap-3 small text-body-secondary mb-5 flex-grow-1">
+                <li><i class="bi bi-check-circle-fill text-primary me-2"></i> 4 Weeks Executive Residency</li>
+                <li><i class="bi bi-check-circle-fill text-primary me-2"></i> 3x Private 1-on-1 Coaching Sessions</li>
+                <li><i class="bi bi-check-circle-fill text-primary me-2"></i> Multi-Camera 4K Live TEDx-Style Talk Film</li>
+                <li><i class="bi bi-check-circle-fill text-primary me-2"></i> Mock Admissions & Scholarship Panels</li>
+                <li><i class="bi bi-check-circle-fill text-primary me-2"></i> Forensics League Credential & Recommendation</li>
+                <li><i class="bi bi-check-circle-fill text-primary me-2"></i> Lifetime Alumni Networking Access</li>
+              </ul>
+
+              <a href="program-details.html#bookingSection" class="btn-vx btn-vx-outline w-100 mt-auto">Enroll Executive</a>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Comparison Matrix Table -->
+        <div class="card border-0 bg-surface rounded-theme-xl p-4 p-md-5 shadow-sm mt-5">
+          <h2 class="h3 fw-bold mb-4 font-heading text-center">Comprehensive Feature Comparison</h2>
+          <div class="table-responsive">
+            <table class="table table-hover align-middle mb-0">
+              <thead>
+                <tr class="bg-surface-alt">
+                  <th class="py-3 px-4 fw-bold">Curriculum Inclusions</th>
+                  <th class="text-center py-3 px-3">Junior Spark</th>
+                  <th class="text-center py-3 px-3 text-primary fw-bold">Teen Orator</th>
+                  <th class="text-center py-3 px-3">Future Executive</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td class="py-3 px-4">Student-to-Coach Ratio</td>
+                  <td class="text-center">1:6</td>
+                  <td class="text-center text-primary fw-bold">1:6</td>
+                  <td class="text-center">1:6 + 1:1 Sessions</td>
+                </tr>
+                <tr>
+                  <td class="py-3 px-4">Parent Portal Mobile & Web Dashboard</td>
+                  <td class="text-center text-primary"><i class="bi bi-check-circle-fill fs-5"></i></td>
+                  <td class="text-center text-primary"><i class="bi bi-check-circle-fill fs-5"></i></td>
+                  <td class="text-center text-primary"><i class="bi bi-check-circle-fill fs-5"></i></td>
+                </tr>
+                <tr>
+                  <td class="py-3 px-4">Parliamentary Debate & Rebuttal Drills</td>
+                  <td class="text-center text-muted">&mdash;</td>
+                  <td class="text-center text-primary"><i class="bi bi-check-circle-fill fs-5"></i></td>
+                  <td class="text-center text-primary"><i class="bi bi-check-circle-fill fs-5"></i></td>
+                </tr>
+                <tr>
+                  <td class="py-3 px-4">4K Video Portfolio Soundstage Filming</td>
+                  <td class="text-center text-muted">&mdash;</td>
+                  <td class="text-center text-muted">&mdash;</td>
+                  <td class="text-center text-primary"><i class="bi bi-check-circle-fill fs-5"></i></td>
+                </tr>
+                <tr>
+                  <td class="py-3 px-4">Money-Back Satisfaction Guarantee</td>
+                  <td class="text-center text-primary"><i class="bi bi-check-circle-fill fs-5"></i></td>
+                  <td class="text-center text-primary"><i class="bi bi-check-circle-fill fs-5"></i></td>
+                  <td class="text-center text-primary"><i class="bi bi-check-circle-fill fs-5"></i></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+  
+    <!-- FINANCIAL AID, SIBLING DISCOUNTS & ACCESSIBILITY -->
+    <section class="py-6">
+      <div class="container">
+        <div class="row g-4 align-items-stretch">
+          <div class="col-lg-6 d-flex">
+            <div class="card border-0 bg-surface rounded-theme-xl p-4 p-lg-5 shadow-sm border border-theme h-100 w-100 d-flex flex-column justify-content-between">
+              <div>
+                <span class="badge bg-primary-soft text-primary fw-bold rounded-pill px-3 py-2 mb-3 align-self-start">Accessibility Guarantee</span>
+                <h3 class="h4 fw-bold mb-3">Family Discounts &amp; Need-Based Scholarships</h3>
+                <p class="text-body-secondary mb-4">
+                  We firmly believe that financial limitations should never prevent an ambitious child from finding their voice.
+                </p>
+                <div class="d-flex flex-column gap-3">
+                  <div class="d-flex align-items-start gap-3 p-3 bg-surface-alt rounded-theme">
+                    <i class="bi bi-people-fill text-primary fs-4 mt-1"></i>
+                    <div>
+                      <div class="fw-bold text-heading">15% Sibling Discount</div>
+                      <small class="text-body-secondary">Automatically applied to the second and third child enrolled across any camp cohort.</small>
+                    </div>
+                  </div>
+                  <div class="d-flex align-items-start gap-3 p-3 bg-surface-alt rounded-theme">
+                    <i class="bi bi-award-fill text-primary fs-4 mt-1"></i>
+                    <div>
+                      <div class="fw-bold text-heading">The Orator Future Leader Grant</div>
+                      <small class="text-body-secondary">Need-based grants covering up to 60% of camp tuition for underrepresented students.</small>
+                    </div>
+                  </div>
+                  <div class="d-flex align-items-start gap-3 p-3 bg-surface-alt rounded-theme">
+                    <i class="bi bi-credit-card-2-front-fill text-primary fs-4 mt-1"></i>
+                    <div>
+                      <div class="fw-bold text-heading">3-Month 0% Interest Installments</div>
+                      <small class="text-body-secondary">Split tuition into 3 predictable monthly payments with no credit checks or penalty fees.</small>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6 d-flex">
+            <div class="card border-0 bg-primary text-white rounded-theme-xl p-4 p-lg-5 shadow-lg position-relative overflow-hidden h-100 w-100 d-flex flex-column justify-content-between" style="background: linear-gradient(135deg, #3730A3 0%, #4F46E5 50%, #6366F1 100%) !important;">
+              <div class="d-flex flex-column flex-sm-row justify-content-between align-items-sm-center gap-3 mb-4">
+                <span class="badge bg-white text-primary fw-bold rounded-pill px-3 py-2 align-self-start">Risk-Free Trial</span>
+                <img src="assets/img/pricing/pricing-guarantee.jpg" alt="100% Speech Guarantee" class="rounded-pill border border-2 border-white shadow-sm" style="width: 72px; height: 72px; object-fit: cover;">
+              </div>
+              <h3 class="h3 fw-bold text-white mb-3">100% "Speech Confidence" Money-Back Guarantee</h3>
+              <p class="lead text-white-50 mb-4">
+                If after the first full week of camp your child does not demonstrate noticeable, tangible improvement in poise, vocal courage, and enthusiasm for speaking, simply notify our Camp Director for a 100% unconditional refund.
+              </p>
+              <div class="d-flex flex-column gap-2 mb-4 text-white-50 small">
+                <div><i class="bi bi-check-circle-fill text-white me-2"></i> Zero processing fees retained</div>
+                <div><i class="bi bi-check-circle-fill text-white me-2"></i> Keep all camp learning manuals and workbooks</div>
+                <div><i class="bi bi-check-circle-fill text-white me-2"></i> Valid across all Junior, Teen, and Executive tracks</div>
+              </div>
+              <a href="contact.html" class="btn-vx btn-vx-white align-self-start">Speak With Admissions Advisor</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PRICING FREQUENTLY ASKED QUESTIONS -->
+    <section class="py-6 bg-surface-alt">
+      <div class="container">
+        <div class="text-center mb-5">
+          <div class="badge-pill-soft mb-2">Payment Details</div>
+          <h2 class="display-5 fw-extrabold mb-3">Tuition & Enrollment FAQs</h2>
+          <p class="lead text-body-secondary">Clear answers about dates, refunds, lunches, and gear inclusions.</p>
+        </div>
+
+        <div class="row justify-content-center">
+          <div class="col-lg-8">
+            <div class="accordion accordion-vx" id="pricingFaqAccordion">
+              <div class="accordion-item">
+                <h3 class="accordion-header" id="priceFaq1">
+                  <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#priceCollapse1" aria-expanded="true">
+                    Are healthy lunches, snacks, and camp materials included in tuition?
+                  </button>
+                </h3>
+                <div id="priceCollapse1" class="accordion-collapse collapse show" data-bs-parent="#pricingFaqAccordion">
+                  <div class="accordion-body">
+                    Yes! All tuition tiers include organic catered lunches, hydration and fruit break stations, our proprietary VoxCurriculum&trade; spiral workbook, a branded VoxLeaders hoodie, and high-resolution photo/video access in the Parent Portal.
+                  </div>
+                </div>
+              </div>
+
+              <div class="accordion-item">
+                <h3 class="accordion-header" id="priceFaq2">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#priceCollapse2">
+                    What happens if we need to reschedule our camp week due to family travel?
+                  </button>
+                </h3>
+                <div id="priceCollapse2" class="accordion-collapse collapse" data-bs-parent="#pricingFaqAccordion">
+                  <div class="accordion-body">
+                    We offer 100% complimentary date transfers up to 14 days before your scheduled cohort begins. You can easily switch to any other open summer or autumn session without penalty.
+                  </div>
+                </div>
+              </div>
+
+              <div class="accordion-item">
+                <h3 class="accordion-header" id="priceFaq3">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#priceCollapse3">
+                    How does the 4K Filmed Showcase video delivery work?
+                  </button>
+                </h3>
+                <div id="priceCollapse3" class="accordion-collapse collapse" data-bs-parent="#pricingFaqAccordion">
+                  <div class="accordion-body">
+                    On the final Thursday of camp, every camper delivers their capstone speech on our auditorium stage. Our media team edits and master-grades the multi-camera footage in 4K with clean audio, delivering a permanent download link for high school applications and family archives.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+        <!-- =================================================================
+       FOOTER
+  ================================================================== -->
+  <footer class="vx-footer">
+    <div class="container">
+      <div class="row g-4 align-items-start">
+        
+        <!-- Column 1: Brand Info & Socials -->
+        <div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
+          <div class="footer-brand-wrap">
+            <a href="index.html" class="footer-brand-logo mb-3">
+              <img src="assets/img/brand/logo-white.svg" alt="VoxLeaders Logo" height="38">
+            </a>
+            <p class="footer-brand-desc small mb-4">
+              Empowering young minds with executive confidence, public speaking mastery &amp; debate skills.
+            </p>
+            <div class="d-flex align-items-center gap-2">
+              <a href="https://www.instagram.com/accounts/login/" target="_blank" rel="noopener noreferrer" class="footer-social-btn" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+              <a href="https://www.facebook.com/login/" target="_blank" rel="noopener noreferrer" class="footer-social-btn" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+              <a href="https://www.linkedin.com/login" target="_blank" rel="noopener noreferrer" class="footer-social-btn" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+              <a href="https://x.com/" target="_blank" rel="noopener noreferrer" class="footer-social-btn" aria-label="X (Twitter)"><i class="fab fa-x-twitter"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Column 2: Navigation -->
+        <div class="col-lg-2 col-md-6 mb-4 mb-lg-0">
+          <div class="footer-col-title">NAVIGATION</div>
+          <ul class="list-unstyled mb-0 d-flex flex-column">
+            <li><a href="index.html" class="footer-link">Home</a></li>
+            <li><a href="about.html" class="footer-link">About Us</a></li>
+            <li><a href="programs.html" class="footer-link">Programs</a></li>
+            <li><a href="pricing.html" class="footer-link">Pricing Tiers</a></li>
+            <li><a href="blog.html" class="footer-link">Blog &amp; Journal</a></li>
+            <li><a href="contact.html" class="footer-link">Contact Sales</a></li>
+          </ul>
+        </div>
+
+        <!-- Column 3: Camp Standards -->
+        <div class="col-lg-4 col-md-6 mb-4 mb-lg-0">
+          <div class="footer-col-title">CAMP STANDARDS</div>
+          <ul class="list-unstyled mb-0 d-flex flex-column">
+            <li class="footer-sla-item"><span class="sla-highlight">1:6 Coach Ratio</span> <span class="sla-desc">Certified Speech Mentors</span></li>
+            <li class="footer-sla-item"><span class="sla-highlight">Daily Stage Time</span> <span class="sla-desc">Live Adjudicated Practice</span></li>
+            <li class="footer-sla-item"><span class="sla-highlight">4K HD Video</span> <span class="sla-desc">Gala Showcase Recordings</span></li>
+            <li class="footer-sla-item"><span class="sla-highlight">Ages 7&ndash;18</span> <span class="sla-desc">Junior, Teen &amp; Exec Tracks</span></li>
+            <li class="footer-sla-item"><span class="sla-highlight">5 Regional Hubs</span> <span class="sla-desc">Speech &amp; Debate Campuses</span></li>
+          </ul>
+        </div>
+
+        <!-- Column 4: Camp Admissions -->
+        <div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
+          <div class="footer-col-title">CAMP ADMISSIONS</div>
+          <ul class="list-unstyled mb-3 d-flex flex-column">
+            <li class="footer-contact-item">
+              <i class="bi bi-envelope"></i>
+              <a href="mailto:admissions@voxleaders.org">admissions@voxleaders.org</a>
+            </li>
+            <li class="footer-contact-item">
+              <i class="bi bi-telephone"></i>
+              <a href="tel:+18005558695">+1 (800) 555-VOXLEAD</a>
+            </li>
+            <li class="footer-contact-item">
+              <i class="bi bi-geo-alt"></i>
+              <span>500 Leadership Way, Boston, MA</span>
+            </li>
+          </ul>
+          <a href="contact.html" class="btn-footer-cta">Connect Admissions Team</a>
+        </div>
+
+      </div>
+
+      <!-- Centered Copyright -->
+      <div class="vx-footer-bottom text-center">
+        &copy; 2026 VoxLeaders Youth Academy Ltd. All rights reserved.
+      </div>
+    </div>
+  </footer>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

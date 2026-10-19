@@ -1,0 +1,18 @@
+2026-10-18 16:04:47.262: [INFO] CurrentProfilePath: C:\Users\Moule Kannan\Documents\IQ Projects\Youth Leadership & Public Speaking Camp\.header-check\refresh-mobile-testimonials\Default
+2026-10-18 16:04:47.262: [INFO] Profiles total count: 1
+2026-10-18 16:04:47.262: [INFO] Profile: name=Profile 1 path=C:\Users\Moule Kannan\Documents\IQ Projects\Youth Leadership & Public Speaking Camp\.header-check\refresh-mobile-testimonials\Default lastActive=2026-10-18T16:04:47.251Z
+2026-10-18 16:04:47.262: [INFO] LastUsedProfileDir: C:\Users\Moule Kannan\Documents\IQ Projects\Youth Leadership & Public Speaking Camp\.header-check\refresh-mobile-testimonials\Default
+2026-10-18 16:04:47.262: [INFO] MostRecentlyActiveProfile: name=Profile 1 path=C:\Users\Moule Kannan\Documents\IQ Projects\Youth Leadership & Public Speaking Camp\.header-check\refresh-mobile-testimonials\Default lastActive=2026-10-18T16:04:47.251Z
+2026-10-18 16:04:47.262: [INFO] OnDoneLoading sync enabled: 0
+2026-10-18 16:04:47.262: [INFO] BookmarkModelLoaded, ids_reassigned: 0
+2026-10-18 16:04:47.262: [INFO] BookmarksLoadDropped droppedNodes=0
+2026-10-18 16:04:47.262: [INFO] BookmarksSnapshot Startup total=0 bar=0 other=0 mobile=0 showBar=0 showBarNTP=1
+2026-10-18 16:04:47.335: [INFO] RecordSyncInitDuration has_sync_been_enabled: 0 state: 0
+2026-10-18 16:04:47.485: [INFO] VisibilityChanged: 0
+2026-10-18 16:04:49.048: [INFO] RecordSyncInitDuration has_sync_been_enabled: 0 state: 0
+2026-10-18 16:04:49.051: [INFO] RecordSyncInitDuration has_sync_been_enabled: 0 state: 3
+2026-10-18 16:04:49.053: [INFO] Primary account changed.
+2026-10-18 16:04:49.053: [INFO] OnPrimaryAccountChanged PrimaryAccountChangeEvent::Type::kSet
+2026-10-18 16:04:49.062: [INFO] RecordSyncInitDuration has_sync_been_enabled: 0 state: 3
+2026-10-18 16:04:49.079: [INFO] RecordSyncInitDuration has_sync_been_enabled: 0 state: 3
+2026-10-18 16:04:50.044: [INFO] BookmarksSnapshot Shutdown total=0 bar=0 other=0 mobile=0 showBar=0 showBarNTP=1

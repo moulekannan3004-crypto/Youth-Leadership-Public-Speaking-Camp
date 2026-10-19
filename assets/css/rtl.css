@@ -93,3 +93,18 @@
   margin-left: auto;
   margin-right: 0;
 }
+
+/* Avatar stack & Hero Trust Bar RTL Support */
+[dir="rtl"] .avatar-stack img,
+[dir="rtl"] .trust-avatar-stack img {
+  margin-left: 0;
+  margin-right: -10px;
+}
+[dir="rtl"] .avatar-stack img:first-child,
+[dir="rtl"] .trust-avatar-stack img:first-child {
+  margin-right: 0;
+}
+
+[dir="rtl"] .hero-trust-bar {
+  text-align: right;
+}

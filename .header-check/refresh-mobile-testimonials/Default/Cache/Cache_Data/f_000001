@@ -1,0 +1,1081 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="light" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Testimonials &amp; Success Stories | VoxLeaders Youth Academy</title>
+  <meta name="description" content="Watch authentic student transformation videos and read parent reviews from graduates of VoxLeaders Public Speaking and Leadership Camp.">
+  
+  <link rel="icon" type="image/svg+xml" href="assets/img/brand/favicon.svg">
+  <link id="bootstrap-theme-style" rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <!-- Google Fonts: Poppins (Light 300), Outfit, Plus Jakarta Sans -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800;900&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,300&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="assets/css/style.css?v=8.4">
+  <link rel="stylesheet" href="assets/css/rtl.css">
+</head>
+<body class="page-testimonials">
+
+  <!-- Navigation Bar -->
+  <header class="vx-header">
+    <nav class="navbar navbar-expand-xl vx-navbar">
+      <div class="container-fluid px-3 px-xl-5">
+        <a class="navbar-brand vx-brand" href="index.html">
+          <img src="assets/img/brand/logo.svg" alt="VoxLeaders Logo" class="vx-brand-img">
+        </a>
+        <button class="navbar-toggler border-0 shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#vxNavbarContent">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="vxNavbarContent">
+          <!-- Navigation Links (Centered Alignment) -->
+          <ul class="navbar-nav mx-auto mb-2 mb-xl-0 align-items-xl-center">
+            <!-- Home with Dropdown -->
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle vx-nav-link" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                <span class="vx-nav-text">Home</span> <i class="bi bi-chevron-down ms-1" style="font-size: 0.75rem;"></i>
+              </a>
+              <ul class="dropdown-menu dropdown-menu-vx">
+                <li><a class="dropdown-item dropdown-item-vx" href="index.html">Home</a></li>
+                <li><a class="dropdown-item dropdown-item-vx" href="index-business.html">Home 2</a></li>
+              </ul>
+            </li>
+
+            <!-- About Us -->
+            <li class="nav-item">
+              <a class="nav-link vx-nav-link" href="about.html"><span class="vx-nav-text">About Us</span></a>
+            </li>
+
+            <!-- Programs -->
+            <li class="nav-item">
+              <a class="nav-link vx-nav-link" href="programs.html"><span class="vx-nav-text">Programs</span></a>
+            </li>
+
+            <!-- Testimonials -->
+            <li class="nav-item">
+              <a class="nav-link vx-nav-link active" href="testimonials.html"><span class="vx-nav-text">Testimonials</span></a>
+            </li>
+
+            <!-- Pricing -->
+            <li class="nav-item">
+              <a class="nav-link vx-nav-link" href="pricing.html"><span class="vx-nav-text">Pricing</span></a>
+            </li>
+
+            <!-- Gallery -->
+            <li class="nav-item">
+              <a class="nav-link vx-nav-link" href="gallery.html"><span class="vx-nav-text">Gallery</span></a>
+            </li>
+
+            <!-- Blog -->
+            <li class="nav-item">
+              <a class="nav-link vx-nav-link" href="blog.html"><span class="vx-nav-text">Blog</span></a>
+            </li>
+
+            <!-- Contact -->
+            <li class="nav-item">
+              <a class="nav-link vx-nav-link" href="contact.html"><span class="vx-nav-text">Contact</span></a>
+            </li>
+
+            <!-- Dashboard -->
+            <li class="nav-item">
+              <a class="nav-link vx-nav-link" href="dashboard-parent.html"><span class="vx-nav-text">Dashboard</span></a>
+            </li>
+          </ul>
+
+          <!-- Right Header Actions (LTR/RTL Pill + Theme Toggle Circle + Login Pill) -->
+          <div class="vx-header-actions mt-3 mt-xl-0">
+            <!-- LTR / RTL Switcher Pill -->
+            <button class="btn-vx-dir-pill rtl-toggle-btn" aria-label="Toggle Text Direction">
+              <span class="dir-active">LTR</span>
+              <i class="bi bi-arrow-left-right text-muted" style="font-size: 0.7rem;"></i>
+              <span class="dir-inactive">RTL</span>
+            </button>
+
+            <!-- Dark / Light Theme Toggle Circle -->
+            <button class="btn-vx-theme-circle theme-toggle-btn" aria-label="Toggle Dark/Light Mode" title="Toggle Theme">
+              <i class="bi bi-moon-stars-fill"></i>
+            </button>
+
+            <!-- Login Pill Button -->
+            <a href="auth.html" class="btn-vx-login-pill">
+              <i class="bi bi-box-arrow-in-right login-icon"></i>
+              <span>Login</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main id="mainContent">
+
+    <!-- =================================================================
+         1. HERO BANNER & VERIFIED SOCIAL PROOF TELEMETRY
+    ================================================================== -->
+    <section class="hero-wrapper page-header-hero testimonials-header-bg text-center position-relative">
+      <div class="hero-glow-bg"></div>
+      <div class="container position-relative z-2">
+        
+        <!-- Live Verified Trust Bar -->
+        <div class="d-inline-flex flex-wrap justify-content-center align-items-center mb-3">
+          <div class="testimonial-hero-trust-bar">
+            <div class="trust-avatar-stack">
+              <img src="assets/img/avatars/trust-test-1.jpg" alt="Parent Community Member">
+              <img src="assets/img/avatars/trust-test-2.jpg" alt="Camp Alum Graduate">
+              <img src="assets/img/avatars/trust-test-3.jpg" alt="Junior Orator Camper">
+              <img src="assets/img/avatars/trust-test-4.jpg" alt="Verified Parent">
+            </div>
+            <div class="text-start">
+              <div class="d-flex align-items-center gap-1.5 small">
+                <span class="text-warning fw-extrabold"><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i></span>
+                <span class="fw-bold text-heading">4.9/5 Rating</span>
+              </div>
+              <small class="text-body-secondary d-block" style="font-size: 0.72rem;">540+ Verified Family Reviews</small>
+            </div>
+            <div class="border-start border-theme ps-3 d-none d-sm-flex align-items-center gap-2">
+              <span class="live-pulse-dot"></span>
+              <span class="small fw-bold text-heading">Top 1% Youth Oratory</span>
+            </div>
+          </div>
+        </div>
+
+        <h1 class="display-4 fw-extrabold mb-3 font-heading">
+          Documented Transformations: <br>
+          <span class="text-gradient-primary">Real Voices. Unshakeable Poise. Proven Lift.</span>
+        </h1>
+        <p class="lead text-body-secondary mx-auto mb-4" style="max-width: 760px;">
+          From overcoming acute elementary stage fright to winning national forensics championships and commanding Ivy League admissions interviews, explore independently audited evidence of what happens when young leaders discover their true voice.
+        </p>
+        
+        <!-- Trust Telemetry Proof Pills -->
+        <div class="d-flex flex-wrap justify-content-center gap-2 mb-2">
+          <span class="proof-tag-pill"><i class="bi bi-mortarboard-fill text-primary"></i> 94% Top-20 Admissions Asset</span>
+          <span class="proof-tag-pill"><i class="bi bi-trophy-fill text-primary"></i> 120+ National Forensics Trophies</span>
+          <span class="proof-tag-pill"><i class="bi bi-people-fill text-primary"></i> 1:6 Harvard &amp; Champion Ratio</span>
+          <span class="proof-tag-pill"><i class="bi bi-shield-check text-primary"></i> 100% Measurable Confidence Guarantee</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- =================================================================
+         2. IMPACT TELEMETRY & VERIFIED OUTCOMES COUNTERS
+    ================================================================== -->
+    <section class="py-5 bg-surface-alt border-bottom border-theme">
+      <div class="container">
+        <div class="row g-4">
+          <!-- Metric 1 -->
+          <div class="col-sm-6 col-lg-3">
+            <div class="testimonials-stat-card h-100">
+              <div class="testimonials-stat-icon">
+                <i class="bi bi-people-fill"></i>
+              </div>
+              <div class="display-6 fw-extrabold font-heading text-heading mb-1" data-counter-target="3850" data-counter-suffix="+">3,850+</div>
+              <div class="fw-bold text-heading small mb-1">Graduates Empowered</div>
+              <p class="text-body-secondary small mb-0">Across Junior Orators (7&ndash;11), Teen Leaders (12&ndash;15), and Future Execs (16&ndash;18).</p>
+            </div>
+          </div>
+          <!-- Metric 2 -->
+          <div class="col-sm-6 col-lg-3">
+            <div class="testimonials-stat-card h-100">
+              <div class="testimonials-stat-icon">
+                <i class="bi bi-heart-fill"></i>
+              </div>
+              <div class="display-6 fw-extrabold font-heading text-heading mb-1" data-counter-target="98" data-counter-suffix=".4%">98.4%</div>
+              <div class="fw-bold text-heading small mb-1">Parent Satisfaction</div>
+              <p class="text-body-secondary small mb-0">Highest recorded Net Promoter Score (NPS 91) across 6 consecutive camp seasons.</p>
+            </div>
+          </div>
+          <!-- Metric 3 -->
+          <div class="col-sm-6 col-lg-3">
+            <div class="testimonials-stat-card h-100">
+              <div class="testimonials-stat-icon">
+                <i class="bi bi-trophy-fill"></i>
+              </div>
+              <div class="display-6 fw-extrabold font-heading text-heading mb-1" data-counter-target="120" data-counter-suffix="+">120+</div>
+              <div class="fw-bold text-heading small mb-1">Forensics Trophies</div>
+              <p class="text-body-secondary small mb-0">State, regional, and Harvard Model UN competitive tournament podium placements.</p>
+            </div>
+          </div>
+          <!-- Metric 4 -->
+          <div class="col-sm-6 col-lg-3">
+            <div class="testimonials-stat-card h-100">
+              <div class="testimonials-stat-icon">
+                <i class="bi bi-mortarboard-fill"></i>
+              </div>
+              <div class="display-6 fw-extrabold font-heading text-heading mb-1" data-counter-target="94" data-counter-suffix="%">94%</div>
+              <div class="fw-bold text-heading small mb-1">Top-20 College Lift</div>
+              <p class="text-body-secondary small mb-0">Alumni reporting speech capstones as their decisive admissions essay &amp; interview asset.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =================================================================
+         3. AUDITED BEFORE & AFTER DIAGNOSTIC MATRIX (INTERACTIVE SWITCHER)
+    ================================================================== -->
+    <section class="py-6 bg-surface-alt border-top border-bottom border-theme">
+      <div class="container">
+        <div class="row justify-content-center text-center mb-5">
+          <div class="col-lg-8">
+            <div class="badge-pill-soft mb-2"><i class="bi bi-sliders text-primary"></i> Objective Telemetry</div>
+            <h2 class="display-5 fw-extrabold font-heading mb-3">The Audited Before &amp; After Diagnostic Matrix</h2>
+            <p class="lead text-body-secondary mb-4">We do not rely on subjective impressions. Use the interactive switch below to observe the empirical shift in camper speech telemetry between Day 1 and Day 15.</p>
+            
+            <!-- Interactive Switcher Toggle Pills -->
+            <div class="toggle-pill-wrapper mb-2">
+              <button type="button" class="toggle-stage-btn" id="stageDay1Btn" onclick="switchTransformationStage(1)">
+                <i class="bi bi-x-circle me-1"></i> Day 1 Baseline (Acute Hesitation)
+              </button>
+              <button type="button" class="toggle-stage-btn active" id="stageDay15Btn" onclick="switchTransformationStage(15)">
+                <i class="bi bi-check-circle-fill me-1"></i> Day 15 Showcase (Magnetic Mastery)
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="transformation-switcher-card">
+          <div class="row g-4 align-items-center">
+            
+            <!-- Metric 1: Filler Words -->
+            <div class="col-md-6 col-lg-3">
+              <div class="metric-diagnostic-box">
+                <div class="d-flex justify-content-between align-items-center mb-2">
+                  <span class="small fw-bold text-body-secondary text-uppercase" style="letter-spacing: 0.05em;">Filler Words</span>
+                  <i class="bi bi-chat-quote-fill text-primary fs-5"></i>
+                </div>
+                <div class="display-6 fw-extrabold text-heading mb-1" id="valFillerWords">1.1 <span class="fs-6 text-muted fw-normal">/min</span></div>
+                <div class="progress mb-2" style="height: 6px;">
+                  <div class="progress-bar bg-primary" id="barFillerWords" style="width: 12%;"></div>
+                </div>
+                <p class="small text-body-secondary mb-0" id="descFillerWords">Strategic pauses replace "um", "like", and throat clears.</p>
+              </div>
+            </div>
+
+            <!-- Metric 2: Eye Contact -->
+            <div class="col-md-6 col-lg-3">
+              <div class="metric-diagnostic-box">
+                <div class="d-flex justify-content-between align-items-center mb-2">
+                  <span class="small fw-bold text-body-secondary text-uppercase" style="letter-spacing: 0.05em;">Room Scanning</span>
+                  <i class="bi bi-eye-fill text-primary fs-5"></i>
+                </div>
+                <div class="display-6 fw-extrabold text-heading mb-1" id="valEyeContact">96% <span class="fs-6 text-muted fw-normal">Coverage</span></div>
+                <div class="progress mb-2" style="height: 6px;">
+                  <div class="progress-bar bg-success" id="barEyeContact" style="width: 96%;"></div>
+                </div>
+                <p class="small text-body-secondary mb-0" id="descEyeContact">Active 3-quadrant room connection across all rows.</p>
+              </div>
+            </div>
+
+            <!-- Metric 3: Decibel Projection -->
+            <div class="col-md-6 col-lg-3">
+              <div class="metric-diagnostic-box">
+                <div class="d-flex justify-content-between align-items-center mb-2">
+                  <span class="small fw-bold text-body-secondary text-uppercase" style="letter-spacing: 0.05em;">Vocal Projection</span>
+                  <i class="bi bi-volume-up-fill text-primary fs-5"></i>
+                </div>
+                <div class="display-6 fw-extrabold text-heading mb-1" id="valProjection">79 dB <span class="fs-6 text-muted fw-normal">Resonant</span></div>
+                <div class="progress mb-2" style="height: 6px;">
+                  <div class="progress-bar bg-primary" id="barProjection" style="width: 88%;"></div>
+                </div>
+                <p class="small text-body-secondary mb-0" id="descProjection">Clear diaphragmatic resonance audible in row 20 without strain.</p>
+              </div>
+            </div>
+
+            <!-- Metric 4: Physiological Poise -->
+            <div class="col-md-6 col-lg-3">
+              <div class="metric-diagnostic-box">
+                <div class="d-flex justify-content-between align-items-center mb-2">
+                  <span class="small fw-bold text-body-secondary text-uppercase" style="letter-spacing: 0.05em;">Heart Rate / Poise</span>
+                  <i class="bi bi-heart-pulse-fill text-primary fs-5"></i>
+                </div>
+                <div class="display-6 fw-extrabold text-heading mb-1" id="valHeartRate">82 BPM <span class="fs-6 text-muted fw-normal">Poised</span></div>
+                <div class="progress mb-2" style="height: 6px;">
+                  <div class="progress-bar bg-success" id="barHeartRate" style="width: 35%;"></div>
+                </div>
+                <p class="small text-body-secondary mb-0" id="descHeartRate">Calm parasympathetic breathing anchoring the podium.</p>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- Adjudicator Endorsement Footer -->
+          <div class="d-flex flex-wrap justify-content-between align-items-center pt-4 border-top border-theme mt-4 gap-3">
+            <div class="d-flex align-items-center gap-3">
+              <img src="assets/img/testimonials/adjudicator-vance.jpg" width="46" height="46" class="rounded-circle shadow-sm" style="object-fit: cover;" alt="Dr. Julian Vance">
+              <div>
+                <span class="fw-bold text-heading small d-block">Adjudicated by Dr. Julian Vance, Ph.D.</span>
+                <small class="text-body-secondary">Chief Speech Scientist &bull; Harvard Debate Alumni Society</small>
+              </div>
+            </div>
+            <div class="d-flex flex-wrap align-items-center gap-2">
+              <span class="badge bg-primary-soft text-primary rounded-pill px-3 py-2 fw-bold text-center">
+                <i class="bi bi-patch-check-fill me-1"></i> ISO 9001 Audited Curriculum Telemetry
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =================================================================
+         5. UNIQUE FEATURE 3: WHERE ARE THEY NOW? (IVY LEAGUE ALUMNI PODIUM)
+    ================================================================== -->
+    <section class="py-6 bg-surface">
+      <div class="container">
+        <div class="row justify-content-center text-center mb-5">
+          <div class="col-lg-8">
+            <div class="badge-pill-soft mb-2"><i class="bi bi-mortarboard-fill text-primary"></i> Collegiate Trajectory</div>
+            <h2 class="display-5 fw-extrabold font-heading mb-3">Where Are They Now? Ivy League &amp; National Podiums</h2>
+            <p class="lead text-body-secondary">See how VoxLeaders graduates leveraged their oratory confidence to earn acceptance letters to the world's most selective academic institutions.</p>
+          </div>
+        </div>
+
+        <div class="row g-4">
+          <!-- Ivy Alum 1: Camilla Zhang (Harvard) -->
+          <div class="col-lg-4 col-md-6 d-flex">
+            <div class="alumni-ivy-card w-100">
+              <div class="d-flex justify-content-between align-items-center mb-3">
+                <span class="univ-crest-badge"><i class="bi bi-mortarboard-fill"></i> HARVARD '28</span>
+                <span class="badge bg-primary-soft text-primary fw-bold">Debate Scholar</span>
+              </div>
+              <div class="d-flex align-items-center gap-3 mb-3">
+                <img src="assets/img/testimonials/alum-camilla.jpg" width="52" height="52" class="rounded-circle shadow-sm" style="object-fit: cover;" alt="Camilla Zhang">
+                <div>
+                  <h3 class="h5 fw-bold text-heading mb-0">Camilla Zhang</h3>
+                  <small class="text-body-secondary">Camp Alum &bull; Future Execs Track</small>
+                </div>
+              </div>
+              <p class="text-body-secondary small mb-4 flex-grow-1 lh-base">
+                "My Harvard admissions interviewer spent nearly 25 minutes discussing my VoxLeaders speech capstone on educational equity. The ability to articulate complex policy ideas under pressure gave me an undeniable edge in Ivy League interviews."
+              </p>
+              <div class="pt-3 border-top border-theme mt-auto d-flex justify-content-between align-items-center small">
+                <span class="text-muted"><i class="bi bi-check2-circle text-primary"></i> Speech Capstone:</span>
+                <strong class="text-heading">Public Policy Thesis</strong>
+              </div>
+            </div>
+          </div>
+
+          <!-- Ivy Alum 2: Gabriel Morales (Stanford) -->
+          <div class="col-lg-4 col-md-6 d-flex">
+            <div class="alumni-ivy-card w-100">
+              <div class="d-flex justify-content-between align-items-center mb-3">
+                <span class="univ-crest-badge"><i class="bi bi-mortarboard-fill"></i> STANFORD '29</span>
+                <span class="badge bg-primary-soft text-primary fw-bold">Tech Ethics Fellow</span>
+              </div>
+              <div class="d-flex align-items-center gap-3 mb-3">
+                <img src="assets/img/testimonials/alum-gabriel.jpg" width="52" height="52" class="rounded-circle shadow-sm" style="object-fit: cover;" alt="Gabriel Morales">
+                <div>
+                  <h3 class="h5 fw-bold text-heading mb-0">Gabriel Morales</h3>
+                  <small class="text-body-secondary">Camp Alum &bull; Boardroom Pitch Lab</small>
+                </div>
+              </div>
+              <p class="text-body-secondary small mb-4 flex-grow-1 lh-base">
+                "The mock boardroom pitches and executive cross-examinations prepared me for high-stakes scholarship interviews that regular high school never teaches. VoxLeaders didn't just help me earn my Stanford spot; it gave me the executive toolkit to thrive here."
+              </p>
+              <div class="pt-3 border-top border-theme mt-auto d-flex justify-content-between align-items-center small">
+                <span class="text-muted"><i class="bi bi-check2-circle text-primary"></i> Speech Capstone:</span>
+                <strong class="text-heading">AI Startup Pitch</strong>
+              </div>
+            </div>
+          </div>
+
+          <!-- Ivy Alum 3: Ananya Roy (Yale) -->
+          <div class="col-lg-4 col-md-12 d-flex">
+            <div class="alumni-ivy-card w-100">
+              <div class="d-flex justify-content-between align-items-center mb-3">
+                <span class="univ-crest-badge"><i class="bi bi-mortarboard-fill"></i> YALE '29</span>
+                <span class="badge bg-primary-soft text-primary fw-bold">MUN Sec-Gen</span>
+              </div>
+              <div class="d-flex align-items-center gap-3 mb-3">
+                <img src="assets/img/testimonials/alum-ananya.jpg" width="52" height="52" class="rounded-circle shadow-sm" style="object-fit: cover;" alt="Ananya Roy">
+                <div>
+                  <h3 class="h5 fw-bold text-heading mb-0">Ananya Roy</h3>
+                  <small class="text-body-secondary">Camp Alum &bull; Parliamentary Debate</small>
+                </div>
+              </div>
+              <p class="text-body-secondary small mb-4 flex-grow-1 lh-base">
+                "VoxLeaders doesn't teach you to speak loudly; it teaches you to think deeply, listen empathetically, and construct ironclad arguments on your feet under extreme tournament pressure. That composure made Yale an achievable reality."
+              </p>
+              <div class="pt-3 border-top border-theme mt-auto d-flex justify-content-between align-items-center small">
+                <span class="text-muted"><i class="bi bi-check2-circle text-primary"></i> Speech Capstone:</span>
+                <strong class="text-heading">Diplomatic Treaty Oratory</strong>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =================================================================
+         5. MULTI-PERSPECTIVE INTERACTIVE REVIEW WALL (FILTER PILLS)
+    ================================================================== -->
+    <section class="py-6 bg-surface-alt border-top border-theme" id="reviewsWallSection">
+      <div class="container">
+        <div class="mb-4 pb-3 border-bottom border-theme">
+          <div class="mb-3">
+            <div class="badge-pill-soft mb-2"><i class="bi bi-chat-heart-fill text-primary"></i> Authentic Community Reviews</div>
+            <h2 class="display-5 fw-extrabold font-heading mb-1">Voices From Our Families &amp; Alumni</h2>
+            <p class="text-body-secondary mb-0">Explore verified feedback from parents, students, deans, and debate coaches across all cohorts.</p>
+          </div>
+          <!-- Filter Buttons with Counts (Single Proper Line Alignment) -->
+          <div class="filter-pills-track justify-content-start gap-2 py-1">
+            <button type="button" class="filter-btn-pill active" data-filter="all">All Reviews (9)</button>
+            <button type="button" class="filter-btn-pill" data-filter="parents">Parents &amp; Families (4)</button>
+            <button type="button" class="filter-btn-pill" data-filter="students">Student Voices (4)</button>
+            <button type="button" class="filter-btn-pill" data-filter="college">College Lift (3)</button>
+            <button type="button" class="filter-btn-pill" data-filter="debate">Debate Champs (3)</button>
+          </div>
+        </div>
+
+        <!-- 9 Rich Cards Grid with [data-category] -->
+        <div class="row g-4">
+          
+          <!-- Card 1: Claire Montgomery (Parent) -->
+          <div class="col-md-6 col-lg-4 d-flex" data-category="parents all">
+            <div class="testimonial-card w-100 h-100 d-flex flex-column">
+              <div class="d-flex justify-content-between align-items-center mb-3">
+                <div class="star-rating text-warning small">
+                  <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                </div>
+                <span class="badge bg-primary-soft text-primary fw-bold">Junior Track &bull; Age 12</span>
+              </div>
+              <p class="text-body-secondary mb-4 flex-grow-1">
+                "The Parent Portal was a revelation! Every evening my husband and I opened the app to watch private 4K video clips of Claire's impromptu drills along with adjudicator rubrics. We watched her transform into a self-assured, joyful young speaker."
+              </p>
+              <div class="d-flex justify-content-between align-items-center mt-auto pt-3 border-top border-theme">
+                <div class="d-flex align-items-center gap-2.5">
+                  <img src="assets/img/testimonials/parent-claire.jpg" style="object-fit: cover;" width="42" height="42" class="rounded-circle shadow-sm" alt="Claire Montgomery">
+                  <div>
+                    <div class="fw-bold text-heading small">Claire Montgomery</div>
+                    <small class="text-primary d-block" style="font-size: 0.72rem;"><i class="bi bi-patch-check-fill"></i> Verified Parent &bull; Boston</small>
+                  </div>
+                </div>
+                <button type="button" class="btn-review-helpful" onclick="voteHelpful(this)">
+                  <i class="bi bi-hand-thumbs-up"></i> (<span class="helpful-count">34</span>)
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 2: Arthur Pendelton (Educator & Debate) -->
+          <div class="col-md-6 col-lg-4 d-flex" data-category="debate college all">
+            <div class="testimonial-card w-100 h-100 d-flex flex-column">
+              <div class="d-flex justify-content-between align-items-center mb-3">
+                <div class="star-rating text-warning small">
+                  <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                </div>
+                <span class="badge bg-primary-soft text-primary fw-bold">High School Dean</span>
+              </div>
+              <p class="text-body-secondary mb-4 flex-grow-1">
+                "Our high school district sponsored 20 students for VoxLeaders parliamentary training. The improvement in their critical inquiry, cross-examination composure, and analytical precision was palpable on the very first day of fall classes."
+              </p>
+              <div class="d-flex justify-content-between align-items-center mt-auto pt-3 border-top border-theme">
+                <div class="d-flex align-items-center gap-2.5">
+                  <img src="assets/img/testimonials/educator-arthur.jpg" style="object-fit: cover;" width="42" height="42" class="rounded-circle shadow-sm" alt="Arthur Pendelton">
+                  <div>
+                    <div class="fw-bold text-heading small">Arthur Pendelton</div>
+                    <small class="text-primary d-block" style="font-size: 0.72rem;"><i class="bi bi-patch-check-fill"></i> Forensics Lead &bull; New York</small>
+                  </div>
+                </div>
+                <button type="button" class="btn-review-helpful" onclick="voteHelpful(this)">
+                  <i class="bi bi-hand-thumbs-up"></i> (<span class="helpful-count">28</span>)
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 3: Sophia K. (Student) -->
+          <div class="col-md-6 col-lg-4 d-flex" data-category="students all">
+            <div class="testimonial-card w-100 h-100 d-flex flex-column">
+              <div class="d-flex justify-content-between align-items-center mb-3">
+                <div class="star-rating text-warning small">
+                  <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                </div>
+                <span class="badge bg-primary-soft text-primary fw-bold">Teen Leader &bull; Age 13</span>
+              </div>
+              <p class="text-body-secondary mb-4 flex-grow-1">
+                "I used to get physical stomach aches before class presentations. By week two at camp, my coach showed me diaphragmatic anchoring and how to pause instead of saying 'um'. Now I actually look forward to taking the mic in front of everyone!"
+              </p>
+              <div class="d-flex justify-content-between align-items-center mt-auto pt-3 border-top border-theme">
+                <div class="d-flex align-items-center gap-2.5">
+                  <img src="assets/img/testimonials/student-aaliyah.jpg" style="object-fit: cover;" width="42" height="42" class="rounded-circle shadow-sm" alt="Sophia K.">
+                  <div>
+                    <div class="fw-bold text-heading small">Sophia K.</div>
+                    <small class="text-primary d-block" style="font-size: 0.72rem;"><i class="bi bi-patch-check-fill"></i> Graduate Camper &bull; Chicago</small>
+                  </div>
+                </div>
+                <button type="button" class="btn-review-helpful" onclick="voteHelpful(this)">
+                  <i class="bi bi-hand-thumbs-up"></i> (<span class="helpful-count">42</span>)
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 4: Dr. Jonathan Hayes (Parent) -->
+          <div class="col-md-6 col-lg-4 d-flex" data-category="parents all">
+            <div class="testimonial-card w-100 h-100 d-flex flex-column">
+              <div class="d-flex justify-content-between align-items-center mb-3">
+                <div class="star-rating text-warning small">
+                  <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                </div>
+                <span class="badge bg-primary-soft text-primary fw-bold">Junior Parent &bull; Age 9</span>
+              </div>
+              <p class="text-body-secondary mb-4 flex-grow-1">
+                "As a surgeon who speaks at medical symposiums, I know that public speaking is the ultimate life multiplier. Sending our 9-year-old son to Junior Orators was our best educational investment. He gave a toast at his grandfather's 75th birthday that moved 80 people to tears."
+              </p>
+              <div class="d-flex justify-content-between align-items-center mt-auto pt-3 border-top border-theme">
+                <div class="d-flex align-items-center gap-2.5">
+                  <img src="assets/img/avatars/avatar-4.jpg" style="object-fit: cover;" width="42" height="42" class="rounded-circle shadow-sm" alt="Dr. Jonathan Hayes">
+                  <div>
+                    <div class="fw-bold text-heading small">Dr. Jonathan Hayes</div>
+                    <small class="text-primary d-block" style="font-size: 0.72rem;"><i class="bi bi-patch-check-fill"></i> Verified Parent &bull; San Francisco</small>
+                  </div>
+                </div>
+                <button type="button" class="btn-review-helpful" onclick="voteHelpful(this)">
+                  <i class="bi bi-hand-thumbs-up"></i> (<span class="helpful-count">31</span>)
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 5: Nadia Volkov (College Lift) -->
+          <div class="col-md-6 col-lg-4 d-flex" data-category="college students all">
+            <div class="testimonial-card w-100 h-100 d-flex flex-column">
+              <div class="d-flex justify-content-between align-items-center mb-3">
+                <div class="star-rating text-warning small">
+                  <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                </div>
+                <span class="badge bg-primary-soft text-primary fw-bold">Yale '28 Admit</span>
+              </div>
+              <p class="text-body-secondary mb-4 flex-grow-1">
+                "My Yale admissions interviewer spent nearly 25 minutes discussing my VoxLeaders filmed TEDx capstone on educational equity. The ability to articulate complex policy ideas concisely gave me an undeniable edge in Ivy League interviews."
+              </p>
+              <div class="d-flex justify-content-between align-items-center mt-auto pt-3 border-top border-theme">
+                <div class="d-flex align-items-center gap-2.5">
+                  <img src="assets/img/testimonials/student-nadia.jpg" style="object-fit: cover;" width="42" height="42" class="rounded-circle shadow-sm" alt="Nadia Volkov">
+                  <div>
+                    <div class="fw-bold text-heading small">Nadia Volkov</div>
+                    <small class="text-primary d-block" style="font-size: 0.72rem;"><i class="bi bi-patch-check-fill"></i> Yale University '28 Alum</small>
+                  </div>
+                </div>
+                <button type="button" class="btn-review-helpful" onclick="voteHelpful(this)">
+                  <i class="bi bi-hand-thumbs-up"></i> (<span class="helpful-count">48</span>)
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 6: Trevor Sterling (Debate & Student) -->
+          <div class="col-md-6 col-lg-4 d-flex" data-category="debate students all">
+            <div class="testimonial-card w-100 h-100 d-flex flex-column">
+              <div class="d-flex justify-content-between align-items-center mb-3">
+                <div class="star-rating text-warning small">
+                  <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                </div>
+                <span class="badge bg-primary-soft text-primary fw-bold">Forensics Finalist</span>
+              </div>
+              <p class="text-body-secondary mb-4 flex-grow-1">
+                "The forensic mentors at VoxLeaders are collegiate debate champions. The mental filing systems they teach for impromptu argumentation and dismantling rhetorical fallacies gave me the skills to reach the national finals."
+              </p>
+              <div class="d-flex justify-content-between align-items-center mt-auto pt-3 border-top border-theme">
+                <div class="d-flex align-items-center gap-2.5">
+                  <img src="assets/img/testimonials/student-trevor.jpg" style="object-fit: cover;" width="42" height="42" class="rounded-circle shadow-sm" alt="Trevor Sterling">
+                  <div>
+                    <div class="fw-bold text-heading small">Trevor Sterling</div>
+                    <small class="text-primary d-block" style="font-size: 0.72rem;"><i class="bi bi-patch-check-fill"></i> National Forensics &bull; Dallas</small>
+                  </div>
+                </div>
+                <button type="button" class="btn-review-helpful" onclick="voteHelpful(this)">
+                  <i class="bi bi-hand-thumbs-up"></i> (<span class="helpful-count">19</span>)
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 7: Miriam & Robert Cole (Parents) -->
+          <div class="col-md-6 col-lg-4 d-flex" data-category="parents all">
+            <div class="testimonial-card w-100 h-100 d-flex flex-column">
+              <div class="d-flex justify-content-between align-items-center mb-3">
+                <div class="star-rating text-warning small">
+                  <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                </div>
+                <span class="badge bg-primary-soft text-primary fw-bold">Parents of Twins</span>
+              </div>
+              <p class="text-body-secondary mb-4 flex-grow-1">
+                "Having two children with opposite personalities—one hyper-extroverted and one deeply introverted—we were astonished how the 1:6 coaching ratio adapted to both. Both returned home proud, articulate, and supportive of each other."
+              </p>
+              <div class="d-flex justify-content-between align-items-center mt-auto pt-3 border-top border-theme">
+                <div class="d-flex align-items-center gap-2.5">
+                  <img src="assets/img/testimonials/parent-robert.jpg" style="object-fit: cover;" width="42" height="42" class="rounded-circle shadow-sm" alt="Miriam & Robert Cole">
+                  <div>
+                    <div class="fw-bold text-heading small">Miriam &amp; Robert Cole</div>
+                    <small class="text-primary d-block" style="font-size: 0.72rem;"><i class="bi bi-patch-check-fill"></i> Verified Parents &bull; London</small>
+                  </div>
+                </div>
+                <button type="button" class="btn-review-helpful" onclick="voteHelpful(this)">
+                  <i class="bi bi-hand-thumbs-up"></i> (<span class="helpful-count">36</span>)
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 8: Priya Sharma (Debate & Student) -->
+          <div class="col-md-6 col-lg-4 d-flex" data-category="debate students all">
+            <div class="testimonial-card w-100 h-100 d-flex flex-column">
+              <div class="d-flex justify-content-between align-items-center mb-3">
+                <div class="star-rating text-warning small">
+                  <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                </div>
+                <span class="badge bg-primary-soft text-primary fw-bold">MUN Captain &bull; Age 15</span>
+              </div>
+              <p class="text-body-secondary mb-4 flex-grow-1">
+                "I went from hiding behind prepared cue cards to pacing the stage freely, making eye contact across all rows, and using strategic pregnant pauses. VoxLeaders showed me that real power comes from calm conviction, not shouting."
+              </p>
+              <div class="d-flex justify-content-between align-items-center mt-auto pt-3 border-top border-theme">
+                <div class="d-flex align-items-center gap-2.5">
+                  <img src="assets/img/testimonials/student-priya.jpg" style="object-fit: cover;" width="42" height="42" class="rounded-circle shadow-sm" alt="Priya Sharma">
+                  <div>
+                    <div class="fw-bold text-heading small">Priya Sharma</div>
+                    <small class="text-primary d-block" style="font-size: 0.72rem;"><i class="bi bi-patch-check-fill"></i> MUN Captain &bull; New York Hub</small>
+                  </div>
+                </div>
+                <button type="button" class="btn-review-helpful" onclick="voteHelpful(this)">
+                  <i class="bi bi-hand-thumbs-up"></i> (<span class="helpful-count">25</span>)
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 9: Mateo Fernandez (College Lift) -->
+          <div class="col-md-6 col-lg-4 d-flex" data-category="college students all">
+            <div class="testimonial-card w-100 h-100 d-flex flex-column">
+              <div class="d-flex justify-content-between align-items-center mb-3">
+                <div class="star-rating text-warning small">
+                  <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                </div>
+                <span class="badge bg-primary-soft text-primary fw-bold">Columbia '29 Admit</span>
+              </div>
+              <p class="text-body-secondary mb-4 flex-grow-1">
+                "The mock trial cross-examinations and rapid rebuttal drills prepared me for high-stakes university scholarship interviews. VoxLeaders didn't just help me earn my Columbia spot; it gave me the executive toolkit to thrive under pressure."
+              </p>
+              <div class="d-flex justify-content-between align-items-center mt-auto pt-3 border-top border-theme">
+                <div class="d-flex align-items-center gap-2.5">
+                  <img src="assets/img/testimonials/student-mateo.jpg" style="object-fit: cover;" width="42" height="42" class="rounded-circle shadow-sm" alt="Mateo Fernandez">
+                  <div>
+                    <div class="fw-bold text-heading small">Mateo Fernandez</div>
+                    <small class="text-primary d-block" style="font-size: 0.72rem;"><i class="bi bi-patch-check-fill"></i> Columbia Scholar &bull; Chicago Hub</small>
+                  </div>
+                </div>
+                <button type="button" class="btn-review-helpful" onclick="voteHelpful(this)">
+                  <i class="bi bi-hand-thumbs-up"></i> (<span class="helpful-count">51</span>)
+                </button>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- =================================================================
+         6. THE VOXLEADERS 100% PARENT CHARTER & GUARANTEE
+    ================================================================== -->
+    <section class="py-6 bg-surface border-top border-theme">
+      <div class="container">
+        <div class="card border-0 bg-surface-alt rounded-theme-xl p-4 p-md-5 border border-theme shadow-sm">
+          <div class="row g-4 align-items-center">
+            <div class="col-lg-7">
+              <div class="badge-pill-soft mb-2"><i class="bi bi-shield-check text-primary"></i> Institutional Quality Charter</div>
+              <h2 class="h2 fw-extrabold font-heading text-heading mb-3">The VoxLeaders 100% Parent Peace of Mind Guarantee</h2>
+              <p class="text-body-secondary mb-4">
+                We believe exceptional public speaking education should be transparent, measurable, and risk-free. Every family who enrolls in VoxLeaders is backed by our fourfold institutional covenant:
+              </p>
+              
+              <div class="row g-3">
+                <div class="col-sm-6">
+                  <div class="d-flex align-items-start gap-2.5">
+                    <i class="bi bi-check-circle-fill text-primary fs-5 mt-0.5"></i>
+                    <div>
+                      <strong class="text-heading small d-block">Guaranteed 1:6 Coach Ratio</strong>
+                      <span class="small text-body-secondary">45 min of direct 1-on-1 speech coaching every single day.</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-6">
+                  <div class="d-flex align-items-start gap-2.5">
+                    <i class="bi bi-check-circle-fill text-primary fs-5 mt-0.5"></i>
+                    <div>
+                      <strong class="text-heading small d-block">12+ Podium Speeches</strong>
+                      <span class="small text-body-secondary">Active microphone time daily, not just passive lectures.</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-6">
+                  <div class="d-flex align-items-start gap-2.5">
+                    <i class="bi bi-check-circle-fill text-primary fs-5 mt-0.5"></i>
+                    <div>
+                      <strong class="text-heading small d-block">Daily Parent Portal Telemetry</strong>
+                      <span class="small text-body-secondary">4K video recordings and coach feedback sent every evening.</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-6">
+                  <div class="d-flex align-items-start gap-2.5">
+                    <i class="bi bi-check-circle-fill text-primary fs-5 mt-0.5"></i>
+                    <div>
+                      <strong class="text-heading small d-block">100% Breakthrough Assurance</strong>
+                      <span class="small text-body-secondary">Full tuition refund if no measurable confidence lift is observed.</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-5 text-center">
+              <div class="bespoke-pedagogical-seal">
+                <div class="seal-status-badge">
+                  <span class="seal-status-pulse"></span>
+                  <span>Active Accreditation &bull; 2026-2027</span>
+                </div>
+
+                <div class="seal-medallion-wrap">
+                  <svg class="seal-rosette-svg" viewBox="0 0 100 110" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <defs>
+                      <linearGradient id="sealPrimaryGrad" x1="15%" y1="0%" x2="85%" y2="100%">
+                        <stop offset="0%" stop-color="#6366F1"/>
+                        <stop offset="50%" stop-color="#4F46E5"/>
+                        <stop offset="100%" stop-color="#312E81"/>
+                      </linearGradient>
+                      <linearGradient id="sealRibbonGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                        <stop offset="0%" stop-color="#4338CA"/>
+                        <stop offset="100%" stop-color="#1E1B4B"/>
+                      </linearGradient>
+                    </defs>
+                    <!-- Ribbon Tails -->
+                    <path d="M 36 68 L 26 98 L 38 90 L 46 98 L 44 68 Z" fill="url(#sealRibbonGrad)"/>
+                    <path d="M 64 68 L 74 98 L 62 90 L 54 98 L 56 68 Z" fill="url(#sealRibbonGrad)"/>
+                    <!-- Medallion Core -->
+                    <g transform="translate(50, 44)">
+                      <circle r="36" fill="url(#sealPrimaryGrad)"/>
+                      <circle r="32" stroke="#FFFFFF" stroke-width="1.2" stroke-dasharray="3, 2.5" opacity="0.65"/>
+                      <circle r="27" stroke="#FFFFFF" stroke-width="1" opacity="0.4"/>
+                      <circle r="25" fill="#3730A3" opacity="0.5"/>
+                      <!-- Laurel Wreath -->
+                      <path d="M -16 6 C -18 -4, -14 -10, -7 -12 M -18 3 C -16 1, -12 2, -10 6 M -17 -3 C -14 -4, -11 -2, -9 1 M -13 -9 C -10 -9, -8 -6, -7 -3" stroke="#FFFFFF" stroke-width="1.5" stroke-linecap="round" fill="none" opacity="0.85"/>
+                      <path d="M 16 6 C 18 -4, 14 -10, 7 -12 M 18 3 C 16 1, 12 2, 10 6 M 17 -3 C 14 -4, 11 -2, 9 1 M 13 -9 C 10 -9, 8 -6, 7 -3" stroke="#FFFFFF" stroke-width="1.5" stroke-linecap="round" fill="none" opacity="0.85"/>
+                      <!-- Center Star & Torch -->
+                      <polygon points="0,-18 2.2,-13 7.5,-13 3.3,-10 4.8,-5 0,-8 -4.8,-5 -3.3,-10 -7.5,-13 -2.2,-13" fill="#FBBF24"/>
+                      <path d="M 0 16 L -4 4 L 4 4 Z" fill="#FBBF24"/>
+                      <circle cx="0" cy="1" r="3.5" fill="#EF4444"/>
+                      <path d="M -2 1 C -2 -3, 0 -6, 0 -8 C 0 -6, 2 -3, 2 1 Z" fill="#F59E0B"/>
+                    </g>
+                  </svg>
+                </div>
+
+                <div class="text-uppercase small fw-bold text-primary font-monospace mb-1" style="font-size: 0.68rem; letter-spacing: 0.12em;">Institutional Covenant</div>
+                <h4 class="h5 fw-extrabold font-heading text-heading mb-1">Official Seal of Pedagogical Rigor</h4>
+                <p class="small text-body-secondary mb-3">Accredited Member &bull; Global Forensics &amp; Debate Educational Council</p>
+
+                <div class="seal-registry-meta">
+                  <div class="seal-meta-item">REG: <strong>#GFDEC-2026-9001</strong></div>
+                  <div class="seal-meta-item">AUDIT: <strong>ISO 9001:2015</strong></div>
+                </div>
+
+                <div class="seal-badges-strip">
+                  <span class="seal-badge-pill"><i class="bi bi-shield-lock-fill"></i> FERPA 34 CFR</span>
+                  <span class="seal-badge-pill"><i class="bi bi-patch-check-fill"></i> 100% Verified Lift</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =================================================================
+         7. INTERACTIVE ALUMNI & PARENT STORY SUBMISSION CALLOUT
+    ================================================================== -->
+    <section class="py-5 bg-surface border-top border-theme">
+      <div class="container">
+        <div class="share-story-banner p-4 p-md-5 text-center text-md-start d-flex flex-column flex-md-row align-items-center justify-content-between gap-4">
+          <div style="max-width: 620px;">
+            <span class="badge bg-white text-primary fw-bold rounded-pill px-3 py-1 mb-2">Alumni &amp; Parent Community</span>
+            <h3 class="h2 fw-extrabold text-white font-heading mb-2">Are You a VoxLeaders Graduate or Parent?</h3>
+            <p class="text-white-50 mb-0">Share your breakthrough story, debate tournament update, or college admission news to inspire the next generation of young orators.</p>
+          </div>
+          <div class="flex-shrink-0">
+            <button type="button" class="btn btn-light rounded-pill px-4 py-2.5 fw-bold text-primary shadow" data-bs-toggle="modal" data-bs-target="#submitStoryModal">
+              <i class="bi bi-chat-heart-fill me-1.5"></i> Submit Your Camp Story
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =================================================================
+         8. FINAL HIGH-CONVERSION ADMISSIONS CONSULTATION BANNER
+    ================================================================== -->
+    <section class="py-6 bg-surface-alt border-top border-theme text-center">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-8">
+            <div class="badge-pill-soft mb-3"><i class="bi bi-stars text-primary"></i> Summer 2026 Admissions Open</div>
+            <h2 class="display-5 fw-extrabold font-heading mb-3">Give Your Child the Lifelong Superpower of Unshakeable Self-Belief</h2>
+            <p class="lead text-body-secondary mb-4">Small cohorts capped at 12 students. 1:6 coach-to-student ratio. Daily soundstage podium time. Reserve your preferred campus session before waitlists open.</p>
+            <div class="d-flex flex-wrap justify-content-center gap-3">
+              <a href="contact.html" class="btn-vx btn-vx-primary"><i class="bi bi-calendar-check-fill"></i> Book 15-Min Zoom Discovery</a>
+              <a href="programs.html" class="btn-vx btn-vx-outline"><i class="bi bi-compass"></i> Explore Summer Cohorts</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Submit Story Modal -->
+  <div class="modal fade" id="submitStoryModal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+      <div class="modal-content bg-surface border border-theme rounded-theme-xl shadow-lg">
+        <div class="modal-header border-bottom border-theme p-4">
+          <div>
+            <h5 class="modal-title font-heading fw-bold text-heading"><i class="bi bi-chat-heart-fill text-primary me-2"></i> Share Your VoxLeaders Story</h5>
+            <small class="text-body-secondary">Your review inspires prospective families and honors your child's courage.</small>
+          </div>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body p-4">
+          <form id="alumniReviewForm" onsubmit="event.preventDefault(); alert('Thank you! Your story has been submitted for editorial verification.'); bootstrap.Modal.getInstance(document.getElementById('submitStoryModal')).hide();">
+            <div class="row g-3">
+              <div class="col-md-6">
+                <label class="form-label small fw-bold text-heading">Your Name</label>
+                <input type="text" class="form-control rounded-pill px-3 py-2" placeholder="e.g. Rachel Adams" required>
+              </div>
+              <div class="col-md-6">
+                <label class="form-label small fw-bold text-heading">I am a...</label>
+                <select class="form-select rounded-pill px-3 py-2">
+                  <option value="parent">Parent of Camper</option>
+                  <option value="student">Camp Graduate / Student</option>
+                  <option value="educator">School Educator / Forensics Coach</option>
+                </select>
+              </div>
+              <div class="col-md-6">
+                <label class="form-label small fw-bold text-heading">Child / Camper Name &amp; Age</label>
+                <input type="text" class="form-control rounded-pill px-3 py-2" placeholder="e.g. Maya (Age 13)">
+              </div>
+              <div class="col-md-6">
+                <label class="form-label small fw-bold text-heading">Camp Cohort / Track Attended</label>
+                <select class="form-select rounded-pill px-3 py-2">
+                  <option value="junior">Junior Orators (Ages 7&ndash;11)</option>
+                  <option value="teen">Teen Leaders &bull; MUN Debate (Ages 12&ndash;15)</option>
+                  <option value="exec">Future Executives &bull; Ivy Prep (Ages 16&ndash;18)</option>
+                </select>
+              </div>
+              <div class="col-12">
+                <label class="form-label small fw-bold text-heading">Star Rating</label>
+                <div class="d-flex gap-2 text-warning fs-5">
+                  <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                </div>
+              </div>
+              <div class="col-12">
+                <label class="form-label small fw-bold text-heading">Your Story or Transformation Review</label>
+                <textarea class="form-control rounded-theme p-3" rows="4" placeholder="What was your camper like before VoxLeaders? What breakthrough did you witness on stage? How has it impacted their confidence in school?" required></textarea>
+              </div>
+            </div>
+            <div class="d-flex justify-content-end gap-2 mt-4">
+              <button type="button" class="btn btn-outline-secondary rounded-pill px-4" data-bs-dismiss="modal">Cancel</button>
+              <button type="submit" class="btn btn-vx-primary rounded-pill px-4"><i class="bi bi-send-fill me-1"></i> Submit Story</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- =================================================================
+       FOOTER
+  ================================================================== -->
+  <footer class="vx-footer">
+    <div class="container">
+      <div class="row g-4 align-items-start">
+        
+        <!-- Column 1: Brand Info & Socials -->
+        <div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
+          <div class="footer-brand-wrap">
+            <a href="index.html" class="footer-brand-logo mb-3">
+              <img src="assets/img/brand/logo-white.svg" alt="VoxLeaders Logo" height="38">
+            </a>
+            <p class="footer-brand-desc small mb-4">
+              Empowering young minds with executive confidence, public speaking mastery &amp; debate skills.
+            </p>
+            <div class="d-flex align-items-center gap-2">
+              <a href="https://www.instagram.com/accounts/login/" target="_blank" rel="noopener noreferrer" class="footer-social-btn" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+              <a href="https://www.facebook.com/login/" target="_blank" rel="noopener noreferrer" class="footer-social-btn" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+              <a href="https://www.linkedin.com/login" target="_blank" rel="noopener noreferrer" class="footer-social-btn" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+              <a href="https://x.com/" target="_blank" rel="noopener noreferrer" class="footer-social-btn" aria-label="X (Twitter)"><i class="fab fa-x-twitter"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Column 2: Navigation -->
+        <div class="col-lg-2 col-md-6 mb-4 mb-lg-0">
+          <div class="footer-col-title">NAVIGATION</div>
+          <ul class="list-unstyled mb-0 d-flex flex-column">
+            <li><a href="index.html" class="footer-link">Home</a></li>
+            <li><a href="about.html" class="footer-link">About Us</a></li>
+            <li><a href="programs.html" class="footer-link">Programs</a></li>
+            <li><a href="testimonials.html" class="footer-link">Testimonials</a></li>
+            <li><a href="pricing.html" class="footer-link">Pricing Tiers</a></li>
+            <li><a href="blog.html" class="footer-link">Blog &amp; Journal</a></li>
+            <li><a href="contact.html" class="footer-link">Contact Sales</a></li>
+          </ul>
+        </div>
+
+        <!-- Column 3: Camp Standards -->
+        <div class="col-lg-4 col-md-6 mb-4 mb-lg-0">
+          <div class="footer-col-title">CAMP STANDARDS</div>
+          <ul class="list-unstyled mb-0 d-flex flex-column">
+            <li class="footer-sla-item"><span class="sla-highlight">1:6 Coach Ratio</span> <span class="sla-desc">Certified Speech Mentors</span></li>
+            <li class="footer-sla-item"><span class="sla-highlight">Daily Stage Time</span> <span class="sla-desc">Live Adjudicated Practice</span></li>
+            <li class="footer-sla-item"><span class="sla-highlight">4K HD Video</span> <span class="sla-desc">Gala Showcase Recordings</span></li>
+            <li class="footer-sla-item"><span class="sla-highlight">Ages 7&ndash;18</span> <span class="sla-desc">Junior, Teen &amp; Exec Tracks</span></li>
+            <li class="footer-sla-item"><span class="sla-highlight">5 Regional Hubs</span> <span class="sla-desc">Speech &amp; Debate Campuses</span></li>
+          </ul>
+        </div>
+
+        <!-- Column 4: Camp Admissions -->
+        <div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
+          <div class="footer-col-title">CAMP ADMISSIONS</div>
+          <ul class="list-unstyled mb-3 d-flex flex-column">
+            <li class="footer-contact-item">
+              <i class="bi bi-envelope"></i>
+              <a href="mailto:admissions@voxleaders.org">admissions@voxleaders.org</a>
+            </li>
+            <li class="footer-contact-item">
+              <i class="bi bi-telephone"></i>
+              <a href="tel:+18005558695">+1 (800) 555-VOXLEAD</a>
+            </li>
+            <li class="footer-contact-item">
+              <i class="bi bi-geo-alt"></i>
+              <span>500 Leadership Way, Boston, MA</span>
+            </li>
+          </ul>
+          <a href="contact.html" class="btn-footer-cta">Connect Admissions Team</a>
+        </div>
+
+      </div>
+
+      <!-- Centered Copyright -->
+      <div class="vx-footer-bottom text-center">
+        &copy; 2026 VoxLeaders Youth Academy Ltd. All rights reserved.
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/js/main.js"></script>
+  <script>
+    // 1. Interactive Day 1 vs Day 15 Transformation Switcher
+    function switchTransformationStage(stage) {
+      const btn1 = document.getElementById('stageDay1Btn');
+      const btn15 = document.getElementById('stageDay15Btn');
+
+      const valFiller = document.getElementById('valFillerWords');
+      const barFiller = document.getElementById('barFillerWords');
+      const descFiller = document.getElementById('descFillerWords');
+
+      const valEye = document.getElementById('valEyeContact');
+      const barEye = document.getElementById('barEyeContact');
+      const descEye = document.getElementById('descEyeContact');
+
+      const valProj = document.getElementById('valProjection');
+      const barProj = document.getElementById('barProjection');
+      const descProj = document.getElementById('descProjection');
+
+      const valHR = document.getElementById('valHeartRate');
+      const barHR = document.getElementById('barHeartRate');
+      const descHR = document.getElementById('descHeartRate');
+
+      if (stage === 1) {
+        btn1.classList.add('active');
+        btn15.classList.remove('active');
+
+        valFiller.innerHTML = '18.4 <span class="fs-6 text-danger fw-normal">/min</span>';
+        barFiller.style.width = '92%';
+        barFiller.className = 'progress-bar bg-danger';
+        descFiller.textContent = 'Frequent fillers, stuttering, and hesitant throat clearing.';
+
+        valEye.innerHTML = '22% <span class="fs-6 text-danger fw-normal">Hesitant</span>';
+        barEye.style.width = '22%';
+        barEye.className = 'progress-bar bg-danger';
+        descEye.textContent = 'Fixated on prepared cue cards and looking down at feet.';
+
+        valProj.innerHTML = '52 dB <span class="fs-6 text-warning-emphasis fw-normal">Whisper</span>';
+        barProj.style.width = '35%';
+        barProj.className = 'progress-bar bg-warning';
+        descProj.textContent = 'Inaudible past row 2 without electronic microphone amplification.';
+
+        valHR.innerHTML = '148 BPM <span class="fs-6 text-danger fw-normal">Panic Freeze</span>';
+        barHR.style.width = '95%';
+        barHR.className = 'progress-bar bg-danger';
+        descHR.textContent = 'Acute fight-or-flight freeze reflex under unscripted questions.';
+
+        if (typeof showToast === 'function') {
+          showToast('Day 1 Baseline Loaded', 'Displaying pre-camp stage anxiety diagnostics.', 'info');
+        }
+      } else {
+        btn15.classList.add('active');
+        btn1.classList.remove('active');
+
+        valFiller.innerHTML = '1.1 <span class="fs-6 text-muted fw-normal">/min</span>';
+        barFiller.style.width = '12%';
+        barFiller.className = 'progress-bar bg-primary';
+        descFiller.textContent = 'Strategic pauses replace "um", "like", and throat clears.';
+
+        valEye.innerHTML = '96% <span class="fs-6 text-muted fw-normal">Coverage</span>';
+        barEye.style.width = '96%';
+        barEye.className = 'progress-bar bg-success';
+        descEye.textContent = 'Active 3-quadrant room connection across all rows.';
+
+        valProj.innerHTML = '79 dB <span class="fs-6 text-muted fw-normal">Resonant</span>';
+        barProj.style.width = '88%';
+        barProj.className = 'progress-bar bg-primary';
+        descProj.textContent = 'Clear diaphragmatic resonance audible in row 20 without strain.';
+
+        valHR.innerHTML = '82 BPM <span class="fs-6 text-muted fw-normal">Poised</span>';
+        barHR.style.width = '35%';
+        barHR.className = 'progress-bar bg-success';
+        descHR.textContent = 'Calm parasympathetic breathing anchoring the podium.';
+
+        if (typeof showToast === 'function') {
+          showToast('Day 15 Showcase Loaded', 'Displaying post-camp executive presence telemetry.', 'success');
+        }
+      }
+    }
+
+    // 3. Helpful Review Vote Counter
+    function voteHelpful(btn) {
+      if (btn.classList.contains('voted')) {
+        return;
+      }
+      const countEl = btn.querySelector('.helpful-count');
+      if (countEl) {
+        let current = parseInt(countEl.textContent, 10);
+        if (!isNaN(current)) {
+          countEl.textContent = current + 1;
+        }
+      }
+      btn.classList.add('voted');
+      btn.innerHTML = `<i class="bi bi-hand-thumbs-up-fill text-primary"></i> Helpful (${countEl ? countEl.textContent : '1'})`;
+      if (typeof showToast === 'function') {
+        showToast('Feedback Received', 'Thank you! Your feedback helps other families evaluate camp outcomes.', 'success');
+      }
+    }
+  </script>
+</body>
+</html>

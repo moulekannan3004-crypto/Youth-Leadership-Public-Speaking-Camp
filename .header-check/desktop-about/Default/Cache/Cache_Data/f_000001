@@ -1,0 +1,927 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="light" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Us | VoxLeaders Youth Leadership Academy</title>
+  <meta name="description" content="Meet the mentors, debate champions, and educators behind VoxLeaders Youth Leadership and Public Speaking Camp.">
+  
+  <link rel="icon" type="image/svg+xml" href="assets/img/brand/favicon.svg">
+  <link id="bootstrap-theme-style" rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <!-- Google Fonts: Poppins (Light 300), Outfit, Plus Jakarta Sans -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800;900&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,300&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="assets/css/style.css?v=8.3">
+  <link rel="stylesheet" href="assets/css/rtl.css">
+</head>
+<body class="page-about">
+
+  <!-- Navigation Bar -->
+    <!-- =================================================================
+       GLOBAL NAVIGATION HEADER (Matches Reference Format)
+  ================================================================== -->
+  <header class="vx-header sticky-top">
+    <nav class="navbar navbar-expand-xl vx-navbar" aria-label="Main Navigation">
+      <div class="container-fluid px-3 px-xl-5">
+        <!-- Brand Logo -->
+        <a class="navbar-brand vx-brand" href="index.html">
+          <img src="assets/img/brand/logo.svg" alt="VoxLeaders Logo" class="vx-brand-img" height="46">
+        </a>
+
+        <!-- Mobile Toggler -->
+        <button class="navbar-toggler border-0 shadow-none d-xl-none" type="button" data-bs-toggle="collapse" data-bs-target="#vxNavbarContent" aria-controls="vxNavbarContent" aria-expanded="false" aria-label="Toggle navigation">
+          <i class="bi bi-list fs-2"></i>
+        </button>
+
+        <!-- Navbar Links & Right Controls -->
+        <div class="collapse navbar-collapse" id="vxNavbarContent">
+          <!-- Center Navigation Links -->
+          <ul class="navbar-nav mx-auto mb-2 mb-xl-0 align-items-xl-center">
+            <!-- Home with Dropdown -->
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle vx-nav-link " href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                <span class="vx-nav-text">Home</span> <i class="bi bi-chevron-down ms-1" style="font-size: 0.75rem;"></i>
+              </a>
+              <ul class="dropdown-menu dropdown-menu-vx">
+                <li><a class="dropdown-item dropdown-item-vx" href="index.html">Home</a></li>
+                <li><a class="dropdown-item dropdown-item-vx" href="index-business.html">Home 2</a></li>
+              </ul>
+            </li>
+
+            <!-- About Us -->
+            <li class="nav-item">
+              <a class="nav-link vx-nav-link active" href="about.html"><span class="vx-nav-text">About Us</span></a>
+            </li>
+
+            <!-- Programs -->
+            <li class="nav-item">
+              <a class="nav-link vx-nav-link " href="programs.html"><span class="vx-nav-text">Programs</span></a>
+            </li>
+
+            <!-- Testimonials -->
+            <li class="nav-item">
+              <a class="nav-link vx-nav-link " href="testimonials.html"><span class="vx-nav-text">Testimonials</span></a>
+            </li>
+
+            <!-- Pricing -->
+            <li class="nav-item">
+              <a class="nav-link vx-nav-link " href="pricing.html"><span class="vx-nav-text">Pricing</span></a>
+            </li>
+
+            <!-- Gallery -->
+            <li class="nav-item">
+              <a class="nav-link vx-nav-link " href="gallery.html"><span class="vx-nav-text">Gallery</span></a>
+            </li>
+
+            <!-- Blog -->
+            <li class="nav-item">
+              <a class="nav-link vx-nav-link " href="blog.html"><span class="vx-nav-text">Blog</span></a>
+            </li>
+
+            <!-- Contact -->
+            <li class="nav-item">
+              <a class="nav-link vx-nav-link " href="contact.html"><span class="vx-nav-text">Contact</span></a>
+            </li>
+
+            <!-- Dashboard -->
+            <li class="nav-item">
+              <a class="nav-link vx-nav-link " href="dashboard-parent.html"><span class="vx-nav-text">Dashboard</span></a>
+            </li>
+          </ul>
+
+          <!-- Right Header Actions (LTR/RTL Pill + Theme Toggle Circle + Login Pill) -->
+          <div class="vx-header-actions mt-3 mt-xl-0">
+            <!-- LTR / RTL Switcher Pill -->
+            <button class="btn-vx-dir-pill rtl-toggle-btn" aria-label="Toggle Text Direction">
+              <span class="dir-active">LTR</span>
+              <i class="bi bi-arrow-left-right text-muted" style="font-size: 0.7rem;"></i>
+              <span class="dir-inactive">RTL</span>
+            </button>
+
+            <!-- Dark / Light Theme Toggle Circle -->
+            <button class="btn-vx-theme-circle theme-toggle-btn" aria-label="Toggle Dark/Light Mode" title="Toggle Theme">
+              <i class="bi bi-moon-stars-fill"></i>
+            </button>
+
+            <!-- Login Pill Button -->
+            <a href="auth.html" class="btn-vx-login-pill">
+              <i class="bi bi-box-arrow-in-right login-icon"></i>
+              <span>Login</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main id="mainContent">
+
+    <!-- Hero Header: Origin & Vision with Background Image -->
+    <section class="hero-wrapper page-header-hero about-origin-hero text-center">
+      <div class="hero-glow-bg"></div>
+      <div class="container position-relative z-2">
+        <div class="badge-pill-soft mb-3">Our Origin &amp; Vision</div>
+        <h1 class="display-4 fw-extrabold mb-4">Every Child Has A Voice.<br><span class="text-gradient-primary">We Give Them The Courage To Use It.</span></h1>
+        <p class="lead text-body-secondary mx-auto mb-0" style="max-width: 720px;">
+          Founded by world debate champions and developmental psychologists, VoxLeaders has nurtured over 3,500 young voices into confident orators, active listeners, and empathetic civic leaders.
+        </p>
+      </div>
+    </section>
+
+    <!-- Mission, Vision, and Core Values (Unique Showcase) -->
+    <section class="py-6 bg-surface-alt position-relative overflow-hidden">
+      <div class="container position-relative z-1">
+        <!-- Section Header -->
+        <div class="text-center mb-5">
+          <div class="badge-pill-soft mb-2"><i class="bi bi-compass text-primary me-1"></i> The Foundations of VoxLeaders</div>
+          <h2 class="display-5 fw-extrabold font-heading mb-3">Our Guiding Compass. <br class="d-none d-md-inline"><span class="text-gradient-primary">Mission, Vision &amp; Moral Code.</span></h2>
+          <p class="lead text-body-secondary mx-auto mb-0" style="max-width: 700px;">
+            We believe eloquent oratory is not a parlor trick for natural extroverts&mdash;it is a lifelong superpower built on disciplined logic, compassionate listening, and courageous empathy.
+          </p>
+        </div>
+
+        <div class="row g-4 align-items-stretch">
+          
+          <!-- Card 1: Our Mission (Unified Brand Indigo) -->
+          <div class="col-lg-4 d-flex">
+            <div class="uniq-pillar-card w-100">
+              <div class="pillar-top-stripe"></div>
+              <div class="pillar-glow" style="background: radial-gradient(circle, rgba(79, 70, 229, 0.18) 0%, transparent 70%);"></div>
+              <div class="pillar-watermark"><i class="bi bi-rocket-takeoff-fill"></i></div>
+
+              <div class="position-relative z-1 d-flex flex-column h-100">
+                <!-- Header: Crest + Badge -->
+                <div class="pillar-card-header">
+                  <div class="pillar-crest" style="background: linear-gradient(135deg, rgba(79, 70, 229, 0.15) 0%, rgba(99, 102, 241, 0.25) 100%); color: #4F46E5; border: 1px solid rgba(79, 70, 229, 0.3);">
+                    <i class="bi bi-rocket-takeoff-fill"></i>
+                  </div>
+                  <span class="pillar-header-badge" style="background: rgba(79, 70, 229, 0.1); color: #4F46E5; border: 1px solid rgba(79, 70, 229, 0.25);">
+                    <i class="bi bi-bullseye me-1"></i> Purpose &amp; Impact
+                  </span>
+                </div>
+
+                <!-- Title & Core Manifesto with Locked Heights -->
+                <h3 class="h4 fw-bold font-heading text-heading pillar-card-title">
+                  <span>Eradicate Anxiety.</span> <span class="text-primary">Unlock Voice.</span>
+                </h3>
+                <p class="text-body-secondary small pillar-card-lead">
+                  To dismantle adolescent stage fright through joyful, evidence-based oratory mentorship that turns paralyzing self-doubt into authentic leadership confidence.
+                </p>
+
+                <!-- 3 Action Pillars (Equal Heights) -->
+                <div class="mb-4">
+                  <div class="pillar-feature-item d-flex align-items-start gap-2.5">
+                    <i class="bi bi-mic-fill text-primary mt-1 fs-6"></i>
+                    <div>
+                      <strong class="text-heading d-block small">Micro-Pod Desensitization</strong>
+                      <span class="text-body-secondary" style="font-size: 0.78rem;">6-student pods where campers speak within their very first 15 minutes.</span>
+                    </div>
+                  </div>
+                  <div class="pillar-feature-item d-flex align-items-start gap-2.5">
+                    <i class="bi bi-lightning-charge-fill text-primary mt-1 fs-6"></i>
+                    <div>
+                      <strong class="text-heading d-block small">Impromptu Fluency Drills</strong>
+                      <span class="text-body-secondary" style="font-size: 0.78rem;">PREP &amp; PEEL cognitive frameworks for clear, spontaneous thinking on feet.</span>
+                    </div>
+                  </div>
+                  <div class="pillar-feature-item d-flex align-items-start gap-2.5">
+                    <i class="bi bi-heart-fill text-primary mt-1 fs-6"></i>
+                    <div>
+                      <strong class="text-heading d-block small">Zero-Judgment Culture</strong>
+                      <span class="text-body-secondary" style="font-size: 0.78rem;">Radical encouragement debriefs that celebrate courage above perfection.</span>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Bottom Telemetry Ribbon -->
+                <div class="pillar-telemetry-ribbon position-relative z-1 d-flex align-items-center justify-content-between">
+                  <div>
+                    <div class="display-6 fw-extrabold font-heading text-primary lh-1 mb-0" style="font-size: 1.55rem;">99.4%</div>
+                    <div class="text-body-secondary" style="font-size: 0.72rem;">Anxiety Reduction Rate</div>
+                  </div>
+                  <span class="badge bg-primary text-white rounded-pill px-2.5 py-1 fw-bold" style="font-size: 0.72rem;">
+                    <i class="bi bi-shield-check me-1"></i> Verified
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 2: Our Vision (Unified Brand Indigo) -->
+          <div class="col-lg-4 d-flex">
+            <div class="uniq-pillar-card w-100">
+              <div class="pillar-top-stripe"></div>
+              <div class="pillar-glow" style="background: radial-gradient(circle, rgba(79, 70, 229, 0.18) 0%, transparent 70%);"></div>
+              <div class="pillar-watermark"><i class="bi bi-globe-americas"></i></div>
+
+              <div class="position-relative z-1 d-flex flex-column h-100">
+                <!-- Header: Crest + Badge -->
+                <div class="pillar-card-header">
+                  <div class="pillar-crest" style="background: linear-gradient(135deg, rgba(79, 70, 229, 0.15) 0%, rgba(99, 102, 241, 0.25) 100%); color: #4F46E5; border: 1px solid rgba(79, 70, 229, 0.3);">
+                    <i class="bi bi-compass-fill"></i>
+                  </div>
+                  <span class="pillar-header-badge" style="background: rgba(79, 70, 229, 0.1); color: #4F46E5; border: 1px solid rgba(79, 70, 229, 0.25);">
+                    <i class="bi bi-globe-americas me-1"></i> Vision 2030
+                  </span>
+                </div>
+
+                <!-- Title & Core Manifesto with Locked Heights -->
+                <h3 class="h4 fw-bold font-heading text-heading pillar-card-title">
+                  <span>A Generation of</span> <span class="text-primary">Empathetic Orators.</span>
+                </h3>
+                <p class="text-body-secondary small pillar-card-lead">
+                  A world where young thinkers&mdash;regardless of temperament or economic background&mdash;stand with poise, debate with respect, and inspire positive civic progress.
+                </p>
+
+                <!-- 3 Action Pillars (Equal Heights) -->
+                <div class="mb-4">
+                  <div class="pillar-feature-item d-flex align-items-start gap-2.5">
+                    <i class="bi bi-mortarboard-fill text-primary mt-1 fs-6"></i>
+                    <div>
+                      <strong class="text-heading d-block small">Civic Inclusion Scholarships</strong>
+                      <span class="text-body-secondary" style="font-size: 0.78rem;">1,500+ fully funded needs-based camp seats awarded annually to public schools.</span>
+                    </div>
+                  </div>
+                  <div class="pillar-feature-item d-flex align-items-start gap-2.5">
+                    <i class="bi bi-chat-square-quote-fill text-primary mt-1 fs-6"></i>
+                    <div>
+                      <strong class="text-heading d-block small">Bridge-Building Dialogue</strong>
+                      <span class="text-body-secondary" style="font-size: 0.78rem;">Replacing tribal shouting matches with evidence-backed dialectical debate.</span>
+                    </div>
+                  </div>
+                  <div class="pillar-feature-item d-flex align-items-start gap-2.5">
+                    <i class="bi bi-flag-fill text-primary mt-1 fs-6"></i>
+                    <div>
+                      <strong class="text-heading d-block small">50,000 Leaders by 2030</strong>
+                      <span class="text-body-secondary" style="font-size: 0.78rem;">Scaling nationwide school district chapters and international youth parliaments.</span>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Bottom Telemetry Ribbon -->
+                <div class="pillar-telemetry-ribbon position-relative z-1 d-flex align-items-center justify-content-between">
+                  <div>
+                    <div class="display-6 fw-extrabold font-heading text-primary lh-1 mb-0" style="font-size: 1.55rem;">35,000+</div>
+                    <div class="text-body-secondary" style="font-size: 0.72rem;">Camper Voices Unlocked</div>
+                  </div>
+                  <span class="badge bg-primary text-white rounded-pill px-2.5 py-1 fw-bold" style="font-size: 0.72rem;">
+                    <i class="bi bi-geo-alt-fill me-1"></i> 14 Countries
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 3: Core Values (Unified Brand Indigo) -->
+          <div class="col-lg-4 d-flex">
+            <div class="uniq-pillar-card w-100">
+              <div class="pillar-top-stripe"></div>
+              <div class="pillar-glow" style="background: radial-gradient(circle, rgba(79, 70, 229, 0.18) 0%, transparent 70%);"></div>
+              <div class="pillar-watermark"><i class="bi bi-gem"></i></div>
+
+              <div class="position-relative z-1 d-flex flex-column h-100">
+                <!-- Header: Crest + Badge -->
+                <div class="pillar-card-header">
+                  <div class="pillar-crest" style="background: linear-gradient(135deg, rgba(79, 70, 229, 0.15) 0%, rgba(99, 102, 241, 0.25) 100%); color: #4F46E5; border: 1px solid rgba(79, 70, 229, 0.3);">
+                    <i class="bi bi-gem"></i>
+                  </div>
+                  <span class="pillar-header-badge" style="background: rgba(79, 70, 229, 0.1); color: #4F46E5; border: 1px solid rgba(79, 70, 229, 0.25);">
+                    <i class="bi bi-shield-check me-1"></i> Ethical Code
+                  </span>
+                </div>
+
+                <!-- Title & Core Manifesto with Locked Heights -->
+                <h3 class="h4 fw-bold font-heading text-heading pillar-card-title">
+                  <span>Character Before</span> <span class="text-primary">Charisma.</span>
+                </h3>
+                <p class="text-body-secondary small pillar-card-lead">
+                  Oratory without integrity is mere performance. We cultivate articulate leaders whose words build bridges, champion truth, and serve the common good.
+                </p>
+
+                <!-- 3 Action Pillars (Equal Heights - Matching Cards 1 & 2 Exactly) -->
+                <div class="mb-4">
+                  <div class="pillar-feature-item d-flex align-items-start gap-2.5">
+                    <i class="bi bi-patch-check-fill text-primary mt-1 fs-6"></i>
+                    <div>
+                      <strong class="text-heading d-block small">Intellectual Humility</strong>
+                      <span class="text-body-secondary" style="font-size: 0.78rem;">Listen twice as much as you speak; celebrate superior counter-evidence with grace.</span>
+                    </div>
+                  </div>
+                  <div class="pillar-feature-item d-flex align-items-start gap-2.5">
+                    <i class="bi bi-diagram-3-fill text-primary mt-1 fs-6"></i>
+                    <div>
+                      <strong class="text-heading d-block small">Rigorous Logic &amp; Truth</strong>
+                      <span class="text-body-secondary" style="font-size: 0.78rem;">Ground every argument in verified fact, analytical context, and moral consistency.</span>
+                    </div>
+                  </div>
+                  <div class="pillar-feature-item d-flex align-items-start gap-2.5">
+                    <i class="bi bi-shield-heart-fill text-primary mt-1 fs-6"></i>
+                    <div>
+                      <strong class="text-heading d-block small">Radical Respect &amp; Service</strong>
+                      <span class="text-body-secondary" style="font-size: 0.78rem;">Attack ideas with rigor; persuade to uplift communities and preserve human dignity.</span>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Bottom Telemetry Ribbon -->
+                <div class="pillar-telemetry-ribbon position-relative z-1 d-flex align-items-center justify-content-between">
+                  <div>
+                    <div class="display-6 fw-extrabold font-heading text-primary lh-1 mb-0" style="font-size: 1.55rem;">100%</div>
+                    <div class="text-body-secondary" style="font-size: 0.72rem;">Camper Honour Code</div>
+                  </div>
+                  <span class="badge bg-primary text-white rounded-pill px-2.5 py-1 fw-bold" style="font-size: 0.72rem;">
+                    <i class="bi bi-bookmark-check-fill me-1"></i> Signed Charter
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Pedagogical Seminar Spotlight Section -->
+    <section class="py-6">
+      <div class="container">
+        <div class="row align-items-stretch g-4 g-xl-5">
+          <div class="col-lg-6 d-flex">
+            <div class="rounded-theme-xl overflow-hidden shadow-lg border border-theme position-relative w-100" style="min-height: 280px;">
+              <img src="assets/img/about/small-seminars-presentation.png" alt="Small Seminars. Transformative Leaps. - Student Executive Presentation" class="w-100 h-100" style="position: absolute; top: 0; left: 0; object-fit: cover; object-position: center 35%;">
+              <div class="position-absolute bottom-0 start-0 m-3 z-1">
+                <span class="badge bg-dark bg-opacity-75 text-white rounded-pill px-3 py-1.5 shadow-sm small">
+                  <i class="bi bi-mic-fill text-primary me-1"></i> Executive Boardroom Oratory Simulation
+                </span>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6 d-flex flex-column justify-content-between">
+            <div>
+              <div class="badge-pill-soft mb-2">Pioneering Pedagogy</div>
+              <h2 class="display-6 fw-extrabold mb-3">Small Seminars. Transformative Leaps.</h2>
+              <p class="text-body-secondary lead mb-4">
+                We replace passive lecture auditoriums with dynamic, high-engagement vocal labs where every camper practices standing up and projecting their thoughts in safe, encouraging pods.
+              </p>
+            </div>
+            <div class="d-flex flex-wrap align-items-center gap-4 pt-1">
+              <div class="d-flex align-items-center gap-2">
+                <i class="bi bi-people-fill text-primary fs-4"></i>
+                <span class="fw-bold small text-heading">1:6 Coach Ratio</span>
+              </div>
+              <div class="d-flex align-items-center gap-2">
+                <i class="bi bi-mic-fill text-primary fs-4"></i>
+                <span class="fw-bold small text-heading">Daily Podium Reps</span>
+              </div>
+              <div class="d-flex align-items-center gap-2">
+                <i class="bi bi-award-fill text-primary fs-4"></i>
+                <span class="fw-bold small text-heading">Accredited Rubrics</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Interactive Timeline / History -->
+    <section class="py-6 bg-surface-alt" id="ourJourneyTimeline">
+      <div class="container">
+        <div class="text-center mb-5">
+          <div class="badge-pill-soft mb-2">Our Journey</div>
+          <h2 class="display-5 fw-extrabold">Milestones in Youth Oratory</h2>
+          <p class="lead text-body-secondary">How a 12-camper workshop evolved into an internationally acclaimed speech movement.</p>
+        </div>
+
+        <div class="timeline-stem">
+          <!-- 2018 Milestone -->
+          <div class="row timeline-node align-items-center g-4">
+            <div class="col-lg-5 text-lg-end">
+              <div class="timeline-content-box shadow-sm">
+                <div class="d-flex flex-wrap align-items-center justify-content-lg-end gap-2 mb-2">
+                  <span class="badge bg-primary text-white rounded-pill px-3 py-1 fw-bold"><i class="bi bi-calendar3 me-1"></i> 2018</span>
+                  <span class="badge bg-primary-soft text-primary rounded-pill px-2.5 py-1 small fw-bold">Grassroots Inception</span>
+                </div>
+                <h3 class="h5 fw-bold mb-2 text-heading">The Pilot Circle in Boston</h3>
+                <p class="text-body-secondary small mb-3">
+                  Dr. Marcus Vance launched the first 12-student public speaking workshop in a community library to help introverted students find their authentic voice.
+                </p>
+                <div class="d-flex flex-wrap align-items-center justify-content-lg-end gap-2 pt-2 border-top border-theme">
+                  <span class="badge bg-surface border text-body-secondary rounded-pill small"><i class="bi bi-geo-alt-fill text-primary me-1"></i> Boston, MA</span>
+                  <span class="badge bg-surface border text-body-secondary rounded-pill small"><i class="bi bi-people-fill text-primary me-1"></i> 12 Founding Campers</span>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-2 text-center position-relative d-none d-lg-block">
+              <div class="timeline-marker"><i class="bi bi-flag-fill"></i></div>
+            </div>
+            <div class="col-lg-5">
+              <div class="timeline-visual-preview rounded-theme-lg overflow-hidden shadow-sm border border-theme position-relative">
+                <img src="assets/img/about/community-library-pod.png" alt="Community Library Pod - Boston Library Workshop 2018" class="w-100" style="height: 180px; object-fit: cover; display: block; object-position: center 60%;">
+                <div class="p-3 bg-surface d-flex align-items-center justify-content-between">
+                  <span class="badge bg-primary-soft text-primary rounded-pill px-2.5 py-1 small fw-bold">
+                    <i class="bi bi-journal-bookmark-fill me-1"></i> Community Library Pod
+                  </span>
+                  <span class="text-body-secondary small fw-semibold">
+                    <i class="bi bi-check-circle-fill text-primary me-1"></i> 100% Desensitized
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- 2021 Milestone -->
+          <div class="row timeline-node align-items-center g-4">
+            <div class="col-lg-5 order-lg-1 order-2">
+              <div class="timeline-visual-preview rounded-theme-lg overflow-hidden shadow-sm border border-theme position-relative">
+                <img src="assets/img/about/parliamentary-debate-league.png" alt="Parliamentary League - MUN &amp; Debate Expansion 2021" class="w-100" style="height: 180px; object-fit: cover; display: block; object-position: center 35%;">
+                <div class="p-3 bg-surface d-flex align-items-center justify-content-between">
+                  <span class="badge bg-primary-soft text-primary rounded-pill px-2.5 py-1 small fw-bold">
+                    <i class="bi bi-trophy-fill me-1"></i> Parliamentary League
+                  </span>
+                  <span class="text-body-secondary small fw-semibold">
+                    <i class="bi bi-award-fill text-primary me-1"></i> 100% Forensics Qualifiers
+                  </span>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-2 text-center position-relative d-none d-lg-block order-lg-2">
+              <div class="timeline-marker"><i class="bi bi-mortarboard-fill"></i></div>
+            </div>
+            <div class="col-lg-5 order-lg-3 order-1">
+              <div class="timeline-content-box shadow-sm">
+                <div class="d-flex flex-wrap align-items-center gap-2 mb-2">
+                  <span class="badge bg-primary text-white rounded-pill px-3 py-1 fw-bold"><i class="bi bi-calendar3 me-1"></i> 2021</span>
+                  <span class="badge bg-primary-soft text-primary rounded-pill px-2.5 py-1 small fw-bold">Competitive Expansion</span>
+                </div>
+                <h3 class="h5 fw-bold mb-2 text-heading">MUN &amp; Debate Expansion</h3>
+                <p class="text-body-secondary small mb-3">
+                  Integrated parliamentary debate formats and launched the Teen Leaders division. 100% of delegates qualified for regional high-school forensics tournament rounds.
+                </p>
+                <div class="d-flex flex-wrap align-items-center gap-2 pt-2 border-top border-theme">
+                  <span class="badge bg-surface border text-body-secondary rounded-pill small"><i class="bi bi-diagram-3-fill text-primary me-1"></i> Karl Popper Format</span>
+                  <span class="badge bg-surface border text-body-secondary rounded-pill small"><i class="bi bi-trophy text-primary me-1"></i> Top 3 State Rank</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- 2024 Milestone -->
+          <div class="row timeline-node align-items-center g-4">
+            <div class="col-lg-5 text-lg-end">
+              <div class="timeline-content-box shadow-sm">
+                <div class="d-flex flex-wrap align-items-center justify-content-lg-end gap-2 mb-2">
+                  <span class="badge bg-primary text-white rounded-pill px-3 py-1 fw-bold"><i class="bi bi-calendar3 me-1"></i> 2024</span>
+                  <span class="badge bg-primary-soft text-primary rounded-pill px-2.5 py-1 small fw-bold">Innovation Milestone</span>
+                </div>
+                <h3 class="h5 fw-bold mb-2 text-heading">TEDxYouth Partnership &amp; Voice AI</h3>
+                <p class="text-body-secondary small mb-3">
+                  Pioneered AI-assisted speech cadence analytics and opened our flagship recording stage with official TEDx-licensed youth talks viewed worldwide.
+                </p>
+                <div class="d-flex flex-wrap align-items-center justify-content-lg-end gap-2 pt-2 border-top border-theme">
+                  <span class="badge bg-surface border text-body-secondary rounded-pill small"><i class="bi bi-broadcast text-primary me-1"></i> Licensed Stage</span>
+                  <span class="badge bg-surface border text-body-secondary rounded-pill small"><i class="bi bi-cpu-fill text-primary me-1"></i> Realtime Audio AI</span>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-2 text-center position-relative d-none d-lg-block">
+              <div class="timeline-marker"><i class="bi bi-broadcast"></i></div>
+            </div>
+            <div class="col-lg-5">
+              <div class="timeline-visual-preview rounded-theme-lg overflow-hidden shadow-sm border border-theme position-relative">
+                <img src="assets/img/about/4k-teleprompter-studio.jpg" alt="4K Teleprompter Studio - TEDx Recording Stage 2024" class="w-100" style="height: 180px; object-fit: cover; display: block; object-position: center 45%;">
+                <div class="p-3 bg-surface d-flex align-items-center justify-content-between">
+                  <span class="badge bg-primary-soft text-primary rounded-pill px-2.5 py-1 small fw-bold">
+                    <i class="bi bi-camera-video-fill me-1"></i> 4K Teleprompter Studio
+                  </span>
+                  <span class="text-body-secondary small fw-semibold">
+                    <i class="bi bi-cpu text-primary me-1"></i> Cadence Heatmaps
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- 2026 Milestone -->
+          <div class="row timeline-node align-items-center g-4">
+            <div class="col-lg-5 order-lg-1 order-2">
+              <div class="timeline-visual-preview rounded-theme-lg overflow-hidden shadow-sm border border-theme position-relative">
+                <img src="assets/img/about/global-flagship-campuses.png" alt="Global Flagship Campuses - VoxLeaders Global Expansion 2026" class="w-100" style="height: 180px; object-fit: cover; display: block; object-position: center 30%;">
+                <div class="p-3 bg-surface d-flex align-items-center justify-content-between">
+                  <span class="badge bg-primary-soft text-primary rounded-pill px-2.5 py-1 small fw-bold">
+                    <i class="bi bi-building-check me-1"></i> Global Flagship Campuses
+                  </span>
+                  <span class="text-body-secondary small fw-semibold">
+                    <i class="bi bi-globe2 text-primary me-1"></i> 35,000+ Alumni
+                  </span>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-2 text-center position-relative d-none d-lg-block order-lg-2">
+              <div class="timeline-marker"><i class="bi bi-globe"></i></div>
+            </div>
+            <div class="col-lg-5 order-lg-3 order-1">
+              <div class="timeline-content-box shadow-sm border-primary">
+                <div class="d-flex flex-wrap align-items-center gap-2 mb-2">
+                  <span class="badge bg-primary text-white rounded-pill px-3 py-1 fw-bold"><i class="bi bi-calendar3 me-1"></i> 2026 (Today)</span>
+                  <span class="badge bg-primary-soft text-primary rounded-pill px-2.5 py-1 small fw-bold">International Scale</span>
+                </div>
+                <h3 class="h5 fw-bold mb-2 text-heading">Global Campus &amp; Parent Portal</h3>
+                <p class="text-body-secondary small mb-3">
+                  Operating 48 cohorts across 14 cities with a fully digitized Parent Portal, continuous rubric diagnostics, and multi-language debate leagues.
+                </p>
+                <div class="d-flex flex-wrap align-items-center gap-2 pt-2 border-top border-theme">
+                  <span class="badge bg-surface border text-body-secondary rounded-pill small"><i class="bi bi-globe text-primary me-1"></i> 14 Worldwide Hubs</span>
+                  <span class="badge bg-surface border text-body-secondary rounded-pill small"><i class="bi bi-app-indicator text-primary me-1"></i> Live Parent Portal</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Leadership & Mentor Team Grid with Mini Bio Modals -->
+    <section class="py-6 bg-surface-alt">
+      <div class="container">
+        <div class="text-center mb-5">
+          <div class="badge-pill-soft mb-2">Mentors & Coaches</div>
+          <h2 class="display-5 fw-extrabold">Meet the Orators Guiding Your Child</h2>
+          <p class="lead text-body-secondary">Champion debaters, theater directors, and TEDx keynote coaches passionate about youth potential.</p>
+        </div>
+
+        <div class="row g-4">
+          <!-- Mentor 1 -->
+          <div class="col-md-6 col-lg-3">
+            <div class="card border-0 bg-surface rounded-theme-lg p-4 text-center shadow-sm h-100">
+              <img src="assets/img/about/coach-james.jpg" style="object-fit: cover;" width="90" height="90" class="mx-auto rounded-circle mb-3 shadow-sm" alt="Dr. Marcus Vance">
+              <h3 class="h5 fw-bold mb-1">Dr. Marcus Vance</h3>
+              <p class="text-primary small fw-semibold mb-2">Founder &amp; Master Coach</p>
+              <p class="text-body-secondary small mb-3">Former Oxford Union Finalist and developmental oratory researcher.</p>
+              <div class="mt-auto pt-3 border-top border-theme d-flex align-items-center justify-content-center gap-1">
+                <div class="d-flex text-warning small">
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                </div>
+                <span class="fw-bold small text-heading ms-1">5.0</span>
+                <span class="text-body-secondary small">(142 reviews)</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Mentor 2 -->
+          <div class="col-md-6 col-lg-3">
+            <div class="card border-0 bg-surface rounded-theme-lg p-4 text-center shadow-sm h-100">
+              <img src="assets/img/about/coach-sarah.jpg" style="object-fit: cover;" width="90" height="90" class="mx-auto rounded-circle mb-3 shadow-sm" alt="Elena Rostova">
+              <h3 class="h5 fw-bold mb-1">Elena Rostova</h3>
+              <p class="text-primary small fw-semibold mb-2">Voice &amp; Body Language Lead</p>
+              <p class="text-body-secondary small mb-3">Juilliard Drama alumna specializing in youth vocal projection and stage comfort.</p>
+              <div class="mt-auto pt-3 border-top border-theme d-flex align-items-center justify-content-center gap-1">
+                <div class="d-flex text-warning small">
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                </div>
+                <span class="fw-bold small text-heading ms-1">4.9</span>
+                <span class="text-body-secondary small">(118 reviews)</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Mentor 3 -->
+          <div class="col-md-6 col-lg-3">
+            <div class="card border-0 bg-surface rounded-theme-lg p-4 text-center shadow-sm h-100">
+              <img src="assets/img/about/coach-michael.jpg" style="object-fit: cover;" width="90" height="90" class="mx-auto rounded-circle mb-3 shadow-sm" alt="David Kim">
+              <h3 class="h5 fw-bold mb-1">David Kim</h3>
+              <p class="text-primary small fw-semibold mb-2">Debate &amp; MUN Director</p>
+              <p class="text-body-secondary small mb-3">Adjudicated 60+ collegiate debate competitions and parliamentary leagues.</p>
+              <div class="mt-auto pt-3 border-top border-theme d-flex align-items-center justify-content-center gap-1">
+                <div class="d-flex text-warning small">
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                </div>
+                <span class="fw-bold small text-heading ms-1">5.0</span>
+                <span class="text-body-secondary small">(96 reviews)</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Mentor 4 -->
+          <div class="col-md-6 col-lg-3">
+            <div class="card border-0 bg-surface rounded-theme-lg p-4 text-center shadow-sm h-100">
+              <img src="assets/img/about/coach-priya.jpg" style="object-fit: cover;" width="90" height="90" class="mx-auto rounded-circle mb-3 shadow-sm" alt="Sophia Chen">
+              <h3 class="h5 fw-bold mb-1">Sophia Chen</h3>
+              <p class="text-primary small fw-semibold mb-2">TEDxYouth Curator</p>
+              <p class="text-body-secondary small mb-3">Keynote coach helping teens craft memorable storytelling arcs for the global stage.</p>
+              <div class="mt-auto pt-3 border-top border-theme d-flex align-items-center justify-content-center gap-1">
+                <div class="d-flex text-warning small">
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                </div>
+                <span class="fw-bold small text-heading ms-1">4.9</span>
+                <span class="text-body-secondary small">(104 reviews)</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Bio Modal 1 -->
+    <div class="modal fade" id="mentorModal1" tabindex="-1" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content bg-surface border-theme">
+          <div class="modal-header border-theme">
+            <h5 class="modal-title fw-bold">Dr. Marcus Vance &bull; Founder</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+          </div>
+          <div class="modal-body p-4 text-center">
+            <img src="assets/img/about/coach-james-modal.jpg" style="object-fit: cover;" width="100" height="100" class="rounded-circle mb-3 shadow-sm" alt="Dr. Marcus Vance">
+            <p class="text-body-secondary">
+              Dr. Marcus Vance holds a Ph.D. in Communication Pedagogy from Stanford University. Having coached collegiate debate champions and national forensics finalists, he created the VoxCurriculum&trade; to bring executive-level oratory training into early adolescent development.
+            </p>
+            <div class="d-flex justify-content-center gap-2">
+              <a href="https://www.linkedin.com/company/voxleaders" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-vx-outline"><i class="fab fa-linkedin"></i> LinkedIn</a>
+              <a href="https://x.com/voxleaders" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-vx-outline"><i class="fab fa-x-twitter"></i> X / Twitter</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Bio Modal 2 -->
+    <div class="modal fade" id="mentorModal2" tabindex="-1" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content bg-surface border-theme">
+          <div class="modal-header border-theme">
+            <h5 class="modal-title fw-bold">Elena Rostova &bull; Voice Mentor</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+          </div>
+          <div class="modal-body p-4 text-center">
+            <img src="assets/img/about/coach-sarah-modal.jpg" style="object-fit: cover;" width="100" height="100" class="rounded-circle mb-3 shadow-sm" alt="Elena Rostova">
+            <p class="text-body-secondary">
+              Elena brings 12 years of conservatory voice pedagogy, guiding young speakers to discover breath control, pitch dynamics, and expansive posture without vocal strain.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Bio Modal 3 -->
+    <div class="modal fade" id="mentorModal3" tabindex="-1" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content bg-surface border-theme">
+          <div class="modal-header border-theme">
+            <h5 class="modal-title fw-bold">David Kim &bull; Debate Director</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+          </div>
+          <div class="modal-body p-4 text-center">
+            <img src="assets/img/about/coach-michael-modal.jpg" style="object-fit: cover;" width="100" height="100" class="rounded-circle mb-3 shadow-sm" alt="David Kim">
+            <p class="text-body-secondary">
+              David was President of the Harvard Speech & Parliamentary Debate League. He specializes in teaching rapid refutation and logic frameworks for middle and high school students.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Bio Modal 4 -->
+    <div class="modal fade" id="mentorModal4" tabindex="-1" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content bg-surface border-theme">
+          <div class="modal-header border-theme">
+            <h5 class="modal-title fw-bold">Sophia Chen &bull; TEDx Curator</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+          </div>
+          <div class="modal-body p-4 text-center">
+            <img src="assets/img/about/coach-priya-modal.jpg" style="object-fit: cover;" width="100" height="100" class="rounded-circle mb-3 shadow-sm" alt="Sophia Chen">
+            <p class="text-body-secondary">
+              Sophia has mentored over 80 youth keynote talks seen by millions online. She helps young thinkers uncover their genuine narrative arc and share ideas that matter.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+    <!-- SAFETY, CHILD WELFARE & CAMPUS PROTOCOLS -->
+    <section class="py-6">
+      <div class="container">
+        <div class="row align-items-start g-4 g-xl-5">
+          <!-- Left Column: Child Safety & Campus Protocols Content -->
+          <div class="col-lg-6">
+            <div class="badge-pill-soft mb-3">
+              <i class="bi bi-shield-check text-primary"></i>
+              <span>Uncompromising Child Safety &amp; Care</span>
+            </div>
+            <h2 class="display-5 fw-extrabold mb-3">Your Child's Safety &amp; Wellbeing Is Our Sacred Priority</h2>
+            <p class="lead text-body-secondary mb-4">
+              We understand that trusting us with your child requires absolute peace of mind. Our camp campuses adhere to the highest international accreditation and supervision safety standards.
+            </p>
+            
+            <!-- 4 Symmetrical Safety Protocol Tiles -->
+            <div class="row g-3 mb-4">
+              <div class="col-sm-6">
+                <div class="p-3 bg-surface border border-theme rounded-theme h-100 shadow-sm d-flex flex-column justify-content-center">
+                  <div class="d-flex align-items-center gap-2 mb-1.5">
+                    <i class="bi bi-person-check-fill text-primary fs-5"></i>
+                    <span class="fw-bold text-heading">1:6 Ratio</span>
+                  </div>
+                  <small class="text-body-secondary d-block" style="line-height: 1.45;">Guaranteed small-group mentor eyes on campers at all times.</small>
+                </div>
+              </div>
+              <div class="col-sm-6">
+                <div class="p-3 bg-surface border border-theme rounded-theme h-100 shadow-sm d-flex flex-column justify-content-center">
+                  <div class="d-flex align-items-center gap-2 mb-1.5">
+                    <i class="bi bi-shield-lock-fill text-primary fs-5"></i>
+                    <span class="fw-bold text-heading">Full Vetting</span>
+                  </div>
+                  <small class="text-body-secondary d-block" style="line-height: 1.45;">Every coach, counselor, and adjudicator undergoes FBI vetting.</small>
+                </div>
+              </div>
+              <div class="col-sm-6">
+                <div class="p-3 bg-surface border border-theme rounded-theme h-100 shadow-sm d-flex flex-column justify-content-center">
+                  <div class="d-flex align-items-center gap-2 mb-1.5">
+                    <i class="bi bi-cup-hot-fill text-primary fs-5"></i>
+                    <span class="fw-bold text-heading">Allergy &amp; Dietary</span>
+                  </div>
+                  <small class="text-body-secondary d-block" style="line-height: 1.45;">100% nut-free dining zones, custom menus &amp; EpiPen certified staff.</small>
+                </div>
+              </div>
+              <div class="col-sm-6">
+                <div class="p-3 bg-surface border border-theme rounded-theme h-100 shadow-sm d-flex flex-column justify-content-center">
+                  <div class="d-flex align-items-center gap-2 mb-1.5">
+                    <i class="bi bi-chat-dots-fill text-primary fs-5"></i>
+                    <span class="fw-bold text-heading">Parent Dispatch</span>
+                  </div>
+                  <small class="text-body-secondary d-block" style="line-height: 1.45;">Daily photo feed updates and evening SMS check-in briefings.</small>
+                </div>
+              </div>
+            </div>
+
+            <!-- Bottom Baseline Security Plaque -->
+            <div class="p-3 bg-surface-alt border border-theme rounded-theme d-flex align-items-center justify-content-between gap-3 shadow-sm">
+              <div class="d-flex align-items-center gap-3">
+                <div class="icon-circle bg-primary-soft text-primary flex-shrink-0" style="width: 42px; height: 42px; border-radius: 10px; display: flex; align-items: center; justify-content: center; font-size: 1.25rem;">
+                  <i class="bi bi-patch-check-fill"></i>
+                </div>
+                <div>
+                  <div class="fw-bold text-heading small">ACA Accredited &bull; 24/7 Gated Security</div>
+                  <div class="small text-body-secondary" style="font-size: 0.78rem;">Continuous badge-in access &bull; Licensed emergency medical response on call.</div>
+                </div>
+              </div>
+              <span class="badge bg-success-soft text-success rounded-pill px-3 py-1.5 fw-bold small flex-shrink-0 d-none d-sm-inline-flex align-items-center gap-1">
+                <i class="bi bi-shield-fill-check"></i> Certified 2026
+              </span>
+            </div>
+          </div>
+
+          <!-- Right Column: Alumni Matriculation & Campus Grounds Card -->
+          <div class="col-lg-6">
+            <div class="card border-0 bg-surface rounded-theme-xl p-4 shadow-lg border border-theme">
+              <!-- Campus Visual Image -->
+              <div class="rounded-theme overflow-hidden mb-3 shadow-sm position-relative" style="height: 380px;">
+                <img src="assets/img/about/about-campus.jpg" alt="VoxLeaders Boston Campus Grounds" class="w-100 h-100" style="object-fit: cover; display: block;">
+                <div class="position-absolute top-0 end-0 m-2.5">
+                  <span class="badge bg-success text-white rounded-pill px-3 py-1.5 shadow-sm small fw-bold">
+                    <i class="bi bi-check-circle-fill me-1"></i> Safety Inspected
+                  </span>
+                </div>
+                <div class="position-absolute bottom-0 start-0 m-2.5">
+                  <span class="badge bg-dark bg-opacity-75 text-white rounded-pill px-3 py-1 small">
+                    <i class="bi bi-geo-alt-fill text-primary me-1"></i> Harvard Square Campus Grounds
+                  </span>
+                </div>
+              </div>
+
+              <div class="d-flex flex-wrap align-items-center justify-content-between gap-2 mb-2">
+                <h3 class="h5 fw-bold mb-0 text-heading">Alumni Matriculation Highlights</h3>
+                <span class="badge bg-primary-soft text-primary fw-bold">Class of 2024&ndash;2026</span>
+              </div>
+              <p class="text-body-secondary small mb-3">Our graduates routinely credit VoxLeaders with their college admissions essays, scholarship panels, and student leadership elections:</p>
+
+              <!-- Admissions Impact & Forensics Lift Meter -->
+              <div class="p-2.5 bg-surface-alt rounded-theme border border-theme mb-3">
+                <div class="d-flex flex-wrap justify-content-between align-items-center gap-2 mb-1">
+                  <span class="small fw-bold text-heading"><i class="bi bi-graph-up-arrow text-primary me-1"></i> Top-Tier Admissions Lift</span>
+                  <span class="badge bg-primary-soft text-primary fw-bold" style="font-size: 0.72rem;">+3.8x Advantage</span>
+                </div>
+                <div class="progress" style="height: 5px; border-radius: 99px; background: rgba(79, 70, 229, 0.1);">
+                  <div class="progress-bar bg-primary" role="progressbar" style="width: 94%; border-radius: 99px;" aria-valuenow="94" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+                <div class="d-flex justify-content-between align-items-center mt-1.5 small text-body-secondary" style="font-size: 0.74rem;">
+                  <span>100% Speech-Backed Personal Statements</span>
+                  <span class="fw-semibold text-primary">Early Decision Track</span>
+                </div>
+              </div>
+
+              <!-- Bottom Stat Ribbon in Right Card -->
+              <div class="d-flex align-items-center justify-content-between pt-3 border-top border-theme small text-body-secondary">
+                <span class="fw-bold text-heading"><i class="bi bi-award text-primary me-1"></i> 94% Acceptance</span>
+                <span class="fw-bold text-primary">$1.2M+ In Scholarships</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+        <!-- =================================================================
+       FOOTER
+  ================================================================== -->
+  <footer class="vx-footer">
+    <div class="container">
+      <div class="row g-4 align-items-start">
+        
+        <!-- Column 1: Brand Info & Socials -->
+        <div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
+          <div class="footer-brand-wrap">
+            <a href="index.html" class="footer-brand-logo mb-3">
+              <img src="assets/img/brand/logo-white.svg" alt="VoxLeaders Logo" height="38">
+            </a>
+            <p class="footer-brand-desc small mb-4">
+              Empowering young minds with executive confidence, public speaking mastery &amp; debate skills.
+            </p>
+            <div class="d-flex align-items-center gap-2">
+              <a href="https://www.instagram.com/accounts/login/" target="_blank" rel="noopener noreferrer" class="footer-social-btn" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+              <a href="https://www.facebook.com/login/" target="_blank" rel="noopener noreferrer" class="footer-social-btn" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+              <a href="https://www.linkedin.com/login" target="_blank" rel="noopener noreferrer" class="footer-social-btn" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+              <a href="https://x.com/" target="_blank" rel="noopener noreferrer" class="footer-social-btn" aria-label="X (Twitter)"><i class="fab fa-x-twitter"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Column 2: Navigation -->
+        <div class="col-lg-2 col-md-6 mb-4 mb-lg-0">
+          <div class="footer-col-title">NAVIGATION</div>
+          <ul class="list-unstyled mb-0 d-flex flex-column">
+            <li><a href="index.html" class="footer-link">Home</a></li>
+            <li><a href="about.html" class="footer-link">About Us</a></li>
+            <li><a href="programs.html" class="footer-link">Programs</a></li>
+            <li><a href="pricing.html" class="footer-link">Pricing Tiers</a></li>
+            <li><a href="blog.html" class="footer-link">Blog &amp; Journal</a></li>
+            <li><a href="contact.html" class="footer-link">Contact Sales</a></li>
+          </ul>
+        </div>
+
+        <!-- Column 3: Camp Standards -->
+        <div class="col-lg-4 col-md-6 mb-4 mb-lg-0">
+          <div class="footer-col-title">CAMP STANDARDS</div>
+          <ul class="list-unstyled mb-0 d-flex flex-column">
+            <li class="footer-sla-item"><span class="sla-highlight">1:6 Coach Ratio</span> <span class="sla-desc">Certified Speech Mentors</span></li>
+            <li class="footer-sla-item"><span class="sla-highlight">Daily Stage Time</span> <span class="sla-desc">Live Adjudicated Practice</span></li>
+            <li class="footer-sla-item"><span class="sla-highlight">4K HD Video</span> <span class="sla-desc">Gala Showcase Recordings</span></li>
+            <li class="footer-sla-item"><span class="sla-highlight">Ages 7&ndash;18</span> <span class="sla-desc">Junior, Teen &amp; Exec Tracks</span></li>
+            <li class="footer-sla-item"><span class="sla-highlight">5 Regional Hubs</span> <span class="sla-desc">Speech &amp; Debate Campuses</span></li>
+          </ul>
+        </div>
+
+        <!-- Column 4: Camp Admissions -->
+        <div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
+          <div class="footer-col-title">CAMP ADMISSIONS</div>
+          <ul class="list-unstyled mb-3 d-flex flex-column">
+            <li class="footer-contact-item">
+              <i class="bi bi-envelope"></i>
+              <a href="mailto:admissions@voxleaders.org">admissions@voxleaders.org</a>
+            </li>
+            <li class="footer-contact-item">
+              <i class="bi bi-telephone"></i>
+              <a href="tel:+18005558695">+1 (800) 555-VOXLEAD</a>
+            </li>
+            <li class="footer-contact-item">
+              <i class="bi bi-geo-alt"></i>
+              <span>500 Leadership Way, Boston, MA</span>
+            </li>
+          </ul>
+          <a href="contact.html" class="btn-footer-cta">Connect Admissions Team</a>
+        </div>
+
+      </div>
+
+      <!-- Centered Copyright -->
+      <div class="vx-footer-bottom text-center">
+        &copy; 2026 VoxLeaders Youth Academy Ltd. All rights reserved.
+      </div>
+    </div>
+  </footer>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

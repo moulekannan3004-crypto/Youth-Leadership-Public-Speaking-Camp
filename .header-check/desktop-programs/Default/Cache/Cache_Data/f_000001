@@ -1,0 +1,836 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="light" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Camp Programs Directory | VoxLeaders Youth Academy</title>
+  <meta name="description" content="Explore and filter age-specific youth public speaking camps, debate workshops, and executive presence masterclasses.">
+  
+  <link rel="icon" type="image/svg+xml" href="assets/img/brand/favicon.svg">
+  <link id="bootstrap-theme-style" rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <!-- Google Fonts: Poppins (Light 300), Outfit, Plus Jakarta Sans -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800;900&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,300&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="assets/css/style.css?v=8.3">
+  <link rel="stylesheet" href="assets/css/rtl.css">
+</head>
+<body class="page-programs">
+
+  <!-- Navigation Bar -->
+    <!-- =================================================================
+       GLOBAL NAVIGATION HEADER (Matches Reference Format)
+  ================================================================== -->
+  <header class="vx-header sticky-top">
+    <nav class="navbar navbar-expand-xl vx-navbar" aria-label="Main Navigation">
+      <div class="container-fluid px-3 px-xl-5">
+        <!-- Brand Logo -->
+        <a class="navbar-brand vx-brand" href="index.html">
+          <img src="assets/img/brand/logo.svg" alt="VoxLeaders Logo" class="vx-brand-img" height="46">
+        </a>
+
+        <!-- Mobile Toggler -->
+        <button class="navbar-toggler border-0 shadow-none d-xl-none" type="button" data-bs-toggle="collapse" data-bs-target="#vxNavbarContent" aria-controls="vxNavbarContent" aria-expanded="false" aria-label="Toggle navigation">
+          <i class="bi bi-list fs-2"></i>
+        </button>
+
+        <!-- Navbar Links & Right Controls -->
+        <div class="collapse navbar-collapse" id="vxNavbarContent">
+          <!-- Center Navigation Links -->
+          <ul class="navbar-nav mx-auto mb-2 mb-xl-0 align-items-xl-center">
+            <!-- Home with Dropdown -->
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle vx-nav-link " href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                <span class="vx-nav-text">Home</span> <i class="bi bi-chevron-down ms-1" style="font-size: 0.75rem;"></i>
+              </a>
+              <ul class="dropdown-menu dropdown-menu-vx">
+                <li><a class="dropdown-item dropdown-item-vx" href="index.html">Home</a></li>
+                <li><a class="dropdown-item dropdown-item-vx" href="index-business.html">Home 2</a></li>
+              </ul>
+            </li>
+
+            <!-- About Us -->
+            <li class="nav-item">
+              <a class="nav-link vx-nav-link " href="about.html"><span class="vx-nav-text">About Us</span></a>
+            </li>
+
+            <!-- Programs -->
+            <li class="nav-item">
+              <a class="nav-link vx-nav-link active" href="programs.html"><span class="vx-nav-text">Programs</span></a>
+            </li>
+
+            <!-- Testimonials -->
+            <li class="nav-item">
+              <a class="nav-link vx-nav-link " href="testimonials.html"><span class="vx-nav-text">Testimonials</span></a>
+            </li>
+
+            <!-- Pricing -->
+            <li class="nav-item">
+              <a class="nav-link vx-nav-link " href="pricing.html"><span class="vx-nav-text">Pricing</span></a>
+            </li>
+
+            <!-- Gallery -->
+            <li class="nav-item">
+              <a class="nav-link vx-nav-link " href="gallery.html"><span class="vx-nav-text">Gallery</span></a>
+            </li>
+
+            <!-- Blog -->
+            <li class="nav-item">
+              <a class="nav-link vx-nav-link " href="blog.html"><span class="vx-nav-text">Blog</span></a>
+            </li>
+
+            <!-- Contact -->
+            <li class="nav-item">
+              <a class="nav-link vx-nav-link " href="contact.html"><span class="vx-nav-text">Contact</span></a>
+            </li>
+
+            <!-- Dashboard -->
+            <li class="nav-item">
+              <a class="nav-link vx-nav-link " href="dashboard-parent.html"><span class="vx-nav-text">Dashboard</span></a>
+            </li>
+          </ul>
+
+          <!-- Right Header Actions (LTR/RTL Pill + Theme Toggle Circle + Login Pill) -->
+          <div class="vx-header-actions mt-3 mt-xl-0">
+            <!-- LTR / RTL Switcher Pill -->
+            <button class="btn-vx-dir-pill rtl-toggle-btn" aria-label="Toggle Text Direction">
+              <span class="dir-active">LTR</span>
+              <i class="bi bi-arrow-left-right text-muted" style="font-size: 0.7rem;"></i>
+              <span class="dir-inactive">RTL</span>
+            </button>
+
+            <!-- Dark / Light Theme Toggle Circle -->
+            <button class="btn-vx-theme-circle theme-toggle-btn" aria-label="Toggle Dark/Light Mode" title="Toggle Theme">
+              <i class="bi bi-moon-stars-fill"></i>
+            </button>
+
+            <!-- Login Pill Button -->
+            <a href="auth.html" class="btn-vx-login-pill">
+              <i class="bi bi-box-arrow-in-right login-icon"></i>
+              <span>Login</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main id="mainContent">
+
+    <!-- Header Banner with Scoped Background -->
+    <section class="hero-wrapper page-header-hero programs-header-bg text-center">
+      <div class="hero-glow-bg"></div>
+      <div class="container position-relative z-2">
+        <div class="badge-pill-soft mb-3">Comprehensive Curriculum</div>
+        <h1 class="display-4 fw-extrabold mb-3">Explore Our Youth Camp Programs</h1>
+        <p class="lead text-body-secondary mx-auto mb-0" style="max-width: 680px;">
+          Tailored developmental stages ensuring age-appropriate cognitive challenges, confidence building, and fun peer collaboration.
+        </p>
+      </div>
+    </section>
+
+    <!-- Program Cards Grid -->
+    <section class="py-5 bg-surface-alt">
+      <div class="container">
+
+        <!-- Search Bar & Filters (Moved Down From Header) -->
+        <div class="row justify-content-center mb-5">
+          <div class="col-lg-8 col-xl-7 mb-4">
+            <form id="programSearchForm" class="w-100" onsubmit="return false;">
+              <div class="search-pill-wrapper input-group p-1 border rounded-pill bg-surface shadow-sm">
+                <span class="input-group-text bg-transparent border-0 ps-3 pe-2 text-primary">
+                  <i class="bi bi-search fs-6"></i>
+                </span>
+                <input type="text" id="programSearchInput" class="form-control border-0 bg-transparent px-2" placeholder="Search by topic (e.g. Debate, Storytelling, MUN, Stage Fright)..." autocomplete="off" aria-label="Search Programs">
+                <button type="button" id="clearSearchBtn" class="btn btn-link text-muted border-0 p-0 me-2 d-none" aria-label="Clear Search" style="text-decoration: none;">
+                  <i class="bi bi-x-circle-fill fs-5"></i>
+                </button>
+                <button type="submit" id="programSearchBtn" class="btn btn-vx-primary rounded-pill px-4 py-2">
+                  <span>Search</span>
+                </button>
+              </div>
+            </form>
+          </div>
+          <div class="col-12 text-center">
+            <!-- Category Pills (Guaranteed Single Line) -->
+            <div class="filter-pills-track">
+              <button type="button" class="filter-btn-pill active" data-filter="all">All Programs (9)</button>
+              <button type="button" class="filter-btn-pill" data-filter="junior">Junior Orators (Ages 7&ndash;11)</button>
+              <button type="button" class="filter-btn-pill" data-filter="teen">Teen Leaders (Ages 12&ndash;15)</button>
+              <button type="button" class="filter-btn-pill" data-filter="executive">Future Executives (Ages 16&ndash;18)</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="row g-4" id="programsGrid">
+
+          <!-- No Programs Found Message (Hidden by Default) -->
+          <div id="noProgramsFound" class="col-12 text-center py-5 d-none">
+            <div class="card border-0 bg-surface rounded-theme-xl p-5 shadow-sm mx-auto" style="max-width: 540px;">
+              <div class="icon-circle bg-primary-soft text-primary mx-auto mb-3" style="width: 64px; height: 64px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 1.8rem;">
+                <i class="bi bi-search"></i>
+              </div>
+              <h3 class="h4 fw-bold mb-2">No Matching Programs Found</h3>
+              <p class="text-body-secondary small mb-4">We couldn't find any cohorts matching "<span id="noResultsTerm" class="fw-bold text-primary"></span>". Try searching for a different keyword or reset filters.</p>
+              <button type="button" id="resetSearchBtn" class="btn btn-vx-primary rounded-pill px-4 mx-auto">
+                <i class="bi bi-arrow-clockwise me-1"></i> View All Programs
+              </button>
+            </div>
+          </div>
+
+          <!-- Card 1: Junior Orators 1 -->
+          <div class="col-md-6 col-lg-4 d-flex" data-category="junior all">
+            <div class="program-card w-100 h-100 d-flex flex-column overflow-hidden">
+              <div class="program-card-thumb position-relative overflow-hidden">
+                <img src="assets/img/programs/program-brave-storytellers.jpg" alt="Brave Storytellers Academy" class="w-100" style="height: 190px; object-fit: cover; object-position: center 30%;">
+              </div>
+              <div class="program-card-header">
+                <span class="badge bg-primary-soft text-primary rounded-pill px-3 py-2 fw-bold">Ages 7&ndash;11 &bull; Level 1</span>
+                <h3 class="h5 fw-bold mt-3 mb-2 program-title"><a href="program-details.html" class="text-heading text-decoration-none">Brave Storytellers Academy</a></h3>
+                <p class="text-body-secondary small mb-0">Ignite expressive storytelling, overcome elementary classroom shyness, and project your natural voice.</p>
+              </div>
+              <div class="program-card-body d-flex flex-column flex-grow-1">
+                <ul class="list-unstyled mb-4 d-flex flex-column gap-2 small">
+                  <li><i class="bi bi-check-circle-fill text-primary me-2"></i> Overcoming stage hesitation through roleplay</li>
+                  <li><i class="bi bi-check-circle-fill text-primary me-2"></i> Voice modulation with animated puppets</li>
+                  <li><i class="bi bi-check-circle-fill text-primary me-2"></i> Parent-student graduation showcase speech</li>
+                </ul>
+                <div class="d-flex align-items-center justify-content-between pt-3 border-top border-theme mt-auto">
+                  <div class="d-flex align-items-center gap-2">
+                    <img src="assets/img/programs/instructor-elena.jpg" width="34" height="34" class="rounded-circle shadow-sm" style="object-fit: cover;" alt="Elena Rostova">
+                    <span class="small fw-bold">Elena Rostova</span>
+                  </div>
+                  <span class="badge bg-primary-soft text-primary fw-bold">June Cohort</span>
+                </div>
+              </div>
+              <div class="program-card-footer mt-auto">
+                <div><span class="fs-4 fw-extrabold text-heading">$650</span><span class="small text-body-secondary"> / session</span></div>
+                <a href="contact.html" class="btn-vx btn-vx-outline btn-vx-sm">Visit</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 2: Junior Orators 2 -->
+          <div class="col-md-6 col-lg-4 d-flex" data-category="junior all">
+            <div class="program-card w-100 h-100 d-flex flex-column overflow-hidden">
+              <div class="program-card-thumb position-relative overflow-hidden">
+                <img src="assets/img/programs/program-junior-debate-pioneers.png" alt="Junior Debate Pioneers" class="w-100" style="height: 190px; object-fit: cover; object-position: center 30%;">
+              </div>
+              <div class="program-card-header">
+                <span class="badge bg-primary-soft text-primary rounded-pill px-3 py-2 fw-bold">Ages 7&ndash;11 &bull; Level 2</span>
+                <h3 class="h5 fw-bold mt-3 mb-2 program-title"><a href="program-details.html" class="text-heading text-decoration-none">Junior Debate Pioneers</a></h3>
+                <p class="text-body-secondary small mb-0">Learn polite disagreement, respectful counter-points, and structured 2-minute arguments.</p>
+              </div>
+              <div class="program-card-body d-flex flex-column flex-grow-1">
+                <ul class="list-unstyled mb-4 d-flex flex-column gap-2 small">
+                  <li><i class="bi bi-check-circle-fill text-primary me-2"></i> Introduction to fact-based reasoning</li>
+                  <li><i class="bi bi-check-circle-fill text-primary me-2"></i> Friendly team point-counterpoint games</li>
+                  <li><i class="bi bi-check-circle-fill text-primary me-2"></i> Active listening and rebuttal etiquette</li>
+                </ul>
+                <div class="d-flex align-items-center justify-content-between pt-3 border-top border-theme mt-auto">
+                  <div class="d-flex align-items-center gap-2">
+                    <img src="assets/img/programs/instructor-marcus.jpg" width="34" height="34" class="rounded-circle shadow-sm" style="object-fit: cover;" alt="Dr. Marcus Vance">
+                    <span class="small fw-bold">Dr. Marcus Vance</span>
+                  </div>
+                  <span class="badge bg-primary-subtle text-primary fw-bold">July Cohort</span>
+                </div>
+              </div>
+              <div class="program-card-footer mt-auto">
+                <div><span class="fs-4 fw-extrabold text-heading">$700</span><span class="small text-body-secondary"> / session</span></div>
+                <a href="contact.html" class="btn-vx btn-vx-outline btn-vx-sm">Visit</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 3: Junior Orators 3 -->
+          <div class="col-md-6 col-lg-4 d-flex" data-category="junior all">
+            <div class="program-card w-100 h-100 d-flex flex-column overflow-hidden">
+              <div class="program-card-thumb position-relative overflow-hidden">
+                <img src="assets/img/programs/program-young-broadcasters.png" alt="Young Broadcasters &amp; Mic Lab" class="w-100" style="height: 190px; object-fit: cover; object-position: center 30%;">
+              </div>
+              <div class="program-card-header">
+                <span class="badge bg-primary-soft text-primary rounded-pill px-3 py-2 fw-bold">Ages 7&ndash;11 &bull; Level 3</span>
+                <h3 class="h5 fw-bold mt-3 mb-2 program-title"><a href="program-details.html" class="text-heading text-decoration-none">Young Broadcasters &amp; Mic Lab</a></h3>
+                <p class="text-body-secondary small mb-0">Hands-on microphone practice, studio cadence, podcast storytelling, and camera presence.</p>
+              </div>
+              <div class="program-card-body d-flex flex-column flex-grow-1">
+                <ul class="list-unstyled mb-4 d-flex flex-column gap-2 small">
+                  <li><i class="bi bi-check-circle-fill text-primary me-2"></i> Voice projection and vocal cord warmups</li>
+                  <li><i class="bi bi-check-circle-fill text-primary me-2"></i> Mini podcast interview recording sessions</li>
+                  <li><i class="bi bi-check-circle-fill text-primary me-2"></i> Expressive body language and stage pacing</li>
+                </ul>
+                <div class="d-flex align-items-center justify-content-between pt-3 border-top border-theme mt-auto">
+                  <div class="d-flex align-items-center gap-2">
+                    <img src="assets/img/programs/instructor-chloe.jpg" width="34" height="34" class="rounded-circle shadow-sm" style="object-fit: cover;" alt="Chloe Bennett">
+                    <span class="small fw-bold">Chloe Bennett</span>
+                  </div>
+                  <span class="badge bg-primary-soft text-primary fw-bold">August Cohort</span>
+                </div>
+              </div>
+              <div class="program-card-footer mt-auto">
+                <div><span class="fs-4 fw-extrabold text-heading">$680</span><span class="small text-body-secondary"> / session</span></div>
+                <a href="contact.html" class="btn-vx btn-vx-outline btn-vx-sm">Visit</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 4: Teen Leaders 1 -->
+          <div class="col-md-6 col-lg-4 d-flex" data-category="teen all">
+            <div class="program-card w-100 h-100 d-flex flex-column overflow-hidden">
+              <div class="program-card-thumb position-relative overflow-hidden">
+                <img src="assets/img/programs/program-parliamentary-debate.jpg" alt="Parliamentary Debate Bootcamp" class="w-100" style="height: 190px; object-fit: cover; object-position: center 60%;">
+              </div>
+              <div class="program-card-header">
+                <span class="badge bg-primary-soft text-primary rounded-pill px-3 py-2 fw-bold">Ages 12&ndash;15 &bull; Level 1</span>
+                <h3 class="h5 fw-bold mt-3 mb-2 program-title"><a href="program-details.html" class="text-heading text-decoration-none">Parliamentary Debate Bootcamp</a></h3>
+                <p class="text-body-secondary small mb-0">Master rapid-fire rebuttal drills, parliamentary rules of order, and critical thinking under pressure.</p>
+              </div>
+              <div class="program-card-body d-flex flex-column flex-grow-1">
+                <ul class="list-unstyled mb-4 d-flex flex-column gap-2 small">
+                  <li><i class="bi bi-check-circle-fill text-primary me-2"></i> Model United Nations (MUN) simulation rounds</li>
+                  <li><i class="bi bi-check-circle-fill text-primary me-2"></i> Fast impromptu 60-second table topics</li>
+                  <li><i class="bi bi-check-circle-fill text-primary me-2"></i> Micro-body language and eye-contact pacing</li>
+                </ul>
+                <div class="d-flex align-items-center justify-content-between pt-3 border-top border-theme mt-auto">
+                  <div class="d-flex align-items-center gap-2">
+                    <img src="assets/img/programs/instructor-david.jpg" width="34" height="34" class="rounded-circle shadow-sm" style="object-fit: cover;" alt="David Kim">
+                    <span class="small fw-bold">David Kim</span>
+                  </div>
+                  <span class="badge bg-primary-soft text-primary fw-bold">4 Spots Left</span>
+                </div>
+              </div>
+              <div class="program-card-footer mt-auto">
+                <div><span class="fs-4 fw-extrabold text-heading">$850</span><span class="small text-body-secondary"> / session</span></div>
+                <a href="contact.html" class="btn-vx btn-vx-primary btn-vx-sm">Visit</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 5: Teen Leaders 2 -->
+          <div class="col-md-6 col-lg-4 d-flex" data-category="teen all">
+            <div class="program-card w-100 h-100 d-flex flex-column overflow-hidden">
+              <div class="program-card-thumb position-relative overflow-hidden">
+                <img src="assets/img/programs/program-civic-leadership-mun.jpg" alt="Youth Civic Leadership &amp; MUN" class="w-100" style="height: 190px; object-fit: cover; object-position: center 25%;">
+              </div>
+              <div class="program-card-header">
+                <span class="badge bg-primary-soft text-primary rounded-pill px-3 py-2 fw-bold">Ages 12&ndash;15 &bull; Level 2</span>
+                <h3 class="h5 fw-bold mt-3 mb-2 program-title"><a href="program-details.html" class="text-heading text-decoration-none">Youth Civic Leadership & MUN</a></h3>
+                <p class="text-body-secondary small mb-0">Build diplomatic resolutions, form voting coalitions, and deliver high-impact committee addresses.</p>
+              </div>
+              <div class="program-card-body d-flex flex-column flex-grow-1">
+                <ul class="list-unstyled mb-4 d-flex flex-column gap-2 small">
+                  <li><i class="bi bi-check-circle-fill text-primary me-2"></i> UN Resolution drafting & policy rhetoric</li>
+                  <li><i class="bi bi-check-circle-fill text-primary me-2"></i> Crisis committee impromptu press briefings</li>
+                  <li><i class="bi bi-check-circle-fill text-primary me-2"></i> Negotiation tactics & consensus building</li>
+                </ul>
+                <div class="d-flex align-items-center justify-content-between pt-3 border-top border-theme mt-auto">
+                  <div class="d-flex align-items-center gap-2">
+                    <img src="assets/img/programs/instructor-liam.jpg" width="34" height="34" class="rounded-circle shadow-sm" style="object-fit: cover;" alt="Liam Parker">
+                    <span class="small fw-bold">Liam Parker</span>
+                  </div>
+                  <span class="badge bg-primary-soft text-primary fw-bold">July Cohort</span>
+                </div>
+              </div>
+              <div class="program-card-footer mt-auto">
+                <div><span class="fs-4 fw-extrabold text-heading">$900</span><span class="small text-body-secondary"> / session</span></div>
+                <a href="contact.html" class="btn-vx btn-vx-outline btn-vx-sm">Visit</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 6: Teen Leaders 3 -->
+          <div class="col-md-6 col-lg-4 d-flex" data-category="teen all">
+            <div class="program-card w-100 h-100 d-flex flex-column overflow-hidden">
+              <div class="program-card-thumb position-relative overflow-hidden">
+                <img src="assets/img/programs/program-mock-trial-forensics.png" alt="Mock Trial &amp; Legal Forensics" class="w-100" style="height: 190px; object-fit: cover; object-position: center 30%;">
+              </div>
+              <div class="program-card-header">
+                <span class="badge bg-primary-soft text-primary rounded-pill px-3 py-2 fw-bold">Ages 12&ndash;15 &bull; Level 3</span>
+                <h3 class="h5 fw-bold mt-3 mb-2 program-title"><a href="program-details.html" class="text-heading text-decoration-none">Mock Trial &amp; Legal Forensics</a></h3>
+                <p class="text-body-secondary small mb-0">Learn courtroom cross-examination, evidentiary objections, witness coaching, and closing arguments.</p>
+              </div>
+              <div class="program-card-body d-flex flex-column flex-grow-1">
+                <ul class="list-unstyled mb-4 d-flex flex-column gap-2 small">
+                  <li><i class="bi bi-check-circle-fill text-primary me-2"></i> Case analysis and legal logic frameworks</li>
+                  <li><i class="bi bi-check-circle-fill text-primary me-2"></i> Witness direct &amp; cross examination drills</li>
+                  <li><i class="bi bi-check-circle-fill text-primary me-2"></i> Real courtroom simulation before trial judge</li>
+                </ul>
+                <div class="d-flex align-items-center justify-content-between pt-3 border-top border-theme mt-auto">
+                  <div class="d-flex align-items-center gap-2">
+                    <img src="assets/img/programs/instructor-alexander.jpg" width="34" height="34" class="rounded-circle shadow-sm" style="object-fit: cover;" alt="Alexander Wright">
+                    <span class="small fw-bold">Alexander Wright</span>
+                  </div>
+                  <span class="badge bg-primary-soft text-primary fw-bold">Limited Seats</span>
+                </div>
+              </div>
+              <div class="program-card-footer mt-auto">
+                <div><span class="fs-4 fw-extrabold text-heading">$920</span><span class="small text-body-secondary"> / session</span></div>
+                <a href="contact.html" class="btn-vx btn-vx-outline btn-vx-sm">Visit</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 7: Future Executives 1 -->
+          <div class="col-md-6 col-lg-4 d-flex" data-category="executive all">
+            <div class="program-card w-100 h-100 d-flex flex-column overflow-hidden">
+              <div class="program-card-thumb position-relative overflow-hidden">
+                <img src="assets/img/programs/program-tedx-keynote.jpg" alt="TEDx &amp; Keynote Oratory Lab" class="w-100" style="height: 190px; object-fit: cover; object-position: center 30%;">
+              </div>
+              <div class="program-card-header">
+                <span class="badge bg-primary-soft text-primary rounded-pill px-3 py-2 fw-bold">Ages 16&ndash;18 &bull; Level 1</span>
+                <h3 class="h5 fw-bold mt-3 mb-2 program-title"><a href="program-details.html" class="text-heading text-decoration-none">TEDx & Keynote Oratory Lab</a></h3>
+                <p class="text-body-secondary small mb-0">Design, script, memorize, and deliver an 8-minute keynote filmed live on our 4K soundstage.</p>
+              </div>
+              <div class="program-card-body d-flex flex-column flex-grow-1">
+                <ul class="list-unstyled mb-4 d-flex flex-column gap-2 small">
+                  <li><i class="bi bi-check-circle-fill text-primary me-2"></i> Storytelling arcs and visual slide economy</li>
+                  <li><i class="bi bi-check-circle-fill text-primary me-2"></i> Full 4K multi-cam stage film for portfolio</li>
+                  <li><i class="bi bi-check-circle-fill text-primary me-2"></i> Mentored by certified TEDx keynote speaker</li>
+                </ul>
+                <div class="d-flex align-items-center justify-content-between pt-3 border-top border-theme mt-auto">
+                  <div class="d-flex align-items-center gap-2">
+                    <img src="assets/img/programs/instructor-sophia.jpg" width="34" height="34" class="rounded-circle shadow-sm" style="object-fit: cover;" alt="Sophia Chen">
+                    <span class="small fw-bold">Sophia Chen</span>
+                  </div>
+                  <span class="badge bg-primary-soft text-primary fw-bold">Selective</span>
+                </div>
+              </div>
+              <div class="program-card-footer mt-auto">
+                <div><span class="fs-4 fw-extrabold text-heading">$1,150</span><span class="small text-body-secondary"> / session</span></div>
+                <a href="contact.html" class="btn-vx btn-vx-outline btn-vx-sm">Visit</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 8: Future Executives 2 -->
+          <div class="col-md-6 col-lg-4 d-flex" data-category="executive all">
+            <div class="program-card w-100 h-100 d-flex flex-column overflow-hidden">
+              <div class="program-card-thumb position-relative overflow-hidden">
+                <img src="assets/img/programs/program-ivy-interview.png" alt="Ivy League Interview &amp; Executive Presence" class="w-100" style="height: 190px; object-fit: cover; object-position: center 25%;">
+              </div>
+              <div class="program-card-header">
+                <span class="badge bg-primary-soft text-primary rounded-pill px-3 py-2 fw-bold">Ages 16&ndash;18 &bull; Level 2</span>
+                <h3 class="h5 fw-bold mt-3 mb-2 program-title"><a href="program-details.html" class="text-heading text-decoration-none">Ivy League Interview & Executive Presence</a></h3>
+                <p class="text-body-secondary small mb-0">High-stakes interviews, scholarship panels, venture pitch decks, and charismatic boardroom leadership.</p>
+              </div>
+              <div class="program-card-body d-flex flex-column flex-grow-1">
+                <ul class="list-unstyled mb-4 d-flex flex-column gap-2 small">
+                  <li><i class="bi bi-check-circle-fill text-primary me-2"></i> Mock admissions interviews with alumni panels</li>
+                  <li><i class="bi bi-check-circle-fill text-primary me-2"></i> Startup pitch competition simulation</li>
+                  <li><i class="bi bi-check-circle-fill text-primary me-2"></i> Crisis communication & press Q&A drills</li>
+                </ul>
+                <div class="d-flex align-items-center justify-content-between pt-3 border-top border-theme mt-auto">
+                  <div class="d-flex align-items-center gap-2">
+                    <img src="assets/img/programs/instructor-julian.jpg" width="34" height="34" class="rounded-circle shadow-sm" style="object-fit: cover;" alt="Julian Thorne">
+                    <span class="small fw-bold">Julian Thorne</span>
+                  </div>
+                  <span class="badge bg-primary-subtle text-primary fw-bold">August Cohort</span>
+                </div>
+              </div>
+              <div class="program-card-footer mt-auto">
+                <div><span class="fs-4 fw-extrabold text-heading">$1,250</span><span class="small text-body-secondary"> / session</span></div>
+                <a href="contact.html" class="btn-vx btn-vx-outline btn-vx-sm">Visit</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 9: Future Executives 3 -->
+          <div class="col-md-6 col-lg-4 d-flex" data-category="executive all">
+            <div class="program-card w-100 h-100 d-flex flex-column overflow-hidden">
+              <div class="program-card-thumb position-relative overflow-hidden">
+                <img src="assets/img/programs/track-boardroom-pitch.jpg" alt="Venture Pitch &amp; Boardroom Leadership" class="w-100" style="height: 190px; object-fit: cover; object-position: center 30%;">
+              </div>
+              <div class="program-card-header">
+                <span class="badge bg-primary-soft text-primary rounded-pill px-3 py-2 fw-bold">Ages 16&ndash;18 &bull; Level 3</span>
+                <h3 class="h5 fw-bold mt-3 mb-2 program-title"><a href="program-details.html" class="text-heading text-decoration-none">Venture Pitch &amp; Boardroom Leadership</a></h3>
+                <p class="text-body-secondary small mb-0">Master high-stakes startup presentations, angel investor defense, and corporate governance.</p>
+              </div>
+              <div class="program-card-body d-flex flex-column flex-grow-1">
+                <ul class="list-unstyled mb-4 d-flex flex-column gap-2 small">
+                  <li><i class="bi bi-check-circle-fill text-primary me-2"></i> Shark Tank style live investor pitch round</li>
+                  <li><i class="bi bi-check-circle-fill text-primary me-2"></i> Financial narrative framing &amp; data storytelling</li>
+                  <li><i class="bi bi-check-circle-fill text-primary me-2"></i> Executive poise &amp; tough inquiry handling</li>
+                </ul>
+                <div class="d-flex align-items-center justify-content-between pt-3 border-top border-theme mt-auto">
+                  <div class="d-flex align-items-center gap-2">
+                    <img src="assets/img/programs/instructor-victoria.jpg" width="34" height="34" class="rounded-circle shadow-sm" style="object-fit: cover;" alt="Victoria Sterling">
+                    <span class="small fw-bold">Victoria Sterling</span>
+                  </div>
+                  <span class="badge bg-primary-soft text-primary fw-bold">Selective</span>
+                </div>
+              </div>
+              <div class="program-card-footer mt-auto">
+                <div><span class="fs-4 fw-extrabold text-heading">$1,350</span><span class="small text-body-secondary"> / session</span></div>
+                <a href="contact.html" class="btn-vx btn-vx-outline btn-vx-sm">Visit</a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+  
+    <!-- COMPARISON MATRIX: JUNIOR VS TEEN VS EXECUTIVE -->
+    <section class="py-6">
+      <div class="container">
+        <div class="text-center mb-5">
+          <div class="badge-pill-soft mb-2">Side-by-Side Comparison</div>
+          <h2 class="display-5 fw-extrabold mb-3">Compare Our Three Camp Divisions</h2>
+          <p class="lead text-body-secondary mx-auto" style="max-width: 680px;">
+            Every division is custom-engineered for specific developmental milestones, cognitive capacities, and future academic goals.
+          </p>
+        </div>
+
+        <div class="table-responsive bg-surface border border-theme rounded-theme-xl shadow-sm p-4">
+          <table class="table table-hover align-middle mb-0 custom-matrix-table">
+            <thead>
+              <tr class="border-bottom border-theme">
+                <th scope="col" class="py-3 px-3 fs-6 text-heading fw-bold" style="width: 28%;">Feature &amp; Curriculum</th>
+                <th scope="col" class="py-3 px-3 text-center" style="width: 24%;">
+                  <div class="p-2.5 rounded-theme bg-surface-alt border border-theme h-100 d-flex flex-column justify-content-center">
+                    <span class="badge bg-primary-soft text-primary rounded-pill px-2.5 py-1 small fw-bold mb-1 mx-auto">Ages 7&ndash;11</span>
+                    <div class="fw-bold text-heading fs-6">Junior Orators</div>
+                    <div class="small text-body-secondary">Storytelling &amp; Play</div>
+                  </div>
+                </th>
+                <th scope="col" class="py-3 px-3 text-center" style="width: 24%;">
+                  <div class="p-2.5 rounded-theme bg-surface-alt border border-theme h-100 d-flex flex-column justify-content-center">
+                    <span class="badge bg-primary-soft text-primary rounded-pill px-2.5 py-1 small fw-bold mb-1 mx-auto">Ages 12&ndash;15</span>
+                    <div class="fw-bold text-heading fs-6">Teen Leaders</div>
+                    <div class="small text-body-secondary">Debate &amp; Forensics</div>
+                  </div>
+                </th>
+                <th scope="col" class="py-3 px-3 text-center" style="width: 24%;">
+                  <div class="p-2.5 rounded-theme bg-surface-alt border border-theme h-100 d-flex flex-column justify-content-center">
+                    <span class="badge bg-primary-soft text-primary rounded-pill px-2.5 py-1 small fw-bold mb-1 mx-auto">Ages 16&ndash;18</span>
+                    <div class="fw-bold text-heading fs-6">Future Executives</div>
+                    <div class="small text-body-secondary">Keynote &amp; College</div>
+                  </div>
+                </th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="py-3 px-3 fw-bold text-heading">
+                  <div class="d-flex align-items-center gap-2">
+                    <i class="bi bi-bullseye text-primary fs-5"></i>
+                    <div>
+                      <span>Primary Focus</span>
+                      <div class="small text-body-secondary fw-normal">Core skill transformation</div>
+                    </div>
+                  </div>
+                </td>
+                <td class="py-3 px-3 text-center">Storytelling &amp; Overcoming Shyness</td>
+                <td class="py-3 px-3 text-center bg-primary-soft fw-semibold text-heading">Parliamentary Debate &amp; Rebuttals</td>
+                <td class="py-3 px-3 text-center">TEDx Keynote &amp; Interview Poise</td>
+              </tr>
+              <tr>
+                <td class="py-3 px-3 fw-bold text-heading">
+                  <div class="d-flex align-items-center gap-2">
+                    <i class="bi bi-people-fill text-primary fs-5"></i>
+                    <div>
+                      <span>Coach Ratio</span>
+                      <div class="small text-body-secondary fw-normal">Mentorship attention</div>
+                    </div>
+                  </div>
+                </td>
+                <td class="py-3 px-3 text-center"><span class="badge bg-primary-soft text-primary rounded-pill px-3 py-1.5 fw-bold"><i class="bi bi-person-check-fill me-1"></i> 1:5 Ratio</span></td>
+                <td class="py-3 px-3 text-center bg-primary-soft"><span class="badge bg-primary text-white shadow-sm rounded-pill px-3 py-1.5 fw-bold"><i class="bi bi-person-check-fill me-1"></i> 1:6 Ratio</span></td>
+                <td class="py-3 px-3 text-center"><span class="badge bg-primary-soft text-primary rounded-pill px-3 py-1.5 fw-bold"><i class="bi bi-star-fill me-1"></i> 1:4 Masterclass</span></td>
+              </tr>
+              <tr>
+                <td class="py-3 px-3 fw-bold text-heading">
+                  <div class="d-flex align-items-center gap-2">
+                    <i class="bi bi-stopwatch-fill text-primary fs-5"></i>
+                    <div>
+                      <span>Daily Stage Practice</span>
+                      <div class="small text-body-secondary fw-normal">Live microphone time</div>
+                    </div>
+                  </div>
+                </td>
+                <td class="py-3 px-3 text-center">45 Mins (Circle Podiums)</td>
+                <td class="py-3 px-3 text-center bg-primary-soft fw-semibold text-heading">90 Mins (Adjudicated Rounds)</td>
+                <td class="py-3 px-3 text-center">120 Mins (4K Filmed Soundstage)</td>
+              </tr>
+              <tr>
+                <td class="py-3 px-3 fw-bold text-heading">
+                  <div class="d-flex align-items-center gap-2">
+                    <i class="bi bi-diagram-3-fill text-primary fs-5"></i>
+                    <div>
+                      <span>Debate Format</span>
+                      <div class="small text-body-secondary fw-normal">Tournament framework</div>
+                    </div>
+                  </div>
+                </td>
+                <td class="py-3 px-3 text-center">Point-Counterpoint Games</td>
+                <td class="py-3 px-3 text-center bg-primary-soft fw-semibold text-heading">Karl Popper &amp; Model UN</td>
+                <td class="py-3 px-3 text-center">Lincoln-Douglas &amp; Policy Debate</td>
+              </tr>
+              <tr>
+                <td class="py-3 px-3 fw-bold text-heading">
+                  <div class="d-flex align-items-center gap-2">
+                    <i class="bi bi-trophy-fill text-primary fs-5"></i>
+                    <div>
+                      <span>Graduation Milestone</span>
+                      <div class="small text-body-secondary fw-normal">Cap-stone showcase</div>
+                    </div>
+                  </div>
+                </td>
+                <td class="py-3 px-3 text-center"><span class="badge bg-surface border text-body-secondary rounded-pill px-2.5 py-1 small">Live Family Gala</span></td>
+                <td class="py-3 px-3 text-center bg-primary-soft"><span class="badge bg-primary-soft text-primary rounded-pill px-3 py-1 fw-bold">Tournament Finals &amp; Trophy</span></td>
+                <td class="py-3 px-3 text-center"><span class="badge bg-surface border text-body-secondary rounded-pill px-2.5 py-1 small">4K TEDx Portfolio Film</span></td>
+              </tr>
+              <tr>
+                <td class="py-3 px-3 fw-bold text-heading">
+                  <div class="d-flex align-items-center gap-2">
+                    <i class="bi bi-phone-fill text-primary fs-5"></i>
+                    <div>
+                      <span>Parent Progress Portal</span>
+                      <div class="small text-body-secondary fw-normal">Daily feedback feed</div>
+                    </div>
+                  </div>
+                </td>
+                <td class="py-3 px-3 text-center">Daily Photos &amp; Audio Clips</td>
+                <td class="py-3 px-3 text-center bg-primary-soft fw-semibold text-heading">Rubric Scoring &amp; Video Clips</td>
+                <td class="py-3 px-3 text-center">Full Speech Analytics &amp; Letters</td>
+              </tr>
+              <tr>
+                <td class="py-3 px-3 fw-bold text-heading">
+                  <div class="d-flex align-items-center gap-2">
+                    <i class="bi bi-calendar-event text-primary fs-5"></i>
+                    <div>
+                      <span>Session Duration</span>
+                      <div class="small text-body-secondary fw-normal">Camp calendar</div>
+                    </div>
+                  </div>
+                </td>
+                <td class="py-3 px-3 text-center">2-Week Day Camp</td>
+                <td class="py-3 px-3 text-center bg-primary-soft fw-semibold text-heading">3-Week Day / Residential</td>
+                <td class="py-3 px-3 text-center">4-Week Intensive Residency</td>
+              </tr>
+              <tr>
+                <td class="py-3 px-3 fw-bold text-heading">
+                  <div class="d-flex align-items-center gap-2">
+                    <i class="bi bi-tag-fill text-primary fs-5"></i>
+                    <div>
+                      <span>All-Inclusive Tuition</span>
+                      <div class="small text-body-secondary fw-normal">Meals &amp; materials included</div>
+                    </div>
+                  </div>
+                </td>
+                <td class="py-3 px-3 text-center"><strong class="fs-5 text-heading">$650</strong></td>
+                <td class="py-3 px-3 text-center bg-primary-soft"><strong class="fs-4 text-primary fw-extrabold">$850</strong></td>
+                <td class="py-3 px-3 text-center"><strong class="fs-5 text-heading">$1,150</strong></td>
+              </tr>
+              <tr class="border-top-0">
+                <td class="py-3 px-3"></td>
+                <td class="py-3 px-3 text-center">
+                  <a href="contact.html" class="btn btn-sm btn-vx-outline rounded-pill w-100">Enroll Junior</a>
+                </td>
+                <td class="py-3 px-3 text-center bg-primary-soft">
+                  <a href="contact.html" class="btn btn-sm btn-vx-primary rounded-pill w-100 shadow-sm fw-bold">Enroll Teen (Flagship)</a>
+                </td>
+                <td class="py-3 px-3 text-center">
+                  <a href="contact.html" class="btn btn-sm btn-vx-outline rounded-pill w-100">Apply Executive</a>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <!-- PARENT FREQUENTLY ASKED QUESTIONS -->
+    <section class="py-6 bg-surface-alt">
+      <div class="container">
+        <div class="row justify-content-center text-center mb-5">
+          <div class="col-lg-8">
+            <div class="badge-pill-soft mb-2">Admissions Clarity</div>
+            <h2 class="display-5 fw-extrabold mb-3">Frequently Asked Questions</h2>
+            <p class="lead text-body-secondary">Everything parents need to know about safety, peer grouping, and what to expect on Day 1.</p>
+          </div>
+        </div>
+
+        <div class="row justify-content-center">
+          <div class="col-lg-9">
+            <div class="accordion accordion-vx" id="programsFaqAccordion">
+              
+              <!-- FAQ 1 -->
+              <div class="accordion-item">
+                <h3 class="accordion-header" id="faqHeading1">
+                  <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#faqCollapse1" aria-expanded="true" aria-controls="faqCollapse1">
+                    <span class="faq-icon-box"><i class="bi bi-heart-pulse-fill"></i></span>
+                    <span class="text-heading">What if my child is extremely introverted or terrified of public speaking?</span>
+                    <span class="badge bg-primary-soft text-primary rounded-pill small ms-auto me-3 d-none d-md-inline">Anxiety Care</span>
+                  </button>
+                </h3>
+                <div id="faqCollapse1" class="accordion-collapse collapse show" aria-labelledby="faqHeading1" data-bs-parent="#programsFaqAccordion">
+                  <div class="accordion-body">
+                    Over 70% of our campers enter on Day 1 describing themselves as "very shy" or "terrified" of school presentations. We never force children onto a high-stakes stage. Our proven cognitive desensitization starts with 1-on-1 mentor games, seated circle sharing, and playful puppet storytelling before ever introducing a podium. By Week 2, children who initially wouldn't make eye contact eagerly volunteer for the microphone.
+                  </div>
+                </div>
+              </div>
+
+              <!-- FAQ 2 -->
+              <div class="accordion-item">
+                <h3 class="accordion-header" id="faqHeading2">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqCollapse2" aria-expanded="false" aria-controls="faqCollapse2">
+                    <span class="faq-icon-box"><i class="bi bi-people-fill"></i></span>
+                    <span class="text-heading">How are campers grouped within their age divisions?</span>
+                    <span class="badge bg-primary-soft text-primary rounded-pill small ms-auto me-3 d-none d-md-inline">Squad Dynamics</span>
+                  </button>
+                </h3>
+                <div id="faqCollapse2" class="accordion-collapse collapse" aria-labelledby="faqHeading2" data-bs-parent="#programsFaqAccordion">
+                  <div class="accordion-body">
+                    On Day 1, our coaching staff conducts an informal, low-pressure diagnostic assessment. Campers are matched into small squads of 6 students who share similar maturity levels and complementary communication temperaments, ensuring every child feels safe, heard, and appropriately challenged.
+                  </div>
+                </div>
+              </div>
+
+              <!-- FAQ 3 -->
+              <div class="accordion-item">
+                <h3 class="accordion-header" id="faqHeading3">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqCollapse3" aria-expanded="false" aria-controls="faqCollapse3">
+                    <span class="faq-icon-box"><i class="bi bi-patch-check-fill"></i></span>
+                    <span class="text-heading">What safety and chaperone measures are in place?</span>
+                    <span class="badge bg-primary-soft text-primary rounded-pill small ms-auto me-3 d-none d-md-inline">1:6 Ratio</span>
+                  </button>
+                </h3>
+                <div id="faqCollapse3" class="accordion-collapse collapse" aria-labelledby="faqHeading3" data-bs-parent="#programsFaqAccordion">
+                  <div class="accordion-body">
+                    All VoxLeaders mentors undergo rigorous FBI-level background checks, child-welfare certifications, and CPR/First-Aid training. We maintain an ironclad 1:6 staff-to-student supervision ratio at all times, with full-time registered nurses on campus and secure, badge-only facility access.
+                  </div>
+                </div>
+              </div>
+
+              <!-- FAQ 4 -->
+              <div class="accordion-item">
+                <h3 class="accordion-header" id="faqHeading4">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqCollapse4" aria-expanded="false" aria-controls="faqCollapse4">
+                    <span class="faq-icon-box"><i class="bi bi-camera-reels-fill"></i></span>
+                    <span class="text-heading">Do parents receive access to speech recordings and progress updates?</span>
+                    <span class="badge bg-primary-soft text-primary rounded-pill small ms-auto me-3 d-none d-md-inline">Parent Portal</span>
+                  </button>
+                </h3>
+                <div id="faqCollapse4" class="accordion-collapse collapse" aria-labelledby="faqHeading4" data-bs-parent="#programsFaqAccordion">
+                  <div class="accordion-body">
+                    Yes! Every parent receives private login credentials to the VoxLeaders Parent Portal (<a href="dashboard-parent.html" class="fw-bold text-primary">Preview Here</a>). Every afternoon, your mentor uploads daily rubric scores, audio snippets, developmental reflections, and full 4K filmed gala keynote speeches.
+                  </div>
+                </div>
+              </div>
+
+            </div>
+
+            <!-- FAQ Support Callout -->
+            <div class="card border-0 bg-surface rounded-theme-xl p-4 shadow-sm mt-4 border border-theme">
+              <div class="row align-items-center g-3">
+                <div class="col-md-8 text-md-start">
+                  <div class="d-flex align-items-center gap-3">
+                    <div class="faq-icon-box bg-primary text-white shadow-sm"><i class="bi bi-chat-heart-fill fs-5"></i></div>
+                    <div>
+                      <h4 class="h6 fw-bold mb-1 text-heading">Have a specific question about your child's placement?</h4>
+                      <p class="small text-body-secondary mb-0">Our admissions advisors evaluate your child's speaking background in a 10-minute friendly call.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4 text-md-end">
+                  <a href="contact.html" class="btn btn-sm btn-vx-primary rounded-pill px-4 shadow-sm"><i class="bi bi-telephone-fill me-1"></i> Speak to an Advisor</a>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+        <!-- =================================================================
+       FOOTER
+  ================================================================== -->
+  <footer class="vx-footer">
+    <div class="container">
+      <div class="row g-4 align-items-start">
+        
+        <!-- Column 1: Brand Info & Socials -->
+        <div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
+          <div class="footer-brand-wrap">
+            <a href="index.html" class="footer-brand-logo mb-3">
+              <img src="assets/img/brand/logo-white.svg" alt="VoxLeaders Logo" height="38">
+            </a>
+            <p class="footer-brand-desc small mb-4">
+              Empowering young minds with executive confidence, public speaking mastery &amp; debate skills.
+            </p>
+            <div class="d-flex align-items-center gap-2">
+              <a href="https://www.instagram.com/accounts/login/" target="_blank" rel="noopener noreferrer" class="footer-social-btn" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+              <a href="https://www.facebook.com/login/" target="_blank" rel="noopener noreferrer" class="footer-social-btn" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+              <a href="https://www.linkedin.com/login" target="_blank" rel="noopener noreferrer" class="footer-social-btn" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+              <a href="https://x.com/" target="_blank" rel="noopener noreferrer" class="footer-social-btn" aria-label="X (Twitter)"><i class="fab fa-x-twitter"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Column 2: Navigation -->
+        <div class="col-lg-2 col-md-6 mb-4 mb-lg-0">
+          <div class="footer-col-title">NAVIGATION</div>
+          <ul class="list-unstyled mb-0 d-flex flex-column">
+            <li><a href="index.html" class="footer-link">Home</a></li>
+            <li><a href="about.html" class="footer-link">About Us</a></li>
+            <li><a href="programs.html" class="footer-link">Programs</a></li>
+            <li><a href="testimonials.html" class="footer-link">Testimonials</a></li>
+            <li><a href="pricing.html" class="footer-link">Pricing Tiers</a></li>
+            <li><a href="blog.html" class="footer-link">Blog &amp; Journal</a></li>
+            <li><a href="contact.html" class="footer-link">Contact Sales</a></li>
+          </ul>
+        </div>
+
+        <!-- Column 3: Camp Standards -->
+        <div class="col-lg-4 col-md-6 mb-4 mb-lg-0">
+          <div class="footer-col-title">CAMP STANDARDS</div>
+          <ul class="list-unstyled mb-0 d-flex flex-column">
+            <li class="footer-sla-item"><span class="sla-highlight">1:6 Coach Ratio</span> <span class="sla-desc">Certified Speech Mentors</span></li>
+            <li class="footer-sla-item"><span class="sla-highlight">Daily Stage Time</span> <span class="sla-desc">Live Adjudicated Practice</span></li>
+            <li class="footer-sla-item"><span class="sla-highlight">4K HD Video</span> <span class="sla-desc">Gala Showcase Recordings</span></li>
+            <li class="footer-sla-item"><span class="sla-highlight">Ages 7&ndash;18</span> <span class="sla-desc">Junior, Teen &amp; Exec Tracks</span></li>
+            <li class="footer-sla-item"><span class="sla-highlight">5 Regional Hubs</span> <span class="sla-desc">Speech &amp; Debate Campuses</span></li>
+          </ul>
+        </div>
+
+        <!-- Column 4: Camp Admissions -->
+        <div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
+          <div class="footer-col-title">CAMP ADMISSIONS</div>
+          <ul class="list-unstyled mb-3 d-flex flex-column">
+            <li class="footer-contact-item">
+              <i class="bi bi-envelope"></i>
+              <a href="mailto:admissions@voxleaders.org">admissions@voxleaders.org</a>
+            </li>
+            <li class="footer-contact-item">
+              <i class="bi bi-telephone"></i>
+              <a href="tel:+18005558695">+1 (800) 555-VOXLEAD</a>
+            </li>
+            <li class="footer-contact-item">
+              <i class="bi bi-geo-alt"></i>
+              <span>500 Leadership Way, Boston, MA</span>
+            </li>
+          </ul>
+          <a href="contact.html" class="btn-footer-cta">Connect Admissions Team</a>
+        </div>
+
+      </div>
+
+      <!-- Centered Copyright -->
+      <div class="vx-footer-bottom text-center">
+        &copy; 2026 VoxLeaders Youth Academy Ltd. All rights reserved.
+      </div>
+    </div>
+  </footer>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,971 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="light" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Photo & Media Gallery | VoxLeaders Youth Academy</title>
+  <meta name="description" content="Explore high-resolution event photos, speech soundstage sessions, Model UN debates, and Gala graduation ceremonies at VoxLeaders.">
+  
+  <link rel="icon" type="image/svg+xml" href="assets/img/brand/favicon.svg">
+  <link id="bootstrap-theme-style" rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <!-- Google Fonts: Poppins (Light 300), Outfit, Plus Jakarta Sans -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800;900&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,300&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="assets/css/style.css?v=8.3">
+  <link rel="stylesheet" href="assets/css/dashboard.css">
+  <link rel="stylesheet" href="assets/css/rtl.css">
+</head>
+<body class="page-gallery">
+
+    <!-- =================================================================
+       GLOBAL NAVIGATION HEADER (Matches Reference Format)
+  ================================================================== -->
+  <header class="vx-header sticky-top">
+    <nav class="navbar navbar-expand-xl vx-navbar" aria-label="Main Navigation">
+      <div class="container-fluid px-3 px-xl-5">
+        <!-- Brand Logo -->
+        <a class="navbar-brand vx-brand" href="index.html">
+          <img src="assets/img/brand/logo.svg" alt="VoxLeaders Logo" class="vx-brand-img" height="46">
+        </a>
+
+        <!-- Mobile Toggler -->
+        <button class="navbar-toggler border-0 shadow-none d-xl-none" type="button" data-bs-toggle="collapse" data-bs-target="#vxNavbarContent" aria-controls="vxNavbarContent" aria-expanded="false" aria-label="Toggle navigation">
+          <i class="bi bi-list fs-2"></i>
+        </button>
+
+        <!-- Navbar Links & Right Controls -->
+        <div class="collapse navbar-collapse" id="vxNavbarContent">
+          <!-- Center Navigation Links -->
+          <ul class="navbar-nav mx-auto mb-2 mb-xl-0 align-items-xl-center">
+            <!-- Home with Dropdown -->
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle vx-nav-link " href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                <span class="vx-nav-text">Home</span> <i class="bi bi-chevron-down ms-1" style="font-size: 0.75rem;"></i>
+              </a>
+              <ul class="dropdown-menu dropdown-menu-vx">
+                <li><a class="dropdown-item dropdown-item-vx" href="index.html">Home</a></li>
+                <li><a class="dropdown-item dropdown-item-vx" href="index-business.html">Home 2</a></li>
+              </ul>
+            </li>
+
+            <!-- About Us -->
+            <li class="nav-item">
+              <a class="nav-link vx-nav-link " href="about.html"><span class="vx-nav-text">About Us</span></a>
+            </li>
+
+            <!-- Programs -->
+            <li class="nav-item">
+              <a class="nav-link vx-nav-link " href="programs.html"><span class="vx-nav-text">Programs</span></a>
+            </li>
+
+            <!-- Testimonials -->
+            <li class="nav-item">
+              <a class="nav-link vx-nav-link " href="testimonials.html"><span class="vx-nav-text">Testimonials</span></a>
+            </li>
+
+            <!-- Pricing -->
+            <li class="nav-item">
+              <a class="nav-link vx-nav-link " href="pricing.html"><span class="vx-nav-text">Pricing</span></a>
+            </li>
+
+            <!-- Gallery -->
+            <li class="nav-item">
+              <a class="nav-link vx-nav-link active" href="gallery.html"><span class="vx-nav-text">Gallery</span></a>
+            </li>
+
+            <!-- Blog -->
+            <li class="nav-item">
+              <a class="nav-link vx-nav-link " href="blog.html"><span class="vx-nav-text">Blog</span></a>
+            </li>
+
+            <!-- Contact -->
+            <li class="nav-item">
+              <a class="nav-link vx-nav-link " href="contact.html"><span class="vx-nav-text">Contact</span></a>
+            </li>
+
+            <!-- Dashboard -->
+            <li class="nav-item">
+              <a class="nav-link vx-nav-link " href="dashboard-parent.html"><span class="vx-nav-text">Dashboard</span></a>
+            </li>
+          </ul>
+
+          <!-- Right Header Actions (LTR/RTL Pill + Theme Toggle Circle + Login Pill) -->
+          <div class="vx-header-actions mt-3 mt-xl-0">
+            <!-- LTR / RTL Switcher Pill -->
+            <button class="btn-vx-dir-pill rtl-toggle-btn" aria-label="Toggle Text Direction">
+              <span class="dir-active">LTR</span>
+              <i class="bi bi-arrow-left-right text-muted" style="font-size: 0.7rem;"></i>
+              <span class="dir-inactive">RTL</span>
+            </button>
+
+            <!-- Dark / Light Theme Toggle Circle -->
+            <button class="btn-vx-theme-circle theme-toggle-btn" aria-label="Toggle Dark/Light Mode" title="Toggle Theme">
+              <i class="bi bi-moon-stars-fill"></i>
+            </button>
+
+            <!-- Login Pill Button -->
+            <a href="auth.html" class="btn-vx-login-pill">
+              <i class="bi bi-box-arrow-in-right login-icon"></i>
+              <span>Login</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!-- =================================================================
+       MAIN CONTENT
+  ================================================================== -->
+  <main id="mainContent">
+
+    <!-- Hero Header with Scoped Background -->
+    <section class="hero-wrapper page-header-hero gallery-header-bg text-center">
+      <div class="hero-glow-bg"></div>
+      <div class="container position-relative z-2">
+        <div class="badge-pill-soft mb-3"><i class="bi bi-camera-fill text-primary"></i> Soundstage & Stage Memories</div>
+        <h1 class="display-4 fw-extrabold mb-3">Photo & Media Gallery</h1>
+        <p class="lead text-body-secondary mx-auto mb-0" style="max-width: 680px;">
+          Glimpse the transformation in action: from intensive small-group rebuttal drills to unforgettable keynote presentations at our Grand Gala.
+        </p>
+      </div>
+    </section>
+
+    <!-- Gallery Grid -->
+    <section class="py-5 bg-surface-alt">
+      <div class="container">
+
+        <!-- Bespoke Category Filter Navigation -->
+        <div class="gallery-pills-container mb-5">
+          <div class="gallery-pills-track">
+            <button type="button" class="gallery-filter-pill filter-btn-pill active" data-filter="all">
+              <i class="bi bi-grid-fill"></i> All Photos <span class="gallery-count-pill">12</span>
+            </button>
+            <button type="button" class="gallery-filter-pill filter-btn-pill" data-filter="keynote">
+              <i class="bi bi-mic-fill"></i> Stage Keynotes <span class="gallery-count-pill">3</span>
+            </button>
+            <button type="button" class="gallery-filter-pill filter-btn-pill" data-filter="debate">
+              <i class="bi bi-bank2"></i> Debate &amp; MUN <span class="gallery-count-pill">4</span>
+            </button>
+            <button type="button" class="gallery-filter-pill filter-btn-pill" data-filter="mentorship">
+              <i class="bi bi-person-video3"></i> 1:1 Mentorship <span class="gallery-count-pill">3</span>
+            </button>
+            <button type="button" class="gallery-filter-pill filter-btn-pill" data-filter="gala">
+              <i class="bi bi-trophy-fill"></i> Graduation Gala <span class="gallery-count-pill">3</span>
+            </button>
+          </div>
+        </div>
+
+        <div class="row g-4" id="galleryGrid">
+
+          <!-- Item 1: Stage Keynote -->
+          <div class="col-md-6 col-lg-3" data-category="keynote gala all">
+            <div class="vx-gallery-card">
+              <div class="vx-gallery-media media-gallery-item" data-bs-toggle="modal" data-bs-target="#galleryLightboxModal" data-img-src="assets/img/gallery/gallery-auditorium-keynote.png" data-img-title="Auditorium Keynote Showcase" data-img-speaker="Alex Rivera &bull; Student President" data-img-meta="July 24, 2026 &bull; Main Auditorium">
+                <img src="assets/img/gallery/gallery-auditorium-keynote.png" alt="Auditorium Keynote Showcase" loading="lazy">
+                <div class="vx-gallery-vignette-bottom"></div>
+                <div class="vx-gallery-inspect-btn">
+                  <i class="bi bi-arrows-fullscreen"></i>
+                  <span>Inspect 4K</span>
+                </div>
+              </div>
+              <div class="vx-gallery-body">
+                <div class="vx-gallery-meta-row">
+                  <span><i class="bi bi-calendar3 me-1 text-primary"></i> July 24, 2026</span>
+                  <span><i class="bi bi-geo-alt-fill me-1 text-primary"></i> Main Stage</span>
+                </div>
+                <h3 class="vx-gallery-card-title">Auditorium Keynote</h3>
+                <div class="vx-gallery-speaker-row">
+                  <i class="bi bi-person-badge text-primary"></i>
+                  <span>Alex Rivera &bull; Student President</span>
+                </div>
+                <div class="vx-gallery-toolbar">
+                  <button type="button" class="vx-gallery-tool-btn" data-bs-toggle="modal" data-bs-target="#galleryLightboxModal" data-img-src="assets/img/gallery/gallery-auditorium-keynote.png" data-img-title="Auditorium Keynote Showcase" data-img-speaker="Alex Rivera &bull; Student President" data-img-meta="July 24, 2026 &bull; Main Auditorium">
+                    <i class="bi bi-zoom-in"></i> Preview
+                  </button>
+                  <div class="d-flex align-items-center gap-1">
+                    <a href="assets/img/gallery/gallery-auditorium-keynote.png" download="voxleaders-auditorium-keynote.png" class="vx-gallery-tool-icon" title="Download 4K Photo" onclick="showToast('Download', 'Downloading high-res 4K image...', 'info');">
+                      <i class="bi bi-download"></i>
+                    </a>
+                    <button type="button" class="vx-gallery-tool-icon" title="Share Photo" onclick="showToast('Share', 'Link copied to clipboard!', 'success');">
+                      <i class="bi bi-share"></i>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Item 2: Debate Pod -->
+          <div class="col-md-6 col-lg-3" data-category="debate all">
+            <div class="vx-gallery-card">
+              <div class="vx-gallery-media media-gallery-item" data-bs-toggle="modal" data-bs-target="#galleryLightboxModal" data-img-src="assets/img/gallery/gallery-crisis-committee-pod.png" data-img-title="Model UN Parliamentary Crisis Simulation" data-img-speaker="Teen Leaders Cohort A &bull; MUN Pod" data-img-meta="July 20, 2026 &bull; Chamber Hall">
+                <img src="assets/img/gallery/gallery-crisis-committee-pod.png" alt="Model UN Parliamentary Crisis Simulation" loading="lazy">
+                <div class="vx-gallery-vignette-bottom"></div>
+                <div class="vx-gallery-inspect-btn">
+                  <i class="bi bi-arrows-fullscreen"></i>
+                  <span>Inspect 4K</span>
+                </div>
+              </div>
+              <div class="vx-gallery-body">
+                <div class="vx-gallery-meta-row">
+                  <span><i class="bi bi-calendar3 me-1 text-primary"></i> July 20, 2026</span>
+                  <span><i class="bi bi-geo-alt-fill me-1 text-primary"></i> Chamber Hall</span>
+                </div>
+                <h3 class="vx-gallery-card-title">Crisis Committee Pod</h3>
+                <div class="vx-gallery-speaker-row">
+                  <i class="bi bi-people-fill text-primary"></i>
+                  <span>Teen Leaders Cohort A &bull; Debate</span>
+                </div>
+                <div class="vx-gallery-toolbar">
+                  <button type="button" class="vx-gallery-tool-btn" data-bs-toggle="modal" data-bs-target="#galleryLightboxModal" data-img-src="assets/img/gallery/gallery-crisis-committee-pod.png" data-img-title="Model UN Parliamentary Crisis Simulation" data-img-speaker="Teen Leaders Cohort A &bull; MUN Pod" data-img-meta="July 20, 2026 &bull; Chamber Hall">
+                    <i class="bi bi-zoom-in"></i> Preview
+                  </button>
+                  <div class="d-flex align-items-center gap-1">
+                    <a href="assets/img/gallery/gallery-crisis-committee-pod.png" download="voxleaders-crisis-committee-pod.png" class="vx-gallery-tool-icon" title="Download 4K Photo" onclick="showToast('Download', 'Downloading high-res 4K image...', 'info');">
+                      <i class="bi bi-download"></i>
+                    </a>
+                    <button type="button" class="vx-gallery-tool-icon" title="Share Photo" onclick="showToast('Share', 'Link copied to clipboard!', 'success');">
+                      <i class="bi bi-share"></i>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Item 3: 1:1 Mentorship -->
+          <div class="col-md-6 col-lg-3" data-category="mentorship all">
+            <div class="vx-gallery-card">
+              <div class="vx-gallery-media media-gallery-item" data-bs-toggle="modal" data-bs-target="#galleryLightboxModal" data-img-src="assets/img/gallery/gallery-vocal-modulation-lab.jpg" data-img-title="Coach 1-on-1 Feedback Session" data-img-speaker="Elena Rostova &bull; Executive Mentor" data-img-meta="July 18, 2026 &bull; Soundstage Studio 2">
+                <img src="assets/img/gallery/gallery-vocal-modulation-lab.jpg" alt="Vocal Modulation Lab - Seminar Cohort Review" loading="lazy">
+                <div class="vx-gallery-vignette-bottom"></div>
+                <div class="vx-gallery-inspect-btn">
+                  <i class="bi bi-arrows-fullscreen"></i>
+                  <span>Inspect 4K</span>
+                </div>
+              </div>
+              <div class="vx-gallery-body">
+                <div class="vx-gallery-meta-row">
+                  <span><i class="bi bi-calendar3 me-1 text-primary"></i> July 18, 2026</span>
+                  <span><i class="bi bi-geo-alt-fill me-1 text-primary"></i> Studio 2</span>
+                </div>
+                <h3 class="vx-gallery-card-title">Vocal Modulation Lab</h3>
+                <div class="vx-gallery-speaker-row">
+                  <i class="bi bi-person-check-fill text-primary"></i>
+                  <span>Elena Rostova &bull; 1-on-1 Review</span>
+                </div>
+                <div class="vx-gallery-toolbar">
+                  <button type="button" class="vx-gallery-tool-btn" data-bs-toggle="modal" data-bs-target="#galleryLightboxModal" data-img-src="assets/img/gallery/gallery-vocal-modulation-lab.jpg" data-img-title="Coach 1-on-1 Feedback Session" data-img-speaker="Elena Rostova &bull; Executive Mentor" data-img-meta="July 18, 2026 &bull; Soundstage Studio 2">
+                    <i class="bi bi-zoom-in"></i> Preview
+                  </button>
+                  <div class="d-flex align-items-center gap-1">
+                    <a href="assets/img/gallery/gallery-vocal-modulation-lab.jpg" download="voxleaders-vocal-modulation-lab.jpg" class="vx-gallery-tool-icon" title="Download 4K Photo" onclick="showToast('Download', 'Downloading high-res 4K image...', 'info');">
+                      <i class="bi bi-download"></i>
+                    </a>
+                    <button type="button" class="vx-gallery-tool-icon" title="Share Photo" onclick="showToast('Share', 'Link copied to clipboard!', 'success');">
+                      <i class="bi bi-share"></i>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Item 4: Graduation Gala Walk -->
+          <div class="col-md-6 col-lg-3" data-category="gala all">
+            <div class="vx-gallery-card">
+              <div class="vx-gallery-media media-gallery-item" data-bs-toggle="modal" data-bs-target="#galleryLightboxModal" data-img-src="assets/img/gallery/gallery-junior-orators.png" data-img-title="Junior Orators Cohort Walk &amp; Campus Leadership" data-img-speaker="Graduates &bull; Campus Leadership" data-img-meta="July 25, 2026 &bull; Alumni Quadrangle">
+                <img src="assets/img/gallery/gallery-junior-orators.png" alt="Junior Orators Cohort Walk" loading="lazy">
+                <div class="vx-gallery-vignette-bottom"></div>
+                <div class="vx-gallery-inspect-btn">
+                  <i class="bi bi-arrows-fullscreen"></i>
+                  <span>Inspect 4K</span>
+                </div>
+              </div>
+              <div class="vx-gallery-body">
+                <div class="vx-gallery-meta-row">
+                  <span><i class="bi bi-calendar3 me-1 text-primary"></i> July 25, 2026</span>
+                  <span><i class="bi bi-geo-alt-fill me-1 text-primary"></i> Alumni Quad</span>
+                </div>
+                <h3 class="vx-gallery-card-title">Junior Orators Cohort Walk</h3>
+                <div class="vx-gallery-speaker-row">
+                  <i class="bi bi-award-fill text-primary"></i>
+                  <span>Graduates &bull; Campus Leadership</span>
+                </div>
+                <div class="vx-gallery-toolbar">
+                  <button type="button" class="vx-gallery-tool-btn" data-bs-toggle="modal" data-bs-target="#galleryLightboxModal" data-img-src="assets/img/gallery/gallery-junior-orators.png" data-img-title="Junior Orators Cohort Walk &amp; Campus Leadership" data-img-speaker="Graduates &bull; Campus Leadership" data-img-meta="July 25, 2026 &bull; Alumni Quadrangle">
+                    <i class="bi bi-zoom-in"></i> Preview
+                  </button>
+                  <div class="d-flex align-items-center gap-1">
+                    <a href="assets/img/gallery/gallery-junior-orators.png" download="voxleaders-junior-orators-cohort.png" class="vx-gallery-tool-icon" title="Download 4K Photo" onclick="showToast('Download', 'Downloading high-res 4K image...', 'info');">
+                      <i class="bi bi-download"></i>
+                    </a>
+                    <button type="button" class="vx-gallery-tool-icon" title="Share Photo" onclick="showToast('Share', 'Link copied to clipboard!', 'success');">
+                      <i class="bi bi-share"></i>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Item 5: Vocal Circle -->
+          <div class="col-md-6 col-lg-3" data-category="mentorship all">
+            <div class="vx-gallery-card">
+              <div class="vx-gallery-media media-gallery-item" data-bs-toggle="modal" data-bs-target="#galleryLightboxModal" data-img-src="assets/img/gallery/gallery-vocal-circle-drills.png" data-img-title="Expressive Vocal Circle Warmup Drills" data-img-speaker="Diaphragmatic Breathing Workshop" data-img-meta="July 15, 2026 &bull; Pine Lawn Amphitheater">
+                <img src="assets/img/gallery/gallery-vocal-circle-drills.png" alt="Expressive Vocal Circle Drills" loading="lazy">
+                <div class="vx-gallery-vignette-bottom"></div>
+                <div class="vx-gallery-inspect-btn">
+                  <i class="bi bi-arrows-fullscreen"></i>
+                  <span>Inspect 4K</span>
+                </div>
+              </div>
+              <div class="vx-gallery-body">
+                <div class="vx-gallery-meta-row">
+                  <span><i class="bi bi-calendar3 me-1 text-primary"></i> July 15, 2026</span>
+                  <span><i class="bi bi-geo-alt-fill me-1 text-primary"></i> Pine Lawn</span>
+                </div>
+                <h3 class="vx-gallery-card-title">Vocal Circle Warmup Drills</h3>
+                <div class="vx-gallery-speaker-row">
+                  <i class="bi bi-broadcast text-primary"></i>
+                  <span>Breathing &amp; Resonance Lab</span>
+                </div>
+                <div class="vx-gallery-toolbar">
+                  <button type="button" class="vx-gallery-tool-btn" data-bs-toggle="modal" data-bs-target="#galleryLightboxModal" data-img-src="assets/img/gallery/gallery-vocal-circle-drills.png" data-img-title="Expressive Vocal Circle Warmup Drills" data-img-speaker="Diaphragmatic Breathing Workshop" data-img-meta="July 15, 2026 &bull; Pine Lawn Amphitheater">
+                    <i class="bi bi-zoom-in"></i> Preview
+                  </button>
+                  <div class="d-flex align-items-center gap-1">
+                    <a href="assets/img/gallery/gallery-vocal-circle-drills.png" download="voxleaders-vocal-circle-drills.png" class="vx-gallery-tool-icon" title="Download 4K Photo" onclick="showToast('Download', 'Downloading high-res 4K image...', 'info');">
+                      <i class="bi bi-download"></i>
+                    </a>
+                    <button type="button" class="vx-gallery-tool-icon" title="Share Photo" onclick="showToast('Share', 'Link copied to clipboard!', 'success');">
+                      <i class="bi bi-share"></i>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Item 6: Confident Delivery Lab -->
+          <div class="col-md-6 col-lg-3" data-category="keynote all">
+            <div class="vx-gallery-card">
+              <div class="vx-gallery-media media-gallery-item" data-bs-toggle="modal" data-bs-target="#galleryLightboxModal" data-img-src="assets/img/gallery/gallery-executive-filming-day.jpg" data-img-title="Executive Soundstage Filming &amp; Confident Speech" data-img-speaker="Maya Chen &bull; Junior Orator Showcase" data-img-meta="July 22, 2026 &bull; Broadcast Studio 1">
+                <img src="assets/img/gallery/gallery-executive-filming-day.jpg" alt="Learners recording a discussion in a teleprompter studio" loading="lazy">
+                <div class="vx-gallery-vignette-bottom"></div>
+                <div class="vx-gallery-inspect-btn">
+                  <i class="bi bi-arrows-fullscreen"></i>
+                  <span>Inspect 4K</span>
+                </div>
+              </div>
+              <div class="vx-gallery-body">
+                <div class="vx-gallery-meta-row">
+                  <span><i class="bi bi-calendar3 me-1 text-primary"></i> July 22, 2026</span>
+                  <span><i class="bi bi-geo-alt-fill me-1 text-primary"></i> Studio 1</span>
+                </div>
+                <h3 class="vx-gallery-card-title">Executive Filming Day</h3>
+                <div class="vx-gallery-speaker-row">
+                  <i class="bi bi-mic-fill text-primary"></i>
+                  <span>Maya Chen &bull; Junior Showcase</span>
+                </div>
+                <div class="vx-gallery-toolbar">
+                  <button type="button" class="vx-gallery-tool-btn" data-bs-toggle="modal" data-bs-target="#galleryLightboxModal" data-img-src="assets/img/gallery/gallery-executive-filming-day.jpg" data-img-title="Executive Soundstage Filming &amp; Confident Speech" data-img-speaker="Maya Chen &bull; Junior Orator Showcase" data-img-meta="July 22, 2026 &bull; Broadcast Studio 1">
+                    <i class="bi bi-zoom-in"></i> Preview
+                  </button>
+                  <div class="d-flex align-items-center gap-1">
+                    <a href="assets/img/gallery/gallery-executive-filming-day.jpg" download="voxleaders-soundstage-filming-day.jpg" class="vx-gallery-tool-icon" title="Download 4K Photo" onclick="showToast('Download', 'Downloading high-res 4K image...', 'info');">
+                      <i class="bi bi-download"></i>
+                    </a>
+                    <button type="button" class="vx-gallery-tool-icon" title="Share Photo" onclick="showToast('Share', 'Link copied to clipboard!', 'success');">
+                      <i class="bi bi-share"></i>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Item 7: Mock Trial Appellate Argument -->
+          <div class="col-md-6 col-lg-3" data-category="debate all">
+            <div class="vx-gallery-card">
+              <div class="vx-gallery-media media-gallery-item" data-bs-toggle="modal" data-bs-target="#galleryLightboxModal" data-img-src="assets/img/gallery/gallery-appellate-round.png" data-img-title="Courtroom Mock Trial Simulation &amp; Appellate Argument" data-img-speaker="Legal Forensics &bull; Defense Team" data-img-meta="July 21, 2026 &bull; Council Chamber">
+                <img src="assets/img/gallery/gallery-appellate-round.png" alt="Students engaging and raising hands during an appellate debate seminar" loading="lazy">
+                <div class="vx-gallery-vignette-bottom"></div>
+                <div class="vx-gallery-inspect-btn">
+                  <i class="bi bi-arrows-fullscreen"></i>
+                  <span>Inspect 4K</span>
+                </div>
+              </div>
+              <div class="vx-gallery-body">
+                <div class="vx-gallery-meta-row">
+                  <span><i class="bi bi-calendar3 me-1 text-primary"></i> July 21, 2026</span>
+                  <span><i class="bi bi-geo-alt-fill me-1 text-primary"></i> Council Room</span>
+                </div>
+                <h3 class="vx-gallery-card-title">Appellate Argument Round</h3>
+                <div class="vx-gallery-speaker-row">
+                  <i class="bi bi-bank text-primary"></i>
+                  <span>Legal Forensics &bull; Defense</span>
+                </div>
+                <div class="vx-gallery-toolbar">
+                  <button type="button" class="vx-gallery-tool-btn" data-bs-toggle="modal" data-bs-target="#galleryLightboxModal" data-img-src="assets/img/gallery/gallery-appellate-round.png" data-img-title="Courtroom Mock Trial Simulation &amp; Appellate Argument" data-img-speaker="Legal Forensics &bull; Defense Team" data-img-meta="July 21, 2026 &bull; Council Chamber">
+                    <i class="bi bi-zoom-in"></i> Preview
+                  </button>
+                  <div class="d-flex align-items-center gap-1">
+                    <a href="assets/img/gallery/gallery-appellate-round.png" download="voxleaders-mock-trial-appellate.png" class="vx-gallery-tool-icon" title="Download 4K Photo" onclick="showToast('Download', 'Downloading high-res 4K image...', 'info');">
+                      <i class="bi bi-download"></i>
+                    </a>
+                    <button type="button" class="vx-gallery-tool-icon" title="Share Photo" onclick="showToast('Share', 'Link copied to clipboard!', 'success');">
+                      <i class="bi bi-share"></i>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Item 8: Graduation Celebration -->
+          <div class="col-md-6 col-lg-3" data-category="gala all">
+            <div class="vx-gallery-card">
+              <div class="vx-gallery-media media-gallery-item" data-bs-toggle="modal" data-bs-target="#galleryLightboxModal" data-img-src="assets/img/gallery/gallery-final-gala.png" data-img-title="Camp Graduation Celebration &amp; Shield Unveiling" data-img-speaker="All Cohorts Commencement &bull; Class of 2026" data-img-meta="July 25, 2026 &bull; Grand Pavilion">
+                <img src="assets/img/gallery/gallery-final-gala.png" alt="Cohort graduates holding trophies and certificates at the final gala celebration" loading="lazy">
+                <div class="vx-gallery-vignette-bottom"></div>
+                <div class="vx-gallery-inspect-btn">
+                  <i class="bi bi-arrows-fullscreen"></i>
+                  <span>Inspect 4K</span>
+                </div>
+              </div>
+              <div class="vx-gallery-body">
+                <div class="vx-gallery-meta-row">
+                  <span><i class="bi bi-calendar3 me-1 text-primary"></i> July 25, 2026</span>
+                  <span><i class="bi bi-geo-alt-fill me-1 text-primary"></i> Grand Pavilion</span>
+                </div>
+                <h3 class="vx-gallery-card-title">Final Gala Celebration</h3>
+                <div class="vx-gallery-speaker-row">
+                  <i class="bi bi-mortarboard text-primary"></i>
+                  <span>All Cohorts Commencement</span>
+                </div>
+                <div class="vx-gallery-toolbar">
+                  <button type="button" class="vx-gallery-tool-btn" data-bs-toggle="modal" data-bs-target="#galleryLightboxModal" data-img-src="assets/img/gallery/gallery-final-gala.png" data-img-title="Camp Graduation Celebration &amp; Shield Unveiling" data-img-speaker="All Cohorts Commencement &bull; Class of 2026" data-img-meta="July 25, 2026 &bull; Grand Pavilion">
+                    <i class="bi bi-zoom-in"></i> Preview
+                  </button>
+                  <div class="d-flex align-items-center gap-1">
+                    <a href="assets/img/gallery/gallery-final-gala.png" download="voxleaders-gala-celebration.png" class="vx-gallery-tool-icon" title="Download 4K Photo" onclick="showToast('Download', 'Downloading high-res 4K image...', 'info');">
+                      <i class="bi bi-download"></i>
+                    </a>
+                    <button type="button" class="vx-gallery-tool-icon" title="Share Photo" onclick="showToast('Share', 'Link copied to clipboard!', 'success');">
+                      <i class="bi bi-share"></i>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Item 9: Broadcast Keynote Camera -->
+          <div class="col-md-6 col-lg-3" data-category="keynote all">
+            <div class="vx-gallery-card">
+              <div class="vx-gallery-media media-gallery-item" data-bs-toggle="modal" data-bs-target="#galleryLightboxModal" data-img-src="assets/img/gallery/gallery-soundstage-broadcast.jpg" data-img-title="Broadcast Soundstage Presentation &amp; Multi-Cam Reel" data-img-speaker="Lucas Vance &bull; Executive Teleprompter Reel" data-img-meta="July 23, 2026 &bull; Soundstage Studio A">
+                <img src="assets/img/gallery/gallery-soundstage-broadcast.jpg" alt="Students conducting an on-air broadcast recording at green screen soundstage" loading="lazy">
+                <div class="vx-gallery-vignette-bottom"></div>
+                <div class="vx-gallery-inspect-btn">
+                  <i class="bi bi-arrows-fullscreen"></i>
+                  <span>Inspect 4K</span>
+                </div>
+              </div>
+              <div class="vx-gallery-body">
+                <div class="vx-gallery-meta-row">
+                  <span><i class="bi bi-calendar3 me-1 text-primary"></i> July 23, 2026</span>
+                  <span><i class="bi bi-geo-alt-fill me-1 text-primary"></i> Soundstage A</span>
+                </div>
+                <h3 class="vx-gallery-card-title">Soundstage Broadcast Cam</h3>
+                <div class="vx-gallery-speaker-row">
+                  <i class="bi bi-film text-primary"></i>
+                  <span>Lucas Vance &bull; Broadcast Reel</span>
+                </div>
+                <div class="vx-gallery-toolbar">
+                  <button type="button" class="vx-gallery-tool-btn" data-bs-toggle="modal" data-bs-target="#galleryLightboxModal" data-img-src="assets/img/gallery/gallery-soundstage-broadcast.jpg" data-img-title="Broadcast Soundstage Presentation &amp; Multi-Cam Reel" data-img-speaker="Lucas Vance &bull; Executive Teleprompter Reel" data-img-meta="July 23, 2026 &bull; Soundstage Studio A">
+                    <i class="bi bi-zoom-in"></i> Preview
+                  </button>
+                  <div class="d-flex align-items-center gap-1">
+                    <a href="assets/img/gallery/gallery-soundstage-broadcast.jpg" download="voxleaders-broadcast-mic.jpg" class="vx-gallery-tool-icon" title="Download 4K Photo" onclick="showToast('Download', 'Downloading high-res 4K image...', 'info');">
+                      <i class="bi bi-download"></i>
+                    </a>
+                    <button type="button" class="vx-gallery-tool-icon" title="Share Photo" onclick="showToast('Share', 'Link copied to clipboard!', 'success');">
+                      <i class="bi bi-share"></i>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Item 10: Debate Rebuttal Podium -->
+          <div class="col-md-6 col-lg-3" data-category="debate all">
+            <div class="vx-gallery-card">
+              <div class="vx-gallery-media media-gallery-item" data-bs-toggle="modal" data-bs-target="#galleryLightboxModal" data-img-src="assets/img/gallery/gallery-cross-examination-podium.png" data-img-title="Parliamentary Rebuttal Podium &amp; Cross-Examination" data-img-speaker="Affirmative Bench &bull; Cross-Exam Pod" data-img-meta="July 19, 2026 &bull; Debate Pod 4">
+                <img src="assets/img/gallery/gallery-cross-examination-podium.png" alt="Coach guiding students through cross-examination speech prep at conference table" loading="lazy">
+                <div class="vx-gallery-vignette-bottom"></div>
+                <div class="vx-gallery-inspect-btn">
+                  <i class="bi bi-arrows-fullscreen"></i>
+                  <span>Inspect 4K</span>
+                </div>
+              </div>
+              <div class="vx-gallery-body">
+                <div class="vx-gallery-meta-row">
+                  <span><i class="bi bi-calendar3 me-1 text-primary"></i> July 19, 2026</span>
+                  <span><i class="bi bi-geo-alt-fill me-1 text-primary"></i> Pod 4</span>
+                </div>
+                <h3 class="vx-gallery-card-title">Cross-Examination Podium</h3>
+                <div class="vx-gallery-speaker-row">
+                  <i class="bi bi-chat-square-quote-fill text-primary"></i>
+                  <span>Affirmative Bench &bull; Cross-Exam</span>
+                </div>
+                <div class="vx-gallery-toolbar">
+                  <button type="button" class="vx-gallery-tool-btn" data-bs-toggle="modal" data-bs-target="#galleryLightboxModal" data-img-src="assets/img/gallery/gallery-cross-examination-podium.png" data-img-title="Parliamentary Rebuttal Podium &amp; Cross-Examination" data-img-speaker="Affirmative Bench &bull; Cross-Exam Pod" data-img-meta="July 19, 2026 &bull; Debate Pod 4">
+                    <i class="bi bi-zoom-in"></i> Preview
+                  </button>
+                  <div class="d-flex align-items-center gap-1">
+                    <a href="assets/img/gallery/gallery-cross-examination-podium.png" download="voxleaders-parliamentary-debate.png" class="vx-gallery-tool-icon" title="Download 4K Photo" onclick="showToast('Download', 'Downloading high-res 4K image...', 'info');">
+                      <i class="bi bi-download"></i>
+                    </a>
+                    <button type="button" class="vx-gallery-tool-icon" title="Share Photo" onclick="showToast('Share', 'Link copied to clipboard!', 'success');">
+                      <i class="bi bi-share"></i>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Item 11: Courtroom Defense & Mock Trial -->
+          <div class="col-md-6 col-lg-3" data-category="debate all">
+            <div class="vx-gallery-card">
+              <div class="vx-gallery-media media-gallery-item" data-bs-toggle="modal" data-bs-target="#galleryLightboxModal" data-img-src="assets/img/gallery/gallery-courtroom-defense.jpg" data-img-title="Championship Mock Trial Round &amp; Courtroom Defense" data-img-speaker="Advocacy Forensics &bull; Defense Counsel Team" data-img-meta="July 21, 2026 &bull; Moot Court Chamber">
+                <img src="assets/img/gallery/gallery-courtroom-defense.jpg" alt="Mock trial defense counsel team strategizing case materials in classroom courtroom" loading="lazy">
+                <div class="vx-gallery-vignette-bottom"></div>
+                <div class="vx-gallery-inspect-btn">
+                  <i class="bi bi-arrows-fullscreen"></i>
+                  <span>Inspect 4K</span>
+                </div>
+              </div>
+              <div class="vx-gallery-body">
+                <div class="vx-gallery-meta-row">
+                  <span><i class="bi bi-calendar3 me-1 text-primary"></i> July 21, 2026</span>
+                  <span><i class="bi bi-geo-alt-fill me-1 text-primary"></i> Moot Court</span>
+                </div>
+                <h3 class="vx-gallery-card-title">Courtroom Defense Team</h3>
+                <div class="vx-gallery-speaker-row">
+                  <i class="bi bi-briefcase-fill text-primary"></i>
+                  <span>Advocacy Forensics Counsel</span>
+                </div>
+                <div class="vx-gallery-toolbar">
+                  <button type="button" class="vx-gallery-tool-btn" data-bs-toggle="modal" data-bs-target="#galleryLightboxModal" data-img-src="assets/img/gallery/gallery-courtroom-defense.jpg" data-img-title="Championship Mock Trial Round &amp; Courtroom Defense" data-img-speaker="Advocacy Forensics &bull; Defense Counsel Team" data-img-meta="July 21, 2026 &bull; Moot Court Chamber">
+                    <i class="bi bi-zoom-in"></i> Preview
+                  </button>
+                  <div class="d-flex align-items-center gap-1">
+                    <a href="assets/img/gallery/gallery-courtroom-defense.jpg" download="voxleaders-mock-trial-courtroom.jpg" class="vx-gallery-tool-icon" title="Download 4K Photo" onclick="showToast('Download', 'Downloading high-res 4K image...', 'info');">
+                      <i class="bi bi-download"></i>
+                    </a>
+                    <button type="button" class="vx-gallery-tool-icon" title="Share Photo" onclick="showToast('Share', 'Link copied to clipboard!', 'success');">
+                      <i class="bi bi-share"></i>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Item 12: Speech Video Breakdown -->
+          <div class="col-md-6 col-lg-3" data-category="mentorship all">
+            <div class="vx-gallery-card">
+              <div class="vx-gallery-media media-gallery-item" data-bs-toggle="modal" data-bs-target="#galleryLightboxModal" data-img-src="assets/img/gallery/gallery-speech-video-breakdown.jpg" data-img-title="Executive Speech Video Review &amp; Biometric Breakdown" data-img-speaker="Speech Video Breakdown Lab" data-img-meta="July 17, 2026 &bull; Media Lab 3">
+                <img src="assets/img/gallery/gallery-speech-video-breakdown.jpg" alt="Student keynote speaker addressing an applauding auditorium from podium" loading="lazy">
+                <div class="vx-gallery-vignette-bottom"></div>
+                <div class="vx-gallery-inspect-btn">
+                  <i class="bi bi-arrows-fullscreen"></i>
+                  <span>Inspect 4K</span>
+                </div>
+              </div>
+              <div class="vx-gallery-body">
+                <div class="vx-gallery-meta-row">
+                  <span><i class="bi bi-calendar3 me-1 text-primary"></i> July 17, 2026</span>
+                  <span><i class="bi bi-geo-alt-fill me-1 text-primary"></i> Media Lab 3</span>
+                </div>
+                <h3 class="vx-gallery-card-title">Speech Video Breakdown</h3>
+                <div class="vx-gallery-speaker-row">
+                  <i class="bi bi-camera-video-fill text-primary"></i>
+                  <span>Masterclass Video Analysis</span>
+                </div>
+                <div class="vx-gallery-toolbar">
+                  <button type="button" class="vx-gallery-tool-btn" data-bs-toggle="modal" data-bs-target="#galleryLightboxModal" data-img-src="assets/img/gallery/gallery-speech-video-breakdown.jpg" data-img-title="Executive Speech Video Review &amp; Biometric Breakdown" data-img-speaker="Speech Video Breakdown Lab" data-img-meta="July 17, 2026 &bull; Media Lab 3">
+                    <i class="bi bi-zoom-in"></i> Preview
+                  </button>
+                  <div class="d-flex align-items-center gap-1">
+                    <a href="assets/img/gallery/gallery-speech-video-breakdown.jpg" download="voxleaders-speech-breakdown.jpg" class="vx-gallery-tool-icon" title="Download 4K Photo" onclick="showToast('Download', 'Downloading high-res 4K image...', 'info');">
+                      <i class="bi bi-download"></i>
+                    </a>
+                    <button type="button" class="vx-gallery-tool-icon" title="Share Photo" onclick="showToast('Share', 'Link copied to clipboard!', 'success');">
+                      <i class="bi bi-share"></i>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+  
+    <!-- SOUNDSTAGE GEAR & MEDIA FACILITY OVERVIEW -->
+    <section class="py-6 bg-surface">
+      <div class="container">
+        <div class="row justify-content-center text-center mb-5">
+          <div class="col-lg-8">
+            <div class="badge-pill-soft mb-2">Professional Infrastructure</div>
+            <h2 class="display-5 fw-extrabold mb-3">Our Dedicated Oratory Soundstage</h2>
+            <p class="lead text-body-secondary">Campers train with identical equipment used by TEDx speakers, broadcast journalists, and courtroom trial advocates.</p>
+          </div>
+        </div>
+
+        <div class="row g-4 align-items-stretch">
+          <!-- Card 1: 4K Multi-Cam Stage -->
+          <div class="col-md-6 col-lg-3 d-flex">
+            <div class="studio-gear-card gear-theme-indigo w-100" onclick="showToast('4K Cinema Stage', 'Blackmagic 6K multi-cam array captures all student keynote addresses.', 'info');">
+              <div class="d-flex align-items-center justify-content-between mb-3">
+                <div class="studio-gear-orb">
+                  <i class="bi bi-camera-reels-fill"></i>
+                </div>
+                <span class="studio-status-pill">
+                  <span class="pulse-dot-red me-1"></span> 4K ULTRA HD
+                </span>
+              </div>
+              <h3 class="h5 fw-bold mb-2 text-heading studio-gear-title">4K Multi-Cam Stage</h3>
+              <p class="small text-body-secondary mb-3 studio-gear-desc">Three dynamic camera angles recorded live with Blackmagic Cinema gear for immediate playback coaching and posture review.</p>
+              
+              <!-- Bespoke Viewfinder HUD -->
+              <div class="studio-gear-hud">
+                <div class="hud-top-bar">
+                  <span class="hud-rec"><i class="bi bi-record-fill text-danger me-1"></i>REC 00:14:32</span>
+                  <span class="hud-badge">6K PRO</span>
+                </div>
+                <div class="hud-viewfinder-grid">
+                  <div class="hud-cam-bracket bracket-tl"></div>
+                  <div class="hud-cam-bracket bracket-tr"></div>
+                  <div class="hud-cam-bracket bracket-bl"></div>
+                  <div class="hud-cam-bracket bracket-br"></div>
+                  <div class="hud-cam-crosshair"></div>
+                  <div class="hud-cam-switcher">
+                    <span class="cam-tab active">CAM 1</span>
+                    <span class="cam-tab">CAM 2</span>
+                    <span class="cam-tab">CAM 3</span>
+                  </div>
+                </div>
+                <div class="hud-meta-row">
+                  <span>3840×2160 • 60 FPS</span>
+                  <span class="text-success"><i class="bi bi-check2-circle me-1"></i>ProRes HQ</span>
+                </div>
+              </div>
+
+              <div class="studio-chip-grid">
+                <span class="studio-tech-chip"><i class="bi bi-camera-video me-1"></i>3-Angle Array</span>
+                <span class="studio-tech-chip"><i class="bi bi-film me-1"></i>Blackmagic 6K</span>
+                <span class="studio-tech-chip"><i class="bi bi-cpu me-1"></i>Zero-Latency</span>
+                <span class="studio-tech-chip"><i class="bi bi-award me-1"></i>Gala 4K Reel</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 2: Acoustic Vocal Pods -->
+          <div class="col-md-6 col-lg-3 d-flex">
+            <div class="studio-gear-card gear-theme-indigo w-100" onclick="showToast('Acoustic Voice Lab', 'Private sound-dampened vocal booths with real-time waveform coaching.', 'info');">
+              <div class="d-flex align-items-center justify-content-between mb-3">
+                <div class="studio-gear-orb">
+                  <i class="bi bi-soundwave"></i>
+                </div>
+                <span class="studio-status-pill">
+                  <span class="studio-audio-eq me-1"><span></span><span></span><span></span><span></span></span>
+                  -42dB ISO
+                </span>
+              </div>
+              <h3 class="h5 fw-bold mb-2 text-heading studio-gear-title">Acoustic Vocal Pods</h3>
+              <p class="small text-body-secondary mb-3 studio-gear-desc">Sound-dampened private coaching booths for diaphragmatic resonance training, pitch stability, and speech warmups.</p>
+              
+              <!-- Bespoke Spectrum EQ HUD -->
+              <div class="studio-gear-hud">
+                <div class="hud-top-bar">
+                  <span><i class="bi bi-mic-fill text-primary me-1"></i>SHURE SM7B</span>
+                  <span class="hud-badge text-primary">-42 dB NOISE FLOOR</span>
+                </div>
+                <div class="hud-spectrum-bars">
+                  <span style="--h: 35%; --d: 0.1s;"></span>
+                  <span style="--h: 65%; --d: 0.25s;"></span>
+                  <span style="--h: 90%; --d: 0.4s;"></span>
+                  <span style="--h: 50%; --d: 0.15s;"></span>
+                  <span style="--h: 80%; --d: 0.35s;"></span>
+                  <span style="--h: 100%; --d: 0.5s;"></span>
+                  <span style="--h: 75%; --d: 0.2s;"></span>
+                  <span style="--h: 40%; --d: 0.45s;"></span>
+                  <span style="--h: 60%; --d: 0.3s;"></span>
+                  <span style="--h: 85%; --d: 0.18s;"></span>
+                  <span style="--h: 70%; --d: 0.38s;"></span>
+                  <span style="--h: 45%; --d: 0.28s;"></span>
+                </div>
+                <div class="hud-meta-row">
+                  <span>Resonance: <strong>98.4%</strong></span>
+                  <span class="text-success"><i class="bi bi-activity me-1"></i>24-bit / 96kHz</span>
+                </div>
+              </div>
+
+              <div class="studio-chip-grid">
+                <span class="studio-tech-chip"><i class="bi bi-mic-fill me-1"></i>Shure SM7B</span>
+                <span class="studio-tech-chip"><i class="bi bi-soundwave me-1"></i>Bio-Resonance</span>
+                <span class="studio-tech-chip"><i class="bi bi-shield-check me-1"></i>-42dB Acoustic</span>
+                <span class="studio-tech-chip"><i class="bi bi-graph-up me-1"></i>Live Pitch EQ</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 3: Presidential Prompters -->
+          <div class="col-md-6 col-lg-3 d-flex">
+            <div class="studio-gear-card gear-theme-indigo w-100" onclick="showToast('Executive Teleprompter', 'Beam-splitter dual wings teach natural auditorium scanning and eye contact.', 'info');">
+              <div class="d-flex align-items-center justify-content-between mb-3">
+                <div class="studio-gear-orb">
+                  <i class="bi bi-display"></i>
+                </div>
+                <span class="studio-status-pill">
+                  <i class="bi bi-eye-fill me-1"></i> 70/30 Glass
+                </span>
+              </div>
+              <h3 class="h5 fw-bold mb-2 text-heading studio-gear-title">Presidential Prompters</h3>
+              <p class="small text-body-secondary mb-3 studio-gear-desc">Dual glass beam-splitter prompters teaching students how to scan entire auditoriums with natural fluency and poise.</p>
+              
+              <!-- Bespoke Prompter Glass HUD -->
+              <div class="studio-gear-hud">
+                <div class="hud-top-bar">
+                  <span><i class="bi bi-textarea-t text-primary me-1"></i>TELEPROMPTER HUD</span>
+                  <span class="hud-badge">135 WPM</span>
+                </div>
+                <div class="hud-prompter-glass">
+                  <div class="hud-prompter-glint"></div>
+                  <p class="hud-prompter-text">"Distinguished delegates, leadership is spoken into existence with poise..."</p>
+                  <div class="hud-eyetrack-reticle">
+                    <span class="reticle-dot"></span>
+                    <span class="reticle-ring"></span>
+                  </div>
+                </div>
+                <div class="hud-meta-row">
+                  <span>Eye Contact: <strong>99.2%</strong></span>
+                  <span class="text-primary"><i class="bi bi-speedometer2 me-1"></i>Cadence Sync</span>
+                </div>
+              </div>
+
+              <div class="studio-chip-grid">
+                <span class="studio-tech-chip"><i class="bi bi-display me-1"></i>70/30 Glass</span>
+                <span class="studio-tech-chip"><i class="bi bi-eye-fill me-1"></i>Eye Tracking</span>
+                <span class="studio-tech-chip"><i class="bi bi-speedometer2 me-1"></i>Cadence Sync</span>
+                <span class="studio-tech-chip"><i class="bi bi-patch-check me-1"></i>TEDx Standard</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 4: Live Family Stream -->
+          <div class="col-md-6 col-lg-3 d-flex">
+            <div class="studio-gear-card gear-theme-indigo w-100" onclick="showToast('Encrypted Gala Stream', 'Secure family streaming with live low-latency worldwide broadcast.', 'info');">
+              <div class="d-flex align-items-center justify-content-between mb-3">
+                <div class="studio-gear-orb">
+                  <i class="bi bi-broadcast"></i>
+                </div>
+                <span class="studio-status-pill">
+                  <span class="pulse-dot-primary"></span> 256-Bit SSL
+                </span>
+              </div>
+              <h3 class="h5 fw-bold mb-2 text-heading studio-gear-title">Live Family Stream</h3>
+              <p class="small text-body-secondary mb-3 studio-gear-desc">Encrypted private family live-stream for grandparents and overseas parents unable to attend graduation in person.</p>
+              
+              <!-- Bespoke Family Stream Player HUD -->
+              <div class="studio-gear-hud">
+                <div class="hud-top-bar">
+                  <span class="text-danger fw-bold"><i class="bi bi-broadcast me-1"></i>LIVE FEED</span>
+                  <span class="hud-badge text-success"><i class="bi bi-shield-fill-check me-1"></i>ENCRYPTED</span>
+                </div>
+                <div class="hud-stream-screen">
+                  <div class="hud-stream-play-orb"><i class="bi bi-play-fill"></i></div>
+                  <div class="hud-viewer-counter">
+                    <span class="hud-avatar-stack">
+                      <span class="av av-1">MC</span>
+                      <span class="av av-2">AR</span>
+                      <span class="av av-3">+140</span>
+                    </span>
+                    <span class="hud-viewer-text">148 Viewers</span>
+                  </div>
+                </div>
+                <div class="hud-meta-row">
+                  <span>Latency: <strong class="text-success">18ms</strong></span>
+                  <span class="text-primary"><i class="bi bi-globe me-1"></i>Edge CDN</span>
+                </div>
+              </div>
+
+              <div class="studio-chip-grid">
+                <span class="studio-tech-chip"><i class="bi bi-shield-lock-fill me-1"></i>256-Bit SSL</span>
+                <span class="studio-tech-chip"><i class="bi bi-globe2 me-1"></i>Global CDN</span>
+                <span class="studio-tech-chip"><i class="bi bi-lightning-charge me-1"></i>WebRTC Low-Lag</span>
+                <span class="studio-tech-chip"><i class="bi bi-people-fill me-1"></i>Private Link</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Lightbox Modal -->
+  <div class="modal fade" id="galleryLightboxModal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-xl">
+      <div class="modal-content bg-dark text-white border-0 shadow-lg rounded-theme-lg overflow-hidden">
+        <div class="modal-header border-bottom border-white-10 px-4 py-3 d-flex justify-content-between align-items-center">
+          <div>
+            <span class="badge bg-primary text-white mb-1"><i class="bi bi-camera-video me-1"></i> 4K Master Media</span>
+            <h5 class="modal-title text-white fw-bold mb-0" id="galleryLightboxTitle">Gallery Preview</h5>
+            <small class="text-white-50" id="galleryLightboxMeta">VoxLeaders Oratory &amp; Debate Media Archive</small>
+          </div>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body p-0 text-center bg-black d-flex align-items-center justify-content-center" style="min-height: 480px;">
+          <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 800 500'%3E%3Crect fill='%23111827' width='800' height='500'/%3E%3C/svg%3E" id="galleryLightboxImg" class="img-fluid" alt="Camp Media Preview" style="max-height: 75vh; width: 100%; object-fit: contain;">
+        </div>
+        <div class="modal-footer border-top border-white-10 px-4 py-3 d-flex justify-content-between align-items-center">
+          <div class="text-white-50 small" id="galleryLightboxSpeaker">
+            <i class="bi bi-person-fill text-primary me-1"></i> Speaker &amp; Cohort
+          </div>
+          <div class="d-flex align-items-center gap-2">
+            <a href="#" id="galleryLightboxDownload" download class="btn btn-sm btn-primary" onclick="showToast('Downloading', 'Downloading high-resolution original 4K asset...', 'success');">
+              <i class="bi bi-download me-1"></i> Download Original (4K)
+            </a>
+            <button type="button" class="btn btn-sm btn-outline-light" data-bs-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+        <!-- =================================================================
+       FOOTER
+  ================================================================== -->
+  <footer class="vx-footer">
+    <div class="container">
+      <div class="row g-4 align-items-start">
+        
+        <!-- Column 1: Brand Info & Socials -->
+        <div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
+          <div class="footer-brand-wrap">
+            <a href="index.html" class="footer-brand-logo mb-3">
+              <img src="assets/img/brand/logo-white.svg" alt="VoxLeaders Logo" height="38">
+            </a>
+            <p class="footer-brand-desc small mb-4">
+              Empowering young minds with executive confidence, public speaking mastery &amp; debate skills.
+            </p>
+            <div class="d-flex align-items-center gap-2">
+              <a href="https://www.instagram.com/accounts/login/" target="_blank" rel="noopener noreferrer" class="footer-social-btn" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+              <a href="https://www.facebook.com/login/" target="_blank" rel="noopener noreferrer" class="footer-social-btn" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+              <a href="https://www.linkedin.com/login" target="_blank" rel="noopener noreferrer" class="footer-social-btn" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+              <a href="https://x.com/" target="_blank" rel="noopener noreferrer" class="footer-social-btn" aria-label="X (Twitter)"><i class="fab fa-x-twitter"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Column 2: Navigation -->
+        <div class="col-lg-2 col-md-6 mb-4 mb-lg-0">
+          <div class="footer-col-title">NAVIGATION</div>
+          <ul class="list-unstyled mb-0 d-flex flex-column">
+            <li><a href="index.html" class="footer-link">Home</a></li>
+            <li><a href="about.html" class="footer-link">About Us</a></li>
+            <li><a href="programs.html" class="footer-link">Programs</a></li>
+            <li><a href="pricing.html" class="footer-link">Pricing Tiers</a></li>
+            <li><a href="blog.html" class="footer-link">Blog &amp; Journal</a></li>
+            <li><a href="contact.html" class="footer-link">Contact Sales</a></li>
+          </ul>
+        </div>
+
+        <!-- Column 3: Camp Standards -->
+        <div class="col-lg-4 col-md-6 mb-4 mb-lg-0">
+          <div class="footer-col-title">CAMP STANDARDS</div>
+          <ul class="list-unstyled mb-0 d-flex flex-column">
+            <li class="footer-sla-item"><span class="sla-highlight">1:6 Coach Ratio</span> <span class="sla-desc">Certified Speech Mentors</span></li>
+            <li class="footer-sla-item"><span class="sla-highlight">Daily Stage Time</span> <span class="sla-desc">Live Adjudicated Practice</span></li>
+            <li class="footer-sla-item"><span class="sla-highlight">4K HD Video</span> <span class="sla-desc">Gala Showcase Recordings</span></li>
+            <li class="footer-sla-item"><span class="sla-highlight">Ages 7&ndash;18</span> <span class="sla-desc">Junior, Teen &amp; Exec Tracks</span></li>
+            <li class="footer-sla-item"><span class="sla-highlight">5 Regional Hubs</span> <span class="sla-desc">Speech &amp; Debate Campuses</span></li>
+          </ul>
+        </div>
+
+        <!-- Column 4: Camp Admissions -->
+        <div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
+          <div class="footer-col-title">CAMP ADMISSIONS</div>
+          <ul class="list-unstyled mb-3 d-flex flex-column">
+            <li class="footer-contact-item">
+              <i class="bi bi-envelope"></i>
+              <a href="mailto:admissions@voxleaders.org">admissions@voxleaders.org</a>
+            </li>
+            <li class="footer-contact-item">
+              <i class="bi bi-telephone"></i>
+              <a href="tel:+18005558695">+1 (800) 555-VOXLEAD</a>
+            </li>
+            <li class="footer-contact-item">
+              <i class="bi bi-geo-alt"></i>
+              <span>500 Leadership Way, Boston, MA</span>
+            </li>
+          </ul>
+          <a href="contact.html" class="btn-footer-cta">Connect Admissions Team</a>
+        </div>
+
+      </div>
+
+      <!-- Centered Copyright -->
+      <div class="vx-footer-bottom text-center">
+        &copy; 2026 VoxLeaders Youth Academy Ltd. All rights reserved.
+      </div>
+    </div>
+  </footer>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/js/main.js"></script>
+  <script>
+    // Gallery Lightbox modal hook
+    const lightboxModalEl = document.getElementById('galleryLightboxModal');
+    if (lightboxModalEl) {
+      lightboxModalEl.addEventListener('show.bs.modal', function (event) {
+        const trigger = event.relatedTarget;
+        if (!trigger) return;
+        const src = trigger.getAttribute('data-img-src') || 'assets/img/gallery/gallery-auditorium-keynote.png';
+        const title = trigger.getAttribute('data-img-title') || 'Gallery Photo';
+        const speaker = trigger.getAttribute('data-img-speaker') || '';
+        const meta = trigger.getAttribute('data-img-meta') || 'VoxLeaders Media Archive';
+        
+        const gImg = document.getElementById('galleryLightboxImg');
+        const gTitle = document.getElementById('galleryLightboxTitle');
+        const gMeta = document.getElementById('galleryLightboxMeta');
+        const gSpeaker = document.getElementById('galleryLightboxSpeaker');
+        const gDownload = document.getElementById('galleryLightboxDownload');
+
+        if (gImg) gImg.src = src;
+        if (gTitle) gTitle.textContent = title;
+        if (gMeta) gMeta.textContent = meta;
+        if (gSpeaker) gSpeaker.innerHTML = speaker ? `<i class="bi bi-person-fill text-primary me-1"></i> ${speaker}` : '';
+        if (gDownload) {
+          gDownload.href = src;
+          const fileName = src.split('/').pop();
+          gDownload.setAttribute('download', fileName);
+        }
+      });
+    }
+  </script>
+</body>
+</html>

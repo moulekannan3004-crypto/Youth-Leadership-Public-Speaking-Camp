@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="light" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us | VoxLeaders Youth Leadership Academy</title>
+  <meta name="description" content="Get in touch with the VoxLeaders admissions team. Schedule a campus tour, book a free student assessment, or inquire about scholarships.">
+  
+  <link rel="icon" type="image/svg+xml" href="assets/img/brand/favicon.svg">
+  <link id="bootstrap-theme-style" rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <!-- Google Fonts: Poppins (Light 300), Outfit, Plus Jakarta Sans -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800;900&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,300&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="assets/css/style.css?v=8.4">
+  <link rel="stylesheet" href="assets/css/rtl.css">
+</head>
+<body class="page-contact">
+
+  <!-- Navigation Bar -->
+    <!-- =================================================================
+       GLOBAL NAVIGATION HEADER (Matches Reference Format)
+  ================================================================== -->
+  <header class="vx-header sticky-top">
+    <nav class="navbar navbar-expand-xl vx-navbar" aria-label="Main Navigation">
+      <div class="container-fluid px-3 px-xl-5">
+        <!-- Brand Logo -->
+        <a class="navbar-brand vx-brand" href="index.html">
+          <img src="assets/img/brand/logo.svg" alt="VoxLeaders Logo" class="vx-brand-img" height="46">
+        </a>
+
+        <!-- Mobile Toggler -->
+        <button class="navbar-toggler border-0 shadow-none d-xl-none" type="button" data-bs-toggle="collapse" data-bs-target="#vxNavbarContent" aria-controls="vxNavbarContent" aria-expanded="false" aria-label="Toggle navigation">
+          <i class="bi bi-list fs-2"></i>
+        </button>
+
+        <!-- Navbar Links & Right Controls -->
+        <div class="collapse navbar-collapse" id="vxNavbarContent">
+          <!-- Center Navigation Links -->
+          <ul class="navbar-nav mx-auto mb-2 mb-xl-0 align-items-xl-center">
+            <!-- Home with Dropdown -->
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle vx-nav-link " href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                <span class="vx-nav-text">Home</span> <i class="bi bi-chevron-down ms-1" style="font-size: 0.75rem;"></i>
+              </a>
+              <ul class="dropdown-menu dropdown-menu-vx">
+                <li><a class="dropdown-item dropdown-item-vx" href="index.html">Home</a></li>
+                <li><a class="dropdown-item dropdown-item-vx" href="index-business.html">Home 2</a></li>
+              </ul>
+            </li>
+
+            <!-- About Us -->
+            <li class="nav-item">
+              <a class="nav-link vx-nav-link " href="about.html"><span class="vx-nav-text">About Us</span></a>
+            </li>
+
+            <!-- Programs -->
+            <li class="nav-item">
+              <a class="nav-link vx-nav-link " href="programs.html"><span class="vx-nav-text">Programs</span></a>
+            </li>
+
+            <!-- Testimonials -->
+            <li class="nav-item">
+              <a class="nav-link vx-nav-link " href="testimonials.html"><span class="vx-nav-text">Testimonials</span></a>
+            </li>
+
+            <!-- Pricing -->
+            <li class="nav-item">
+              <a class="nav-link vx-nav-link " href="pricing.html"><span class="vx-nav-text">Pricing</span></a>
+            </li>
+
+            <!-- Gallery -->
+            <li class="nav-item">
+              <a class="nav-link vx-nav-link " href="gallery.html"><span class="vx-nav-text">Gallery</span></a>
+            </li>
+
+            <!-- Blog -->
+            <li class="nav-item">
+              <a class="nav-link vx-nav-link " href="blog.html"><span class="vx-nav-text">Blog</span></a>
+            </li>
+
+            <!-- Contact -->
+            <li class="nav-item">
+              <a class="nav-link vx-nav-link active" href="contact.html"><span class="vx-nav-text">Contact</span></a>
+            </li>
+
+            <!-- Dashboard -->
+            <li class="nav-item">
+              <a class="nav-link vx-nav-link " href="dashboard-parent.html"><span class="vx-nav-text">Dashboard</span></a>
+            </li>
+          </ul>
+
+          <!-- Right Header Actions (LTR/RTL Pill + Theme Toggle Circle + Login Pill) -->
+          <div class="vx-header-actions mt-3 mt-xl-0">
+            <!-- LTR / RTL Switcher Pill -->
+            <button class="btn-vx-dir-pill rtl-toggle-btn" aria-label="Toggle Text Direction">
+              <span class="dir-active">LTR</span>
+              <i class="bi bi-arrow-left-right text-muted" style="font-size: 0.7rem;"></i>
+              <span class="dir-inactive">RTL</span>
+            </button>
+
+            <!-- Dark / Light Theme Toggle Circle -->
+            <button class="btn-vx-theme-circle theme-toggle-btn" aria-label="Toggle Dark/Light Mode" title="Toggle Theme">
+              <i class="bi bi-moon-stars-fill"></i>
+            </button>
+
+            <!-- Login Pill Button -->
+            <a href="auth.html" class="btn-vx-login-pill">
+              <i class="bi bi-box-arrow-in-right login-icon"></i>
+              <span>Login</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main id="mainContent">
+
+    <!-- Header Banner with Scoped Background -->
+    <section class="hero-wrapper page-header-hero contact-header-bg text-center">
+      <div class="hero-glow-bg"></div>
+      <div class="container position-relative z-2">
+        <div class="badge-pill-soft mb-3">
+          <i class="bi bi-mic-fill me-1 text-primary"></i> Admissions &amp; Inquiries Desk
+        </div>
+        <h1 class="display-4 fw-extrabold mb-3">We'd Love To Hear From You</h1>
+        <p class="lead text-body-secondary mx-auto mb-0" style="max-width: 680px;">
+          Have questions regarding age cohorts, scholarships, or camp logistics? Our educational directors are here to assist your family.
+        </p>
+      </div>
+    </section>
+
+    <!-- Decorative Speech Frequency Soundwave Divider -->
+    <div class="contact-soundwave-banner"></div>
+
+    <!-- Contact Cards & Form Section -->
+    <section class="contact-main-section py-5">
+      <div class="container position-relative z-1">
+
+        <!-- Mixed Website-Themed Telemetry Bar (Positioned Down From Header) -->
+        <div class="text-center mb-5">
+          <div class="d-inline-flex flex-wrap align-items-center justify-content-center gap-2 px-3 py-1.5 rounded-pill contact-telemetry-badge">
+            <span class="live-pulse-dot"></span>
+            <span class="small fw-bold">Live Campus Desk Online</span>
+            <span class="text-body-tertiary small d-none d-sm-inline">&bull;</span>
+            <span class="small text-body-secondary"><i class="bi bi-soundwave text-primary me-1"></i> 2026 Summer Cohorts Enrolling</span>
+            <span class="text-body-tertiary small d-none d-sm-inline">&bull;</span>
+            <span class="small text-body-secondary"><i class="bi bi-geo-alt-fill text-primary me-1"></i> Boston Hub &amp; Regional Pods</span>
+          </div>
+        </div>
+        
+        <!-- Detail Cards Grid (Unified Single Color Consistency) -->
+        <div class="row g-4 mb-5">
+          <!-- Card 1: Campus Location -->
+          <div class="col-md-6 col-lg-3">
+            <div class="vx-contact-card">
+              <i class="bi bi-geo-alt-fill card-watermark" aria-hidden="true"></i>
+              <div class="w-100">
+                <div class="contact-icon-orb">
+                  <i class="bi bi-geo-alt-fill"></i>
+                </div>
+                <div class="mb-2">
+                  <span class="contact-status-pill">
+                    <i class="bi bi-pin-map-fill"></i> Camp HQ
+                  </span>
+                </div>
+                <h3 class="contact-card-title">Campus Location</h3>
+                <p class="contact-card-info fw-semibold text-heading">500 Leadership Way, Suite 400</p>
+                <div class="contact-card-meta">Downtown Financial District &bull; Boston, MA 02116</div>
+              </div>
+              <a href="https://maps.google.com" target="_blank" rel="noopener" class="contact-card-action">
+                <span>Get Directions</span>
+                <i class="bi bi-arrow-right"></i>
+              </a>
+            </div>
+          </div>
+
+          <!-- Card 2: Direct Telephone -->
+          <div class="col-md-6 col-lg-3">
+            <div class="vx-contact-card">
+              <i class="bi bi-telephone-fill card-watermark" aria-hidden="true"></i>
+              <div class="w-100">
+                <div class="contact-icon-orb">
+                  <i class="bi bi-telephone-fill"></i>
+                </div>
+                <div class="mb-2">
+                  <span class="contact-status-pill">
+                    <span class="pulse-dot"></span> Lines Active
+                  </span>
+                </div>
+                <h3 class="contact-card-title">Direct Telephone</h3>
+                <p class="contact-card-info">
+                  <a href="tel:+18005558695" class="text-heading fw-bold text-decoration-none">+1 (800) 555-VOXLEAD</a>
+                </p>
+                <div class="contact-card-meta">Mon &ndash; Fri: 8:00 AM &ndash; 6:00 PM EST</div>
+              </div>
+              <a href="tel:+18005558695" class="contact-card-action">
+                <span>Call Toll-Free</span>
+                <i class="bi bi-telephone-outbound"></i>
+              </a>
+            </div>
+          </div>
+
+          <!-- Card 3: Email Admissions -->
+          <div class="col-md-6 col-lg-3">
+            <div class="vx-contact-card">
+              <i class="bi bi-envelope-fill card-watermark" aria-hidden="true"></i>
+              <div class="w-100">
+                <div class="contact-icon-orb">
+                  <i class="bi bi-envelope-fill"></i>
+                </div>
+                <div class="mb-2">
+                  <span class="contact-status-pill">
+                    <i class="bi bi-lightning-charge-fill"></i> 2hr Avg Reply
+                  </span>
+                </div>
+                <h3 class="contact-card-title">Email Admissions</h3>
+                <p class="contact-card-info">
+                  <a href="mailto:admissions@voxleaders.org" class="text-heading fw-bold text-decoration-none">admissions@voxleaders.org</a>
+                </p>
+                <div class="contact-card-meta">Guaranteed response within 24 hours</div>
+              </div>
+              <a href="mailto:admissions@voxleaders.org" class="contact-card-action">
+                <span>Send An Email</span>
+                <i class="bi bi-send-fill"></i>
+              </a>
+            </div>
+          </div>
+
+          <!-- Card 4: Camp Office Hours -->
+          <div class="col-md-6 col-lg-3">
+            <div class="vx-contact-card">
+              <i class="bi bi-clock-fill card-watermark" aria-hidden="true"></i>
+              <div class="w-100">
+                <div class="contact-icon-orb">
+                  <i class="bi bi-clock-fill"></i>
+                </div>
+                <div class="mb-2">
+                  <span class="contact-status-pill">
+                    <i class="bi bi-calendar-check-fill"></i> Mon &ndash; Sat
+                  </span>
+                </div>
+                <h3 class="contact-card-title">Camp Office Hours</h3>
+                <p class="contact-card-info fw-semibold text-heading mb-1">Mon &ndash; Fri: 8:00 AM &ndash; 6:00 PM</p>
+                <div class="contact-card-meta">Saturday: 9:00 AM &ndash; 2:00 PM EST</div>
+              </div>
+              <a href="#contactForm" class="contact-card-action" onclick="event.preventDefault(); const formCard = document.getElementById('contactForm'); if (formCard) { formCard.scrollIntoView({ behavior: 'smooth', block: 'center' }); } const input = document.getElementById('parentFirstName'); if (input) { setTimeout(() => { input.focus(); }, 450); }">
+                <span>Drop An Inquiry</span>
+                <i class="bi bi-chat-dots-fill"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Form & Map Row -->
+        <div class="row g-4 g-lg-5">
+          <!-- Contact Form -->
+          <div class="col-lg-7">
+            <div class="card border-0 bg-surface rounded-theme-xl p-4 p-md-5 shadow-sm h-100" id="inquiryFormCard">
+              <h2 class="h3 fw-bold mb-2 font-heading">Send Us A Message</h2>
+              <p class="text-body-secondary small mb-4">Fill out the inquiry form and our Academic Director will respond promptly.</p>
+
+              <form id="contactForm" class="needs-validation-vx" novalidate>
+                <div class="row g-3">
+                  <div class="col-md-6">
+                    <label class="form-label small fw-bold" for="parentFirstName">Parent First Name</label>
+                    <input type="text" class="form-control form-control-vx input-name-only" id="parentFirstName" placeholder="e.g. Rachel" pattern="^[A-Za-z\s\-']+$" title="Please enter letters only (no numbers)" required>
+                  </div>
+                  <div class="col-md-6">
+                    <label class="form-label small fw-bold">Parent Last Name</label>
+                    <input type="text" class="form-control form-control-vx input-name-only" placeholder="e.g. Adams" pattern="^[A-Za-z\s\-']+$" title="Please enter letters only (no numbers)" required>
+                  </div>
+                  <div class="col-md-6">
+                    <label class="form-label small fw-bold">Email Address</label>
+                    <input type="email" class="form-control form-control-vx" placeholder="rachel@example.com" required>
+                  </div>
+                  <div class="col-md-6">
+                    <label class="form-label small fw-bold">Phone Number</label>
+                    <input type="tel" class="form-control form-control-vx input-phone-only" placeholder="+1 (555) 000-0000" pattern="^[\d\s\+\-\(\)]{7,20}$" title="Please enter numbers and phone symbols only (no letters)" required>
+                  </div>
+                  <div class="col-md-6">
+                    <label class="form-label small fw-bold">Child Age & Grade</label>
+                    <input type="text" class="form-control form-control-vx" placeholder="e.g. Age 13, 8th Grade" required>
+                  </div>
+                  <div class="col-md-6">
+                    <label class="form-label small fw-bold">Program of Interest</label>
+                    <select class="form-select form-select-vx" required>
+                      <option value="" selected disabled>Choose a program...</option>
+                      <option value="junior">Junior Orators (Ages 7&ndash;11)</option>
+                      <option value="teen">Teen Leaders Debate Bootcamp (Ages 12&ndash;15)</option>
+                      <option value="executive">Future Executives TEDx Academy (Ages 16&ndash;18)</option>
+                      <option value="enterprise">School / Institutional Cohort</option>
+                    </select>
+                  </div>
+                  <div class="col-12">
+                    <label class="form-label small fw-bold">Your Question or Goals for Your Child</label>
+                    <textarea class="form-control form-control-vx" rows="4" placeholder="Tell us about your child's speaking background, goals, or any questions regarding schedule..." required></textarea>
+                  </div>
+                  <div class="col-12">
+                    <button type="submit" class="btn-vx btn-vx-primary btn-vx-lg w-100">
+                      <i class="bi bi-send-fill"></i>
+                      <span>Send Inquiry Message</span>
+                    </button>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+
+          <!-- Embedded Map & Campus Tour Card -->
+          <div class="col-lg-5">
+            <div class="card border-0 bg-surface rounded-theme-xl overflow-hidden shadow-sm h-100 d-flex flex-column contact-map-card">
+              <!-- Map Container -->
+              <div class="p-3 bg-surface-alt border-bottom border-theme">
+                <span class="badge bg-primary text-white rounded-pill px-3 py-1">Interactive Campus Map</span>
+              </div>
+              <div class="position-relative flex-grow-1" style="min-height: 280px; background-color: var(--vx-surface-alt);">
+                <iframe 
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2948.847146039572!2d-71.07764832349787!3d42.34895823594833!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89e37a09756037eb%3A0xb21dc9167104e137!2sBack%20Bay%2C%20Boston%2C%20MA!5e0!3m2!1sen!2sus!4v1715000000000!5m2!1sen!2sus" 
+                  width="100%" 
+                  height="100%" 
+                  style="border:0; min-height: 280px;" 
+                  allowfullscreen="" 
+                  loading="lazy" 
+                  referrerpolicy="no-referrer-when-downgrade"
+                  title="VoxLeaders Campus Map">
+                </iframe>
+              </div>
+              <div class="p-4 bg-surface">
+                <div class="row g-2 mb-3">
+                  <div class="col-6">
+                    <img src="assets/img/contact/contact-campus-boston.jpg" alt="Boston Campus Center" class="w-100 rounded-theme shadow-sm" style="height: 110px; object-fit: cover;">
+                  </div>
+                  <div class="col-6">
+                    <img src="assets/img/contact/contact-open-house.jpg" alt="Open House Speech Lab" class="w-100 rounded-theme shadow-sm" style="height: 110px; object-fit: cover;">
+                  </div>
+                </div>
+                <h3 class="h6 fw-bold mb-2">Visiting Our Campus & Open Houses</h3>
+                <p class="small text-body-secondary mb-3">
+                  Located in central Back Bay, Boston. State-of-the-art auditorium, speech video soundstage, and comfortable breakout debate pods. Free validated parking available for parent tours.
+                </p>
+                <a href="#mainContent" class="btn btn-sm btn-vx-outline w-100">Schedule In-Person Tour</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+  
+    <!-- COMPLIMENTARY SPEECH DIAGNOSTIC CALL -->
+    <section class="py-6">
+      <div class="container">
+        <div class="card border-0 rounded-theme-xl p-4 p-lg-5 shadow-lg position-relative overflow-hidden contact-diagnostic-cta">
+          <div class="row align-items-center g-4 position-relative z-1">
+            <div class="col-lg-8">
+              <span class="badge contact-diagnostic-badge rounded-pill px-3 py-2 mb-3">Free Virtual Consultation</span>
+              <h2 class="display-5 fw-extrabold text-white mb-3">Book a 15-Minute Speech Diagnostic with a Master Coach</h2>
+              <p class="lead contact-diagnostic-lead mb-4">
+                Not sure which cohort best fits your child's temperament and experience? Join an informal, pressure-free video assessment where our Director identifies your child's communication strengths and suggests a tailored developmental path.
+              </p>
+              <div class="d-flex flex-wrap gap-3">
+                <a href="tel:+18005558695" class="btn-vx btn-vx-white"><i class="bi bi-telephone-fill"></i> Call (800) 555-VOXLEAD</a>
+                <a href="#mainContent" class="btn-vx btn-vx-glass-light"><i class="bi bi-calendar-event"></i> Request Diagnostic Slot</a>
+              </div>
+            </div>
+            <div class="col-lg-4 text-center">
+              <div class="contact-director-card p-4 rounded-theme-lg shadow">
+                <img src="assets/img/contact/contact-director.jpg" alt="Sarah Jenkins - Director of Admissions" class="rounded-circle shadow-sm mb-3" style="width: 80px; height: 80px; object-fit: cover;">
+                <h4 class="h5 fw-bold mb-1 director-name">Sarah Jenkins</h4>
+                <div class="small fw-semibold mb-2 director-role">Director of Admissions</div>
+                <p class="small mb-0 director-bio">Includes an immediate personalized vocal & argumentation rubric sent directly to your email.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+        <!-- =================================================================
+       FOOTER
+  ================================================================== -->
+  <footer class="vx-footer">
+    <div class="container">
+      <div class="row g-4 align-items-start">
+        
+        <!-- Column 1: Brand Info & Socials -->
+        <div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
+          <div class="footer-brand-wrap">
+            <a href="index.html" class="footer-brand-logo mb-3">
+              <img src="assets/img/brand/logo-white.svg" alt="VoxLeaders Logo" height="38">
+            </a>
+            <p class="footer-brand-desc small mb-4">
+              Empowering young minds with executive confidence, public speaking mastery &amp; debate skills.
+            </p>
+            <div class="d-flex align-items-center gap-2">
+              <a href="https://www.instagram.com/accounts/login/" target="_blank" rel="noopener noreferrer" class="footer-social-btn" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+              <a href="https://www.facebook.com/login/" target="_blank" rel="noopener noreferrer" class="footer-social-btn" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+              <a href="https://www.linkedin.com/login" target="_blank" rel="noopener noreferrer" class="footer-social-btn" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+              <a href="https://x.com/" target="_blank" rel="noopener noreferrer" class="footer-social-btn" aria-label="X (Twitter)"><i class="fab fa-x-twitter"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Column 2: Navigation -->
+        <div class="col-lg-2 col-md-6 mb-4 mb-lg-0">
+          <div class="footer-col-title">NAVIGATION</div>
+          <ul class="list-unstyled mb-0 d-flex flex-column">
+            <li><a href="index.html" class="footer-link">Home</a></li>
+            <li><a href="about.html" class="footer-link">About Us</a></li>
+            <li><a href="programs.html" class="footer-link">Programs</a></li>
+            <li><a href="pricing.html" class="footer-link">Pricing Tiers</a></li>
+            <li><a href="blog.html" class="footer-link">Blog &amp; Journal</a></li>
+            <li><a href="contact.html" class="footer-link">Contact Sales</a></li>
+          </ul>
+        </div>
+
+        <!-- Column 3: Camp Standards -->
+        <div class="col-lg-4 col-md-6 mb-4 mb-lg-0">
+          <div class="footer-col-title">CAMP STANDARDS</div>
+          <ul class="list-unstyled mb-0 d-flex flex-column">
+            <li class="footer-sla-item"><span class="sla-highlight">1:6 Coach Ratio</span> <span class="sla-desc">Certified Speech Mentors</span></li>
+            <li class="footer-sla-item"><span class="sla-highlight">Daily Stage Time</span> <span class="sla-desc">Live Adjudicated Practice</span></li>
+            <li class="footer-sla-item"><span class="sla-highlight">4K HD Video</span> <span class="sla-desc">Gala Showcase Recordings</span></li>
+            <li class="footer-sla-item"><span class="sla-highlight">Ages 7&ndash;18</span> <span class="sla-desc">Junior, Teen &amp; Exec Tracks</span></li>
+            <li class="footer-sla-item"><span class="sla-highlight">5 Regional Hubs</span> <span class="sla-desc">Speech &amp; Debate Campuses</span></li>
+          </ul>
+        </div>
+
+        <!-- Column 4: Camp Admissions -->
+        <div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
+          <div class="footer-col-title">CAMP ADMISSIONS</div>
+          <ul class="list-unstyled mb-3 d-flex flex-column">
+            <li class="footer-contact-item">
+              <i class="bi bi-envelope"></i>
+              <a href="mailto:admissions@voxleaders.org">admissions@voxleaders.org</a>
+            </li>
+            <li class="footer-contact-item">
+              <i class="bi bi-telephone"></i>
+              <a href="tel:+18005558695">+1 (800) 555-VOXLEAD</a>
+            </li>
+            <li class="footer-contact-item">
+              <i class="bi bi-geo-alt"></i>
+              <span>500 Leadership Way, Boston, MA</span>
+            </li>
+          </ul>
+          <a href="contact.html" class="btn-footer-cta">Connect Admissions Team</a>
+        </div>
+
+      </div>
+
+      <!-- Centered Copyright -->
+      <div class="vx-footer-bottom text-center">
+        &copy; 2026 VoxLeaders Youth Academy Ltd. All rights reserved.
+      </div>
+    </div>
+  </footer>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

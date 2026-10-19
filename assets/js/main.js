@@ -31,10 +31,10 @@ document.addEventListener('DOMContentLoaded', () => {
       }
     });
 
-    // Swap brand logo if exists
+    // Swap brand logo if exists (keep logo-white.svg in .vx-header for solid navy background)
     const brandLogos = document.querySelectorAll('.vx-brand-img');
     brandLogos.forEach(logo => {
-      if (theme === 'dark') {
+      if (theme === 'dark' || logo.closest('.vx-header')) {
         logo.src = 'assets/img/brand/logo-white.svg';
       } else {
         logo.src = 'assets/img/brand/logo.svg';

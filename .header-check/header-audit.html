@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    html, body { margin: 0; padding: 0; width: 100%; overflow: hidden; }
+    iframe { display: block; width: 100%; height: 900px; border: 0; }
+  </style>
+</head>
+<body>
+  <pre id="results">Loading header audit…</pre>
+  <script>
+    const pages = ['index', 'index-business', 'about', 'programs', 'testimonials', 'pricing', 'gallery', 'blog', 'contact'];
+    const auditWidth = Number(new URLSearchParams(window.location.search).get('width')) || window.innerWidth;
+
+    Promise.all(pages.map((page) => new Promise((resolve) => {
+      const frame = document.createElement('iframe');
+      frame.src = `../${page}.html`;
+      frame.style.width = `${auditWidth}px`;
+      frame.addEventListener('load', () => {
+        const doc = frame.contentDocument;
+        const hero = doc.querySelector('.hero-wrapper');
+        const title = hero?.querySelector('h1');
+        const heroStyles = hero ? frame.contentWindow.getComputedStyle(hero) : null;
+        const titleBox = title?.getBoundingClientRect();
+        const viewport = doc.documentElement.clientWidth;
+        resolve({
+          page,
+          image: Boolean(heroStyles?.backgroundImage && heroStyles.backgroundImage !== 'none'),
+          cover: heroStyles?.backgroundSize === 'cover',
+          center: heroStyles?.backgroundPosition === '50% 50%',
+          pageOverflow: doc.documentElement.scrollWidth > viewport,
+          heroOverflow: hero?.scrollWidth > hero?.clientWidth,
+          titleOverflow: titleBox ? titleBox.left < 0 || titleBox.right > viewport : false,
+          titleContentOverflow: title ? title.scrollWidth > title.clientWidth : false,
+          titleWidth: title?.clientWidth,
+          titleScrollWidth: title?.scrollWidth,
+          viewport
+        });
+        frame.remove();
+      }, { once: true });
+      document.body.append(frame);
+    }))).then((results) => {
+      document.querySelector('#results').textContent = JSON.stringify(results);
+    });
+  </script>
+</body>
+</html>

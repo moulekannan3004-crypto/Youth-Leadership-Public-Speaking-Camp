@@ -1,0 +1,853 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="light" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>VoxLeaders | Youth Leadership & Public Speaking Camp</title>
+  <meta name="description" content="Empowering the next generation of confident speakers, empathetic leaders, and visionary debaters through immersive experiential public speaking camps.">
+  <meta name="keywords" content="youth leadership camp, public speaking for kids, teen debate academy, oratory skills, toastmasters youth, confidence building">
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="assets/img/brand/favicon.svg">
+  
+  <!-- Dynamic Bootstrap CSS (Supports RTL switching) -->
+  <link id="bootstrap-theme-style" rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+  
+  <!-- Icon Libraries -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  
+    <!-- Google Fonts: Poppins (Light 300), Outfit, Plus Jakarta Sans -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800;900&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,300&display=swap" rel="stylesheet">
+  
+<!-- Master Stylesheet & RTL Support -->
+  <link rel="stylesheet" href="assets/css/style.css?v=8.3">
+  <link rel="stylesheet" href="assets/css/rtl.css">
+</head>
+<body class="page-home-camp">
+
+  <!-- Skip to content for Accessibility -->
+  <a href="#mainContent" class="visually-hidden-focusable p-3 bg-primary text-white position-absolute top-0 start-0 z-3">Skip to main content</a>
+
+    <!-- =================================================================
+       GLOBAL NAVIGATION HEADER (Matches Reference Format)
+  ================================================================== -->
+  <header class="vx-header sticky-top">
+    <nav class="navbar navbar-expand-xl vx-navbar" aria-label="Main Navigation">
+      <div class="container-fluid px-3 px-xl-5">
+        <!-- Brand Logo -->
+        <a class="navbar-brand vx-brand" href="index.html">
+          <img src="assets/img/brand/logo.svg" alt="VoxLeaders Logo" class="vx-brand-img" height="46">
+        </a>
+
+        <!-- Mobile Toggler -->
+        <button class="navbar-toggler border-0 shadow-none d-xl-none" type="button" data-bs-toggle="collapse" data-bs-target="#vxNavbarContent" aria-controls="vxNavbarContent" aria-expanded="false" aria-label="Toggle navigation">
+          <i class="bi bi-list fs-2"></i>
+        </button>
+
+        <!-- Navbar Links & Right Controls -->
+        <div class="collapse navbar-collapse" id="vxNavbarContent">
+          <!-- Navigation Links (Centered Alignment matching Home 2) -->
+          <ul class="navbar-nav mx-auto mb-2 mb-xl-0 align-items-xl-center">
+            <!-- Home with Dropdown -->
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle vx-nav-link active" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                <span class="vx-nav-text">Home</span> <i class="bi bi-chevron-down ms-1" style="font-size: 0.75rem;"></i>
+              </a>
+              <ul class="dropdown-menu dropdown-menu-vx">
+                <li><a class="dropdown-item dropdown-item-vx active" href="index.html">Home</a></li>
+                <li><a class="dropdown-item dropdown-item-vx" href="index-business.html">Home 2</a></li>
+              </ul>
+            </li>
+
+            <!-- About Us -->
+            <li class="nav-item">
+              <a class="nav-link vx-nav-link " href="about.html"><span class="vx-nav-text">About Us</span></a>
+            </li>
+
+            <!-- Programs -->
+            <li class="nav-item">
+              <a class="nav-link vx-nav-link " href="programs.html"><span class="vx-nav-text">Programs</span></a>
+            </li>
+
+            <!-- Testimonials -->
+            <li class="nav-item">
+              <a class="nav-link vx-nav-link " href="testimonials.html"><span class="vx-nav-text">Testimonials</span></a>
+            </li>
+
+            <!-- Pricing -->
+            <li class="nav-item">
+              <a class="nav-link vx-nav-link " href="pricing.html"><span class="vx-nav-text">Pricing</span></a>
+            </li>
+
+            <!-- Gallery -->
+            <li class="nav-item">
+              <a class="nav-link vx-nav-link " href="gallery.html"><span class="vx-nav-text">Gallery</span></a>
+            </li>
+
+            <!-- Blog -->
+            <li class="nav-item">
+              <a class="nav-link vx-nav-link " href="blog.html"><span class="vx-nav-text">Blog</span></a>
+            </li>
+
+            <!-- Contact -->
+            <li class="nav-item">
+              <a class="nav-link vx-nav-link " href="contact.html"><span class="vx-nav-text">Contact</span></a>
+            </li>
+
+            <!-- Dashboard -->
+            <li class="nav-item">
+              <a class="nav-link vx-nav-link " href="dashboard-parent.html"><span class="vx-nav-text">Dashboard</span></a>
+            </li>
+          </ul>
+
+          <!-- Right Header Actions (LTR/RTL Pill + Theme Toggle Circle + Login Pill) -->
+          <div class="vx-header-actions mt-3 mt-xl-0">
+            <!-- LTR / RTL Switcher Pill -->
+            <button class="btn-vx-dir-pill rtl-toggle-btn" aria-label="Toggle Text Direction">
+              <span class="dir-active">LTR</span>
+              <i class="bi bi-arrow-left-right text-muted" style="font-size: 0.7rem;"></i>
+              <span class="dir-inactive">RTL</span>
+            </button>
+
+            <!-- Dark / Light Theme Toggle Circle -->
+            <button class="btn-vx-theme-circle theme-toggle-btn" aria-label="Toggle Dark/Light Mode" title="Toggle Theme">
+              <i class="bi bi-moon-stars-fill"></i>
+            </button>
+
+            <!-- Login Pill Button -->
+            <a href="auth.html" class="btn-vx-login-pill">
+              <i class="bi bi-box-arrow-in-right login-icon"></i>
+              <span>Login</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!-- =================================================================
+       MAIN CONTENT
+  ================================================================== -->
+  <main id="mainContent">
+
+    <!-- 1. HERO SECTION (Perfected Alignment & Symmetrical Baseline) -->
+    <section class="hero-wrapper position-relative">
+      <div class="hero-glow-bg"></div>
+      <div class="container position-relative z-1">
+        <!-- Top Row: Perfectly Equal & Symmetrical 2-Column Hero Grid -->
+        <div class="row align-items-stretch g-4 g-xl-5 hero-main-row">
+          <!-- Left Column: Copy & Actions (Equally Distributed) -->
+          <div class="col-lg-6 d-flex">
+            <div class="hero-copy-column d-flex flex-column justify-content-between w-100">
+              <div>
+                <div class="badge-pill-soft mb-3">
+                  <i class="bi bi-stars text-primary"></i>
+                  <span>Summer &amp; Fall 2026 Cohorts Now Open</span>
+                </div>
+                
+                <h1 class="hero-title mb-3">
+                  Ignite Their Voice. <br>
+                  <span class="text-gradient-primary">Build Tomorrow's Leaders.</span>
+                </h1>
+
+                <p class="hero-lead mb-4">
+                  Where shy children become dynamic orators and natural leaders find their strategic voice. Transform stage fright into magnetic confidence through expert mentorship, parliamentary debate, and live stage experience.
+                </p>
+
+                <!-- CTA Button Group -->
+                <div class="d-flex flex-wrap align-items-center gap-3 mb-4">
+                  <a href="programs.html" class="btn-vx btn-vx-primary btn-vx-lg">
+                    <i class="bi bi-compass"></i>
+                    <span>Explore Programs</span>
+                  </a>
+                </div>
+              </div>
+
+              <!-- Micro Trust & Ratio Pill (Aligned at bottom baseline) -->
+              <div class="hero-trust-bar pt-3 d-flex align-items-center gap-3">
+                <div class="avatar-stack">
+                  <img src="assets/img/avatars/trust-avatar-1.jpg" width="36" height="36" class="rounded-circle shadow-xs" alt="Happy Camper Maya" style="object-fit: cover;">
+                  <img src="assets/img/avatars/trust-avatar-2.jpg" width="36" height="36" class="rounded-circle shadow-xs" alt="Happy Camper Lucas" style="object-fit: cover;">
+                  <img src="assets/img/avatars/trust-avatar-3.jpg" width="36" height="36" class="rounded-circle shadow-xs" alt="Happy Camper Noah" style="object-fit: cover;">
+                </div>
+                <div class="small text-body-secondary">
+                  <span class="fw-bold text-heading"><i class="bi bi-star-fill text-warning me-1"></i>4.9/5 Rating</span> from 850+ Parents &bull; <span class="fw-bold text-primary">1:6 Coach Ratio</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right Column: Authentic Youth Camp Hero Card (Equally Matched Height) -->
+          <div class="col-lg-6 d-flex">
+            <div class="hero-visual-card h-100 w-100 d-flex flex-column position-relative overflow-hidden">
+              <div class="hero-image-frame position-relative w-100 flex-grow-1 overflow-hidden">
+                <img src="assets/img/hero/hero-youth-camp.jpg" alt="Youth Leadership & Public Speaking Camp Experience" class="img-fluid w-100 h-100">
+                
+                <!-- Top-Right Accreditation Floating Pill -->
+                <div class="floating-pill-badge floating-pill-top">
+                  <i class="bi bi-trophy-fill text-primary"></i>
+                  <span class="fw-bold">National Oratory Finalist</span>
+                </div>
+
+                <!-- Bottom-Left Live Status Badge -->
+                <div class="floating-pill-badge floating-pill-bottom">
+                  <span class="badge-pulse-dot"></span>
+                  <span class="fw-bold">Live Adjudication Lab Active</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Symmetrical Hero Stats Anchor (Full-Width Row) -->
+        <div class="hero-stats-bar">
+          <div class="row g-4 text-start">
+            
+            <!-- Stat Card 1: Confidence Boost -->
+            <div class="col-md-4">
+              <div class="hero-stat-card position-relative overflow-hidden">
+                <!-- Ambient Glow & Watermark -->
+                <div class="stat-card-watermark"><i class="bi bi-shield-check"></i></div>
+                <div class="stat-card-glow"></div>
+                
+                <!-- Card Header: Icon Crest + Category Pill -->
+                <div class="d-flex align-items-center justify-content-between mb-3 w-100 position-relative z-1">
+                  <div class="hero-stat-icon">
+                    <i class="bi bi-shield-check"></i>
+                  </div>
+                  <span class="stat-category-pill">
+                    <i class="bi bi-graph-up-arrow"></i> 14-Day Shift
+                  </span>
+                </div>
+                
+                <!-- Card Body: Large Counter & Title -->
+                <div class="position-relative z-1 w-100">
+                  <div class="d-flex align-items-baseline gap-1 mb-1">
+                    <span class="stat-number display-5 fw-extrabold font-heading text-primary lh-1" data-counter-target="98" data-counter-suffix="%">98%</span>
+                  </div>
+                  <div class="stat-title fw-bold text-heading">Confidence Boost</div>
+                  <div class="stat-subtitle small text-body-secondary mb-3">Stage anxiety conquered in 2 weeks</div>
+                  
+                  <!-- Tactile Progress Meter -->
+                  <div class="stat-progress-wrapper">
+                    <div class="stat-progress-track">
+                      <div class="stat-progress-fill" style="width: 98%;"></div>
+                    </div>
+                    <div class="d-flex justify-content-between align-items-center mt-2">
+                      <span class="stat-micro-caption">Pre-camp 18% &rarr; Post-camp 98%</span>
+                      <span class="stat-micro-badge">+80% Net Lift</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Stat Card 2: Graduated Orators -->
+            <div class="col-md-4">
+              <div class="hero-stat-card position-relative overflow-hidden">
+                <!-- Ambient Glow & Watermark -->
+                <div class="stat-card-watermark"><i class="bi bi-mortarboard"></i></div>
+                <div class="stat-card-glow"></div>
+                
+                <!-- Card Header: Icon Crest + Category Pill -->
+                <div class="d-flex align-items-center justify-content-between mb-3 w-100 position-relative z-1">
+                  <div class="hero-stat-icon">
+                    <i class="bi bi-mortarboard-fill"></i>
+                  </div>
+                  <span class="stat-category-pill">
+                    <i class="bi bi-stars"></i> Global Alumni
+                  </span>
+                </div>
+                
+                <!-- Card Body: Large Counter & Title -->
+                <div class="position-relative z-1 w-100">
+                  <div class="d-flex align-items-baseline gap-1 mb-1">
+                    <span class="stat-number display-5 fw-extrabold font-heading text-primary lh-1" data-counter-target="3500" data-counter-suffix="+">3,500+</span>
+                  </div>
+                  <div class="stat-title fw-bold text-heading">Graduated Orators</div>
+                  <div class="stat-subtitle small text-body-secondary mb-3">Alumni at TEDx, Model UN &amp; Forensics</div>
+                  
+                  <!-- Tactile Progress Meter -->
+                  <div class="stat-progress-wrapper">
+                    <div class="stat-progress-track">
+                      <div class="stat-progress-fill" style="width: 88%;"></div>
+                    </div>
+                    <div class="d-flex justify-content-between align-items-center mt-2">
+                      <span class="stat-micro-caption">Across 18 Regional Campuses</span>
+                      <span class="stat-micro-badge">100% Mentored</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Stat Card 3: National Trophies -->
+            <div class="col-md-4">
+              <div class="hero-stat-card position-relative overflow-hidden">
+                <!-- Ambient Glow & Watermark -->
+                <div class="stat-card-watermark"><i class="bi bi-trophy"></i></div>
+                <div class="stat-card-glow"></div>
+                
+                <!-- Card Header: Icon Crest + Category Pill -->
+                <div class="d-flex align-items-center justify-content-between mb-3 w-100 position-relative z-1">
+                  <div class="hero-stat-icon">
+                    <i class="bi bi-trophy-fill"></i>
+                  </div>
+                  <span class="stat-category-pill">
+                    <i class="bi bi-award-fill"></i> Forensics Record
+                  </span>
+                </div>
+                
+                <!-- Card Body: Large Counter & Title -->
+                <div class="position-relative z-1 w-100">
+                  <div class="d-flex align-items-baseline gap-1 mb-1">
+                    <span class="stat-number display-5 fw-extrabold font-heading text-primary lh-1" data-counter-target="40" data-counter-suffix="+">40+</span>
+                  </div>
+                  <div class="stat-title fw-bold text-heading">National Trophies</div>
+                  <div class="stat-subtitle small text-body-secondary mb-3">Championship debate &amp; speech titles</div>
+                  
+                  <!-- Tactile Progress Meter -->
+                  <div class="stat-progress-wrapper">
+                    <div class="stat-progress-track">
+                      <div class="stat-progress-fill" style="width: 94%;"></div>
+                    </div>
+                    <div class="d-flex justify-content-between align-items-center mt-2">
+                      <span class="stat-micro-caption">NSDA &amp; Harvard Forensics</span>
+                      <span class="stat-micro-badge">Top 3 National</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 2. CORE CAMP OUTCOMES (Unique Mastery Matrix) -->
+    <section class="pillars-section" id="curriculumSection">
+      <div class="container position-relative z-1">
+        <!-- Section Header with Distinctive Chip & Authority Proof -->
+        <div class="row justify-content-center text-center mb-5">
+          <div class="col-lg-9 col-xl-8">
+            <div class="pillars-eyebrow-chip mb-3">
+              <span class="pillars-chip-dot"></span>
+              <span class="pillars-chip-text">PROPRIETARY VOXCURRICULUM&trade; BLUEPRINT</span>
+              <span class="pillars-chip-badge">2026 EDITION</span>
+            </div>
+            
+            <h2 class="display-5 fw-extrabold pillars-main-title mb-3">
+              The <span class="pillars-highlight">4 Master Pillars</span> of a Confident Orator
+            </h2>
+
+            <p class="lead text-body-secondary mb-3">
+              Designed by Harvard debate champions, TEDx speakers, and child psychologists to build lifelong social, intellectual, and executive fluency.
+            </p>
+
+            <div class="pillars-credentials-bar">
+              <span class="pillar-cred-item"><i class="bi bi-mortarboard-fill text-primary"></i> Harvard Debate Pedagogy</span>
+              <span class="pillar-cred-sep">&bull;</span>
+              <span class="pillar-cred-item"><i class="bi bi-mic-fill text-primary"></i> TEDx Keynote Coaching</span>
+              <span class="pillar-cred-sep">&bull;</span>
+              <span class="pillar-cred-item"><i class="bi bi-shield-check text-primary"></i> Child Psychology Validated</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Outcome Cards Grid (Level Aligned Baseline & Mastery Matrix) -->
+        <div class="row g-4 align-items-stretch">
+          <!-- Pillar 1: Unshakeable Confidence -->
+          <div class="col-md-6 col-lg-3 d-flex">
+            <div class="outcome-card-mastery w-100 h-100 d-flex flex-column">
+              <div class="rounded-theme overflow-hidden mb-3 shadow-sm">
+                <img src="assets/img/camp/pillar-confidence.jpg" class="w-100" style="height: 120px; object-fit: cover; object-position: center 20%;" alt="Unshakeable Confidence">
+              </div>
+              <div class="d-flex justify-content-between align-items-center mb-3">
+                <div class="pillar-icon-crest">
+                  <i class="bi bi-shield-check"></i>
+                </div>
+                <span class="outcome-level-badge">Phase 1 &bull; Foundations</span>
+              </div>
+              <h3 class="pillar-card-title text-heading">Unshakeable Confidence</h3>
+              <p class="pillar-card-desc text-body-secondary small mb-3">
+                Conquer stage fright through proven cognitive reframing, vocal warmups, and progressive stage desensitization in a supportive circle.
+              </p>
+              <ul class="outcome-drill-list flex-grow-1">
+                <li><i class="bi bi-check2-circle"></i> 3-Minute Impromptu "Table Topics"</li>
+                <li><i class="bi bi-check2-circle"></i> Diaphragmatic Breath &amp; Posture Lab</li>
+                <li><i class="bi bi-check2-circle"></i> Micro-Expression Desensitization</li>
+              </ul>
+              
+              <!-- Unique Level Alignment Rail & Milestone Jewel -->
+              <div class="pillar-alignment-wrapper mt-auto">
+                <div class="pillar-alignment-rail">
+                  <span class="pillar-rail-line"></span>
+                  <span class="pillar-rail-node"><i class="bi bi-patch-check-fill"></i></span>
+                  <span class="pillar-rail-line"></span>
+                </div>
+                <div class="pillar-metric-container">
+                  <span class="outcome-metric-pill">
+                    <i class="bi bi-graph-up-arrow"></i> 98% Anxiety Reduction
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Pillar 2: Oratory Mastery -->
+          <div class="col-md-6 col-lg-3 d-flex">
+            <div class="outcome-card-mastery w-100 h-100 d-flex flex-column">
+              <div class="rounded-theme overflow-hidden mb-3 shadow-sm">
+                <img src="assets/img/camp/pillar-oratory.jpg" class="w-100" style="height: 120px; object-fit: cover; object-position: center 25%;" alt="Oratory Mastery">
+              </div>
+              <div class="d-flex justify-content-between align-items-center mb-3">
+                <div class="pillar-icon-crest">
+                  <i class="bi bi-broadcast"></i>
+                </div>
+                <span class="outcome-level-badge">Phase 2 &bull; Delivery</span>
+              </div>
+              <h3 class="pillar-card-title text-heading">Oratory Mastery</h3>
+              <p class="pillar-card-desc text-body-secondary small mb-3">
+                Master pitch modulation, deliberate pauses, storytelling cadences, and body language projection that commands audience respect.
+              </p>
+              <ul class="outcome-drill-list flex-grow-1">
+                <li><i class="bi bi-check2-circle"></i> 5 Vocal Varieties (Pitch &amp; Pace)</li>
+                <li><i class="bi bi-check2-circle"></i> Aristotle's Rhetoric: Ethos/Pathos</li>
+                <li><i class="bi bi-check2-circle"></i> 4K Teleprompter &amp; Live Podiums</li>
+              </ul>
+              
+              <!-- Unique Level Alignment Rail & Milestone Jewel -->
+              <div class="pillar-alignment-wrapper mt-auto">
+                <div class="pillar-alignment-rail">
+                  <span class="pillar-rail-line"></span>
+                  <span class="pillar-rail-node"><i class="bi bi-patch-check-fill"></i></span>
+                  <span class="pillar-rail-line"></span>
+                </div>
+                <div class="pillar-metric-container">
+                  <span class="outcome-metric-pill">
+                    <i class="bi bi-soundwave"></i> 4.2x Vocal Projection Gain
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Pillar 3: Debate & Critical Thinking (Featured Glow) -->
+          <div class="col-md-6 col-lg-3 d-flex">
+            <div class="outcome-card-mastery featured-outcome w-100 h-100 d-flex flex-column">
+              <div class="rounded-theme overflow-hidden mb-3 shadow-sm">
+                <img src="assets/img/camp/pillar-debate.jpg" class="w-100" style="height: 120px; object-fit: cover; object-position: center 25%;" alt="Debate &amp; Critical Thinking">
+              </div>
+              <div class="d-flex justify-content-between align-items-center mb-3">
+                <div class="pillar-icon-crest">
+                  <i class="bi bi-lightning-charge-fill"></i>
+                </div>
+                <span class="outcome-level-badge bg-primary text-white border-0"><i class="bi bi-star-fill text-warning me-1"></i>Flagship Pillar</span>
+              </div>
+              <h3 class="pillar-card-title text-heading">Debate &amp; Critical Thinking</h3>
+              <p class="pillar-card-desc text-body-secondary small mb-3">
+                Construct logical argument frameworks, anticipate rebuttal angles, and dissect opposing logic with composure and factual rigor.
+              </p>
+              <ul class="outcome-drill-list flex-grow-1">
+                <li><i class="bi bi-check2-circle"></i> 60-Second Rapid Cross-Examination</li>
+                <li><i class="bi bi-check2-circle"></i> Fallacy Detection &amp; Rebuttal Matrix</li>
+                <li><i class="bi bi-check2-circle"></i> Karl Popper &amp; MUN Format</li>
+              </ul>
+              
+              <!-- Unique Level Alignment Rail & Milestone Jewel -->
+              <div class="pillar-alignment-wrapper mt-auto">
+                <div class="pillar-alignment-rail">
+                  <span class="pillar-rail-line"></span>
+                  <span class="pillar-rail-node"><i class="bi bi-patch-check-fill"></i></span>
+                  <span class="pillar-rail-line"></span>
+                </div>
+                <div class="pillar-metric-container">
+                  <span class="outcome-metric-pill">
+                    <i class="bi bi-award"></i> Top 5% Tournament Placements
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Pillar 4: Emotional Intelligence & Diplomacy -->
+          <div class="col-md-6 col-lg-3 d-flex">
+            <div class="outcome-card-mastery w-100 h-100 d-flex flex-column">
+              <div class="rounded-theme overflow-hidden mb-3 shadow-sm">
+                <img src="assets/img/camp/pillar-leadership.jpg" class="w-100" style="height: 120px; object-fit: cover; object-position: center 25%;" alt="Diplomatic Leadership">
+              </div>
+              <div class="d-flex justify-content-between align-items-center mb-3">
+                <div class="pillar-icon-crest">
+                  <i class="bi bi-heart-pulse-fill"></i>
+                </div>
+                <span class="outcome-level-badge">Phase 4 &bull; Impact</span>
+              </div>
+              <h3 class="pillar-card-title text-heading">Diplomatic Leadership</h3>
+              <p class="pillar-card-desc text-body-secondary small mb-3">
+                Learn active listening, empathetic debate rebuttals, inclusive team leadership, and diplomatic compromise under pressure.
+              </p>
+              <ul class="outcome-drill-list flex-grow-1">
+                <li><i class="bi bi-check2-circle"></i> Non-Defensive Active Listening</li>
+                <li><i class="bi bi-check2-circle"></i> 360&deg; Peer Feedback "Sandwich" Drills</li>
+                <li><i class="bi bi-check2-circle"></i> Crisis Negotiation Simulation</li>
+              </ul>
+              
+              <!-- Unique Level Alignment Rail & Milestone Jewel -->
+              <div class="pillar-alignment-wrapper mt-auto">
+                <div class="pillar-alignment-rail">
+                  <span class="pillar-rail-line"></span>
+                  <span class="pillar-rail-node"><i class="bi bi-patch-check-fill"></i></span>
+                  <span class="pillar-rail-line"></span>
+                </div>
+                <div class="pillar-metric-container">
+                  <span class="outcome-metric-pill">
+                    <i class="bi bi-people-fill"></i> 100% Team Synergy Score
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- UNIQUE SECTION: THE TRANSFORMATION (MINIMUM 3-STAGE PROGRESSION BOXES) -->
+    <section class="py-6 bg-surface-alt" id="transformationSection">
+      <div class="container">
+        <div class="row justify-content-center text-center mb-5">
+          <div class="col-lg-8">
+            <div class="transform-section-chip mb-2">
+              <i class="bi bi-arrow-repeat text-primary"></i>
+              <span>MEASURABLE 3-STAGE EVOLUTION</span>
+            </div>
+            <h2 class="display-5 fw-extrabold mb-3 font-heading">
+              The VoxLeaders <span class="text-gradient-primary">Transformation</span>
+            </h2>
+            <p class="lead text-body-secondary">
+              Witness the dramatic tangible shift in your child's posture, speech rhythm, eye contact, and emotional courage across three progressive phases.
+            </p>
+          </div>
+        </div>
+
+        <!-- 3-Box Transformation Matrix (Unified Single Color Consistency) -->
+        <div class="row g-4 align-items-stretch">
+          <!-- Box 1: Day 1 - The Hesitant Baseline -->
+          <div class="col-lg-4 d-flex">
+            <div class="transform-compare-box stage-hesitant w-100 h-100 d-flex flex-column">
+              <div class="transform-watermark-num">01</div>
+              <div class="d-flex align-items-center mb-3 position-relative" style="z-index: 2;">
+                <span class="badge bg-primary-soft text-primary fw-bold rounded-pill px-3 py-1.5 small d-inline-flex align-items-center gap-2">
+                  <i class="bi bi-clock-history"></i> Stage 01 &bull; Day 1 Benchmark
+                </span>
+              </div>
+              <h4 class="h5 fw-bold mb-2 text-heading">Day 1: The Hesitant Speaker</h4>
+              <p class="text-body-secondary small mb-3">Pre-camp baseline: Stage fright and self-doubt inhibit participation in class.</p>
+              <ul class="list-unstyled d-flex flex-column gap-2 small text-body-secondary mb-4 flex-grow-1">
+                <li class="d-flex gap-2"><i class="bi bi-check-circle-fill text-primary flex-shrink-0 mt-1"></i> Avoids eye contact; stares at floor, ceiling, or index cards.</li>
+                <li class="d-flex gap-2"><i class="bi bi-check-circle-fill text-primary flex-shrink-0 mt-1"></i> Fast, nervous monotone with vocal tremors and excessive filler words ("um", "like").</li>
+                <li class="d-flex gap-2"><i class="bi bi-check-circle-fill text-primary flex-shrink-0 mt-1"></i> Defensive or shut down during classroom discussions and debates.</li>
+                <li class="d-flex gap-2"><i class="bi bi-check-circle-fill text-primary flex-shrink-0 mt-1"></i> Slumped posture and nervous fidgeting with hands or hair.</li>
+              </ul>
+              <div class="transform-metric-bar mt-auto">
+                <i class="bi bi-bar-chart-fill text-primary"></i>
+                <span>15% Speaking Confidence &bull; High Anxiety</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Box 2: Day 7 - The Mid-Camp Breakthrough -->
+          <div class="col-lg-4 d-flex">
+            <div class="transform-compare-box stage-breakthrough w-100 h-100 d-flex flex-column">
+              <div class="transform-watermark-num">02</div>
+              <div class="d-flex align-items-center mb-3 position-relative" style="z-index: 2;">
+                <span class="badge bg-primary-soft text-primary fw-bold rounded-pill px-3 py-1.5 small d-inline-flex align-items-center gap-2">
+                  <i class="bi bi-lightning-charge-fill"></i> Stage 02 &bull; Day 7 Breakthrough
+                </span>
+              </div>
+              <h4 class="h5 fw-bold mb-2 text-heading">Day 7: The Emerging Orator</h4>
+              <p class="text-body-secondary small mb-3">Mid-camp ignition: Vocal drills and supportive circle unlock spontaneous voice.</p>
+              <ul class="list-unstyled d-flex flex-column gap-2 small text-body-secondary mb-4 flex-grow-1">
+                <li class="d-flex gap-2"><i class="bi bi-check-circle-fill text-primary flex-shrink-0 mt-1"></i> Sustained audience eye contact with calm breath control.</li>
+                <li class="d-flex gap-2"><i class="bi bi-check-circle-fill text-primary flex-shrink-0 mt-1"></i> Eliminates 70% of filler words through deliberate rhetorical pauses.</li>
+                <li class="d-flex gap-2"><i class="bi bi-check-circle-fill text-primary flex-shrink-0 mt-1"></i> Structures 60-second impromptu table topic points with composure.</li>
+                <li class="d-flex gap-2"><i class="bi bi-check-circle-fill text-primary flex-shrink-0 mt-1"></i> Grounded podium stance with natural expressive hand gestures.</li>
+              </ul>
+              <div class="transform-metric-bar mt-auto">
+                <i class="bi bi-graph-up-arrow text-primary"></i>
+                <span>65% Confidence Index &bull; Core Voice Unlocked</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Box 3: Day 14 - The Confident VoxLeader -->
+          <div class="col-lg-4 d-flex">
+            <div class="transform-compare-box stage-mastery w-100 h-100 d-flex flex-column">
+              <div class="transform-watermark-num">03</div>
+              <div class="d-flex align-items-center mb-3 position-relative" style="z-index: 2;">
+                <span class="badge bg-primary-soft text-primary fw-bold rounded-pill px-3 py-1.5 small d-inline-flex align-items-center gap-2">
+                  <i class="bi bi-patch-check-fill"></i> Stage 03 &bull; Day 14 Mastery
+                </span>
+              </div>
+              <h4 class="h5 fw-bold mb-2 text-heading">Day 14: The Confident Leader</h4>
+              <p class="text-body-secondary small mb-3">Mastery &amp; Showcase: Delivering 4K filmed keynote speeches with magnetic authority.</p>
+              <ul class="list-unstyled d-flex flex-column gap-2 small text-body-secondary mb-4 flex-grow-1">
+                <li class="d-flex gap-2"><i class="bi bi-check-circle-fill text-primary flex-shrink-0 mt-1"></i> Magnetic triangular eye contact commanding the entire auditorium.</li>
+                <li class="d-flex gap-2"><i class="bi bi-check-circle-fill text-primary flex-shrink-0 mt-1"></i> Masterful vocal variety, resonant projection, and persuasive cadences.</li>
+                <li class="d-flex gap-2"><i class="bi bi-check-circle-fill text-primary flex-shrink-0 mt-1"></i> Composed, empathetic debate rebuttals that win respect from judges.</li>
+                <li class="d-flex gap-2"><i class="bi bi-check-circle-fill text-primary flex-shrink-0 mt-1"></i> Commanding stage presence earning gala standing ovations.</li>
+              </ul>
+              <div class="transform-metric-bar mt-auto">
+                <i class="bi bi-trophy-fill text-primary"></i>
+                <span>98% Mastery Score &bull; Gala Showcase Champion</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+<!-- 4.7 FEATURED PARENT TESTIMONIALS & OUTCOMES -->
+    <section class="py-6 bg-surface-alt" id="testimonialsOutcomeSection">
+      <div class="container">
+        <div class="d-flex flex-column flex-md-row justify-content-between align-items-md-end mb-5 gap-3">
+          <div>
+            <div class="badge-pill-soft mb-2"><i class="bi bi-star-fill text-warning"></i> 850+ Verified Parent Stories</div>
+            <h2 class="display-5 fw-extrabold mb-2 font-heading">Parent &amp; Student <span class="text-gradient-primary">Transformation Stories</span></h2>
+            <p class="lead text-body-secondary mb-0">See how our public speaking &amp; debate camp unlocked lifetime leadership outcomes for young orators.</p>
+          </div>
+          <div>
+            <a href="testimonials.html" class="btn-vx btn-vx-outline btn-vx-sm d-inline-flex align-items-center gap-2">
+              <span>View All Testimonials &amp; Videos</span>
+              <i class="bi bi-arrow-right"></i>
+            </a>
+          </div>
+        </div>
+
+        <div class="row g-4">
+          <!-- Testimonial 1: Rebecca Foster -->
+          <div class="col-md-6 col-lg-4 d-flex">
+            <div class="testimonial-card w-100 h-100 d-flex flex-column bg-surface rounded-theme-xl p-4 border border-theme shadow-sm">
+              <div class="d-flex justify-content-between align-items-center mb-3">
+                <div class="star-rating text-warning">
+                  <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                </div>
+                <span class="badge bg-primary-soft text-primary rounded-pill px-2.5 py-1 small fw-bold">Teen Leaders</span>
+              </div>
+              <h3 class="h6 fw-bold text-heading mb-2">"Charlotte Won 1st Place at National Forensics"</h3>
+              <p class="text-body-secondary small mb-4 flex-grow-1">
+                "Before VoxLeaders, Charlotte wouldn't speak up even when she knew the answer in class. In three weeks, she conquered her stage hesitation and learned to command an entire auditorium with poise."
+              </p>
+              <div class="d-flex align-items-center gap-3 pt-3 border-top border-theme mt-auto">
+                <img src="assets/img/testimonials/parent-rebecca.jpg" width="42" height="42" class="rounded-circle shadow-xs" style="object-fit: cover;" alt="Rebecca Foster">
+                <div>
+                  <div class="fw-bold small text-heading">Rebecca Foster</div>
+                  <small class="text-primary"><i class="bi bi-patch-check-fill"></i> Mother of Charlotte (Age 13)</small>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Testimonial 2: Nathaniel Brooks -->
+          <div class="col-md-6 col-lg-4 d-flex">
+            <div class="testimonial-card w-100 h-100 d-flex flex-column bg-surface rounded-theme-xl p-4 border border-theme shadow-sm">
+              <div class="d-flex justify-content-between align-items-center mb-3">
+                <div class="star-rating text-warning">
+                  <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                </div>
+                <span class="badge bg-primary-soft text-primary rounded-pill px-2.5 py-1 small fw-bold">Junior Orators</span>
+              </div>
+              <h3 class="h6 fw-bold text-heading mb-2">"Delivered Our School Graduation Speech"</h3>
+              <p class="text-body-secondary small mb-4 flex-grow-1">
+                "The 1:6 mentor ratio gave Oliver the individualized feedback he needed to eliminate vocal tremors. The parent portal tracking every day was an absolute game changer!"
+              </p>
+              <div class="d-flex align-items-center gap-3 pt-3 border-top border-theme mt-auto">
+                <img src="assets/img/testimonials/parent-nathaniel.jpg" width="42" height="42" class="rounded-circle shadow-xs" style="object-fit: cover;" alt="Nathaniel Brooks">
+                <div>
+                  <div class="fw-bold small text-heading">Nathaniel Brooks</div>
+                  <small class="text-primary"><i class="bi bi-patch-check-fill"></i> Father of Oliver (Age 9)</small>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Testimonial 3: Christian Zhao -->
+          <div class="col-md-6 col-lg-4 d-flex">
+            <div class="testimonial-card w-100 h-100 d-flex flex-column bg-surface rounded-theme-xl p-4 border border-theme shadow-sm">
+              <div class="d-flex justify-content-between align-items-center mb-3">
+                <div class="star-rating text-warning">
+                  <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                </div>
+                <span class="badge bg-primary-soft text-primary rounded-pill px-2.5 py-1 small fw-bold">Future Executives</span>
+              </div>
+              <h3 class="h6 fw-bold text-heading mb-2">"Accepted Early Decision to Harvard"</h3>
+              <p class="text-body-secondary small mb-4 flex-grow-1">
+                "The executive track taught me how to articulate my passion in high-stakes admissions interviews. The filmed TEDx keynote gave me irreplaceable confidence that still guides me today."
+              </p>
+              <div class="d-flex align-items-center gap-3 pt-3 border-top border-theme mt-auto">
+                <img src="assets/img/testimonials/student-christian.jpg" width="42" height="42" class="rounded-circle shadow-xs" style="object-fit: cover;" alt="Christian Zhao">
+                <div>
+                  <div class="fw-bold small text-heading">Christian Zhao</div>
+                  <small class="text-primary"><i class="bi bi-award-fill"></i> Harvard Debate Scholar (Age 17)</small>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 5. INTERACTIVE PROGRAM PREVIEW & CTA BANNER -->
+    <section class="py-6 bg-surface">
+      <div class="container">
+        <div class="card vx-cta-banner text-white p-4 p-lg-5">
+          <div class="cta-watermark-icon">
+            <i class="bi bi-trophy-fill"></i>
+          </div>
+          <div class="row align-items-center g-4 position-relative z-1">
+            <div class="col-lg-8">
+              <div class="d-inline-flex align-items-center gap-2 px-3 py-1 rounded-pill mb-3" style="background: rgba(255, 255, 255, 0.12); border: 1px solid rgba(255, 255, 255, 0.22); backdrop-filter: blur(8px);">
+                <span class="pulse-indicator"></span>
+                <span class="fw-bold small text-white text-uppercase" style="letter-spacing: 0.08em; font-size: 0.72rem;">Limited Summer Cohort Enrollment &bull; 1:6 Coach Ratio</span>
+              </div>
+              <h2 class="display-5 fw-extrabold text-white mb-3 font-heading lh-sm">
+                Ready to Watch Your Child Speak With <span style="background: linear-gradient(135deg, #FFFFFF 0%, #C7D2FE 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">Unstoppable Conviction?</span>
+              </h2>
+              <p class="lead text-white-50 mb-4" style="max-width: 640px;">
+                Small student-to-mentor ratios ensure customized coaching, intensive daily stage time, and broadcast-grade video analysis for every single camper.
+              </p>
+              <div class="d-flex flex-wrap gap-3 mb-4 text-white-50 small">
+                <span class="d-flex align-items-center gap-2 text-white"><i class="bi bi-patch-check-fill" style="color: #A5B4FC;"></i> 1:6 Individualized Ratio</span>
+                <span class="d-flex align-items-center gap-2 text-white"><i class="bi bi-camera-video-fill" style="color: #A5B4FC;"></i> 4K Video Analysis &amp; Film</span>
+                <span class="d-flex align-items-center gap-2 text-white"><i class="bi bi-shield-check" style="color: #A5B4FC;"></i> 100% Week 1 Money-Back</span>
+              </div>
+              <div class="d-flex flex-column flex-sm-row align-items-sm-center gap-3">
+                <a href="contact.html" class="btn-vx btn-vx-white btn-vx-lg shadow-lg fw-bold d-inline-flex align-items-center gap-2">
+                  <span>Schedule A Free Assessment Call</span>
+                  <i class="bi bi-arrow-right fs-5"></i>
+                </a>
+                <span class="small text-white-50 d-inline-flex align-items-center gap-1">
+                  <i class="bi bi-shield-lock-fill text-white"></i> 15-min zoom discovery &bull; Zero obligation
+                </span>
+              </div>
+            </div>
+            <div class="col-lg-4">
+              <div class="guarantee-vault-card">
+                <div class="rounded-theme overflow-hidden mb-3" style="height: 140px;">
+                  <img src="assets/img/camp/cta-alumni.jpg" alt="VoxLeaders Alumni Celebration" class="w-100 h-100" style="object-fit: cover;">
+                </div>
+                <div class="guarantee-crest-badge">
+                  <i class="bi bi-shield-fill-check"></i>
+                </div>
+                <h3 class="h5 fw-bold mb-2 guarantee-title">100% Satisfaction Guarantee</h3>
+                <p class="small guarantee-desc mb-3">If your child doesn't feel substantially more confident after Week 1, get a full refund with zero questions asked.</p>
+                <div class="pt-3 border-top border-secondary border-opacity-10 guarantee-divider">
+                  <div class="d-flex justify-content-center align-items-center gap-1 text-warning mb-1">
+                    <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                    <span class="ms-1 fw-bold guarantee-rating small">4.98 / 5.0</span>
+                  </div>
+                  <small class="guarantee-alumni d-block">Admissions Quality Verified &bull; 500+ Alumni</small>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+
+      <!-- =================================================================
+       FOOTER
+  ================================================================== -->
+  <footer class="vx-footer">
+    <div class="container">
+      <div class="row g-4 align-items-start">
+        
+        <!-- Column 1: Brand Info & Socials -->
+        <div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
+          <div class="footer-brand-wrap">
+            <a href="index.html" class="footer-brand-logo mb-3">
+              <img src="assets/img/brand/logo-white.svg" alt="VoxLeaders Logo" height="38">
+            </a>
+            <p class="footer-brand-desc small mb-4">
+              Empowering young minds with executive confidence, public speaking mastery &amp; debate skills.
+            </p>
+            <div class="d-flex align-items-center gap-2">
+              <a href="https://www.instagram.com/accounts/login/" target="_blank" rel="noopener noreferrer" class="footer-social-btn" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+              <a href="https://www.facebook.com/login/" target="_blank" rel="noopener noreferrer" class="footer-social-btn" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+              <a href="https://www.linkedin.com/login" target="_blank" rel="noopener noreferrer" class="footer-social-btn" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+              <a href="https://x.com/" target="_blank" rel="noopener noreferrer" class="footer-social-btn" aria-label="X (Twitter)"><i class="fab fa-x-twitter"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Column 2: Navigation -->
+        <div class="col-lg-2 col-md-6 mb-4 mb-lg-0">
+          <div class="footer-col-title">NAVIGATION</div>
+          <ul class="list-unstyled mb-0 d-flex flex-column">
+            <li><a href="index.html" class="footer-link">Home</a></li>
+            <li><a href="about.html" class="footer-link">About Us</a></li>
+            <li><a href="programs.html" class="footer-link">Programs</a></li>
+            <li><a href="testimonials.html" class="footer-link">Testimonials</a></li>
+            <li><a href="pricing.html" class="footer-link">Pricing Tiers</a></li>
+            <li><a href="blog.html" class="footer-link">Blog &amp; Journal</a></li>
+            <li><a href="contact.html" class="footer-link">Contact Sales</a></li>
+          </ul>
+        </div>
+
+        <!-- Column 3: Camp Standards -->
+        <div class="col-lg-4 col-md-6 mb-4 mb-lg-0">
+          <div class="footer-col-title">CAMP STANDARDS</div>
+          <ul class="list-unstyled mb-0 d-flex flex-column">
+            <li class="footer-sla-item"><span class="sla-highlight">1:6 Coach Ratio</span> <span class="sla-desc">Certified Speech Mentors</span></li>
+            <li class="footer-sla-item"><span class="sla-highlight">Daily Stage Time</span> <span class="sla-desc">Live Adjudicated Practice</span></li>
+            <li class="footer-sla-item"><span class="sla-highlight">4K HD Video</span> <span class="sla-desc">Gala Showcase Recordings</span></li>
+            <li class="footer-sla-item"><span class="sla-highlight">Ages 7&ndash;18</span> <span class="sla-desc">Junior, Teen &amp; Exec Tracks</span></li>
+            <li class="footer-sla-item"><span class="sla-highlight">5 Regional Hubs</span> <span class="sla-desc">Speech &amp; Debate Campuses</span></li>
+          </ul>
+        </div>
+
+        <!-- Column 4: Camp Admissions -->
+        <div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
+          <div class="footer-col-title">CAMP ADMISSIONS</div>
+          <ul class="list-unstyled mb-3 d-flex flex-column">
+            <li class="footer-contact-item">
+              <i class="bi bi-envelope"></i>
+              <a href="mailto:admissions@voxleaders.org">admissions@voxleaders.org</a>
+            </li>
+            <li class="footer-contact-item">
+              <i class="bi bi-telephone"></i>
+              <a href="tel:+18005558695">+1 (800) 555-VOXLEAD</a>
+            </li>
+            <li class="footer-contact-item">
+              <i class="bi bi-geo-alt"></i>
+              <span>500 Leadership Way, Boston, MA</span>
+            </li>
+          </ul>
+          <a href="contact.html" class="btn-footer-cta">Connect Admissions Team</a>
+        </div>
+
+      </div>
+
+      <!-- Centered Copyright -->
+      <div class="vx-footer-bottom text-center">
+        &copy; 2026 VoxLeaders Youth Academy Ltd. All rights reserved.
+      </div>
+    </div>
+  </footer>
+
+  <!-- Back to Top Button -->
+<!-- Bootstrap JS Bundle -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  
+  <!-- Master JavaScript Bundle -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+</html>
