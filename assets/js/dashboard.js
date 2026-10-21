@@ -6,6 +6,39 @@
 document.addEventListener('DOMContentLoaded', () => {
   'use strict';
 
+  // Display the profile that was created in the Parent Portal registration form.
+  const storedProfile = localStorage.getItem('vox_parent_profile');
+  if (storedProfile) {
+    try {
+      const profile = JSON.parse(storedProfile);
+      if (profile.parentName && profile.childName) {
+        const childFirstName = profile.childName.split(/\s+/)[0];
+        const textNodes = [];
+        const walker = document.createTreeWalker(document.body, NodeFilter.SHOW_TEXT);
+        while (walker.nextNode()) textNodes.push(walker.currentNode);
+
+        textNodes.forEach(node => {
+          node.nodeValue = node.nodeValue
+            .replace(/RACHEL ADAMS/g, profile.parentName.toUpperCase())
+            .replace(/Rachel Adams/g, profile.parentName)
+            .replace(/Maya Lin/g, profile.childName)
+            .replace(/\bMaya\b/g, childFirstName);
+        });
+
+        document.querySelectorAll('.user-avatar-ring').forEach(avatar => {
+          avatar.alt = profile.parentName;
+          const profileLink = avatar.closest('a');
+          if (profileLink) profileLink.title = `${profile.parentName} Profile`;
+        });
+        document.querySelectorAll('.dashboard-search-input').forEach(input => {
+          input.placeholder = `Global search (e.g. ${childFirstName}, coach, speech syllabus)...`;
+        });
+      }
+    } catch {
+      localStorage.removeItem('vox_parent_profile');
+    }
+  }
+
   // 1. CHART.JS THEME DETECTOR
   function isDarkMode() {
     return document.documentElement.getAttribute('data-bs-theme') === 'dark';

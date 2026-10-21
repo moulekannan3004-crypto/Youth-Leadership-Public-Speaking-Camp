@@ -127,31 +127,31 @@
 
               <!-- REGISTER TAB -->
               <div class="tab-pane fade" id="registerTabContent" role="tabpanel">
-                <form class="needs-validation-vx" novalidate onsubmit="event.preventDefault(); showToast('Account Created!', 'Your parent account has been successfully registered. Opening dashboard...', 'success'); setTimeout(() => { window.location.href='dashboard-parent.html'; }, 900);">
+                <form id="registerForm" class="needs-validation-vx" novalidate>
                   <div class="mb-3">
                     <label class="form-label small fw-bold">Parent Full Name</label>
-                    <input type="text" class="form-control form-control-vx input-name-only" placeholder="e.g. Sarah Jenkins" pattern="^[A-Za-z\s\-']+$" required>
+                    <input type="text" id="registerParentName" class="form-control form-control-vx input-name-only" placeholder="e.g. Sarah Jenkins" pattern="^[A-Za-z\s\-']+$" required>
                   </div>
 
                   <div class="row g-2 mb-3">
                     <div class="col-8">
                       <label class="form-label small fw-bold">Child Name</label>
-                      <input type="text" class="form-control form-control-vx input-name-only" placeholder="e.g. Lucas Jenkins" pattern="^[A-Za-z\s\-']+$" required>
+                      <input type="text" id="registerChildName" class="form-control form-control-vx input-name-only" placeholder="e.g. Lucas Jenkins" pattern="^[A-Za-z\s\-']+$" required>
                     </div>
                     <div class="col-4">
                       <label class="form-label small fw-bold">Child Age</label>
-                      <input type="number" class="form-control form-control-vx" placeholder="13" min="7" max="18" required>
+                      <input type="number" id="registerChildAge" class="form-control form-control-vx" placeholder="13" min="7" max="18" required>
                     </div>
                   </div>
 
                   <div class="mb-3">
                     <label class="form-label small fw-bold">Email Address</label>
-                    <input type="email" class="form-control form-control-vx" placeholder="sarah@example.com" required>
+                    <input type="email" id="registerEmail" class="form-control form-control-vx" placeholder="sarah@example.com" required>
                   </div>
 
                   <div class="mb-3">
                     <label class="form-label small fw-bold">Create Password</label>
-                    <input type="password" class="form-control form-control-vx" placeholder="At least 8 characters" required>
+                    <input type="password" class="form-control form-control-vx" placeholder="At least 8 characters, including a number and symbol" minlength="8" pattern="(?=.*[A-Za-z])(?=.*\d)(?=.*[^A-Za-z0-9\s]).{8,}" title="Use at least 8 characters, including a letter, number, and special character." required>
                   </div>
 
                   <div class="form-check mb-4">

@@ -852,3 +852,12 @@
   }
 }
 
+/* Keep achievement symbols centered within every badge card. */
+.achievement-badge-icon {
+  display: block;
+  width: 84px;
+  height: 84px;
+  margin: 0 auto;
+  object-fit: contain;
+}
+

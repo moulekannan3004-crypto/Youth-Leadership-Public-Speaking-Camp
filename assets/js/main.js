@@ -398,9 +398,32 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   });
 
-  // 8. FORM VALIDATION & INTERACTIVE TOAST
+  // 8. NEW PARENT ACCOUNT REGISTRATION
+  const registerForm = document.getElementById('registerForm');
+  if (registerForm) {
+    registerForm.addEventListener('submit', (e) => {
+      e.preventDefault();
+      if (!registerForm.checkValidity()) {
+        registerForm.classList.add('was-validated');
+        return;
+      }
+
+      const profile = {
+        parentName: document.getElementById('registerParentName').value.trim(),
+        childName: document.getElementById('registerChildName').value.trim(),
+        childAge: document.getElementById('registerChildAge').value.trim(),
+        email: document.getElementById('registerEmail').value.trim()
+      };
+      localStorage.setItem('vox_parent_profile', JSON.stringify(profile));
+      showToast('Account Created!', 'Your parent account has been registered. Opening your dashboard...', 'success');
+      setTimeout(() => { window.location.href = 'dashboard-parent.html'; }, 900);
+    });
+  }
+
+  // 9. FORM VALIDATION & INTERACTIVE TOAST
   const forms = document.querySelectorAll('.needs-validation-vx');
   forms.forEach(form => {
+    if (form.id === 'registerForm') return;
     form.addEventListener('submit', (e) => {
       e.preventDefault();
       if (!form.checkValidity()) {
