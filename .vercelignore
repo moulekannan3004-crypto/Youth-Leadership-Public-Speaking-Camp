@@ -1,0 +1,6 @@
+.header-check
+__pycache__
+.git
+.vercel
+scratch/
+*.py
