@@ -6983,8 +6983,26 @@ html, body {
   color: #CBD5E1 !important;
 }
 
-[data-bs-theme="dark"] .pricing-card .opacity-50 {
-  opacity: 0.72 !important;
+.pricing-card ul li {
+  color: #1E293B !important;
+  font-weight: 500;
+}
+
+.pricing-card ul li .bi-dash-circle {
+  color: #94A3B8 !important;
+}
+
+.pricing-card .opacity-50,
+.pricing-card li.opacity-50 {
+  opacity: 1 !important;
+}
+
+[data-bs-theme="dark"] .pricing-card ul li {
+  color: #E2E8F0 !important;
+}
+
+[data-bs-theme="dark"] .pricing-card ul li .bi-dash-circle {
+  color: #64748B !important;
 }
 
 [data-bs-theme="dark"] .vx-editorial-card .vx-editorial-title,
