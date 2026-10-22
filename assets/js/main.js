@@ -398,32 +398,166 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   });
 
-  // 8. NEW PARENT ACCOUNT REGISTRATION
+  // 8. PARENT PORTAL AUTHENTICATION & MULTI-ACCOUNT MANAGEMENT
+  const DEFAULT_PARENT_PROFILE = {
+    parentName: 'Rachel Adams',
+    childName: 'Maya Lin',
+    childAge: '14',
+    email: 'rachel.adams@example.com'
+  };
+
+  function getVoxAccounts() {
+    try {
+      return JSON.parse(localStorage.getItem('vox_accounts') || '{}');
+    } catch {
+      return {};
+    }
+  }
+
+  function saveVoxAccount(profile) {
+    const accounts = getVoxAccounts();
+    accounts[profile.email.toLowerCase()] = profile;
+    localStorage.setItem('vox_accounts', JSON.stringify(accounts));
+  }
+
+  // Auth Page Logic
+  if (window.location.pathname.includes('auth.html') || document.getElementById('signinForm') || document.getElementById('registerForm')) {
+    // Check if redirected from dashboard with intent to register
+    const authIntent = localStorage.getItem('vox_auth_intent');
+    if (authIntent === 'new') {
+      localStorage.removeItem('vox_auth_intent');
+      const regTab = document.getElementById('register-tab');
+      if (regTab) regTab.click();
+    }
+
+    // Reflect current active account on auth page
+    const storedActive = localStorage.getItem('vox_parent_profile');
+    const authCurrentName = document.getElementById('authCurrentAccountName');
+    const signinEmail = document.getElementById('signinEmail');
+    if (storedActive) {
+      try {
+        const activeProf = JSON.parse(storedActive);
+        if (activeProf && activeProf.parentName) {
+          if (authCurrentName) {
+            authCurrentName.textContent = `${activeProf.parentName} (${activeProf.email || ''})`;
+          }
+          if (signinEmail && activeProf.email) {
+            signinEmail.value = activeProf.email;
+          }
+        }
+      } catch (e) {}
+    }
+
+    // Reset Demo Button
+    const resetDemoBtn = document.getElementById('authSwitchToDemoBtn');
+    if (resetDemoBtn) {
+      resetDemoBtn.addEventListener('click', () => {
+        localStorage.setItem('vox_parent_profile', JSON.stringify(DEFAULT_PARENT_PROFILE));
+        localStorage.setItem('vox_active_user', DEFAULT_PARENT_PROFILE.email);
+        if (signinEmail) signinEmail.value = DEFAULT_PARENT_PROFILE.email;
+        if (authCurrentName) authCurrentName.textContent = 'Rachel Adams (Default)';
+        showToast('Demo Account Selected', 'Switched to Rachel Adams demo profile.', 'info');
+      });
+    }
+
+    // Google / Apple Simulated One-Click Sign-Ins
+    const handleSocialAuth = (providerName, defaultParent, defaultChild) => {
+      const profile = {
+        parentName: defaultParent,
+        childName: defaultChild,
+        childAge: '13',
+        email: `${defaultParent.toLowerCase().replace(/\s+/g, '.')}@example.com`
+      };
+      saveVoxAccount(profile);
+      localStorage.setItem('vox_parent_profile', JSON.stringify(profile));
+      localStorage.setItem('vox_active_user', profile.email);
+      showToast(`${providerName} Sign-In`, `Signed in as ${defaultParent}. Redirecting to dashboard...`, 'success');
+      setTimeout(() => { window.location.href = 'dashboard-parent.html'; }, 800);
+    };
+
+    document.getElementById('googleSignInBtn')?.addEventListener('click', () => handleSocialAuth('Google', 'Sarah Jenkins', 'Lucas Jenkins'));
+    document.getElementById('appleSignInBtn')?.addEventListener('click', () => handleSocialAuth('Apple', 'David Miller', 'Sophie Miller'));
+    document.getElementById('googleSignUpBtn')?.addEventListener('click', () => handleSocialAuth('Google', 'Sarah Jenkins', 'Lucas Jenkins'));
+    document.getElementById('appleSignUpBtn')?.addEventListener('click', () => handleSocialAuth('Apple', 'David Miller', 'Sophie Miller'));
+  }
+
+  // Register Form Submission
   const registerForm = document.getElementById('registerForm');
   if (registerForm) {
     registerForm.addEventListener('submit', (e) => {
       e.preventDefault();
       if (!registerForm.checkValidity()) {
         registerForm.classList.add('was-validated');
+        showToast('Form Incomplete', 'Please check that all fields are filled with at least 6 password characters.', 'warning');
         return;
       }
 
-      const profile = {
-        parentName: document.getElementById('registerParentName').value.trim(),
-        childName: document.getElementById('registerChildName').value.trim(),
-        childAge: document.getElementById('registerChildAge').value.trim(),
-        email: document.getElementById('registerEmail').value.trim()
+      const pName = document.getElementById('registerParentName').value.trim();
+      const cName = document.getElementById('registerChildName').value.trim() || `${pName.split(' ')[0]}'s Child`;
+      const cAge = document.getElementById('registerChildAge').value.trim() || '13';
+      const email = document.getElementById('registerEmail').value.trim().toLowerCase();
+
+      const newProfile = {
+        parentName: pName,
+        childName: cName,
+        childAge: cAge,
+        email: email
       };
+
+      // Save to registered accounts & activate
+      saveVoxAccount(newProfile);
+      localStorage.setItem('vox_parent_profile', JSON.stringify(newProfile));
+      localStorage.setItem('vox_active_user', email);
+
+      showToast('Account Created!', `Welcome, ${pName}! Opening your custom command center...`, 'success');
+      setTimeout(() => { window.location.href = 'dashboard-parent.html'; }, 800);
+    });
+  }
+
+  // Sign In Form Submission
+  const signinForm = document.getElementById('signinForm');
+  if (signinForm) {
+    signinForm.addEventListener('submit', (e) => {
+      e.preventDefault();
+      if (!signinForm.checkValidity()) {
+        signinForm.classList.add('was-validated');
+        return;
+      }
+
+      const email = (document.getElementById('signinEmail')?.value || '').trim().toLowerCase();
+      const accounts = getVoxAccounts();
+      let profile = accounts[email];
+
+      if (!profile) {
+        if (email === 'rachel.adams@example.com' || !email) {
+          profile = DEFAULT_PARENT_PROFILE;
+        } else {
+          // If a new email was entered directly in sign-in, create clean parent profile
+          const namePart = email.split('@')[0].replace(/[._\-]/g, ' ');
+          const formattedName = namePart.split(' ').map(w => w.charAt(0).toUpperCase() + w.slice(1)).join(' ');
+          profile = {
+            parentName: formattedName || 'Parent User',
+            childName: `${(formattedName || 'Student').split(' ')[0]} Child`,
+            childAge: '14',
+            email: email
+          };
+          saveVoxAccount(profile);
+        }
+      }
+
+      // Set active profile & user
       localStorage.setItem('vox_parent_profile', JSON.stringify(profile));
-      showToast('Account Created!', 'Your parent account has been registered. Opening your dashboard...', 'success');
-      setTimeout(() => { window.location.href = 'dashboard-parent.html'; }, 900);
+      localStorage.setItem('vox_active_user', profile.email);
+
+      showToast('Sign In Successful', `Welcome back, ${profile.parentName}! Redirecting to dashboard...`, 'success');
+      setTimeout(() => { window.location.href = 'dashboard-parent.html'; }, 800);
     });
   }
 
   // 9. FORM VALIDATION & INTERACTIVE TOAST
   const forms = document.querySelectorAll('.needs-validation-vx');
   forms.forEach(form => {
-    if (form.id === 'registerForm') return;
+    if (form.id === 'registerForm' || form.id === 'signinForm') return;
     form.addEventListener('submit', (e) => {
       e.preventDefault();
       if (!form.checkValidity()) {

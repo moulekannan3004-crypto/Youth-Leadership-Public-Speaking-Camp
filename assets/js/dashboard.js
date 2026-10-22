@@ -6,38 +6,140 @@
 document.addEventListener('DOMContentLoaded', () => {
   'use strict';
 
-  // Display the profile that was created in the Parent Portal registration form.
-  const storedProfile = localStorage.getItem('vox_parent_profile');
-  if (storedProfile) {
-    try {
-      const profile = JSON.parse(storedProfile);
-      if (profile.parentName && profile.childName) {
-        const childFirstName = profile.childName.split(/\s+/)[0];
-        const textNodes = [];
-        const walker = document.createTreeWalker(document.body, NodeFilter.SHOW_TEXT);
-        while (walker.nextNode()) textNodes.push(walker.currentNode);
-
-        textNodes.forEach(node => {
-          node.nodeValue = node.nodeValue
-            .replace(/RACHEL ADAMS/g, profile.parentName.toUpperCase())
-            .replace(/Rachel Adams/g, profile.parentName)
-            .replace(/Maya Lin/g, profile.childName)
-            .replace(/\bMaya\b/g, childFirstName);
-        });
-
-        document.querySelectorAll('.user-avatar-ring').forEach(avatar => {
-          avatar.alt = profile.parentName;
-          const profileLink = avatar.closest('a');
-          if (profileLink) profileLink.title = `${profile.parentName} Profile`;
-        });
-        document.querySelectorAll('.dashboard-search-input').forEach(input => {
-          input.placeholder = `Global search (e.g. ${childFirstName}, coach, speech syllabus)...`;
-        });
-      }
-    } catch {
-      localStorage.removeItem('vox_parent_profile');
+  // 0. ACTIVE PARENT PROFILE HYDRATION & MULTI-ACCOUNT SYNC
+  function getActiveParentProfile() {
+    const stored = localStorage.getItem('vox_parent_profile');
+    if (stored) {
+      try {
+        const parsed = JSON.parse(stored);
+        if (parsed && parsed.parentName) return parsed;
+      } catch (e) {}
     }
+    return {
+      parentName: 'Rachel Adams',
+      childName: 'Maya Lin',
+      childAge: '14',
+      email: 'rachel.adams@example.com'
+    };
   }
+
+  function applyActiveDashboardProfile() {
+    const profile = getActiveParentProfile();
+    const parentName = profile.parentName;
+    const childName = profile.childName || `${parentName.split(' ')[0]}'s Child`;
+    const childFirstName = childName.split(/\s+/)[0];
+
+    // 1. Direct targeted element replacements for 100% guarantee
+    document.querySelectorAll('.status-pill-gold').forEach(pill => {
+      pill.innerHTML = `<i class="bi bi-shield-check"></i> PARENT ACCESS: ${parentName.toUpperCase()}`;
+    });
+
+    const welcomeH1 = document.querySelector('.dashboard-welcome-card h1');
+    if (welcomeH1) {
+      welcomeH1.innerHTML = `Good evening, ${parentName} 👋`;
+    }
+
+    const welcomeP = document.querySelector('.dashboard-welcome-card p');
+    if (welcomeP) {
+      welcomeP.innerHTML = welcomeP.innerHTML
+        .replace(/Rachel Adams/g, parentName)
+        .replace(/Maya Lin/g, childName)
+        .replace(/\bMaya\b/g, childFirstName);
+    }
+
+    // 2. Active Account Badges in Topbars & Dropdowns
+    document.querySelectorAll('.active-account-name-badge').forEach(el => {
+      el.textContent = parentName;
+    });
+    const emailBadge = document.getElementById('activeAccountEmailBadge');
+    if (emailBadge && profile.email) {
+      emailBadge.textContent = profile.email;
+    }
+
+    // 3. TreeWalker text node replacements across the whole DOM
+    const textNodes = [];
+    const walker = document.createTreeWalker(document.body, NodeFilter.SHOW_TEXT);
+    while (walker.nextNode()) textNodes.push(walker.currentNode);
+
+    textNodes.forEach(node => {
+      if (node.nodeValue) {
+        node.nodeValue = node.nodeValue
+          .replace(/RACHEL ADAMS/g, parentName.toUpperCase())
+          .replace(/Rachel Adams/g, parentName)
+          .replace(/Maya Lin/g, childName)
+          .replace(/\bMaya\b/g, childFirstName);
+      }
+    });
+
+    // 4. Update avatar rings and profile links with interactive account dropdown
+    document.querySelectorAll('.user-avatar-ring').forEach(avatar => {
+      avatar.alt = parentName;
+      const profileLink = avatar.closest('a');
+      if (profileLink && !profileLink.classList.contains('account-switcher-init')) {
+        profileLink.classList.add('account-switcher-init');
+        profileLink.title = `${parentName} Profile (${profile.email || ''})`;
+        profileLink.setAttribute('role', 'button');
+        profileLink.setAttribute('data-bs-toggle', 'dropdown');
+        profileLink.setAttribute('aria-expanded', 'false');
+        profileLink.href = 'javascript:void(0);';
+
+        const parentWrapper = profileLink.parentElement;
+        if (parentWrapper) {
+          const dropdownContainer = document.createElement('div');
+          dropdownContainer.className = 'dropdown d-inline-block ms-1';
+          parentWrapper.insertBefore(dropdownContainer, profileLink);
+          dropdownContainer.appendChild(profileLink);
+
+          const menuHtml = `
+            <ul class="dropdown-menu dropdown-menu-end shadow-sm border border-theme p-2" style="min-width: 240px;">
+              <li><h6 class="dropdown-header small text-uppercase fw-bold text-muted px-2 py-1">Active Parent Account</h6></li>
+              <li class="px-2 py-1.5 mb-2 bg-surface-alt rounded border border-theme">
+                <div class="fw-bold small text-heading active-account-name-badge">${parentName}</div>
+                <div class="text-muted text-truncate" style="font-size: 0.75rem;" id="activeAccountEmailBadge">${profile.email || 'rachel.adams@example.com'}</div>
+              </li>
+              <li>
+                <a class="dropdown-item small rounded py-1.5" href="auth.html" onclick="localStorage.setItem('vox_auth_intent', 'new');">
+                  <i class="bi bi-person-plus text-primary me-2"></i> Register New Account
+                </a>
+              </li>
+              <li>
+                <a class="dropdown-item small rounded py-1.5" href="auth.html">
+                  <i class="bi bi-arrow-left-right text-info me-2"></i> Switch Account
+                </a>
+              </li>
+              <li><hr class="dropdown-divider my-1"></li>
+              <li>
+                <a class="dropdown-item small rounded py-1.5 text-danger" href="auth.html" onclick="localStorage.removeItem('vox_parent_profile'); localStorage.removeItem('vox_active_user');">
+                  <i class="bi bi-box-arrow-right me-2"></i> Sign Out
+                </a>
+              </li>
+            </ul>
+          `;
+          dropdownContainer.insertAdjacentHTML('beforeend', menuHtml);
+        }
+      }
+    });
+
+    // 5. Update dashboard search placeholder
+    document.querySelectorAll('.dashboard-search-input').forEach(input => {
+      input.placeholder = `Global search (e.g. ${childFirstName}, coach, speech syllabus)...`;
+    });
+
+    // 6. Safe Sidebar & Topbar Logout Handlers
+    document.querySelectorAll('.btn-sidebar-logout').forEach(btn => {
+      btn.onclick = (e) => {
+        e.preventDefault();
+        localStorage.removeItem('vox_parent_profile');
+        localStorage.removeItem('vox_active_user');
+        if (typeof showToast === 'function') {
+          showToast('Logged Out', 'You have been safely signed out. Redirecting to login...', 'info');
+        }
+        setTimeout(() => { window.location.href = 'auth.html'; }, 600);
+      };
+    });
+  }
+
+  applyActiveDashboardProfile();
 
   // 1. CHART.JS THEME DETECTOR
   function isDarkMode() {

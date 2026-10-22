@@ -52,6 +52,22 @@
               <p class="small text-body-secondary mb-0">Track your child's speaking progress, view session milestones, and download camp recordings.</p>
             </div>
 
+            <!-- Active Account Indicator / Quick Switch -->
+            <div id="authAccountSwitcher" class="p-2.5 mb-4 bg-surface-alt rounded-theme border border-theme d-flex align-items-center justify-content-between small">
+              <div class="d-flex align-items-center gap-2 overflow-hidden">
+                <div class="rounded-circle bg-primary-soft text-primary d-flex align-items-center justify-content-center flex-shrink-0" style="width: 30px; height: 30px;">
+                  <i class="bi bi-person-fill"></i>
+                </div>
+                <div class="text-truncate">
+                  <span class="text-muted d-block" style="font-size: 0.7rem; line-height: 1.2;">ACTIVE ACCOUNT SESSION</span>
+                  <strong id="authCurrentAccountName" class="text-heading">Rachel Adams (Default)</strong>
+                </div>
+              </div>
+              <button type="button" id="authSwitchToDemoBtn" class="btn btn-sm btn-outline-primary py-1 px-2.5 rounded-pill text-nowrap fw-bold" style="font-size: 0.75rem;">
+                <i class="bi bi-arrow-counterclockwise me-1"></i>Reset Demo
+              </button>
+            </div>
+
             <!-- Tab Switcher (Sign In vs Register) -->
             <ul class="nav nav-pills nav-fill mb-4 p-1 bg-surface-alt rounded-pill border border-theme" id="authTabs" role="tablist">
               <li class="nav-item">
@@ -69,10 +85,10 @@
             <div class="tab-content" id="authTabContent">
               <!-- SIGN IN TAB -->
               <div class="tab-pane fade show active" id="signinTabContent" role="tabpanel">
-                <form class="needs-validation-vx" novalidate onsubmit="event.preventDefault(); showToast('Sign In Successful', 'Welcome back, Rachel Adams! Redirecting to parent dashboard...', 'success'); setTimeout(() => { window.location.href='dashboard-parent.html'; }, 900);">
+                <form id="signinForm" class="needs-validation-vx" novalidate>
                   <div class="mb-3">
                     <label class="form-label small fw-bold">Parent Email Address</label>
-                    <input type="email" class="form-control form-control-vx" placeholder="rachel.adams@example.com" value="rachel.adams@example.com" required>
+                    <input type="email" id="signinEmail" class="form-control form-control-vx" placeholder="rachel.adams@example.com" value="rachel.adams@example.com" required>
                   </div>
 
                   <div class="mb-3">
@@ -106,13 +122,13 @@
 
                   <div class="row g-2 mb-3">
                     <div class="col-6">
-                      <button type="button" onclick="showToast('Google Sign-In', 'Google authentication connected. Signed in to Parent Portal successfully.', 'success');" class="btn btn-vx-outline w-100 d-flex align-items-center justify-content-center gap-2 py-2.5 small fw-bold rounded-pill">
+                      <button type="button" id="googleSignInBtn" class="btn btn-vx-outline w-100 d-flex align-items-center justify-content-center gap-2 py-2.5 small fw-bold rounded-pill">
                         <i class="fab fa-google text-danger fs-6"></i>
                         <span>Google</span>
                       </button>
                     </div>
                     <div class="col-6">
-                      <button type="button" onclick="showToast('Apple ID', 'Apple ID connected. Signed in to Parent Portal successfully.', 'success');" class="btn btn-vx-outline w-100 d-flex align-items-center justify-content-center gap-2 py-2.5 small fw-bold rounded-pill">
+                      <button type="button" id="appleSignInBtn" class="btn btn-vx-outline w-100 d-flex align-items-center justify-content-center gap-2 py-2.5 small fw-bold rounded-pill">
                         <i class="fab fa-apple fs-6 text-heading"></i>
                         <span>Apple</span>
                       </button>
@@ -130,13 +146,13 @@
                 <form id="registerForm" class="needs-validation-vx" novalidate>
                   <div class="mb-3">
                     <label class="form-label small fw-bold">Parent Full Name</label>
-                    <input type="text" id="registerParentName" class="form-control form-control-vx input-name-only" placeholder="e.g. Sarah Jenkins" pattern="^[A-Za-z\s\-']+$" required>
+                    <input type="text" id="registerParentName" class="form-control form-control-vx" placeholder="e.g. Sarah Jenkins" required>
                   </div>
 
                   <div class="row g-2 mb-3">
                     <div class="col-8">
                       <label class="form-label small fw-bold">Child Name</label>
-                      <input type="text" id="registerChildName" class="form-control form-control-vx input-name-only" placeholder="e.g. Lucas Jenkins" pattern="^[A-Za-z\s\-']+$" required>
+                      <input type="text" id="registerChildName" class="form-control form-control-vx" placeholder="e.g. Lucas Jenkins" required>
                     </div>
                     <div class="col-4">
                       <label class="form-label small fw-bold">Child Age</label>
@@ -151,7 +167,7 @@
 
                   <div class="mb-3">
                     <label class="form-label small fw-bold">Create Password</label>
-                    <input type="password" class="form-control form-control-vx" placeholder="At least 8 characters, including a number and symbol" minlength="8" pattern="(?=.*[A-Za-z])(?=.*\d)(?=.*[^A-Za-z0-9\s]).{8,}" title="Use at least 8 characters, including a letter, number, and special character." required>
+                    <input type="password" id="registerPassword" class="form-control form-control-vx" placeholder="At least 6 characters" minlength="6" required>
                   </div>
 
                   <div class="form-check mb-4">
@@ -172,13 +188,13 @@
 
                   <div class="row g-2 mb-3">
                     <div class="col-6">
-                      <button type="button" onclick="showToast('Google Sign-Up', 'Google profile verified. Parent account registered successfully.', 'success');" class="btn btn-vx-outline w-100 d-flex align-items-center justify-content-center gap-2 py-2.5 small fw-bold rounded-pill">
+                      <button type="button" id="googleSignUpBtn" class="btn btn-vx-outline w-100 d-flex align-items-center justify-content-center gap-2 py-2.5 small fw-bold rounded-pill">
                         <i class="fab fa-google text-danger fs-6"></i>
                         <span>Google</span>
                       </button>
                     </div>
                     <div class="col-6">
-                      <button type="button" onclick="showToast('Apple Sign-Up', 'Apple ID verified. Parent account registered successfully.', 'success');" class="btn btn-vx-outline w-100 d-flex align-items-center justify-content-center gap-2 py-2.5 small fw-bold rounded-pill">
+                      <button type="button" id="appleSignUpBtn" class="btn btn-vx-outline w-100 d-flex align-items-center justify-content-center gap-2 py-2.5 small fw-bold rounded-pill">
                         <i class="fab fa-apple fs-6 text-heading"></i>
                         <span>Apple</span>
                       </button>
