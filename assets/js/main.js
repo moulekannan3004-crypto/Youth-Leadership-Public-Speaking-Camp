@@ -479,6 +479,83 @@ document.addEventListener('DOMContentLoaded', () => {
     document.getElementById('appleSignInBtn')?.addEventListener('click', () => handleSocialAuth('Apple', 'David Miller', 'Sophie Miller'));
     document.getElementById('googleSignUpBtn')?.addEventListener('click', () => handleSocialAuth('Google', 'Sarah Jenkins', 'Lucas Jenkins'));
     document.getElementById('appleSignUpBtn')?.addEventListener('click', () => handleSocialAuth('Apple', 'David Miller', 'Sophie Miller'));
+
+    // Real-time Strong Password Validator (Supports & validates numericals & special characters)
+    const regPassword = document.getElementById('registerPassword');
+    const strengthBar = document.getElementById('passwordStrengthBar');
+    const strengthLabel = document.getElementById('passwordStrengthLabel');
+    const ruleLength = document.getElementById('ruleLength');
+    const ruleNumber = document.getElementById('ruleNumber');
+    const ruleSpecial = document.getElementById('ruleSpecial');
+    const togglePassBtn = document.getElementById('toggleRegisterPassword');
+
+    if (togglePassBtn && regPassword) {
+      togglePassBtn.addEventListener('click', () => {
+        const isPass = regPassword.type === 'password';
+        regPassword.type = isPass ? 'text' : 'password';
+        const icon = togglePassBtn.querySelector('i');
+        if (icon) {
+          icon.className = isPass ? 'bi bi-eye-slash fs-5' : 'bi bi-eye fs-5';
+        }
+      });
+    }
+
+    function validateStrongPassword(val) {
+      const hasLen = (val || '').length >= 8;
+      const hasNum = /\d/.test(val || '');
+      const hasSpl = /[^A-Za-z0-9]/.test(val || '');
+
+      const setRuleState = (el, passed, text) => {
+        if (!el) return;
+        if (passed) {
+          el.className = 'badge bg-success-subtle text-success border border-success-subtle py-1 px-2';
+          el.innerHTML = `<i class="bi bi-check-circle-fill me-1"></i>${text}`;
+        } else {
+          el.className = 'badge bg-surface-alt border text-muted py-1 px-2';
+          el.innerHTML = `<i class="bi bi-circle me-1"></i>${text}`;
+        }
+      };
+
+      setRuleState(ruleLength, hasLen, '8+ Characters');
+      setRuleState(ruleNumber, hasNum, 'Numericals (0-9)');
+      setRuleState(ruleSpecial, hasSpl, 'Special Character (!@#$%)');
+
+      if (!val) {
+        if (strengthBar) { strengthBar.style.width = '0%'; strengthBar.className = 'progress-bar bg-danger'; }
+        if (strengthLabel) { strengthLabel.className = 'badge bg-secondary-subtle text-secondary small py-0.5 px-2'; strengthLabel.textContent = 'Strength'; }
+        if (regPassword) regPassword.setCustomValidity('Password is required.');
+        return false;
+      }
+
+      const isStrong = hasLen && hasNum && hasSpl;
+
+      if (isStrong) {
+        if (strengthBar) { strengthBar.style.width = '100%'; strengthBar.className = 'progress-bar bg-success'; }
+        if (strengthLabel) { strengthLabel.className = 'badge bg-success-subtle text-success small py-0.5 px-2'; strengthLabel.textContent = 'Strong ✓'; }
+        if (regPassword) regPassword.setCustomValidity('');
+        return true;
+      } else {
+        const count = (hasLen ? 1 : 0) + (hasNum ? 1 : 0) + (hasSpl ? 1 : 0);
+        if (count === 2) {
+          if (strengthBar) { strengthBar.style.width = '65%'; strengthBar.className = 'progress-bar bg-warning'; }
+          if (strengthLabel) { strengthLabel.className = 'badge bg-warning-subtle text-warning-emphasis small py-0.5 px-2'; strengthLabel.textContent = 'Medium'; }
+        } else {
+          if (strengthBar) { strengthBar.style.width = '30%'; strengthBar.className = 'progress-bar bg-danger'; }
+          if (strengthLabel) { strengthLabel.className = 'badge bg-danger-subtle text-danger small py-0.5 px-2'; strengthLabel.textContent = 'Weak'; }
+        }
+        if (regPassword) regPassword.setCustomValidity('Password must be at least 8 characters and include numericals (0-9) and special characters (!@#$%).');
+        return false;
+      }
+    }
+
+    if (regPassword) {
+      regPassword.addEventListener('input', () => {
+        validateStrongPassword(regPassword.value);
+      });
+    }
+
+    // Expose for submit handler
+    window.voxValidateStrongPassword = validateStrongPassword;
   }
 
   // Register Form Submission
@@ -486,9 +563,14 @@ document.addEventListener('DOMContentLoaded', () => {
   if (registerForm) {
     registerForm.addEventListener('submit', (e) => {
       e.preventDefault();
-      if (!registerForm.checkValidity()) {
+
+      const passVal = document.getElementById('registerPassword')?.value || '';
+      const isPassValid = typeof window.voxValidateStrongPassword === 'function' ? 
+        window.voxValidateStrongPassword(passVal) : (passVal.length >= 8 && /\d/.test(passVal) && /[^A-Za-z0-9]/.test(passVal));
+
+      if (!registerForm.checkValidity() || !isPassValid) {
         registerForm.classList.add('was-validated');
-        showToast('Form Incomplete', 'Please check that all fields are filled with at least 6 password characters.', 'warning');
+        showToast('Strong Password Required', 'Please ensure password has 8+ characters with numericals (0-9) and special characters (!@#$).', 'warning');
         return;
       }
 
