@@ -861,3 +861,34 @@
   object-fit: contain;
 }
 
+/* Badge card equal alignment rules */
+.badge-card-title {
+  min-height: 3.25rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin-bottom: 0.5rem;
+}
+
+.badge-card-desc {
+  min-height: 5.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.badge-criterion-box {
+  min-height: 5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-size: 0.8125rem;
+  line-height: 1.35;
+  width: 100%;
+}
+
+
