@@ -6974,6 +6974,35 @@ html, body {
   height: 100%;
 }
 
+/* Curriculum Roadmap Tabs: Guaranteed Single-Line Alignment & Non-wrapping Track */
+#curriculumTabs {
+  display: flex !important;
+  flex-wrap: nowrap !important;
+  align-items: center;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+  gap: 0.65rem;
+  padding-bottom: 0.35rem;
+  margin-bottom: 1.5rem !important;
+}
+
+#curriculumTabs::-webkit-scrollbar {
+  display: none;
+}
+
+#curriculumTabs .nav-item {
+  flex: 0 0 auto;
+}
+
+#curriculumTabs .filter-btn-pill {
+  font-size: 0.84rem;
+  padding: 0.45rem 1rem;
+  white-space: nowrap !important;
+  line-height: 1.35;
+}
+
 .pricing-card.featured {
   transform: none;
 }
