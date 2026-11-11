@@ -15,7 +15,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800;900&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,300&display=swap" rel="stylesheet">
   
-  <link rel="stylesheet" href="assets/css/style.css?v=8.1">
+  <link rel="stylesheet" href="assets/css/style.css?v=10.0">
   <link rel="stylesheet" href="assets/css/dashboard.css">
   <link rel="stylesheet" href="assets/css/rtl.css">
 </head>
@@ -86,7 +86,7 @@
       <!-- Topbar Header (Modularis Reference Style) -->
       <header class="dashboard-topbar">
         <div class="d-flex align-items-center gap-3">
-          <button class="btn btn-sm btn-vx-outline d-lg-none" id="sidebarToggleBtn" aria-label="Toggle Mobile Menu">
+          <button class="btn-vx btn-vx-sm btn-vx-outline d-lg-none" id="sidebarToggleBtn" aria-label="Toggle Mobile Menu">
             <i class="bi bi-list fs-5"></i>
           </button>
 
@@ -147,10 +147,10 @@
             </div>
             <div class="col-lg-4 text-lg-end">
               <div class="d-flex flex-wrap gap-2 justify-content-lg-end">
-                <button class="btn-vx btn-vx-primary py-2.5 px-4 rounded-pill fw-bold" onclick="showToast('Diagnostic Export', 'Generating detailed PDF Skill Rubric Report for Maya Lin...', 'info');">
+                <button class="btn-vx btn-vx-primary" onclick="showToast('Diagnostic Export', 'Generating detailed PDF Skill Rubric Report for Maya Lin...', 'info');">
                   <i class="bi bi-download me-1"></i> EXPORT REPORT
                 </button>
-                <a href="dashboard-parent.html" class="btn btn-vx-outline py-2.5 px-3 rounded-pill fw-bold">
+                <a href="dashboard-parent.html" class="btn-vx btn-vx-outline">
                   <i class="bi bi-speedometer2 me-1"></i> OVERVIEW
                 </a>
               </div>
@@ -343,7 +343,7 @@
             <div class="text-md-end flex-shrink-0">
               <div class="display-6 fw-extrabold text-primary font-heading mb-1">94 <small class="fs-6 text-muted">/100</small></div>
               <div class="small fw-bold text-success mb-3"><i class="bi bi-star-fill text-warning"></i> Tournament Honor Roll</div>
-              <a href="contact.html" class="btn btn-sm btn-vx-outline">
+              <a href="contact.html" class="btn-vx btn-vx-sm btn-vx-outline">
                 <i class="bi bi-chat-dots me-1"></i> Reply to Coach
               </a>
             </div>
@@ -389,7 +389,7 @@
               <span class="small fw-bold">Total Deposit:</span>
               <span class="h4 fw-bold text-primary mb-0 font-heading" id="checkoutTotalDisplay">$850</span>
             </div>
-            <button type="submit" class="btn-vx btn-vx-primary w-100 py-3">Confirm Enrollment & Pay</button>
+            <button type="submit" class="btn-vx btn-vx-primary w-100">Confirm Enrollment & Pay</button>
           </form>
         </div>
       </div>
@@ -401,5 +401,9 @@
   <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.2/dist/chart.umd.min.js"></script>
   <script src="assets/js/main.js"></script>
   <script src="assets/js/dashboard.js"></script>
+  <!-- Floating Back to Top Button -->
+  <button type="button" id="vxBackToTop" class="vx-back-to-top" aria-label="Back to Top" title="Back to Top">
+    <i class="bi bi-chevron-up"></i>
+  </button>
 </body>
 </html>

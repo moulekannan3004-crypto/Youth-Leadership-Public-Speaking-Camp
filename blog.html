@@ -15,7 +15,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800;900&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,300&display=swap" rel="stylesheet">
   
-  <link rel="stylesheet" href="assets/css/style.css?v=8.6">
+  <link rel="stylesheet" href="assets/css/style.css?v=10.0">
   <link rel="stylesheet" href="assets/css/rtl.css">
 </head>
 <body class="page-blog">
@@ -112,6 +112,12 @@
               <i class="bi bi-box-arrow-in-right login-icon"></i>
               <span>Login</span>
             </a>
+
+            <!-- Primary CTA Button -->
+            <a href="pricing.html#enroll" class="btn-vx-cta-pill">
+              <span>Enroll Now</span>
+              <i class="bi bi-arrow-right"></i>
+            </a>
           </div>
         </div>
       </div>
@@ -124,11 +130,17 @@
     <section class="hero-wrapper page-header-hero blog-header-bg text-center page-header-solid-bg">
       <div class="hero-glow-bg"></div>
       <div class="container position-relative z-2">
-        <div class="badge-pill-soft mb-3"><i class="bi bi-journal-bookmark-fill me-1 text-primary"></i> The Oratory Journal &bull; Volume 4</div>
-        <h1 class="display-4 fw-extrabold mb-3">Ideas That Build Tomorrow's Voices</h1>
-        <p class="lead text-body-secondary mx-auto mb-3" style="max-width: 700px;">
+        <div class="badge-pill-soft mb-2"><i class="bi bi-journal-bookmark-fill me-1 text-primary"></i> The Oratory Journal &bull; Volume 4</div>
+        <h1 class="display-4 fw-extrabold mb-1" style="font-size: clamp(1.85rem, 3.2vw, 2.65rem); line-height: 1.2;">Ideas That Build Tomorrow's Voices</h1>
+        <div class="hero-accent-divider"></div>
+        <p class="lead text-body-secondary mx-auto mb-3" style="max-width: 700px; font-size: 0.94rem; line-height: 1.45;">
           Practical guides for parents, tournament debate frameworks for teens, and peer-reviewed educational research on building self-efficacy and unshakeable confidence in youth.
         </p>
+        <div class="d-flex flex-wrap justify-content-center gap-2">
+          <span class="proof-tag-pill"><i class="bi bi-lightbulb-fill text-primary"></i> Debate Frameworks</span>
+          <span class="proof-tag-pill"><i class="bi bi-shield-fill text-primary"></i> Overcoming Stage Fright</span>
+          <span class="proof-tag-pill"><i class="bi bi-mortarboard-fill text-primary"></i> College Admissions</span>
+        </div>
       </div>
     </section>
 
@@ -182,6 +194,37 @@
               <div class="editorial-stat-chip">
                 <i class="bi bi-star-fill text-warning me-1"></i> 4.9/5 Rating &bull; 1,840+ Parent Reads
               </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Search Bar & Category Filters -->
+        <div class="row justify-content-center mb-5" id="blogFilterSection">
+          <div class="col-lg-8 col-xl-7 mb-4">
+            <form id="blogSearchForm" class="w-100" onsubmit="return false;">
+              <div class="search-pill-wrapper input-group p-1 border rounded-pill bg-surface shadow-sm">
+                <span class="input-group-text bg-transparent border-0 ps-3 pe-2 text-primary">
+                  <i class="bi bi-search fs-6"></i>
+                </span>
+                <input type="text" id="blogSearchInput" class="form-control border-0 bg-transparent px-2" placeholder="Search articles by topic, author, or keyword (e.g. Anxiety, MUN, Rebuttal)..." autocomplete="off" aria-label="Search Articles">
+                <button type="button" id="clearBlogSearchBtn" class="btn btn-link text-muted border-0 p-0 me-2 d-none" aria-label="Clear Search" style="text-decoration: none;">
+                  <i class="bi bi-x-circle-fill fs-5"></i>
+                </button>
+                <button type="submit" id="blogSearchBtn" class="btn btn-vx-primary rounded-pill px-4 py-2">
+                  <span>Search</span>
+                </button>
+              </div>
+            </form>
+          </div>
+          <div class="col-12 text-center">
+            <!-- Category Pills -->
+            <div class="filter-pills-track" id="blogFilterTrack">
+              <button type="button" class="filter-btn-pill active" data-blog-filter="all">All Articles (9)</button>
+              <button type="button" class="filter-btn-pill" data-blog-filter="psychology">Stage Psychology</button>
+              <button type="button" class="filter-btn-pill" data-blog-filter="mechanics">Voice &amp; Delivery</button>
+              <button type="button" class="filter-btn-pill" data-blog-filter="debate">Debate &amp; MUN</button>
+              <button type="button" class="filter-btn-pill" data-blog-filter="college">Admissions &amp; Forensics</button>
+              <button type="button" class="filter-btn-pill" data-blog-filter="parenting">Parenting Guides</button>
             </div>
           </div>
         </div>
@@ -527,33 +570,54 @@
           </div>
         </div>
 
-        <!-- Editorial Lead Magnet Banner (Playbook Download) -->
-        <div class="blog-playbook-card mt-5 mb-5">
-          <div class="row align-items-center g-4">
+        <!-- ===================================================================
+         CLOSING SECTION: EDITORIAL LEAD MAGNET & 24-PAGE PLAYBOOK
+         =================================================================== -->
+        <div class="vx-cta-card-spotlight p-4 p-md-5 mt-5">
+          <div class="row align-items-center g-4 g-xl-5">
             <div class="col-lg-7">
-              <span class="blog-playbook-badge mb-3"><i class="bi bi-file-earmark-pdf-fill me-1"></i> Free Resource Kit</span>
-              <h2 class="h3 fw-extrabold mb-2 text-heading">The 2026 Youth Oratory Diagnostic Playbook</h2>
-              <p class="text-body-secondary mb-3">
-                Download our 24-page PDF featuring our 15-point vocal clarity scoring rubric, filler word elimination drills, and 10 impromptu dinner-table debate prompts.
+              <span class="badge bg-white text-primary rounded-pill px-3 py-2 fw-bold text-uppercase letter-spacing-1 mb-3">
+                <i class="bi bi-file-earmark-pdf-fill me-1 text-danger"></i> Free 24-Page Parent Playbook
+              </span>
+              <h2 class="display-6 fw-extrabold text-white mb-3 font-heading">
+                The 2026 Youth Oratory Diagnostic Playbook
+              </h2>
+              <p class="text-white-50 lead mb-4">
+                Download our comprehensive PDF featuring our Ivy League 15-point vocal clarity scoring rubric, filler word elimination drills, and 10 impromptu dinner-table debate prompts to practice at home.
               </p>
-              <div class="d-flex align-items-center gap-3 text-body-secondary small">
-                <span><i class="bi bi-check-circle-fill text-success me-1"></i> Instant PDF Download</span>
-                <span><i class="bi bi-star-fill text-warning me-1"></i> 4.9/5 Rating</span>
-                <span><i class="bi bi-people-fill text-primary me-1"></i> 3,400+ Parents</span>
+
+              <div class="d-flex flex-wrap align-items-center gap-3 text-white-50 small mb-4">
+                <span class="d-flex align-items-center gap-1"><i class="bi bi-check-circle-fill text-success"></i> Instant PDF Download</span>
+                <span class="d-flex align-items-center gap-1"><i class="bi bi-star-fill text-warning"></i> 4.9/5 Parent Rating</span>
+                <span class="d-flex align-items-center gap-1"><i class="bi bi-people-fill text-info"></i> 14,200+ Downloads</span>
               </div>
-            </div>
-            <div class="col-lg-5">
-              <form class="p-3 bg-surface rounded-theme border shadow-sm" onsubmit="event.preventDefault(); showToast('Success', 'Diagnostic Playbook PDF sent to your email!', 'success'); this.reset();">
-                <label class="form-label small fw-bold text-heading mb-2">Get Instant Access (Free PDF)</label>
-                <div class="input-group mb-2">
-                  <span class="input-group-text bg-transparent border-end-0 text-muted"><i class="bi bi-envelope"></i></span>
-                  <input type="email" class="form-control border-start-0" placeholder="Enter parent/guardian email" required>
+
+              <form class="p-3 rounded-theme bg-white bg-opacity-10 border border-white border-opacity-10" onsubmit="event.preventDefault(); showToast('Success', 'Diagnostic Playbook PDF sent to your email!', 'success'); this.reset();">
+                <label class="form-label small fw-bold text-white mb-2">Send Free PDF Directly to Parent / Guardian Email</label>
+                <div class="d-flex flex-column flex-sm-row gap-2">
+                  <div class="input-group">
+                    <span class="input-group-text bg-white bg-opacity-10 border-white border-opacity-20 text-white"><i class="bi bi-envelope"></i></span>
+                    <input type="email" class="form-control bg-white bg-opacity-10 border-white border-opacity-20 text-white placeholder-white-50" placeholder="Enter parent email address" required style="color: #fff;">
+                  </div>
+                  <button type="submit" class="btn-vx btn-vx-white flex-shrink-0">
+                    <i class="bi bi-download me-1"></i>
+                    <span>Download Free PDF</span>
+                  </button>
                 </div>
-                <button type="submit" class="btn-vx btn-vx-primary w-100 justify-content-center">
-                  <i class="bi bi-download"></i>
-                  <span>Download Free Playbook</span>
-                </button>
               </form>
+            </div>
+
+            <div class="col-lg-5">
+              <div class="vx-cta-photo-frame" style="height: 350px;">
+                <img src="assets/img/about/youth-voice-delegates.jpg" alt="Youth Voice Oratory Guide" loading="lazy">
+                <div class="vx-cta-badge-overlay-top">
+                  <i class="bi bi-journal-bookmark-fill me-1"></i> 2026 Edition
+                </div>
+                <div class="vx-cta-badge-overlay">
+                  <div class="fw-bold text-white small">Includes Ivy League Scoring Rubric</div>
+                  <div class="text-xs text-white-50 mt-1">15 vocal metrics &bull; 10 dinner-table debate drills &bull; Free instant download</div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -634,9 +698,23 @@
 
       </div>
 
-      <!-- Centered Copyright -->
-      <div class="vx-footer-bottom text-center">
-        &copy; 2026 VoxLeaders Youth Academy Ltd. All rights reserved.
+            <!-- Polished Sub-Footer Bottom Bar -->
+      <div class="vx-footer-bottom d-flex flex-column flex-md-row justify-content-between align-items-center gap-3">
+        <div class="small text-secondary text-center text-md-start">
+          &copy; 2026 VoxLeaders Youth Leadership Academy. All rights reserved. &bull; Accredited Forensic Pedagogy.
+        </div>
+        <div class="d-flex align-items-center flex-wrap justify-content-center gap-3 small">
+          <a href="documentation.html" class="footer-legal-link">Privacy Policy</a>
+          <span class="text-secondary opacity-50">&bull;</span>
+          <a href="documentation.html" class="footer-legal-link">Terms of Service</a>
+          <span class="text-secondary opacity-50">&bull;</span>
+          <a href="documentation.html" class="footer-legal-link">Child Safety Charter</a>
+          <span class="text-secondary opacity-50">&bull;</span>
+          <span class="badge bg-success bg-opacity-10 text-success border border-success border-opacity-25 rounded-pill px-2.5 py-1">
+            <span class="d-inline-block rounded-circle bg-success me-1 animate-pulse" style="width: 6px; height: 6px;"></span>
+            Summer 2026 Open
+          </span>
+        </div>
       </div>
     </div>
   </footer>
@@ -659,5 +737,106 @@
       }
     };
   </script>
+  <script>
+    // Interactive Blog Search & Category Filtering Controller
+    (function() {
+      const searchInput = document.getElementById('blogSearchInput');
+      const searchForm = document.getElementById('blogSearchForm');
+      const searchBtn = document.getElementById('blogSearchBtn');
+      const clearBtn = document.getElementById('clearBlogSearchBtn');
+      const noResults = document.getElementById('noBlogResults');
+      const filterBtns = document.querySelectorAll('#blogFilterTrack .filter-btn-pill');
+      const blogCards = document.querySelectorAll('#blogGrid .blog-item-col');
+
+      function filterArticles() {
+        const query = searchInput ? searchInput.value.toLowerCase().trim() : '';
+        const activeBtn = document.querySelector('#blogFilterTrack .filter-btn-pill.active');
+        const activeCategory = activeBtn ? activeBtn.getAttribute('data-blog-filter') : 'all';
+
+        if (clearBtn) {
+          if (query.length > 0) {
+            clearBtn.classList.remove('d-none');
+          } else {
+            clearBtn.classList.add('d-none');
+          }
+        }
+
+        let visibleCount = 0;
+
+        blogCards.forEach(col => {
+          const catAttr = (col.getAttribute('data-category') || '').toLowerCase();
+          const tagAttr = (col.getAttribute('data-tag') || '').toLowerCase();
+          const title = (col.querySelector('.vx-editorial-title')?.textContent || '').toLowerCase();
+          const excerpt = (col.querySelector('.vx-editorial-excerpt')?.textContent || '').toLowerCase();
+          const author = (col.querySelector('.vx-editorial-author-name')?.textContent || '').toLowerCase();
+
+          const matchesCategory = (activeCategory === 'all') || catAttr.includes(activeCategory);
+          const matchesQuery = !query || title.includes(query) || excerpt.includes(query) || author.includes(query) || tagAttr.includes(query);
+
+          if (matchesCategory && matchesQuery) {
+            col.style.display = '';
+            visibleCount++;
+          } else {
+            col.style.display = 'none';
+          }
+        });
+
+        if (noResults) {
+          if (visibleCount === 0) {
+            noResults.classList.remove('d-none');
+          } else {
+            noResults.classList.add('d-none');
+          }
+        }
+      }
+
+      if (searchInput) {
+        searchInput.addEventListener('input', filterArticles);
+      }
+      if (searchForm) {
+        searchForm.addEventListener('submit', (e) => {
+          e.preventDefault();
+          filterArticles();
+        });
+      }
+      if (searchBtn) {
+        searchBtn.addEventListener('click', (e) => {
+          e.preventDefault();
+          filterArticles();
+        });
+      }
+      if (clearBtn) {
+        clearBtn.addEventListener('click', () => {
+          searchInput.value = '';
+          searchInput.focus();
+          filterArticles();
+        });
+      }
+
+      filterBtns.forEach(btn => {
+        btn.addEventListener('click', () => {
+          filterBtns.forEach(b => b.classList.remove('active'));
+          btn.classList.add('active');
+          filterArticles();
+        });
+      });
+
+      window.resetBlogFilters = function() {
+        if (searchInput) searchInput.value = '';
+        filterBtns.forEach(b => {
+          if (b.getAttribute('data-blog-filter') === 'all') {
+            b.classList.add('active');
+          } else {
+            b.classList.remove('active');
+          }
+        });
+        filterArticles();
+      };
+    })();
+  </script>
+  <!-- Floating Back to Top Button -->
+  <button type="button" id="vxBackToTop" class="vx-back-to-top" aria-label="Back to Top" title="Back to Top">
+    <i class="bi bi-chevron-up"></i>
+  </button>
 </body>
 </html>

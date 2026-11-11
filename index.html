@@ -23,7 +23,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800;900&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,300&display=swap" rel="stylesheet">
   
 <!-- Master Stylesheet & RTL Support -->
-  <link rel="stylesheet" href="assets/css/style.css?v=8.6">
+  <link rel="stylesheet" href="assets/css/style.css?v=10.0">
   <link rel="stylesheet" href="assets/css/rtl.css">
 </head>
 <body class="page-home-camp">
@@ -122,6 +122,12 @@
               <i class="bi bi-box-arrow-in-right login-icon"></i>
               <span>Login</span>
             </a>
+
+            <!-- Primary CTA Button -->
+            <a href="pricing.html#enroll" class="btn-vx-cta-pill">
+              <span>Enroll Now</span>
+              <i class="bi bi-arrow-right"></i>
+            </a>
           </div>
         </div>
       </div>
@@ -162,6 +168,10 @@
                   <a href="programs.html" class="btn-vx btn-vx-primary btn-vx-lg">
                     <i class="bi bi-compass"></i>
                     <span>Explore Programs</span>
+                  </a>
+                  <a href="contact.html" class="btn-vx btn-vx-outline btn-vx-outline-hero btn-vx-lg">
+                    <i class="bi bi-calendar-check"></i>
+                    <span>Book Free Assessment</span>
                   </a>
                 </div>
               </div>
@@ -621,7 +631,7 @@
             <p class="lead text-body-secondary mb-0">See how our public speaking &amp; debate camp unlocked lifetime leadership outcomes for young orators.</p>
           </div>
           <div>
-            <a href="testimonials.html" class="btn-vx btn-vx-outline btn-vx-sm d-inline-flex align-items-center gap-2">
+            <a href="testimonials.html" class="btn-vx btn-vx-outline d-inline-flex align-items-center gap-2">
               <span>View All Testimonials &amp; Videos</span>
               <i class="bi bi-arrow-right"></i>
             </a>
@@ -730,9 +740,10 @@
                   <span>Schedule A Free Assessment Call</span>
                   <i class="bi bi-arrow-right fs-5"></i>
                 </a>
-                <span class="small text-white-50 d-inline-flex align-items-center gap-1">
-                  <i class="bi bi-shield-lock-fill text-white"></i> 15-min zoom discovery &bull; Zero obligation
-                </span>
+                <a href="programs.html" class="btn-vx btn-vx-outline btn-vx-lg text-white border-white border-opacity-50 fw-bold d-inline-flex align-items-center gap-2">
+                  <i class="bi bi-compass"></i>
+                  <span>Explore All Cohorts</span>
+                </a>
               </div>
             </div>
             <div class="col-lg-4">
@@ -835,9 +846,23 @@
 
       </div>
 
-      <!-- Centered Copyright -->
-      <div class="vx-footer-bottom text-center">
-        &copy; 2026 VoxLeaders Youth Academy Ltd. All rights reserved.
+            <!-- Polished Sub-Footer Bottom Bar -->
+      <div class="vx-footer-bottom d-flex flex-column flex-md-row justify-content-between align-items-center gap-3">
+        <div class="small text-secondary text-center text-md-start">
+          &copy; 2026 VoxLeaders Youth Leadership Academy. All rights reserved. &bull; Accredited Forensic Pedagogy.
+        </div>
+        <div class="d-flex align-items-center flex-wrap justify-content-center gap-3 small">
+          <a href="documentation.html" class="footer-legal-link">Privacy Policy</a>
+          <span class="text-secondary opacity-50">&bull;</span>
+          <a href="documentation.html" class="footer-legal-link">Terms of Service</a>
+          <span class="text-secondary opacity-50">&bull;</span>
+          <a href="documentation.html" class="footer-legal-link">Child Safety Charter</a>
+          <span class="text-secondary opacity-50">&bull;</span>
+          <span class="badge bg-success bg-opacity-10 text-success border border-success border-opacity-25 rounded-pill px-2.5 py-1">
+            <span class="d-inline-block rounded-circle bg-success me-1 animate-pulse" style="width: 6px; height: 6px;"></span>
+            Summer 2026 Open
+          </span>
+        </div>
       </div>
     </div>
   </footer>
@@ -849,5 +874,9 @@
   <!-- Master JavaScript Bundle -->
   <script src="assets/js/main.js"></script>
 
+  <!-- Floating Back to Top Button -->
+  <button type="button" id="vxBackToTop" class="vx-back-to-top" aria-label="Back to Top" title="Back to Top">
+    <i class="bi bi-chevron-up"></i>
+  </button>
 </body>
 </html>

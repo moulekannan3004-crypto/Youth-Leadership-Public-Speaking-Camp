@@ -797,4 +797,22 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
+
+  // Floating Back to Top Handler
+  const vxBackToTop = document.getElementById('vxBackToTop');
+  if (vxBackToTop) {
+    window.addEventListener('scroll', () => {
+      if (window.scrollY > 350) {
+        vxBackToTop.classList.add('active');
+      } else {
+        vxBackToTop.classList.remove('active');
+      }
+    }, { passive: true });
+
+    vxBackToTop.addEventListener('click', (e) => {
+      e.preventDefault();
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+  }
+
 });
