@@ -891,4 +891,134 @@
   width: 100%;
 }
 
+/* Table Action Button single-line lock */
+.dashboard-content-area .table td,
+.dashboard-content-area .table th {
+  vertical-align: middle !important;
+}
+
+.dashboard-content-area .table td.text-end .btn-link,
+.dashboard-content-area .table td .btn-link,
+.dashboard-content-area .table td button {
+  white-space: nowrap !important;
+  display: inline-flex !important;
+  align-items: center !important;
+  gap: 0.35rem !important;
+}
+
+/* ===================================================================
+   1024px VIEWPORT ALIGNMENT SPEC (992px - 1199.98px)
+   Targets tablet landscape & compact desktop displays (~1024px) where
+   the 250px-270px sidebar constrains main dashboard container width.
+   =================================================================== */
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  /* 1. Harmonized sidebar width at 1024px */
+  .dashboard-sidebar {
+    width: 250px !important;
+  }
+  .dashboard-main {
+    margin-left: 250px !important;
+  }
+  [dir="rtl"] .dashboard-main {
+    margin-left: 0 !important;
+    margin-right: 250px !important;
+  }
+
+  .dashboard-content-area {
+    padding: 1.5rem 1.15rem !important;
+  }
+
+  /* 2. Welcome Card Action Buttons - Prevent horizontal bleed / overflow at 1024px */
+  .dashboard-welcome-card {
+    padding: 1.6rem 1.4rem !important;
+  }
+  .dashboard-welcome-card .row {
+    row-gap: 1.25rem !important;
+  }
+  .dashboard-welcome-card .col-lg-8,
+  .dashboard-welcome-card .col-lg-4 {
+    flex: 0 0 100% !important;
+    max-width: 100% !important;
+    width: 100% !important;
+    text-align: left !important;
+  }
+  .dashboard-welcome-card .col-lg-4 {
+    margin-top: 0.25rem !important;
+  }
+  .dashboard-welcome-card .col-lg-4 .d-flex,
+  .dashboard-welcome-card .col-lg-4 > div {
+    justify-content: flex-start !important;
+  }
+  [dir="rtl"] .dashboard-welcome-card .col-lg-8,
+  [dir="rtl"] .dashboard-welcome-card .col-lg-4 {
+    text-align: right !important;
+  }
+  [dir="rtl"] .dashboard-welcome-card .col-lg-4 .d-flex,
+  [dir="rtl"] .dashboard-welcome-card .col-lg-4 > div {
+    justify-content: flex-start !important;
+  }
+
+  /* 3. Program Cards Grid & Header Collision Fix at 1024px */
+  .dashboard-content-area .row.g-4 {
+    --bs-gutter-x: 0.85rem !important;
+  }
+  .dashboard-content-area .col-md-4 .p-3 {
+    padding: 1rem 0.65rem !important;
+  }
+  .dashboard-content-area .col-md-4 .badge {
+    font-size: 0.68rem !important;
+    padding: 0.22rem 0.42rem !important;
+    white-space: nowrap !important;
+    letter-spacing: -0.01em !important;
+  }
+  .dashboard-content-area .col-md-4 .h6.fw-bold.text-primary.mb-0 {
+    font-size: 0.90rem !important;
+    white-space: nowrap !important;
+    margin-left: auto !important;
+  }
+  [dir="rtl"] .dashboard-content-area .col-md-4 .h6.fw-bold.text-primary.mb-0 {
+    margin-left: 0 !important;
+    margin-right: auto !important;
+  }
+  .dashboard-content-area .col-md-4 .d-flex.justify-content-between.align-items-start,
+  .dashboard-content-area .col-md-4 .d-flex.justify-content-between.align-items-center {
+    display: flex !important;
+    justify-content: space-between !important;
+    align-items: center !important;
+    flex-wrap: nowrap !important;
+    gap: 0.35rem !important;
+  }
+
+  /* 4. Table Spacing & Action Button No-Wrap at 1024px */
+  .dashboard-content-area .card {
+    padding: 1.25rem 1rem !important;
+  }
+  .dashboard-content-area .table th,
+  .dashboard-content-area .table td {
+    padding: 0.65rem 0.42rem !important;
+    font-size: 0.80rem !important;
+    white-space: nowrap !important;
+    vertical-align: middle !important;
+  }
+  .dashboard-content-area .table th:first-child,
+  .dashboard-content-area .table td:first-child {
+    padding-left: 0.25rem !important;
+  }
+  .dashboard-content-area .table th:last-child,
+  .dashboard-content-area .table td:last-child {
+    padding-right: 0.25rem !important;
+  }
+  .dashboard-content-area .table td .btn,
+  .dashboard-content-area .table td .btn-link,
+  .dashboard-content-area .table td button {
+    white-space: nowrap !important;
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: flex-end !important;
+    gap: 0.35rem !important;
+    font-size: 0.80rem !important;
+  }
+}
+
+
 
