@@ -16,7 +16,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800;900&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,300&display=swap" rel="stylesheet">
   
-  <link rel="stylesheet" href="assets/css/style.css?v=10.0">
+  <link rel="stylesheet" href="assets/css/style.css?v=11.0">
   <link rel="stylesheet" href="assets/css/rtl.css">
 </head>
 <body class="page-home-business">
@@ -134,7 +134,7 @@
       <div class="hero-glow-bg"></div>
       <div class="container position-relative z-1">
         <div class="row align-items-stretch g-4 g-xl-5">
-          <div class="col-lg-6 d-flex flex-column justify-content-between">
+          <div class="col-lg-7 col-xl-7 d-flex flex-column justify-content-between">
             <div>
               <div class="badge-pill-soft mb-3">
                 <i class="bi bi-cpu-fill text-primary"></i>
@@ -154,7 +154,7 @@
               <form class="needs-validation-vx mb-3" novalidate>
                 <div class="input-group p-1 border rounded-pill bg-surface shadow-sm" style="max-width: 520px;">
                   <input type="email" class="form-control border-0 bg-transparent px-3" placeholder="Enter your institutional email..." required>
-                  <button class="btn-vx btn-vx-primary" type="submit" style="padding: 0.55rem 1.4rem; min-height: 40px; font-size: 0.88rem;">
+                  <button class="btn-vx btn-vx-primary" type="submit">
                     <span>Start Free Trial</span>
                     <i class="bi bi-arrow-right"></i>
                   </button>
@@ -162,8 +162,8 @@
                 <div class="form-text small mt-2">14-day free institutional trial &bull; No credit card required &bull; FERPA compliant</div>
               </form>
 
-              <!-- CTA Button Group (Consistent with Home 1) -->
-              <div class="d-flex flex-wrap align-items-center gap-3 mb-4">
+              <!-- CTA Button Group (Side-by-Side: View Institutional Tiers on Right-Hand Side) -->
+              <div class="hero-cta-btn-pair mb-4">
                 <a href="contact.html" class="btn-vx btn-vx-primary btn-vx-lg">
                   <i class="bi bi-calendar-check"></i>
                   <span>Request District Consultation</span>
@@ -195,7 +195,7 @@
           </div>
 
           <!-- Product Dashboard Illustration (Equally Matched Height & Baseline Alignment) -->
-          <div class="col-lg-6 d-flex">
+          <div class="col-lg-5 col-xl-5 d-flex">
             <div class="hero-visual-card hero-dashboard-window h-100 w-100 position-relative">
               <!-- Window Chrome Bar -->
               <div class="dashboard-window-bar">
@@ -827,7 +827,7 @@
         <!-- Institutional Spotlight Card -->
         <div class="card border-0 bg-surface rounded-theme-xl overflow-hidden shadow-sm mb-5">
           <div class="row g-0 align-items-stretch">
-            <div class="col-lg-6 d-flex">
+            <div class="col-lg-5 d-flex">
               <div class="position-relative w-100 h-100" style="min-height: 380px;">
                 <img src="assets/img/business/turnkey-school-curriculum.png" alt="Turnkey Oratory Curriculum for Schools &amp; Leagues - Collaborative Classroom Workshop" class="w-100 h-100" style="object-fit: cover; object-position: center;">
                 <div class="position-absolute bottom-0 start-0 m-3">
@@ -835,7 +835,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-lg-6 p-4 p-md-5 d-flex flex-column justify-content-center">
+            <div class="col-lg-7 p-4 p-xl-5 d-flex flex-column justify-content-center">
               <div class="badge-pill-soft mb-3">Enterprise &amp; District Partnerships</div>
               <h3 class="h3 fw-bold font-heading mb-3">Turnkey Oratory Curriculum for Schools &amp; Leagues</h3>
               <p class="text-body-secondary mb-3">
@@ -847,9 +847,15 @@
                 <div class="col-sm-6 small text-body-secondary"><i class="bi bi-check-circle-fill text-primary me-2"></i>Certified Mentor Staffing</div>
                 <div class="col-sm-6 small text-body-secondary"><i class="bi bi-check-circle-fill text-primary me-2"></i>Speech Benchmarking AI</div>
               </div>
-              <div class="d-flex flex-wrap align-items-center gap-3">
-                <a href="contact.html" class="btn-vx btn-vx-primary"><i class="bi bi-calendar-check me-2"></i>Request District Consultation</a>
-                <a href="pricing.html" class="btn-vx btn-vx-outline">View Institutional Tiers</a>
+              <div class="hero-cta-btn-pair">
+                <a href="contact.html" class="btn-vx btn-vx-primary">
+                  <i class="bi bi-calendar-check"></i>
+                  <span>Request District Consultation</span>
+                </a>
+                <a href="pricing.html" class="btn-vx btn-vx-outline">
+                  <i class="bi bi-layers"></i>
+                  <span>View Institutional Tiers</span>
+                </a>
               </div>
             </div>
           </div>
@@ -890,10 +896,12 @@
               </div>
               <div class="d-flex flex-wrap align-items-center gap-3">
                 <a href="contact.html" class="btn-vx btn-vx-white btn-vx-lg">
-                  <i class="bi bi-calendar-check-fill me-2"></i>Schedule Institutional Demo
+                  <i class="bi bi-calendar-check-fill"></i>
+                  <span>Schedule Institutional Demo</span>
                 </a>
                 <a href="pricing.html" class="btn-vx btn-vx-glass-light btn-vx-lg">
-                  <i class="bi bi-layers-fill me-2"></i>Review Enterprise Tiers
+                  <i class="bi bi-layers-fill"></i>
+                  <span>Review Enterprise Tiers</span>
                 </a>
               </div>
             </div>
@@ -983,7 +991,10 @@
               <span>500 Leadership Way, Boston, MA</span>
             </li>
           </ul>
-          <a href="contact.html" class="btn-footer-cta">Connect Admissions Team</a>
+          <a href="contact.html" class="btn-footer-cta">
+            <span>Connect Admissions Team</span>
+            <i class="bi bi-arrow-right ms-1"></i>
+          </a>
         </div>
 
       </div>
